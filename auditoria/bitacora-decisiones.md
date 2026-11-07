@@ -79,3 +79,14 @@ Además, en el AR 166/2019 Sonnet asignó un código sustantivo de `derecho_prin
 - **Diagnóstico**: sus notas fueron más largas de lo necesario en documentos complejos.
 - **Consecuencia**: esos 3 documentos quedan fuera de la corrida de Haiku. Para reprocesarlos: subir `max_tokens` o pedir notas de 2 o 3 oraciones como máximo.
 - **Lección**: además de las citas, revisa siempre el `stop_reason`. Una respuesta truncada no es un error de la API: es una salida incompleta que hay que detectar.
+
+### D12 · 2026-11-06 · La sesión pasa de mesas a actividad individual
+
+- **Qué**: se elimina el trabajo por mesas. Cada participante elige una de 10 variables (o una propia) y lleva el flujo completo en su equipo. La carpeta `mesas/` se renombra a `ejercicio/`.
+- **Validación**: cada persona codifica a mano y a ciegas 6 documentos (`a_mano = si` en `muestra.csv`: los 3 AI y los 3 amparos más cortos) mientras Cowork codifica los 20, antes de ver los resultados de Claude.
+- **Límites que se declaran**:
+  - con n = 6, el kappa es ilustrativo;
+  - quien diseña el codebook es quien valida;
+  - los documentos se eligieron por su longitud, no al azar.
+- **Comparación**: unas 5 personas eligen la misma variable sin coordinarse, así que en la puesta en común se compara cómo la definió cada una y qué kappa obtuvo.
+- **Consecuencia**: el caso completo no cambia. La referencia simulada se regeneró con la nueva ruta y salió idéntica.
