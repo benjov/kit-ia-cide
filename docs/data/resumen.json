@@ -1,0 +1,478 @@
+{
+ "modelos": [
+  {
+   "id": "claude-opus-5-5",
+   "nombre": "Opus 5.5",
+   "n": 102,
+   "citas_ok": 431,
+   "citas_mal": 0,
+   "pct_citas": 1.0,
+   "confianza_baja": 43,
+   "costo_usd": 4.26,
+   "tokens": {
+    "entrada": 1245612,
+    "cache": 553076,
+    "salida": 165856
+   }
+  },
+  {
+   "id": "claude-sonnet-5-5",
+   "nombre": "Sonnet 5.5",
+   "n": 102,
+   "citas_ok": 418,
+   "citas_mal": 3,
+   "pct_citas": 0.9928741092636579,
+   "confianza_baja": 13,
+   "costo_usd": 1.68,
+   "tokens": {
+    "entrada": 1245612,
+    "cache": 553076,
+    "salida": 75710
+   }
+  },
+  {
+   "id": "claude-haiku-5-5",
+   "nombre": "Haiku 5.5",
+   "n": 99,
+   "citas_ok": 420,
+   "citas_mal": 3,
+   "pct_citas": 0.9929078014184397,
+   "confianza_baja": 17,
+   "costo_usd": 0.13,
+   "tokens": {
+    "entrada": 1222066,
+    "cache": 525696,
+    "salida": 254561
+   }
+  }
+ ],
+ "kappa_vs_referencia": [
+  {
+   "modelo": "Opus 5.5",
+   "variable": "promovente",
+   "n": 20,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  },
+  {
+   "modelo": "Opus 5.5",
+   "variable": "resultado",
+   "n": 20,
+   "acuerdo": 0.85,
+   "kappa": 0.7468354430379747
+  },
+  {
+   "modelo": "Opus 5.5",
+   "variable": "derecho_principal",
+   "n": 20,
+   "acuerdo": 0.7,
+   "kappa": 0.6470588235294117
+  },
+  {
+   "modelo": "Opus 5.5",
+   "variable": "fuentes_internacionales",
+   "n": 20,
+   "acuerdo": 0.8,
+   "kappa": 0.710144927536232
+  },
+  {
+   "modelo": "Opus 5.5",
+   "variable": "proporcionalidad",
+   "n": 20,
+   "acuerdo": 0.7,
+   "kappa": 0.3999999999999999
+  },
+  {
+   "modelo": "Opus 5.5",
+   "variable": "perspectiva_genero",
+   "n": 20,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  },
+  {
+   "modelo": "Sonnet 5.5",
+   "variable": "promovente",
+   "n": 20,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  },
+  {
+   "modelo": "Sonnet 5.5",
+   "variable": "resultado",
+   "n": 20,
+   "acuerdo": 0.85,
+   "kappa": 0.7468354430379747
+  },
+  {
+   "modelo": "Sonnet 5.5",
+   "variable": "derecho_principal",
+   "n": 20,
+   "acuerdo": 0.7,
+   "kappa": 0.6470588235294117
+  },
+  {
+   "modelo": "Sonnet 5.5",
+   "variable": "fuentes_internacionales",
+   "n": 20,
+   "acuerdo": 0.75,
+   "kappa": 0.6363636363636364
+  },
+  {
+   "modelo": "Sonnet 5.5",
+   "variable": "proporcionalidad",
+   "n": 20,
+   "acuerdo": 0.75,
+   "kappa": 0.5
+  },
+  {
+   "modelo": "Sonnet 5.5",
+   "variable": "perspectiva_genero",
+   "n": 20,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  },
+  {
+   "modelo": "Haiku 5.5",
+   "variable": "promovente",
+   "n": 19,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  },
+  {
+   "modelo": "Haiku 5.5",
+   "variable": "resultado",
+   "n": 19,
+   "acuerdo": 0.8421052631578947,
+   "kappa": 0.7259615384615383
+  },
+  {
+   "modelo": "Haiku 5.5",
+   "variable": "derecho_principal",
+   "n": 19,
+   "acuerdo": 0.631578947368421,
+   "kappa": 0.5737179487179487
+  },
+  {
+   "modelo": "Haiku 5.5",
+   "variable": "fuentes_internacionales",
+   "n": 19,
+   "acuerdo": 0.8421052631578947,
+   "kappa": 0.7755905511811023
+  },
+  {
+   "modelo": "Haiku 5.5",
+   "variable": "proporcionalidad",
+   "n": 19,
+   "acuerdo": 0.7894736842105263,
+   "kappa": 0.5777777777777778
+  },
+  {
+   "modelo": "Haiku 5.5",
+   "variable": "perspectiva_genero",
+   "n": 19,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  }
+ ],
+ "acuerdo_entre_modelos": [
+  {
+   "par": "Opus 5.5 – Sonnet 5.5",
+   "variable": "promovente",
+   "n": 102,
+   "acuerdo": 0.9607843137254902,
+   "kappa": 0.9027645376549095
+  },
+  {
+   "par": "Opus 5.5 – Sonnet 5.5",
+   "variable": "resultado",
+   "n": 102,
+   "acuerdo": 0.9019607843137255,
+   "kappa": 0.8407991259559858
+  },
+  {
+   "par": "Opus 5.5 – Sonnet 5.5",
+   "variable": "derecho_principal",
+   "n": 102,
+   "acuerdo": 0.9117647058823529,
+   "kappa": 0.9004122369277501
+  },
+  {
+   "par": "Opus 5.5 – Sonnet 5.5",
+   "variable": "fuentes_internacionales",
+   "n": 102,
+   "acuerdo": 0.8823529411764706,
+   "kappa": 0.8331515812431842
+  },
+  {
+   "par": "Opus 5.5 – Sonnet 5.5",
+   "variable": "proporcionalidad",
+   "n": 102,
+   "acuerdo": 0.9607843137254902,
+   "kappa": 0.9130434782608696
+  },
+  {
+   "par": "Opus 5.5 – Sonnet 5.5",
+   "variable": "perspectiva_genero",
+   "n": 102,
+   "acuerdo": 0.9901960784313726,
+   "kappa": 0.9510086455331414
+  },
+  {
+   "par": "Opus 5.5 – Haiku 5.5",
+   "variable": "promovente",
+   "n": 99,
+   "acuerdo": 0.9797979797979798,
+   "kappa": 0.9473963868225291
+  },
+  {
+   "par": "Opus 5.5 – Haiku 5.5",
+   "variable": "resultado",
+   "n": 99,
+   "acuerdo": 0.898989898989899,
+   "kappa": 0.8358753315649867
+  },
+  {
+   "par": "Opus 5.5 – Haiku 5.5",
+   "variable": "derecho_principal",
+   "n": 99,
+   "acuerdo": 0.8484848484848485,
+   "kappa": 0.8302857142857143
+  },
+  {
+   "par": "Opus 5.5 – Haiku 5.5",
+   "variable": "fuentes_internacionales",
+   "n": 99,
+   "acuerdo": 0.9393939393939394,
+   "kappa": 0.9137880986937591
+  },
+  {
+   "par": "Opus 5.5 – Haiku 5.5",
+   "variable": "proporcionalidad",
+   "n": 99,
+   "acuerdo": 0.898989898989899,
+   "kappa": 0.787917737789203
+  },
+  {
+   "par": "Opus 5.5 – Haiku 5.5",
+   "variable": "perspectiva_genero",
+   "n": 99,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  },
+  {
+   "par": "Sonnet 5.5 – Haiku 5.5",
+   "variable": "promovente",
+   "n": 99,
+   "acuerdo": 0.9494949494949495,
+   "kappa": 0.8732718894009217
+  },
+  {
+   "par": "Sonnet 5.5 – Haiku 5.5",
+   "variable": "resultado",
+   "n": 99,
+   "acuerdo": 0.8686868686868687,
+   "kappa": 0.793716941817599
+  },
+  {
+   "par": "Sonnet 5.5 – Haiku 5.5",
+   "variable": "derecho_principal",
+   "n": 99,
+   "acuerdo": 0.8282828282828283,
+   "kappa": 0.8073489010989011
+  },
+  {
+   "par": "Sonnet 5.5 – Haiku 5.5",
+   "variable": "fuentes_internacionales",
+   "n": 99,
+   "acuerdo": 0.898989898989899,
+   "kappa": 0.8560628089560919
+  },
+  {
+   "par": "Sonnet 5.5 – Haiku 5.5",
+   "variable": "proporcionalidad",
+   "n": 99,
+   "acuerdo": 0.898989898989899,
+   "kappa": 0.7865459249676585
+  },
+  {
+   "par": "Sonnet 5.5 – Haiku 5.5",
+   "variable": "perspectiva_genero",
+   "n": 99,
+   "acuerdo": 0.98989898989899,
+   "kappa": 0.9467455621301778
+  }
+ ],
+ "hallazgos": [
+  {
+   "variable": "proporcionalidad",
+   "codigo": "si",
+   "etiqueta": "Aplica test de proporcionalidad",
+   "abstracto": {
+    "si": 7,
+    "n": 9
+   },
+   "concreto": {
+    "si": 28,
+    "n": 86
+   },
+   "p_fisher": 0.011391697301375299
+  },
+  {
+   "variable": "fuentes_internacionales",
+   "codigo": "corte_idh",
+   "etiqueta": "Cita a la Corte IDH",
+   "abstracto": {
+    "si": 5,
+    "n": 9
+   },
+   "concreto": {
+    "si": 30,
+    "n": 86
+   },
+   "p_fisher": 0.28218608644791027
+  },
+  {
+   "variable": "perspectiva_genero",
+   "codigo": "si",
+   "etiqueta": "Declara perspectiva de género",
+   "abstracto": {
+    "si": 3,
+    "n": 9
+   },
+   "concreto": {
+    "si": 8,
+    "n": 86
+   },
+   "p_fisher": 0.06654837856722497
+  },
+  {
+   "variable": "resultado",
+   "codigo": "protege",
+   "etiqueta": "Resultado: protege el derecho",
+   "abstracto": {
+    "si": 3,
+    "n": 9
+   },
+   "concreto": {
+    "si": 54,
+    "n": 86
+   },
+   "p_fisher": 0.14949719924077579
+  }
+ ],
+ "distribuciones": {
+  "promovente": {
+   "abstracto": {
+    "organo_autonomo": 5,
+    "actor_politico": 3,
+    "fiscalia": 1
+   },
+   "concreto": {
+    "persona": 78,
+    "colectivo": 7,
+    "autoridad": 1
+   },
+   "otro": {
+    "no_identificable": 2,
+    "autoridad": 4,
+    "persona": 1
+   }
+  },
+  "resultado": {
+   "abstracto": {
+    "protege": 3,
+    "mixto": 5,
+    "no_protege": 1
+   },
+   "concreto": {
+    "no_protege": 19,
+    "mixto": 13,
+    "protege": 54
+   },
+   "otro": {
+    "otro": 5,
+    "protege": 2
+   }
+  },
+  "derecho_principal": {
+   "abstracto": {
+    "salud": 1,
+    "libertad_expresion_informacion": 3,
+    "igualdad_no_discriminacion": 2,
+    "derechos_sexuales_reproductivos": 1,
+    "libertad_integridad_personal": 1,
+    "ninez": 1
+   },
+   "concreto": {
+    "otro": 8,
+    "privacidad_datos": 4,
+    "pueblos_indigenas": 5,
+    "libertad_expresion_informacion": 6,
+    "igualdad_no_discriminacion": 21,
+    "medio_ambiente": 8,
+    "debido_proceso_acceso_justicia": 14,
+    "libertad_integridad_personal": 4,
+    "ninez": 5,
+    "familia": 3,
+    "salud": 5,
+    "derechos_sexuales_reproductivos": 2,
+    "trabajo_seguridad_social": 1
+   },
+   "otro": {
+    "otro": 2,
+    "privacidad_datos": 1,
+    "pueblos_indigenas": 1,
+    "salud": 1,
+    "trabajo_seguridad_social": 1,
+    "medio_ambiente": 1
+   }
+  },
+  "fuentes_internacionales": {
+   "abstracto": {
+    "otra_jurisprudencia": 2,
+    "corte_idh": 5,
+    "tratados": 1,
+    "ninguna": 1
+   },
+   "concreto": {
+    "corte_idh": 30,
+    "ninguna": 19,
+    "tratados": 30,
+    "otra_jurisprudencia": 7
+   },
+   "otro": {
+    "corte_idh": 2,
+    "ninguna": 3,
+    "tratados": 2
+   }
+  },
+  "proporcionalidad": {
+   "abstracto": {
+    "no": 2,
+    "si": 7
+   },
+   "concreto": {
+    "no": 58,
+    "si": 28
+   },
+   "otro": {
+    "no": 6,
+    "si": 1
+   }
+  },
+  "perspectiva_genero": {
+   "abstracto": {
+    "si": 3,
+    "no": 6
+   },
+   "concreto": {
+    "no": 78,
+    "si": 8
+   },
+   "otro": {
+    "no": 6,
+    "si": 1
+   }
+  }
+ }
+}

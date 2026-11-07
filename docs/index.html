@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es" data-base=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit IA-CIDE</title>
+<meta name="description" content="Sesión 4: análisis de contenido asistido por IA, de punta a punta y verificable, con sentencias de la SCJN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+<style>
+  .flujo { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; position: relative; margin: 28px 0 8px; }
+  .flujo::before { content: ""; position: absolute; left: 4%; right: 4%; top: 34px; height: 4px; background: var(--borde); border-radius: 4px; }
+  .riel { position: absolute; left: 4%; top: 34px; height: 4px; background: var(--acento); border-radius: 4px; width: 0; transition: width .8s ease; }
+  .fase { position: relative; text-align: center; cursor: pointer; background: none; border: 0; color: inherit; font: inherit; padding: 0;
+    display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
+  .fase .nodo { width: 72px; height: 72px; margin: 0 auto 8px; border-radius: 50%; display: grid; place-items: center; font-size: 1.7rem;
+    background: var(--superficie); border: 2px solid var(--borde); position: relative; z-index: 1; transition: transform .35s, border-color .35s, background .35s; }
+  .fase.hecha .nodo { border-color: var(--acento); }
+  .fase.activa .nodo { border-color: var(--acento); background: var(--acento-suave); transform: scale(1.12); }
+  .fase .num { font-size: .72rem; color: var(--texto-suave); font-weight: 600; letter-spacing: .06em; }
+  .fase .nom { font-weight: 600; font-size: .9rem; line-height: 1.25; }
+  .detalle { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 14px; margin-top: 18px; min-height: 150px; }
+  .detalle .tarjeta { padding: 16px; }
+  .detalle h4 { margin: 0 0 6px; font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; color: var(--texto-suave); }
+  .detalle p { margin: 0; }
+  .flujo { padding-top: 34px; align-items: start; }
+  .flujo::before, .riel { top: 68px !important; }
+  .doc { position: absolute; top: 0; width: 26px; height: 30px; z-index: 2; transition: left .8s ease; pointer-events: none; }
+  .controles { display: flex; gap: 8px; align-items: center; margin-top: 12px; color: var(--texto-suave); font-size: .9rem; }
+  @media (max-width: 760px) {
+    .flujo { grid-template-columns: 1fr; gap: 6px; padding-top: 0; }
+    .fase { flex-direction: row; justify-content: flex-start; }
+    .flujo::before, .riel, .doc { display: none; }
+    .fase { display: grid; grid-template-columns: 56px 1fr; text-align: left; align-items: center; gap: 10px; }
+    .fase .nodo { width: 52px; height: 52px; margin: 0; font-size: 1.3rem; }
+    .detalle { grid-template-columns: 1fr; }
+  }
+  .grande { font-family: var(--serif); font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1; color: var(--acento); }
+</style>
+</head>
+<body>
+<main class="contenedor">
+  <section class="hero aparece">
+    <div class="sobre">Sesión 4 · Programa de IA para ciencias sociales · CIDE</div>
+    <h1>Del codebook al hallazgo</h1>
+    <p class="lead">Un análisis de contenido con IA <strong>de punta a punta</strong> y <strong>verificable</strong>: 102 sentencias de la Suprema Corte, una pregunta de investigación, y cada código respaldado por una cita que cualquiera puede revisar.</p>
+    <p style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+      <a class="boton" href="caso.html">Ver el caso terminado →</a>
+      <a class="boton sec" href="guia.html">Guía paso a paso</a>
+      <a class="boton sec" href="kit.html">Descargar el kit</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="t-flujo">
+    <h2 id="t-flujo">El flujo: siete fases, cinco herramientas</h2>
+    <p>Cada fase usa la herramienta de Claude que mejor resuelve ese problema y deja una <strong>evidencia de auditoría</strong>. Haz clic en una fase o deja que avance sola.</p>
+    <div class="flujo" id="flujo">
+      <div class="riel" id="riel"></div>
+      <svg class="doc" id="doc" viewBox="0 0 26 30" aria-hidden="true"><path d="M2 2h15l7 7v19H2z" fill="var(--superficie)" stroke="var(--acento)" stroke-width="2"/><path d="M6 13h14M6 18h14M6 23h9" stroke="var(--acento)" stroke-width="1.6"/></svg>
+    </div>
+    <div class="controles"><button class="tema" id="pausa" type="button">⏸ Pausar</button><span id="estado">Reproduciendo</span></div>
+    <div class="detalle" id="detalle" aria-live="polite"></div>
+  </section>
+
+  <section>
+    <h2>Lo que vas a llevarte</h2>
+    <div class="rejilla">
+      <div class="tarjeta"><h3>📚 Un corpus listo</h3><p>102 resúmenes y sentencias de la SCJN en texto plano, con procedencia y huella digital (SHA-256) de cada archivo.</p></div>
+      <div class="tarjeta"><h3>🧩 Un skill instalable</h3><p><code>codificador-scjn</code>: aplica el codebook en Cowork y audita sus propias citas. Más una plantilla para tu corpus.</p></div>
+      <div class="tarjeta"><h3>🔍 Un protocolo de auditoría</h3><p>Cinco controles con umbrales fijados de antemano: procedencia, citas, validación humana, versionado y bitácora.</p></div>
+      <div class="tarjeta"><h3>🧪 Un caso resuelto</h3><p>De la pregunta al memo metodológico, con tres modelos comparados, costos reales y errores documentados.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>La pregunta del caso</h2>
+    <div class="rejilla-2">
+      <div class="tarjeta">
+        <p class="grande">¿Abstracto o concreto?</p>
+        <p>Cuando la Suprema Corte protege derechos humanos, <strong>¿argumenta distinto</strong> si revisa una ley "en el papel" (acción de inconstitucionalidad) que si resuelve el caso de una persona (amparo)?</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Tres hipótesis para discutir</h3>
+        <p><span class="etiqueta azul">H1</span> En la vía abstracta, más test de proporcionalidad.</p>
+        <p><span class="etiqueta azul">H2</span> En la vía concreta, más fuentes internacionales.</p>
+        <p><span class="etiqueta azul">H3</span> La perspectiva de género aparece igual en ambas.</p>
+        <p><a href="caso.html#hallazgos">¿Qué encontramos? →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Herramientas interactivas</h2>
+    <div class="rejilla">
+      <a class="tarjeta" href="herramientas/auditor.html" style="text-decoration:none;color:inherit"><h3>🔎 Auditor de citas</h3><p>Elige una sentencia y comprueba, resaltada en el texto, cada cita con la que Claude justificó sus códigos.</p></a>
+      <a class="tarjeta" href="herramientas/kappa.html" style="text-decoration:none;color:inherit"><h3>🎯 Simulador de kappa</h3><p>¿Por qué 90% de acuerdo puede ser un mal resultado? Juega con la prevalencia y el acuerdo.</p></a>
+      <a class="tarjeta" href="herramientas/costos.html" style="text-decoration:none;color:inherit"><h3>💲 Calculadora de costos</h3><p>Cuánto cuesta codificar tu corpus según el modelo, la Batch API y la caché.</p></a>
+    </div>
+  </section>
+</main>
+<script src="assets/comun.js"></script>
+<script>
+const FASES = [
+  { i: "❓", n: "Pregunta y corpus", h: "—", p: "Pregunta de investigación + 102 sentencias descargadas de la SCJN", a: "Manifiesto con URL oficial y SHA-256 de cada archivo", t: "Elegir corpus también es método: los muros anti-bots de la SCJN cambiaron nuestra pregunta." },
+  { i: "💬", n: "Diseñar el codebook", h: "Chat · Proyecto", p: "codebook.md v1.0: 6 variables, reglas de decisión, casos frontera", a: "Bitácora: qué se decidió y por qué", t: "Claude como colega escéptico: \"¿qué caso no encaja en tus categorías?\"" },
+  { i: "🧪", n: "Prototipar el prompt", h: "Console Workbench", p: "Prompt con variables, salida JSON, comparación Haiku · Sonnet · Opus", a: "Casos de prueba con respuesta conocida", t: "Aquí se mide el costo antes de gastar: tokens por documento × N." },
+  { i: "🧩", n: "Empaquetar", h: "Skill", p: "codificador-scjn: codebook + instrucciones + scripts de auditoría", a: "Versión del skill", t: "Un skill convierte un buen prompt en un procedimiento reutilizable y compartible." },
+  { i: "⚙️", n: "Escalar", h: "Cowork (o API Batch)", p: "resultados.csv: código + cita + confianza por variable", a: "Cada código con cita literal verificable", t: "Cowork lee la carpeta, aplica el skill, corre la verificación y corrige." },
+  { i: "✅", n: "Validar", h: "Cowork / Chat", p: "Kappa humano–Claude, desacuerdos analizados", a: "Tabla de confiabilidad", t: "Un kappa alto no es validez; un kappa bajo sí es una alarma." },
+  { i: "📝", n: "Comunicar", h: "Chat / Cowork", p: "Memo metodológico + nota de hallazgos", a: "El memo enlaza a cada artefacto anterior", t: "Lo que no está en el memo, no pasó." },
+];
+const flujo = document.getElementById("flujo"), det = document.getElementById("detalle"), riel = document.getElementById("riel"), doc = document.getElementById("doc");
+FASES.forEach((f, k) => {
+  const b = document.createElement("button");
+  b.className = "fase"; b.type = "button";
+  b.innerHTML = `<div class="nodo" aria-hidden="true">${f.i}</div><div><div class="num">FASE ${k}</div><div class="nom">${f.n}</div></div>`;
+  b.addEventListener("click", () => { pausar(true); ir(k); });
+  flujo.append(b);
+});
+let actual = 0, timer = null, pausado = false;
+function ir(k) {
+  actual = k;
+  [...flujo.querySelectorAll(".fase")].forEach((b, j) => { b.classList.toggle("activa", j === k); b.classList.toggle("hecha", j < k); b.setAttribute("aria-pressed", j === k); });
+  const ancho = flujo.clientWidth, paso = ancho / FASES.length;
+  riel.style.width = `${Math.max(0, (k / (FASES.length - 1)) * 92)}%`;
+  doc.style.left = `${paso * k + paso / 2 - 13}px`;
+  const f = FASES[k];
+  det.innerHTML = `
+    <div class="tarjeta aparece"><h4>Fase ${k} · ${f.h}</h4><p><strong>${f.n}</strong></p><p style="color:var(--texto-suave);margin-top:6px">${f.t}</p></div>
+    <div class="tarjeta aparece"><h4>Producto</h4><p>${f.p}</p></div>
+    <div class="tarjeta aparece"><h4>Evidencia de auditoría</h4><p>${f.a}</p></div>`;
+}
+function pausar(v) { pausado = v; document.getElementById("pausa").textContent = v ? "▶ Reproducir" : "⏸ Pausar"; document.getElementById("estado").textContent = v ? "En pausa" : "Reproduciendo"; }
+document.getElementById("pausa").addEventListener("click", () => pausar(!pausado));
+const reducido = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (reducido) pausar(true);
+setInterval(() => { if (!pausado) ir((actual + 1) % FASES.length); }, 3200);
+addEventListener("resize", () => ir(actual));
+ir(0);
+</script>
+</body>
+</html>

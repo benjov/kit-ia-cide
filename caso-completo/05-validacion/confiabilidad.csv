@@ -1,0 +1,19 @@
+modelo,variable,n,acuerdo,kappa
+Opus 5.5,promovente,20,1.0,1.0
+Opus 5.5,resultado,20,0.85,0.747
+Opus 5.5,derecho_principal,20,0.7,0.647
+Opus 5.5,fuentes_internacionales,20,0.8,0.71
+Opus 5.5,proporcionalidad,20,0.7,0.4
+Opus 5.5,perspectiva_genero,20,1.0,1.0
+Sonnet 5.5,promovente,20,1.0,1.0
+Sonnet 5.5,resultado,20,0.85,0.747
+Sonnet 5.5,derecho_principal,20,0.7,0.647
+Sonnet 5.5,fuentes_internacionales,20,0.75,0.636
+Sonnet 5.5,proporcionalidad,20,0.75,0.5
+Sonnet 5.5,perspectiva_genero,20,1.0,1.0
+Haiku 5.5,promovente,19,1.0,1.0
+Haiku 5.5,resultado,19,0.842,0.726
+Haiku 5.5,derecho_principal,19,0.632,0.574
+Haiku 5.5,fuentes_internacionales,19,0.842,0.776
+Haiku 5.5,proporcionalidad,19,0.789,0.578
+Haiku 5.5,perspectiva_genero,19,1.0,1.0

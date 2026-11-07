@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es" data-base="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador de kappa</title>
+<meta name="description" content="Simulador interactivo del kappa de Cohen: acuerdo observado, acuerdo por azar y paradoja de la prevalencia.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/estilo.css">
+<style>
+  .mapa { display: grid; grid-template-columns: repeat(20, 1fr); gap: 3px; max-width: 520px; }
+  .mapa span { aspect-ratio: 1; border-radius: 3px; transition: background .4s; }
+  .si-si { background: var(--ok); } .no-no { background: color-mix(in srgb, var(--ok) 35%, transparent); }
+  .desac { background: var(--error); }
+  .leyenda { display: flex; gap: 14px; flex-wrap: wrap; font-size: .85rem; color: var(--texto-suave); margin: 10px 0; }
+  .leyenda i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 5px; }
+  .medidor { height: 16px; border-radius: 8px; background: linear-gradient(90deg, var(--error) 0 20%, var(--alerta) 20% 40%, #c9a227 40% 60%, color-mix(in srgb, var(--ok) 70%, #fff) 60% 80%, var(--ok) 80%); position: relative; margin: 28px 0 6px; }
+  .aguja { position: absolute; top: -10px; width: 4px; height: 36px; background: var(--texto); border-radius: 2px; transition: left .5s; }
+  .escala { display: flex; justify-content: space-between; font-size: .75rem; color: var(--texto-suave); }
+  .presets { display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0; }
+  .matriz td, .matriz th { text-align: center; }
+</style>
+</head>
+<body>
+<main class="contenedor">
+  <section class="hero">
+    <div class="sobre">Herramienta · Validación</div>
+    <h1>Simulador de kappa</h1>
+    <p class="lead">El porcentaje de acuerdo engaña: si casi todo es "sí", dos codificadores que adivinan coinciden casi siempre. El <strong>kappa de Cohen</strong> descuenta el acuerdo esperado por azar.</p>
+  </section>
+
+  <div class="rejilla-2">
+    <div class="tarjeta">
+      <h3>Ajusta el escenario</h3>
+      <label for="prev">¿Qué tan común es el "sí" en el corpus? <output id="o-prev"></output></label>
+      <input id="prev" type="range" min="0.02" max="0.98" step="0.01" value="0.5">
+      <label for="ea">Errores del humano <output id="o-ea"></output></label>
+      <input id="ea" type="range" min="0" max="0.5" step="0.01" value="0.05">
+      <label for="eb">Errores de Claude <output id="o-eb"></output></label>
+      <input id="eb" type="range" min="0" max="0.5" step="0.01" value="0.10">
+      <div class="presets">
+        <button class="boton sec" data-p="0.5,0.05,0.1" type="button">Caso típico</button>
+        <button class="boton sec" data-p="0.97,0.06,0.06" type="button">Paradoja de la prevalencia</button>
+        <button class="boton sec" data-p="0.5,0.5,0.5" type="button">Dos que adivinan</button>
+        <button class="boton sec" data-p="0.12,0.03,0.25" type="button">Variable rara + Claude impreciso</button>
+      </div>
+      <p style="font-size:.88rem;color:var(--texto-suave)">Modelo: cada documento tiene un valor "verdadero" (sí/no) y cada codificador se equivoca al azar con la probabilidad indicada. En la vida real no conocemos la verdad: solo vemos si coinciden.</p>
+    </div>
+
+    <div class="tarjeta">
+      <h3>100 documentos codificados por los dos</h3>
+      <div class="mapa" id="mapa" role="img" aria-label="Mapa de 100 documentos"></div>
+      <div class="leyenda"><span><i class="si-si"></i>ambos "sí"</span><span><i class="no-no"></i>ambos "no"</span><span><i class="desac"></i>desacuerdo</span></div>
+      <div class="metricas">
+        <div class="metrica"><small>Acuerdo observado</small><b id="po"></b></div>
+        <div class="metrica"><small>Acuerdo esperado por azar</small><b id="pe"></b></div>
+        <div class="metrica"><small>Kappa</small><b id="k"></b></div>
+      </div>
+      <div class="medidor"><div class="aguja" id="aguja"></div></div>
+      <div class="escala"><span>&lt;0.2 leve</span><span>0.4 moderado</span><span>0.6 sustancial</span><span>0.8 casi perfecto</span></div>
+      <p id="lectura" style="margin-top:14px"></p>
+    </div>
+  </div>
+
+  <h2>La cuenta, paso a paso</h2>
+  <div class="rejilla-2">
+    <div class="tabla-env"><table class="matriz">
+      <thead><tr><th></th><th>Claude: sí</th><th>Claude: no</th><th>Total humano</th></tr></thead>
+      <tbody id="tabla"></tbody></table></div>
+    <div class="tarjeta">
+      <p><strong>κ = (p<sub>o</sub> − p<sub>e</sub>) / (1 − p<sub>e</sub>)</strong></p>
+      <p>p<sub>o</sub> = proporción de documentos en la diagonal (coinciden).</p>
+      <p>p<sub>e</sub> = probabilidad de coincidir por azar = P(humano dice sí)·P(Claude dice sí) + P(humano dice no)·P(Claude dice no).</p>
+      <p id="cuenta" style="font-family:var(--mono);font-size:.9rem"></p>
+    </div>
+  </div>
+
+  <div class="aviso info"><strong>Para llevar a tu proyecto:</strong> reporta siempre <em>kappa y % de acuerdo y la distribución</em> de la variable. En el caso completo, las variables con prevalencia extrema (como <code>perspectiva_genero</code>) tienen kappas inestables con N=20.</div>
+</main>
+<script src="../assets/comun.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+function calcular() {
+  const p = +$("prev").value, ea = +$("ea").value, eb = +$("eb").value;
+  $("o-prev").textContent = KIT.pct(p); $("o-ea").textContent = KIT.pct(ea); $("o-eb").textContent = KIT.pct(eb);
+  // Probabilidades de cada celda
+  const ss = p * (1 - ea) * (1 - eb) + (1 - p) * ea * eb;
+  const sn = p * (1 - ea) * eb + (1 - p) * ea * (1 - eb);
+  const ns = p * ea * (1 - eb) + (1 - p) * (1 - ea) * eb;
+  const nn = 1 - ss - sn - ns;
+  const po = ss + nn, pa = ss + sn, pb = ss + ns, pe = pa * pb + (1 - pa) * (1 - pb);
+  const k = pe >= 1 ? 1 : (po - pe) / (1 - pe);
+  // 100 casillas
+  let n = [ss, nn, sn + ns].map(x => Math.round(x * 100)); n[1] = 100 - n[0] - n[2];
+  const celdas = [...Array(n[0]).fill("si-si"), ...Array(n[2]).fill("desac"), ...Array(n[1]).fill("no-no")];
+  $("mapa").innerHTML = celdas.map(c => `<span class="${c}"></span>`).join("");
+  $("po").textContent = KIT.pct(po); $("pe").textContent = KIT.pct(pe); $("k").textContent = k.toFixed(2);
+  $("aguja").style.left = `calc(${Math.min(Math.max(k, 0), 1) * 100}% - 2px)`;
+  const etq = k >= .81 ? "casi perfecto" : k >= .61 ? "sustancial" : k >= .41 ? "moderado" : k >= .21 ? "aceptable" : k >= 0 ? "leve" : "peor que el azar";
+  let txt = `Acuerdo <strong>${etq}</strong>.`;
+  if (po >= .85 && k < .5) txt += ` ⚠️ Aquí está la paradoja: ${KIT.pct(po)} de acuerdo suena excelente, pero casi todo se explica por azar porque la variable está muy desbalanceada.`;
+  if (k >= .61) txt += " Pasa el umbral de nuestro protocolo (≥ 0.61).";
+  $("lectura").innerHTML = txt;
+  const f = x => (x * 100).toFixed(0);
+  $("tabla").innerHTML = `<tr><th>Humano: sí</th><td>${f(ss)}</td><td>${f(sn)}</td><td>${f(pa)}</td></tr>
+    <tr><th>Humano: no</th><td>${f(ns)}</td><td>${f(nn)}</td><td>${f(1 - pa)}</td></tr>
+    <tr><th>Total Claude</th><td>${f(pb)}</td><td>${f(1 - pb)}</td><td>100</td></tr>`;
+  $("cuenta").innerHTML = `p<sub>o</sub> = ${po.toFixed(3)}<br>p<sub>e</sub> = ${pa.toFixed(2)}×${pb.toFixed(2)} + ${(1 - pa).toFixed(2)}×${(1 - pb).toFixed(2)} = ${pe.toFixed(3)}<br>κ = (${po.toFixed(3)} − ${pe.toFixed(3)}) / (1 − ${pe.toFixed(3)}) = <strong>${k.toFixed(3)}</strong>`;
+}
+["prev", "ea", "eb"].forEach(id => $(id).addEventListener("input", calcular));
+document.querySelectorAll("[data-p]").forEach(b => b.addEventListener("click", () => {
+  const [p, a, c] = b.dataset.p.split(","); $("prev").value = p; $("ea").value = a; $("eb").value = c; calcular();
+}));
+calcular();
+</script>
+</body>
+</html>

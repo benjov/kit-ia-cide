@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es" data-base="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de costos</title>
+<meta name="description" content="Estima cuánto cuesta codificar un corpus con la API de Claude según modelo, Batch API y caché.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/estilo.css">
+</head>
+<body>
+<main class="contenedor">
+  <section class="hero">
+    <div class="sobre">Herramienta · Planeación</div>
+    <h1>¿Cuánto cuesta codificar tu corpus?</h1>
+    <p class="lead">En Claude Desktop (Pro) no pagas por token, pero tienes límites de uso. En la API pagas por token y puedes escalar a miles de documentos. Esta calculadora estima el costo vía API.</p>
+  </section>
+
+  <div class="rejilla-2">
+    <div class="tarjeta">
+      <h3>Tu corpus</h3>
+      <label for="n">Número de documentos</label>
+      <input id="n" type="number" min="1" value="102">
+      <label for="pal">Palabras promedio por documento <output id="o-tok"></output></label>
+      <input id="pal" type="range" min="200" max="60000" step="100" value="4600">
+      <label for="fac">Tipo de texto</label>
+      <select id="fac"><option value="1.4">Texto limpio (≈ 1.4 tokens por palabra en español)</option><option value="2.6" selected>Extraído de PDF con espacios de maquetación (≈ 2.6, medido en el caso)</option></select>
+      <label for="sys">Tamaño del codebook + instrucciones (tokens)</label>
+      <input id="sys" type="number" min="0" value="5400">
+      <label for="sal">Tokens de salida por documento</label>
+      <input id="sal" type="number" min="50" value="1600">
+      <label><input id="batch" type="checkbox" checked> Usar Batch API (−50%, resultados en minutos u horas)</label>
+      <label><input id="cache" type="checkbox" checked> Prompt caching del codebook (se lee al 10% del precio)</label>
+      <p style="font-size:.85rem;color:var(--texto-suave)">Precargado con lo medido en el caso completo (Opus): unas 4,600 palabras por resumen ≈ 12,000 tokens (el PDF extraído trae muchos espacios de maquetación, que también cuestan), unos 5,400 tokens de codebook e instrucciones en caché, y unos 1,600 tokens de salida (JSON con citas y notas). <strong>Lección: limpiar el texto antes de enviarlo puede ahorrar casi la mitad.</strong></p>
+    </div>
+    <div class="tarjeta">
+      <h3>Costo estimado por modelo</h3>
+      <div id="barras"></div>
+      <div class="metricas" style="margin-top:16px">
+        <div class="metrica"><small>Tokens de entrada totales</small><b id="tin"></b></div>
+        <div class="metrica"><small>Costo por documento (Sonnet)</small><b id="pdoc"></b></div>
+      </div>
+      <div class="aviso info" style="margin-top:16px"><strong>Lo que costó el caso completo de verdad:</strong> <span id="real">se actualiza al terminar las corridas.</span></div>
+    </div>
+  </div>
+
+  <h2>¿Qué modelo uso?</h2>
+  <div class="tabla-env"><table>
+    <thead><tr><th>Modelo</th><th class="num">Entrada / millón</th><th class="num">Salida / millón</th><th>Cuándo conviene</th></tr></thead>
+    <tbody>
+      <tr><td>Haiku 5.5</td><td class="num">US$0.10</td><td class="num">US$0.50</td><td>Variables simples y explícitas, corpus enormes, primera pasada de filtrado</td></tr>
+      <tr><td>Sonnet 5.5</td><td class="num">US$2</td><td class="num">US$10</td><td>Buen equilibrio para la mayoría de los codebooks</td></tr>
+      <tr><td>Opus 5.5</td><td class="num">US$4</td><td class="num">US$20</td><td>Variables interpretativas, casos frontera, documentos largos y densos</td></tr>
+    </tbody></table></div>
+  <p style="font-size:.85rem;color:var(--texto-suave)">Precios de la API de Anthropic a noviembre de 2026; verifica los vigentes en claude.com/pricing. La regla de oro: <strong>elige el modelo por el kappa, no por el precio</strong>. Corre los tres sobre tu muestra de validación y quédate con el más barato que pase tu umbral.</p>
+</main>
+<script src="../assets/comun.js"></script>
+<script>
+const P = { "Haiku 5.5": [0.10, 0.50], "Sonnet 5.5": [2, 10], "Opus 5.5": [4, 20] };
+const $ = id => document.getElementById(id);
+function calc() {
+  const n = +$("n").value || 0, tokDoc = Math.round(+$("pal").value * +$("fac").value), sys = +$("sys").value || 0, sal = +$("sal").value || 0;
+  const batch = $("batch").checked ? 0.5 : 1, cache = $("cache").checked;
+  $("o-tok").textContent = `(${(+$("pal").value).toLocaleString("es-MX")} palabras ≈ ${tokDoc.toLocaleString("es-MX")} tokens)`;
+  const filas = Object.entries(P).map(([m, [pi, po]]) => {
+    const sysCosto = cache ? (sys * pi * 1.25 + (n - 1) * sys * pi * 0.1) : n * sys * pi;
+    const usd = batch * (sysCosto + n * tokDoc * pi + n * sal * po) / 1e6;
+    return { etiqueta: m, valor: usd };
+  });
+  KIT.barras($("barras"), filas, { formato: v => "US$" + (v < 1 ? v.toFixed(2) : v.toFixed(1)) });
+  $("tin").textContent = ((n * (tokDoc + sys)) / 1e6).toFixed(2) + " M";
+  $("pdoc").textContent = "US$" + (filas[1].valor / Math.max(n, 1)).toFixed(3);
+}
+document.querySelectorAll("input, select").forEach(i => i.addEventListener("input", calc));
+calc();
+KIT.json("../data/costos_reales.json").then(d => {
+  $("real").innerHTML = d.map(x => `${x.modelo}: <strong>US$${x.costo_usd.toFixed(2)}</strong> (${x.n} docs, Batch)`).join(" · ");
+}).catch(() => {});
+</script>
+</body>
+</html>

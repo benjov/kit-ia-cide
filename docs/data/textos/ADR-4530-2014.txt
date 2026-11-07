@@ -1,0 +1,477 @@
+ Este resumen contiene la carátula, la síntesis y el extracto de una sentencia de la Suprema Corte de Justicia
+ de la Nación. Para facilitar la lectura del extracto, se realizaron modificaciones al texto original de la misma.
+ Este documento tiene fines informativos, por lo que carece de efectos vinculantes.
+
+
+
+
+    REGLA DE EXCLUSIÓN PROBATORIA ANTE LA DEMOSTRACIÓN DE TORTURA
+
+
+CASO: Amparo Directo en Revisión 4530/2014
+
+
+MINISTRO PONENTE: Arturo Zaldívar Lelo de Larrea
+
+
+SENTENCIA EMITIDA POR: Primera Sala de la Suprema Corte de Justicia de la Nación
+
+
+FECHA: 30 de septiembre de 2015
+
+
+TEMAS: derecho al debido proceso, derechos del imputado, tortura, exclusión probatoria,
+valoración de las pruebas.
+
+
+CITA DE LA SENTENCIA: Suprema Corte de Justicia de la Nación, Amparo Directo en
+Revisión 4530/2014, Primera Sala, Min. Arturo Zaldívar Lelo de Larrea, sentencia de 30 de
+septiembre de 2015, México.
+
+
+El texto íntegro de la sentencia puede consultarse en el siguiente enlace:
+https://www.scjn.gob.mx/derechos-humanos/sites/default/files/sentencias-
+emblematicas/sentencia/2022-01/ADR4530-2014.pdf
+
+
+CITA SUGERIDA PARA ESTE DOCUMENTO: Suprema Corte de Justicia de la Nación,
+Extracto del Amparo Directo en Revisión 4530/2014, Centro de Estudios Constitucionales,
+México.
+                SÍNTESIS DEL AMPARO DIRECTO EN REVISIÓN 4530/2014
+
+
+ANTECEDENTES: En Veracruz, un juez penal sentenció a JOV por el delito de secuestro y,
+más tarde, la sala penal que conoció del asunto confirmó la culpabilidad de JOV e incrementó
+la pena impuesta por el juez penal. Inconforme con la resolución de la sala, JOV presentó una
+demanda de amparo en la que señaló que había sido torturado durante el traslado del lugar de
+detención al centro penitenciario para obtener las confesiones de él y su coinculpado. Asimismo,
+JOV argumentó que esta situación fue manifestada en las declaraciones preparatorias y
+ampliaciones, además de que especialistas en materia de psiquiatría concluyeron que JOV sí
+fue sujeto de tortura. El tribunal colegiado negó el amparo, pues consideró que no era creíble
+que JOV y el coinculpado hubieran sido torturados al rendir su declaración preparatoria. En
+contra de la sentencia del tribunal colegiado, JOV interpuso recurso de revisión del que conoció
+la Suprema Corte de Justicia de la Nación (esta Corte).
+
+
+CUESTIÓN A RESOLVER: Determinar si en el caso se aplicaron los estándares
+constitucionales y convencionales para la investigación, prevención, sanción y reparación de la
+tortura y cuáles son los efectos de la actualización de tortura para la valoración de las pruebas.
+
+
+RESOLUCIÓN DEL CASO: Se concedió el amparo, esencialmente, por las siguientes razones.
+Esta Corte advierte que la tortura es una violación a derechos humanos, que afecta el derecho
+fundamental a un debido proceso legal por lo que, ante una denuncia de ese tipo, la autoridad
+judicial tiene la obligación de investigarla. Esta obligación es una formalidad esencial del
+procedimiento, pues incide sobre las efectivas posibilidades de defensa de los gobernados en
+el proceso penal. En el caso de afirmarse la existencia de la tortura, el juez tendrá que analizar
+si dicha violación a derechos humanos tuvo un impacto en la generación, introducción o
+desahogo de pruebas incorporadas a la causa penal, porque de ser así tendrá que aplicar las
+directrices de exclusión de probatoria de la prueba ilícita. En caso de que no pueda afirmarse
+la existencia de tortura, la denuncia o advertencia de indicios coincidentes con su comisión
+obligan a la autoridad judicial que conoce del proceso penal a dar vista al ministerio público para
+
+
+
+                                                 I
+que se investigue el hecho como delito. Además, debe realizar un análisis oficioso de los
+elementos materiales con los que se cuentan hasta la etapa procesal en que se actúa, con el
+objetivo de determinar si cuenta o no con elementos que le permitan concluir que existió la
+tortura. De ahí que, al detectarse la falta de investigación después de concluir la etapa de
+instrucción del proceso penal, ello necesariamente obliga a reponer el procedimiento para que
+sea subsanada la omisión y la situación jurídica del procesado pueda resolverse a partir de
+tener en cuenta dicha circunstancia. La indicada reposición del procedimiento deberá realizarse
+hasta la diligencia inmediata anterior al auto de cierre de instrucción, tratándose del sistema
+procesal tradicional. En caso de que se determine que en el proceso sí existió tortura, ya sea
+como delito o como violación al derecho humano de debido proceso, se debe excluir todo medio
+de convicción que haya sido obtenido directamente de la misma o que derive de ésta, lo cual
+comprende declaraciones, confesiones y toda clase de información incriminatoria resultado de
+éstas
+
+
+VOTACIÓN: La Primera Sala resolvió el presente asunto por mayoría de cuatro votos de la
+ministra Olga María del Carmen Sánchez Cordero de García Villegas y los ministros Arturo
+Zaldívar Lelo de Larrea, José Ramón Cossío Díaz y Alfredo Gutiérrez Ortiz Mena. El ministro
+Jorge Mario Pardo Rebolledo votó en contra (formuló voto particular).
+
+
+Los votos formulados pueden consultarse en el siguiente enlace:
+https://www2.scjn.gob.mx/ConsultaTematica/PaginasPub/DetallePub.aspx?AsuntoID=171221
+
+
+
+
+                                               II
+                   EXTRACTO DEL AMPARO DIRECTO EN REVISIÓN 4530/2014
+
+ p.1    Ciudad de México. La Primera Sala de la Suprema Corte de Justicia de la Nación (esta
+        Corte), en sesión de 30 de septiembre de 2015, emite la siguiente sentencia.
+
+                                            ANTECEDENTES
+
+p.1-6   El 19 de marzo de 2014, JOV solicitó el amparo en contra de la sentencia emitida por la
+        sala penal que lo condenaba por el delito de secuestro. JOV argumentó esencialmente
+        que: (a) la sentencia dictada en su contra no estaba debidamente fundada y motivada,
+        pues no existen suficientes pruebas para demostrar que había cometido los delitos; y, (b)
+        la sala penal omitió ejercer un control de convencionalidad ex oficio en materia de
+        derechos humanos, en protección a su derecho de no autoincriminación, ya que su
+        resolución se basó en confesiones de él y su co-inculpado, que se obtuvieron con tortura.
+        JOV señaló esta situación fue manifestada en las declaraciones preparatorias y
+        ampliaciones respectivas, aunado, a que los especialistas en materia de psiquiatría,
+        ofrecidos por la defensa y la representación social, concluyeron que sí fue sujeto de
+        tortura.
+
+ p. 9   El tribunal colegiado negó el amparo. En relación con la tortura señalada en la demanda,
+        el tribunal colegiado estableció que no era creíble que hubiera sido torturado al rendir su
+        declaración preparatoria ante el juez penal, pues había sido asistido de un defensor y
+        tuvo la libertad de expresarse. Por ello, consideró que fue correcto que la sala penal no
+        otorgara valor probatorio a los dictámenes de los especialistas en materia de psiquiatría,
+        pues no obstante los especialistas hayan concluido que los actos de tortura narrados por
+        JOV, le ocasionaron estrés postraumático, ello no motivó a que confesara en preparatoria,
+        aunado a que no había prueba alguna que demostrará que fue golpeado. Asimismo, el
+        tribunal colegiado consideró que fue correcto que se le otorgara valor probatorio a la
+        confesión del coinculpado realizada en su declaración ministerial y preparatoria.
+
+p.11    Frente a esta resolución, JOV presentó recurso de revisión y argumentó que el tribunal
+        colegiado había realizado una interpretación indebida de los artículos 14 y 16
+        constitucionales, al no analizar todas las pruebas y conceder valor probatorio a
+
+
+
+                                                   1
+          confesiones obtenidas bajo tortura. Finalmente, el recurso de revisión fue del
+          conocimiento de esta Corte.
+
+                                           ESTUDIO DE FONDO
+
+   p.13   Esta Corte considera que las alegaciones relativas a la fundamentación y motivación del
+          acto reclamado, así como la valoración del material probatorio con base en los cuáles se
+          tuvieron por demostrados los ilícitos atribuidos y la responsabilidad penal, no son temas
+          que puedan ser materia de un recurso de revisión en amparo directo, ya que se refieren
+          a cuestiones de legalidad, de modo que no es procedente pronunciarse sobre la
+          corrección o no de éstos.
+
+   p.16   A pesar de lo anterior, debemos suplir la deficiencia de la queja para abordar un tema en
+          que se advierte que el tribunal colegiado omitió pronunciarse sobre el significado de los
+          derechos humanos de JOV, pues pasó por alto que JOV manifestó que no debieron ser
+          valoradas las confesiones de él y de su coinculpado, al haber sido obtenidas con tortura,
+          lo que se demuestra con dictámenes psiquiatricos y en grafoscopía.
+
+          A) Proscripción de la tortura a través de la doctrina constitucional de esta Corte
+
+p.20-22   La proscripción de la tortura está enfatizada en los artículos 20, apartado B, fracción II,
+          22, párrafo primero, y 29, párrafo segundo de la Constitución Política de los Estados
+          Unidos Mexicanos (Constitución). Además, la prohibición de la tortura está prevista en los
+          artículos, 1, 3, 6, 7, 8, 9 y 11 de la Ley Federal para Prevenir y Sancionar la Tortura
+          (LFPST).
+
+   p.23   Conforme al contenido de los instrumentos de fuente internacional, se desprende la
+          obligación de establecer dentro del sistema jurídico doméstico la condena a la tortura,
+          bajo el contexto de delito, con independencia del grado de concreción — ya sea
+          consumada o tentada—; el grado de intervención del sujeto que la perpetra—; la
+          obligación de detener al torturador para procesarlo internamente o extraditarlo previa
+          investigación preliminar; la obligación de sancionar con las penas adecuadas este delito;
+          prestar todo el auxilio posible a todo proceso penal relativo a los delitos de tortura,
+          incluyendo el suministro de toda prueba que posean; y, que ninguna declaración ni
+
+
+
+
+                                                     2
+          confesión obtenida bajo tortura será válida para configurar prueba en procedimiento
+          alguno, salvo contra el torturador.
+
+p.25-26   El derecho a no ser objeto de tortura, ni de tratos o penas crueles, inhumanos o
+          degradantes, es un derecho absoluto con carácter de jus cogens. Consecuentemente, las
+          autoridades tienen la obligación de prevenir, investigar y sancionar la tortura. El derecho
+          a no ser objeto de tortura tiene el carácter de absoluto; por tanto, no admite excepciones,
+          incluso frente a situaciones de emergencia que amenacen la vida de la nación.
+
+p.27-29   La tortura actualiza una categoría especial y de mayor gravedad que impone hacer un
+          análisis cuidadoso bajo los estándares nacionales e internacionales, tanto en su impacto
+          de violación de derechos humanos como de delito. La Corte Interamericana de Derechos
+          Humanos (CoIDH) ha enfatizado que la tortura y las penas o tratos crueles, inhumanos o
+          degradantes están prohibidos por el Derecho Internacional de los Derechos Humanos. La
+          prohibición de la tortura y las penas o tratos crueles, inhumanos o degradantes es
+          absoluta e inderogable, aún en las circunstancias más difíciles, tales como guerra,
+          amenaza de guerra, lucha contra el terrorismo y cualesquiera otros delitos, estado de sitio
+          o   de   emergencia,    conmoción     o   conflicto   interior,   suspensión   de   garantías
+          constitucionales, inestabilidad política interna u otras emergencias o calamidades
+          públicas.
+
+   p.30   Además, la CoIDH ha precisado que la violación del derecho a la integridad física y
+          psíquica de las personas tiene diversas connotaciones de grado y que abarca desde la
+          tortura hasta otro tipo de tratos crueles, cuyas secuelas físicas y psíquicas varían de
+          intensidad según factores endógenos y exógenos de las personas (duración de los tratos,
+          edad, salud, entre otros). Esto implica una revisión de las características personales de
+          una supuesta víctima de tortura o tratos crueles, inhumanos o degradantes, pues estas
+          deben tomarse en cuanta al momento de determinar si la integridad personal fue
+          vulnerada.
+
+          B) Oportunidad de la denuncia de actos de tortura
+
+   p.32   La violación al derecho humano a la integridad personal por la comisión de actos de
+          tortura contra las personas que están sujetas a custodia de las autoridades del Estado,
+
+
+
+                                                      3
+          genera serias consecuencias; esto obliga a que la tortura sea investigada como: (a) delito
+          en estricto sentido y, (b) violación a los derechos humanos de la persona sometida a
+          algún procedimiento penal.
+
+p.32-33   La denuncia de tortura de ninguna manera puede condicionarse a circunstancias de
+          temporalidad o de oportunidad para alegarla, o incluso para determinar que se investigue
+          en caso de que se advierta la existencia de indicios concordantes con actos de tortura.
+          Esto obedece a su carácter de violación a derechos humanos, por lo que no está sujeta
+          a condiciones de preclusión. La violación al derecho humano a la integridad personal
+          debe investigarse por el Estado, a partir de que se tenga conocimiento de la denuncia o
+          cuando existan razones fundadas para creer que se ha cometido un acto tortura contra
+          una persona. Esto no está sujeto a la decisión discrecional de las autoridades del Estado,
+          sino que se trata de un imperativo de observancia inmediata que tiene sustento en normas
+          jurídicas de fuente internacional y de derecho interno. La tortura debe investigarse por
+          constituir una conducta constitutiva de un hecho calificado por la ley penal como delito.
+
+   p.34   La concreción de actos de tortura contra una persona, con la finalidad de obtener
+          elementos que sirvan de sustento para vincularla con la comisión de un delito y determinar
+          su responsabilidad en ese hecho, además de afectar la integridad personal de la presunta
+          víctima de tortura, también conlleva otro tipo de afectación a los derechos humanos como
+          la libertad, derivada de detenciones ilegales y/o arbitrarias, así como a contar con una
+          defensa técnica adecuada y oportuna, entre otro tipo de afectaciones que pudieran
+          generarse.
+
+   p.36   El núcleo, objetivo y fin último de la prohibición de la tortura y otro tipo de tratos crueles,
+          inhumanos o degradantes, es en realidad la tutela de un derecho fundamental más
+          amplio: la integridad personal (física, psíquica y moral), derivado de la dignidad humana.
+          Por tanto, es un derecho absolutamente fundamental del que gozan todas las personas
+          por el solo hecho de ser seres humanos. Por ello, no procede imponer condiciones de
+          oportunidad para formular la denuncia de tortura.
+
+   p.37   La denuncia, en las vertientes de delito y de violación a derechos humanos cometida
+          presuntamente contra una persona sometida a un procedimiento penal, no tiene
+
+
+
+
+                                                      4
+          condiciones de preclusión, por lo que no puede impedirse que se alegue en cualquiera
+          de las etapas de los procedimientos judiciales. De lo contario, se permitiría que el órgano
+          jurisdiccional desestimara la denuncia de tortura, por no haberse expresado dentro de un
+          plazo o etapa procedimental, lo cual iría en contra a lo dispuesto por el párrafo tercero del
+          artículo 1º de la Constitución, que señala la obligación de todas las autoridades del Estado
+          de prevenir, investigar, sancionar y reparar las violaciones a derechos humanos, entre los
+          que se ubican los actos de tortura.
+
+   p.41   Dado que la denuncia de tortura contra una persona a la que se le instruye o instruyó un
+          proceso penal no debe sujetarse a condiciones de preclusión, el alegato debe ser
+          atendido con independencia del momento en que se haga valer y no puede condicionarse
+          a la preparación de la violación. Ello implica que la denuncia o existencia de indicios de
+          tortura, en el contexto genérico de delito o cometida contra una persona sujeta a cualquier
+          tipo de procedimiento penal por atribuírsele que cometió un delito, actualiza la obligación
+          de investigación de la autoridad que conozca en ese momento del caso. Esto involucra
+          tanto a autoridades administrativas —agentes de cuerpos de seguridad pública y
+          ministerio público—, así como autoridades judiciales de primera o segunda instancia, que
+          durante el trámite de un proceso penal tengan conocimiento de una denuncia o advierta
+          la existencia de evidencia razonable o tenga razón fundada para creer que se ha cometido
+          un acto de tortura contra el inculpado; y, también a los órganos de control constitucional
+          que, en el ámbito de sus competencias, al conocer de un juicio de amparo indirecto o
+          directo tengan información sobre la comisión de un hecho de tortura.
+
+p.41-42   No es procedente fijar alguna condición de oportunidad procesal para denunciar la
+          violación a derechos humanos derivados de la práctica de la tortura. Conforme al estándar
+          definido por la CoIDH, aun cuando los actos de tortura no hayan sido denunciados ante
+          las autoridades, cuando existan indicios o razón fundada de su concurrencia, y con mayor
+          razón ante la denuncia, el Estado tiene la obligación de iniciar de oficio y de inmediato la
+          investigación respectiva. Esto implica que la tortura puede alegarse en cualquier
+          momento.
+
+
+
+
+                                                     5
+          C) Tortura como violación a derechos humanos que tiene impacto en el proceso
+          penal instruido contra una persona señalada como víctima de la misma
+
+p.44-45   En el Amparo en Revisión 703/2012, la Primera Sala de esta Corte estableció que frente
+          a la denuncia o alegada tortura, ante cualquier autoridad, surgen diversos deberes que
+          es imperativo cumplir por aquéllas en el ámbito de su competencia. Las directrices
+          señaladas en ese asunto retoman los parámetros fijados por la CoIDH, pues de la
+          Convención Interamericana contra la Tortura deriva el deber del Estado de investigarm
+          cuando se presenta denuncia o cuando exista razón fundada para creer que se ha
+          cometido un acto de tortura en el ámbito de su jurisdicción. Debiéndose entender por
+          razón fundada la existencia de indicios de la ocurrencia de actos de tortura.
+
+   p.46   En atención a lo anterior, cuando alguna autoridad tenga conocimientos de la
+          manifestación de que una persona ha sufrido tortura o cuando tenga datos de la misma,
+          deberá inmediatamente y de oficio, dar vistal al ministerio público para que inicie una
+          investigación, la cual tiene como finalidad determinar el origen y naturaleza de la
+          afectación a la integridad personal de quien alega tortura, e identificar y procesar a las
+          personas responsables.
+
+p.47-54   Para los efectos de la reparacion de una posible violación al derecho a no ser torturado,
+          es necesario precisar si la omisión de las autoridades judiciales de investigar una
+          denuncia de tortura realizada en el proceso, constituye o no una violación procesal. En la
+          Contradicción de Tesis 315/2014, la Primera Sala de esta Corte señaló que el derecho a
+          un debido proceso contiene un núcleo duro que debe observarse de manera inexcusable
+          en todo el procedimiento judicial, y que se garantiza a través del cumplimiento de las
+          formalidades esenciales del procedimiento, cuyo conjunto integra la “garantía de
+          audiencia”. Cuando se violan las formalidades esenciales del procedimiento, ello se
+          traduce en un impedimento para el gobernado en el ejercicio pleno de su derecho
+          fundamental de defensa previo al acto privativo y, ante una violación a estas formalidades
+          es procedente el juicio de amparo directo.Por tanto, si la prohibición de la tortura y otro
+          tipo de tratos crueles, inhumanos, o bien, degradantes, tutela el derecho fundamental a
+          la integridad personal (física, psíquica y/o moral); y se acredita la afectación de ese
+          derecho con relación a un proceso penal, se actualiza la violación a las leyes del
+
+
+                                                     6
+          procedimiento que se establece en la fracción VIII, del artículo 173 de la Ley de Amparo
+          – artículo que prevé un catálogo de diversos supuestos en los que, en los juicios del orden
+          penal, se consideran violadas las leyes del procedimiento para transcender en la defensa
+          de las personas que solicitan el amparo.
+
+p.55-56   Por tanto, si los gobernados, constitucional y convencionalmente, tienen el derecho
+          fundamental a que el Estado investigue las violaciones a los derechos humanos, en
+          específico, el derecho a no ser objeto de tortura, y si la tortura afecta el derecho
+          fundamental a un debido proceso legal, entonces, ante una denuncia de ese tipo, la
+          autoridad judicial, como parte integral del Estado Mexicano, tiene la obligación de
+          investigarla; lo que se constituye, en consecuencia, una formalidad esencial del
+          procedimiento, al incidir sobre las efectivas posibilidades de defensa de los gobernados,
+          previo al correspondiente acto de autoridad privativo de sus derechos. Al ser la tortura
+          una violación a derechos humanos de la que es posibile que se puedan obtener datos o
+          elementos de prueba que con posterioridad se utilicen para sustentar una imputación de
+          carácter penal contra la persona identificada como presunta víctima de la tortura, resulta
+          evidente que existe una relación entre la violación a derechos humanos y el debido
+          proceso.
+
+p.57-58   El cumplimiento a los parámetros imperativos impuestos desde el marco jurídico
+          internacional o nacional, ante la denuncia o la advertencia de indicios coincidentes con la
+          comisión de tortura, obligan a la autoridad judicial que conoce del proceso penal, luego
+          de dar vista al ministerio público para que se investigue el hecho bajo la vertiente de
+          delito, a realizar un análisis oficioso de los elementos materiales con los que se cuentan
+          hasta la etapa procesal en que se actúa, con el objetivo de determinar si cuenta o no con
+          elementos que le permitan concluir que existió la tortura.
+
+   p.58   En el caso de que esté en posibilidad de afirmarse existencia de la tortura, ello hace
+          innecesario aperturar una investigación adicional en el propio proceso penal, por lo que
+          al decidir la situación jurídica del procesado tendrá que analizar si dicha violación a
+          derechos humanos tuvo un impacto en la generación, introducción o desahogo de
+
+
+
+
+                                                     7
+          pruebas incorporadas a la causa penal, porque de ser así tendrá que aplicar las
+          directrices de exclusión de probatoria de la prueba ilícita.
+
+          De lo contrario, ante la insuficiencia de indicios que le permitan a la autoridad judicial
+          determinar si aconteció o no la comisión de actos de tortura contra el procesado, entonces
+          deberá realizarse la investigación en el propio proceso penal de manera que permita
+          obtener una respuesta a esa interrogante. Cuando se omite realizar dicha investigación,
+          la violación a las formalidades esenciales del procedimiento dejan sin defensa al
+          procesado. De ahí que al detectarse la falta de investigación después de concluir la etapa
+          de instrucción del proceso penal, ello necesariamente obliga a reponer el procedimiento
+          para que sea subsanada la omisión y la situación jurídica del procesado pueda resolverse
+          a partir de tener en cuenta dicha circunstancia.
+
+   p.59   La investigación permitirá, en un primer momento, corroborar si la violación a derechos
+          humanos por actos de tortura efectivamente aconteció; en segundo lugar, de afirmarse la
+          existencia de la violación a la integridad personal del inculpado, entonces corresponderá
+          determinar si dicha conducta violatoria de derechos humanos tuvo alguna incidencia en
+          la etapa procedimiental en que esto se demuestre; por lo que, la situación jurídica del
+          inculpado esté determinada a partir del valor demostrativo que la autoridad haya otorgado
+          a elementos de prueba que tuvieran como origen los actos de tortura, respecto de los
+          cuales deberían ser aplicables las reglas de exclusión probatoria.
+
+p.60-61   La omisión de investigar la existencia de tortura, con motivo de una denuncia o la
+          existencia de indicios de que la violación de derechos humanos aconteció, da lugar a que
+          la vía de reparación óptima sea la reposición del procedimiento. Dicha reposición no tiene
+          el alcance de anular, per se, la investigación ni las pruebas ya desahogadas en juicio. La
+          indicada reposición del procedimiento deberá realizarse hasta la diligencia inmediata
+          anterior al auto de cierre de instrucción, tratándose del sistema procesal tradicional.
+
+   p.61   Lo anterior, con el objeto de salvaguardar el punto en tensión que se genera respecto del
+          derecho fundamental a una expedita impartición de justicia, que se consagra en el artículo
+          17 de la Constitución, así como el derecho fundamental de los inculpados a no ser objeto
+          de tortura, y los correspondientes derechos fundamentales de las víctimas u ofendidos
+
+
+
+
+                                                      8
+       de los delitos; pues no puede soslayarse que el objeto de la reposición del procedimiento,
+       únicamente se relaciona con la práctica de las diligencias necesarias para verificar la
+       veracidad de la denuncia de actos de tortura, a través de una investigación diligente, que
+       implica exclusivamente la práctica de los exámenes periciales correspondientes que
+       determinen la existencia o no de los actos de tortura. La reposición del procedimiento
+       tiene como justificación que se investigue la tortura alegada, a efecto de verificar su
+       existencia; no porque exista alguna otra violación concreta y constatada al derecho de
+       defensa del sentenciado.
+
+p.62   Ninguna razón existe para que se afecre todo lo desahogado en el proceso, pues si la
+       denuncia de tortura no se comprueba, las actuaciones y diligencias subsistirán en sus
+       términos; para el caso de que se justifique la existencia de la violación denunciada, los
+       efectos de su acreditación trascenderán con relación al material probatorio, que en su
+       caso será objeto de exclusión al momento de dictar sentencia. No debe anularse todo lo
+       actuado en el juicio, pues conllevaría la invalidez de todas las actuaciones y diligencias
+       realizadas; y luego la necesidad de su posterior desahogo, con independencia del
+       resultado que arroje la correspondiente investigación sobre la denuncia de tortura. Esto
+       afectaría la pronta impartición de justicia, el riesgo latente de no poder reproducir las
+       pruebas, e incluso, el efecto revictimizador de las personas que resintieron la comisión
+       del delito.
+
+       D) Aplicación de las reglas de exclusión probatoria ante la demostración de tortura
+
+p.64   Cuando se analiza la tortura como conducta típica, antijurídica y culpable (delito), el
+       ministerio público deberá (a) acreditar que la víctima fue objeto de la violación a su
+       integridad personal y (b) comprobar, más allá de toda duda razonable, la responsabilidad
+       penal del autor en su comisión. Sin embargo, cuando se analiza la tortura como violación
+       a la integridad personal, con repercusión al derecho humano de debido proceso, para
+       tenerla por acreditada bastará que se demuestre la existencia de la afectación a la
+       integridad peronal, aunque de momento no sea posible identificar al o los torturadores.
+
+p.66   En lo relativo a determinar cómo aplica la regla de exclusión probatoria ante la
+       demostración de tortura, si se pretende el respeto al derecho de ser juzgado por tribunales
+
+
+
+
+                                                  9
+          imparciales y el derecho a una defensa adecuada, es claro que una prueba cuya
+          obtención ha sido irregular (ya sea por contravenir el orden constitucional o el legal), no
+          puede sino ser considerada inválida. Por ello, ninguna prueba que vaya contra el derecho
+          debe ser admitida y si pese a ello ya se desahogó, debe restársele todo valor probatorio.
+
+   p.67   Por ello, si se ha determinado la existencia de tortura, ya sea como delito o como violación
+          al derecho humano de debido proceso, se debe excluir todo medio de convicción que
+          haya sido obtenido directamente de la misma o que derive de ésta, lo cual comprende
+          declaraciones, confesiones y toda clase de información incriminatoria resultado de éstas.
+
+p.68-69   De acuerdo con todo lo anterior, es incorrecta la interpretación realizada por el tribunal
+          colegiado respecto a las obligaciones de las autoridades del Estado de prevenir,
+          investigar, sancionar y reparar la violación a derechos humanos con motivo de actos de
+          tortura. En primer lugar, el tribunal colegiado no ordenó dar vista al ministerio público para
+          que iniciara una investigación respecto de las manifestaciones de tortura, con la finalidad
+          de verificar la veracidad de la denuncia y realizar los exámenes médicos respectivos. Por
+          otro lado, a pesar de que JOV en su escrito de demanda adujo la existencia de los
+          dictámenes periciales en materia de psiquiatría, de los que se desprende que sufrió daños
+          corporales y psicológicos que le causaron estrés postraumático, el tribunal colegiado
+          desestimó la alegación sin tomar en cuenta que al quejoso no le corresponde la carga de
+          la prueba respecto de los hechos calificados como tortura.
+
+   p.69   Finalmente, la interpretación del tribunal colegiado también es incorrecta porque al haber
+          considerado que los elementos que obraban en autos no eran suficientes para acreditar
+          la tortura como violación a la integridad personal, no debía desestimar el alegato de
+          tortura, sino conceder el amparo para el efecto de que la sala ordenara la reposición del
+          procedimiento para que el juez llevara a cabo una investigación en los términos
+          precisados en esta sentencia.
+
+                                                RESOLUCIÓN
+
+ p.102    Se revoca la sentencia del tribunal colegiado y devolver los autos a este, de tal manera
+          que vuelva a analizar el argumento de JOV relacionado con la existencia de tortura.
+
+
+
+
+                                                     10
+

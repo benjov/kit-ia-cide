@@ -1,0 +1,3 @@
+# Solo para el carril B (opcional). verificar_citas, calcular_acuerdo y verificar_hashes no necesitan nada.
+anthropic>=0.80
+pypdf>=5.0   # solo si no tienes pdftotext, para descargar_corpus.py

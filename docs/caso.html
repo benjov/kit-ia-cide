@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es" data-base=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caso completo SCJN</title>
+<meta name="description" content="El caso resuelto: ¿argumenta distinto la SCJN en control abstracto y concreto? De la pregunta al memo, con auditoría.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+<style>
+  .panel-fase[hidden] { display: none; }
+  .comparar { display: grid; grid-template-columns: minmax(150px, 30%) 1fr 64px; gap: 10px; align-items: center; margin: 8px 0; }
+  .par { display: grid; gap: 4px; }
+  .barra-h { height: 16px; border-radius: 5px; background: var(--superficie-2); overflow: hidden; }
+  .barra-h span { display: block; height: 100%; border-radius: 5px; transition: width .7s; }
+  .abs { background: var(--azul); } .con { background: var(--acento); }
+  .calor td.k { text-align: center; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .hallazgo { border-left: 4px solid var(--azul); }
+  .hallazgo.invalido { border-color: var(--error); }
+  .hallazgo h3 { margin-top: 0; }
+  .p { font-family: var(--mono); font-size: .85rem; }
+  .ley { display: flex; gap: 14px; font-size: .85rem; color: var(--texto-suave); margin: 4px 0 10px; flex-wrap: wrap; }
+  .ley i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 5px; }
+</style>
+</head>
+<body>
+<main class="contenedor">
+  <section class="hero">
+    <div class="sobre">Caso completo · resuelto de punta a punta</div>
+    <h1>¿Argumenta distinto la Corte en control abstracto y concreto?</h1>
+    <p class="lead">102 sentencias emblemáticas de la SCJN en materia de derechos humanos, 6 variables, 3 modelos de Claude y cada código con su cita verificable. Este es el caso que vas a replicar con tu propia variable.</p>
+    <div class="metricas" id="kpis"></div>
+  </section>
+
+  <div class="pestanas" role="tablist" id="tabs"></div>
+
+  <section class="panel-fase" data-fase="0" role="tabpanel">
+    <h2>Fase 0 · Pregunta y corpus</h2>
+    <div class="rejilla-2">
+      <div class="tarjeta"><h3>La pregunta</h3><p>La <strong>acción de inconstitucionalidad</strong> (AI) revisa una ley en abstracto, a petición de órganos del Estado. El <strong>amparo</strong> parte del caso concreto de una persona. ¿Cambia el razonamiento de la Corte?</p>
+        <p><span class="etiqueta azul">H1</span> Abstracto → más test de proporcionalidad<br><span class="etiqueta azul">H2</span> Concreto → más fuentes internacionales<br><span class="etiqueta azul">H3</span> Perspectiva de género igual en ambas vías</p></div>
+      <div class="tarjeta"><h3>El corpus (y su historia)</h3><p>Queríamos unas 40 acciones de inconstitucionalidad. Los buscadores de la SCJN y el DOF bloquean la descarga automatizada con muros anti-bots, y decidimos no evadirlos. La colección <em>Sentencias emblemáticas</em> de la DGDH sí es descargable: 102 sentencias, <strong>solo 9 AI</strong>.</p>
+        <p>Por eso la pregunta pasó de "describir las AI" a "comparar AI contra amparos". <strong>El acceso a los datos definió la pregunta.</strong> Está registrado en la <a href="https://github.com/benjov/kit-ia-cide/blob/main/auditoria/bitacora-decisiones.md">bitácora (D1)</a>.</p></div>
+    </div>
+    <h3>Composición del corpus</h3>
+    <div class="tarjeta" id="composicion"></div>
+  </section>
+
+  <section class="panel-fase" data-fase="1" role="tabpanel" hidden>
+    <h2>Fase 1 · Codebook (Chat)</h2>
+    <p>Lo diseñamos en un Proyecto de Claude: subimos 5 resúmenes, le pedimos categorías y luego le pedimos que actuara como <em>codificador escéptico</em> buscando ambigüedades. Resultado: <a href="https://github.com/benjov/kit-ia-cide/blob/main/caso-completo/01-codebook.md">codebook v1.0</a>.</p>
+    <div class="tabla-env"><table>
+      <thead><tr><th>Variable</th><th>Pregunta</th><th>Códigos</th><th>Hipótesis</th></tr></thead>
+      <tbody>
+        <tr><td><code>promovente</code></td><td>¿Quién llevó el asunto a la Corte?</td><td>persona, colectivo, órgano autónomo, fiscalía, actor político, autoridad</td><td>control de calidad</td></tr>
+        <tr><td><code>resultado</code></td><td>¿Se protege el derecho invocado?</td><td>protege, no protege, mixto, otro</td><td>—</td></tr>
+        <tr><td><code>derecho_principal</code></td><td>¿Qué derecho organiza el caso?</td><td>13 categorías</td><td>—</td></tr>
+        <tr><td><code>fuentes_internacionales</code></td><td>¿Se apoya en fuentes internacionales?</td><td>ninguna, tratados, Corte IDH, otra</td><td>H2</td></tr>
+        <tr><td><code>proporcionalidad</code></td><td>¿Aplica un test por etapas?</td><td>sí, no</td><td>H1</td></tr>
+        <tr><td><code>perspectiva_genero</code></td><td>¿La declara como método?</td><td>sí, no</td><td>H3</td></tr>
+      </tbody></table></div>
+    <div class="aviso info">Cada código exige una <strong>cita literal</strong> de 5 a 40 palabras. Es lo que hace auditable todo lo demás.</div>
+  </section>
+
+  <section class="panel-fase" data-fase="2" role="tabpanel" hidden>
+    <h2>Fase 2 · Prototipo del prompt (Workbench)</h2>
+    <div class="rejilla-2">
+      <div class="tarjeta"><h3>Qué hicimos</h3><ol><li>System prompt con el codebook como variable.</li><li>Salida forzada a JSON con un esquema (cada variable: código, cita, confianza).</li><li>Prueba con 3 documentos difíciles y los tres modelos.</li><li>Medimos tokens: unos 19,000 de entrada y 1,750 de salida por documento.</li><li><em>Get code</em> → el mismo prompt pasó a <code>scripts/codificar_api.py</code>.</li></ol></div>
+      <div class="tarjeta"><h3>El caso que nos enseñó algo</h3><p>En la <strong>AI 148/2017</strong> (aborto), la Corte valida un artículo e invalida otros. La regla del codebook dice <code>mixto</code>. Opus lo aplicó y explicó en su nota por qué no era <code>protege</code>. Ese documento quedó como caso de prueba permanente.</p>
+        <p><a href="herramientas/auditor.html#AI-148-2017|claude-opus-5-5">Verlo en el auditor →</a></p></div>
+    </div>
+  </section>
+
+  <section class="panel-fase" data-fase="3" role="tabpanel" hidden>
+    <h2>Fase 3 · Skill</h2>
+    <p>El prompt, el codebook y los scripts de auditoría se empaquetaron en el skill <code>codificador-scjn</code>. Lo importante: el skill <strong>no solo codifica, también se audita</strong>. Al terminar corre <code>verificar_citas.py</code>, corrige las citas que no encuentra y reporta el % antes y después.</p>
+    <div class="tarjeta" style="font-family:var(--mono);font-size:.85rem;white-space:pre-wrap">codificador-scjn/
+├── SKILL.md              ← cuándo activarse + procedimiento + auditoría
+├── referencias/codebook.md
+└── scripts/
+    ├── verificar_citas.py
+    └── calcular_acuerdo.py</div>
+  </section>
+
+  <section class="panel-fase" data-fase="4" role="tabpanel" hidden>
+    <h2>Fase 4 · Escalar: tres modelos, 102 documentos</h2>
+    <p>Para el caso usamos la <strong>Batch API</strong> (50% más barata). En la sesión harás lo mismo con Cowork sobre 20 documentos.</p>
+    <div class="tabla-env"><table><thead><tr><th>Modelo</th><th class="num">Documentos</th><th class="num">Citas verificadas</th><th class="num">Códigos con confianza baja</th><th class="num">Costo real (Batch)</th></tr></thead><tbody id="t-modelos"></tbody></table></div>
+    <h3>¿Coinciden los modelos entre sí? (kappa, 102 documentos)</h3>
+    <div class="tabla-env"><table class="calor"><thead id="h-entre"></thead><tbody id="t-entre"></tbody></table></div>
+    <p style="font-size:.9rem;color:var(--texto-suave)">Haiku codificó 99 de 102 documentos: en 3, la respuesta se truncó por exceder el límite de tokens (<a href="https://github.com/benjov/kit-ia-cide/blob/main/auditoria/bitacora-decisiones.md">bitácora D11</a>). Revisa siempre el <code>stop_reason</code>.</p>
+    <p style="font-size:.9rem;color:var(--texto-suave)">El acuerdo entre modelos <strong>no</strong> es validación: dos modelos pueden equivocarse igual. Sirve para detectar variables frágiles, las que dependen del modelo que elijas.</p>
+  </section>
+
+  <section class="panel-fase" data-fase="5" role="tabpanel" hidden>
+    <h2>Fase 5 · Validación contra la referencia humana</h2>
+    <div class="aviso"><strong>⚠️ Codificación humana SIMULADA.</strong> Para este ejercicio didáctico, la referencia "humana" (20 documentos) se generó con un procedimiento documentado: parte de los códigos de Opus e introduce desacuerdos plausibles, con más probabilidad donde Claude declaró baja confianza (<a href="https://github.com/benjov/kit-ia-cide/blob/main/scripts/simular_codificacion_humana.py">script</a>). Por eso el kappa de Opus está <strong>inflado por construcción</strong>. En tu ejercicio, la referencia es real: la haces tú, a ciegas, antes de ver a Claude.</div>
+    <h3>Kappa de cada modelo contra la referencia (n = 20)</h3>
+    <div class="ley"><span><i style="background:var(--ok)"></i>≥ 0.61 se reporta</span><span><i style="background:var(--alerta)"></i>0.41–0.60 con advertencia</span><span><i style="background:var(--error)"></i>&lt; 0.41 no se reporta</span></div>
+    <div class="tabla-env"><table class="calor"><thead id="h-ref"></thead><tbody id="t-ref"></tbody></table></div>
+    <div class="tarjeta" style="margin-top:16px"><h3>Decisión que tomamos</h3><p><code>proporcionalidad</code> no pasa el umbral fijado <em>antes</em> de ver resultados. Al revisar los desacuerdos, las notas del propio Claude señalaban la ambigüedad: en la AI 25/2016, la AI 87/2015 y la AI 54/2018, la Corte <strong>enuncia</strong> los estándares de necesidad y proporcionalidad, pero <strong>no aplica un test por etapas</strong>. ¿Eso cuenta como "sí"? El codebook v1.0 no lo decía. Se agregó una regla (v1.1), que <strong>debe validarse con una muestra nueva</strong> antes de reportar H1.</p></div>
+    <div class="tarjeta" style="margin-top:16px"><h3>🔎 La auditoría también encontró errores en la fuente</h3><p>Al codificar, Opus advirtió en sus notas que la carátula oficial del resumen de la <strong>AI 35/2014</strong> cita "Acción de Inconstitucionalidad 22/2016… 2 de octubre de 2019", que es otro caso. La de la <strong>AI 148/2017</strong> fecha la sentencia en 2017, aunque se emitió en 2021. Lo verificamos: es cierto. <strong>Los documentos oficiales también tienen errores</strong>, y un flujo con citas verificables los saca a la luz.</p></div>
+  </section>
+
+  <section class="panel-fase" data-fase="6" role="tabpanel" hidden id="hallazgos">
+    <h2>Fase 6 · Hallazgos</h2>
+    <p>Opus 5.5, 9 acciones de inconstitucionalidad (control abstracto) contra 86 amparos (control concreto). Prueba exacta de Fisher bilateral.</p>
+    <div class="ley"><span><i class="abs"></i>Abstracto (AI, n = 9)</span><span><i class="con"></i>Concreto (amparos, n = 86)</span></div>
+    <div class="rejilla-2" id="hallazgos-g"></div>
+    <div class="aviso"><strong>Límites que van en el memo:</strong> (1) el corpus es una <em>selección</em> de la SCJN, no una muestra aleatoria; (2) solo 9 AI: cada caso mueve la proporción 11 puntos; (3) se codifica el <em>resumen</em>, no la sentencia; (4) la referencia humana es simulada.</div>
+    <p><a class="boton sec" href="https://github.com/benjov/kit-ia-cide/blob/main/caso-completo/06-memo-metodologico.md">Leer el memo metodológico →</a></p>
+  </section>
+</main>
+<script src="assets/comun.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const FASES = ["0 · Corpus", "1 · Codebook", "2 · Prompt", "3 · Skill", "4 · Escalar", "5 · Validar", "6 · Hallazgos"];
+const VN = { promovente: "Promovente", resultado: "Resultado", derecho_principal: "Derecho principal", fuentes_internacionales: "Fuentes internac.", proporcionalidad: "Proporcionalidad", perspectiva_genero: "Persp. de género" };
+$("tabs").innerHTML = FASES.map((f, i) => `<button role="tab" type="button" data-i="${i}" aria-selected="${i === 0}">${f}</button>`).join("");
+function abrir(i) {
+  document.querySelectorAll("[role=tab]").forEach(b => b.setAttribute("aria-selected", b.dataset.i == i));
+  document.querySelectorAll(".panel-fase").forEach(p => (p.hidden = p.dataset.fase != i));
+}
+$("tabs").addEventListener("click", e => { if (e.target.dataset.i) { abrir(e.target.dataset.i); history.replaceState(null, "", "#f" + e.target.dataset.i); } });
+if (location.hash === "#hallazgos") abrir(6); else if (/^#f\d$/.test(location.hash)) abrir(location.hash[2]);
+
+const color = k => k >= .61 ? "var(--ok-suave)" : k >= .41 ? "var(--alerta-suave)" : "var(--error-suave)";
+KIT.json("data/resumen.json").then(R => {
+  const op = R.modelos.find(m => m.id === "claude-opus-5-5");
+  const costo = R.modelos.reduce((s, m) => s + (m.costo_usd || 0), 0);
+  $("kpis").innerHTML = `
+    <div class="metrica"><small>Sentencias</small><b>102</b></div>
+    <div class="metrica"><small>Citas verificadas (Opus)</small><b>${KIT.pct(op.pct_citas, 1)}</b></div>
+    <div class="metrica"><small>Modelos comparados</small><b>${R.modelos.length}</b></div>
+    <div class="metrica"><small>Costo total (3 modelos, Batch)</small><b>US$${costo.toFixed(2)}</b></div>`;
+  // Composición
+  const comp = {}; Object.values(R.distribuciones.resultado).forEach(() => {});
+  KIT.json("data/codificaciones.json").then(C => {
+    const n = {}; Object.values(C.docs).forEach(d => (n[d.tipo] = (n[d.tipo] || 0) + 1));
+    const nom = { AR: "Amparo en revisión", ADR: "Amparo directo en revisión", AD: "Amparo directo", AI: "Acción de inconstitucionalidad", CT: "Contradicción de tesis", CC: "Controversia constitucional", DGI: "Declaratoria general" };
+    KIT.barras($("composicion"), Object.entries(n).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ etiqueta: nom[k] || k, valor: v, color: k === "AI" ? "var(--azul)" : "var(--acento)" })));
+  });
+  // Modelos
+  $("t-modelos").innerHTML = R.modelos.map(m => `<tr><td>${m.nombre}</td><td class="num">${m.n}</td>
+    <td class="num">${m.citas_ok}/${m.citas_ok + m.citas_mal} <span class="etiqueta ${m.pct_citas >= .95 ? "ok" : "error"}">${KIT.pct(m.pct_citas, 1)}</span></td>
+    <td class="num">${m.confianza_baja}</td><td class="num">${m.costo_usd != null ? "US$" + m.costo_usd.toFixed(2) : "—"}</td></tr>`).join("");
+  // Entre modelos
+  const vars = Object.keys(VN);
+  const pares = [...new Set(R.acuerdo_entre_modelos.map(x => x.par))];
+  $("h-entre").innerHTML = `<tr><th>Par</th>${vars.map(v => `<th>${VN[v]}</th>`).join("")}</tr>`;
+  $("t-entre").innerHTML = pares.map(p => `<tr><td>${p}</td>${vars.map(v => { const x = R.acuerdo_entre_modelos.find(a => a.par === p && a.variable === v); return `<td class="k" style="background:${color(x.kappa)}" title="acuerdo ${KIT.pct(x.acuerdo)}">${x.kappa.toFixed(2)}</td>`; }).join("")}</tr>`).join("");
+  // Vs referencia
+  const mods = [...new Set(R.kappa_vs_referencia.map(x => x.modelo))];
+  $("h-ref").innerHTML = `<tr><th>Modelo</th>${vars.map(v => `<th>${VN[v]}</th>`).join("")}</tr>`;
+  $("t-ref").innerHTML = mods.map(m => `<tr><td>${m}</td>${vars.map(v => { const x = R.kappa_vs_referencia.find(a => a.modelo === m && a.variable === v); return `<td class="k" style="background:${color(x.kappa)}" title="acuerdo ${KIT.pct(x.acuerdo)}">${x.kappa.toFixed(2)}</td>`; }).join("")}</tr>`).join("");
+  // Hallazgos
+  const kOpus = v => R.kappa_vs_referencia.find(a => a.modelo === "Opus 5.5" && a.variable === v).kappa;
+  const H = { proporcionalidad: "H1", fuentes_internacionales: "H2", perspectiva_genero: "H3", resultado: "—" };
+  $("hallazgos-g").innerHTML = R.hallazgos.map(h => {
+    const pa = h.abstracto.si / h.abstracto.n, pc = h.concreto.si / h.concreto.n, k = kOpus(h.variable), valida = k >= .61, adv = k >= .41 && k < .61;
+    const lectura = !valida && !adv ? `❌ <strong>No se reporta</strong>: κ = ${k.toFixed(2)} &lt; 0.41. La diferencia es "significativa", pero la medición no es confiable.`
+      : h.p_fisher < .05 ? `Diferencia estadísticamente significativa (p = ${h.p_fisher.toFixed(3)}).`
+      : `Sin evidencia suficiente de diferencia (p = ${h.p_fisher.toFixed(3)}); con 9 AI la potencia es baja.`;
+    return `<div class="tarjeta hallazgo ${!valida && !adv ? "invalido" : ""}">
+      <h3><span class="etiqueta azul">${H[h.variable]}</span> ${h.etiqueta}</h3>
+      <div class="comparar"><span>Abstracto</span><div class="barra-h"><span class="abs" style="width:${pa * 100}%"></span></div><b>${KIT.pct(pa)}</b></div>
+      <div class="comparar"><span>Concreto</span><div class="barra-h"><span class="con" style="width:${pc * 100}%"></span></div><b>${KIT.pct(pc)}</b></div>
+      <p class="p">${h.abstracto.si}/${h.abstracto.n} vs ${h.concreto.si}/${h.concreto.n} · Fisher p = ${h.p_fisher.toFixed(3)} · κ(Opus vs ref.) = ${k.toFixed(2)}</p>
+      <p>${lectura}</p></div>`;
+  }).join("");
+}).catch(e => { $("kpis").innerHTML = `<div class="aviso">No se pudieron cargar los datos (${e.message}). Abre el sitio desde un servidor: <code>python -m http.server</code> en <code>docs/</code>.</div>`; });
+</script>
+</body>
+</html>

@@ -1,0 +1,546 @@
+ Este resumen contiene la carátula, la síntesis y el extracto de una sentencia de la Suprema Corte de Justicia
+ de la Nación. Para facilitar la lectura del extracto, se realizaron modificaciones al texto original de la misma.
+ Este documento tiene fines informativos, por lo que carece de efectos vinculantes.
+ o tiene fines informativos, por lo que carece de efectos vinculantes.
+
+
+
+     TWITTER: BLOQUEO A UN USUARIO POR PARTE DE UN SERVIDOR PÚBLICO
+
+
+
+
+CASO: Amparo en Revisión 1005/2018
+
+
+MINISTRO PONENTE: Eduardo Medina Mora I.
+
+
+SENTENCIA EMITIDA POR: Segunda Sala de la Suprema Corte de Justicia de la Nación
+
+
+FECHA: 20 de marzo de 2019
+
+
+TEMAS: derecho a la libertad de expresión, derecho de acceso a la información, derecho a la
+privacidad, persona pública, servidor público, periodista, redes sociales, Twitter.
+
+
+CITA DE LA SENTENCIA: Suprema Corte de Justicia de la Nación, Amparo en Revisión
+1005/2018, Segunda Sala, Min. Eduardo Medina Mora I. Sentencia de 20 de marzo de 2019,
+México.
+
+
+El texto íntegro de la sentencia puede consultarse en el siguiente enlace:
+https://www.scjn.gob.mx/derechos-humanos/sites/default/files/sentencias-
+emblematicas/sentencia/2022-01/AR1005-2018.pdf
+
+
+CITA SUGERIDA PARA ESTE DOCUMENTO: Suprema Corte de Justicia de la Nación,
+Extracto del Amparo en Revisión 1005/2018, Centro de Estudios Constitucionales, México.
+                     SÍNTESIS DEL AMPARO EN REVISIÓN 1005/2018
+
+ANTECEDENTES: Un periodista se percató de que el fiscal general del Estado de Veracruz lo
+había bloqueado de la red social Twitter, de la cual ambos eran usuarios, impidiéndole tener
+acceso a la información de carácter público y de interés general que el fiscal general compartía
+en su cuenta. El periodista promovió un amparo indirecto en contra del bloqueo, el cual fue
+concedido por un juzgado de distrito. Inconforme con la decisión, el fiscal general promovió un
+recurso de revisión el cual fue conocido por la Suprema Corte de Justicia de la Nación (esta
+Corte).
+
+CUESTIÓN A RESOLVER: Determinar si un servidor público puede bloquear a un ciudadano
+en la red social Twitter, y si debe prevalecer el derecho a la privacidad de los servidores
+públicos, o el derecho de acceso a la información.
+
+RESOLUCIÓN DEL CASO: Se confirmó la sentencia de amparo, esencialmente, por las
+siguientes razones. El bloqueo al ciudadano de la cuenta del fiscal general de Veracruz en la
+red social Twitter, violó el derecho de acceso a la información del afectado, en virtud de que la
+cuenta contenía información sobre las actividades que realizaba el servidor público, en su
+calidad de fiscal general. En este caso, el derecho a la información prevaleció sobre el derecho
+a la intimidad, pues la información contenida en la cuenta de Twitter del fiscal era de interés
+público para la sociedad, y cualquier otro usuario estaba en condiciones de acceder a ella. Se
+concedió el amparo al ciudadano, para efecto de que se permitiera su acceso a la cuenta del
+fiscal general en Twitter, retirando las restricciones de bloqueo que tenía.
+
+VOTACIÓN: La Segunda Sala de la Suprema Corte de Justicia de la Nación, resolvió el
+presente asunto por unanimidad de cuatro votos de los ministros Alberto Pérez Dayán, Eduardo
+Medina Mora I., José Fernando Franco González Salas (emitió su voto con reservas) y Javier
+Laynez Potisek (se reservó el derecho a formular voto concurrente). y Alfredo Gutiérrez Ortiz
+Mena (se reservó el derecho a formular voto concurrente). El ministro José Ramón Cossío Díaz
+estuvo ausente.
+
+Los votos formulados pueden consultarse en el siguiente enlace:
+https://www2.scjn.gob.mx/ConsultaTematica/PaginasPub/DetallePub.aspx?AsuntoID=246865
+
+
+                                                I
+                         EXTRACTO DEL AMPARO EN REVISIÓN 1005/2018
+
+ p.1    Ciudad de México. La Segunda Sala de la Suprema Corte de Justicia de la Nación (esta
+        Corte), en sesión de 20 de marzo de 2019, emite la siguiente sentencia.
+
+                                            ANTECEDENTES
+
+p.4-5   Un periodista para diversos medios de comunicación en los que realiza coberturas sobre
+        temas vinculados con la inseguridad, derechos humanos, desapariciones y fosas
+        clandestinas, utiliza la red social Twitter como herramienta de trabajo, pues le permite
+        difundir las notas que redacta y mantener contacto con las autoridades del estado de
+        Veracruz.
+
+ p.5    El 6 de octubre de 2017, el ciudadano se percató de que el fiscal general del estado de
+        Veracruz, lo había bloqueado en la red social Twitter, impidiéndole tener acceso a la
+        información que el fiscal general comparte como autoridad en su cuenta personal,
+        información de carácter público y de interés general.
+
+        En contra de lo anterior, el ciudadano promovió juicio de amparo.
+
+ p.7    El Juez de Distrito resolvió conceder el amparo al afectado.
+
+ p.9    En contra de dicha sentencia, el fiscal general del estado de Veracruz interpuso el
+        presente recurso de revisión
+
+                                       ESTUDIO DE PROCEDENCIA
+
+        I.    El bloqueo del fiscal al ciudadano en la red social Twitter es un acto de
+        autoridad
+
+p.13    Para acceder al juicio de amparo, es necesario que el acto u omisión sea emitido por una
+        autoridad, que es todo ente que ejerce facultades decisorias que le están atribuidas en la
+        ley, y que dichas facultades constituyen una potestad administrativa, cuyo ejercicio es
+        irrenunciable, por ser de naturaleza pública la fuente de tal potestad.
+
+ p13    De acuerdo con la Ley Orgánica de la Fiscalía General del estado de Veracruz de Ignacio
+        de la Llave, la fiscalía es un organismo dotado de personalidad jurídica y patrimonio
+
+
+
+
+                                                   1
+       propios, dotado de autonomía (técnica, presupuestaria, de gestión y de emisión de reglas)
+       conforme a la cual sistematizará la información bajo su resguardo.
+
+p.14   Además, de acuerdo con dicha ley, el fiscal general del estado de Veracruz tiene entre
+       las obligaciones inherentes a su cargo la responsabilidad de promover la comunicación
+       social y difundir información de interés público vinculada con las actividades llevadas a
+       cabo en el desempeño del cargo conferido. Para lo cual, establecerá la normativa y los
+       canales de comunicación con la ciudadanía a través de las plataformas digitales o de
+       redes sociales.
+
+p.15   En consecuencia, el particular tiene un derecho correlativo al exigir el cumplimiento de
+       dicha obligación.
+
+       Las leyes no obligan al fiscal general a tener una cuenta en la red social Twitter para
+       interactuar con los gobernados. No obstante, si el fiscal decidió comunicarse con la
+       ciudadanía a través de su cuenta personal (al compartir por dicho medio información
+       inherente al desempeño de su encargo), resulta evidente que, por el tipo de información
+       compartida, el fiscal asumió voluntariamente las consecuencias normativas.
+
+p.16   Se observa que el fiscal no solo difunde en su cuenta información personal, sino también
+       contenidos sobre las funciones y actividades que se derivan de su encargo.
+
+       Por ende, si bloquea la cuenta de uno de sus seguidores, está incumpliendo su obligación
+       de difundir información relativa a sus actividades. En consecuencia, está restringiendo el
+       derecho de acceso a la información del usuario bloqueado. Situación que constituye un
+       acto de autoridad para efectos del juicio de amparo.
+
+       II.   Inexistencia de un agravio personal y directo
+
+p.17   La cuenta del fiscal es usada para comunicar tanto información personal, como
+       información sobre sus actividades como servidor público. Al compartir este último tipo de
+       información por este medio, el fiscal decidió de manera tácita utilizar su cuenta personal
+       en Twitter para informar cotidianamente a la sociedad sobre sus actividades como
+       servidor público. En vista de que esta información es de relevancia, el medio de difusión
+       debe ser accesible para todos los gobernados, incluido el periodista afectado.
+
+
+
+
+                                                 2
+p.17-18   Cuando el fiscal bloqueó el acceso a la cuenta del periodista afectado, impidió que
+          conociera datos de relevancia social. Por lo tanto, se violentó de forma personal y directa
+          su derecho de acceso a la información, pues se le está restringiendo su derecho a buscar
+          información sobre las labores de un servidor público.
+
+                                            ESTUDIO DE FONDO
+
+          I.   Derecho de acceso a la información
+
+   p.18   Esta Corte ha establecido que el derecho a la información está inmerso en el derecho a
+          la libertad de pensamiento y de expresión, en tanto que comprende la libertad de buscar,
+          recibir y difundir informaciones e ideas de toda índole, sin consideración de fronteras, ya
+          sea oralmente, por escrito o en forma impresa o artística, o por cualquier otro
+          procedimiento de su elección.
+
+          El artículo 6 Constitucional prevé que toda la información en posesión de cualquier
+          autoridad es pública y sólo podrá ser reservada temporalmente por razones de interés
+          público en los términos que fijen las leyes.
+
+   p.23   El acceso a la información constituye una herramienta esencial para concretar el principio
+          de rendición de cuentas, así como la transparencia en la gestión pública y mejorar la
+          calidad de la democracia.
+
+          “Si hay un principio elemental en el funcionamiento de la administración pública
+          contemporánea, es el de la publicidad y transparencia, resultado de la relación entre el
+          derecho ciudadano a tener acceso a la información administrativa y la consiguiente
+          obligación de los órganos de la administración pública de informar y, en algunos casos,
+          de publicar informaciones de interés general”.
+
+          II. Derecho a la privacidad
+
+   p.26   Esta Corte ha definido lo privado como aquello que no constituye vida pública. Es el
+          ámbito reservado frente a la acción y el conocimiento de los demás. Lo que se desea
+          compartir sólo con quienes uno elige. Las actividades de las personas en la esfera
+          particular, relacionadas con el hogar y la familia.
+
+
+
+
+                                                      3
+p.27   La noción de privacidad se relaciona con la esfera de la vida de las personas en donde
+       pueden expresar libremente su identidad, ya sea en sus relaciones con los demás o en
+       lo individual. La privacidad tiene una vinculación con otros derechos.
+
+       Las personas tienen derecho a gozar de un ámbito de proyección de su existencia que
+       quede reservado de la invasión y de la mirada de los demás. Este ámbito les concierne
+       sólo a ellos y les provee de condiciones adecuadas para el despliegue de su
+       individualidad, para el desarrollo de su autonomía y de su libertad. Las personas tienen
+       derecho a mantener fuera del conocimiento de los demás (o sólo dentro del círculo de
+       sus personas más próximas) ciertas manifestaciones o dimensiones de su existencia
+       (conducta, datos, información, objetos) y al correspondiente derecho a que los demás no
+       las invadan sin su consentimiento.
+
+          a) Elementos del derecho a la privacidad
+
+p.29   La Corte Interamericana de Derechos Humanos ha sostenido en diversos casos
+       conclusiones de las que se desprende que el derecho a la privacidad tiene dos elementos:
+
+       i) El derecho a que la persona mantenga su ámbito personal (lo cual incluye la vida de su
+       familia, su domicilio o su correspondencia, entre otras cuestiones) ajeno a toda injerencia
+       o intromisión por parte de terceros extraños.
+
+       ii) El derecho a mantener reservados ciertos aspectos de su vida privada y controlar la
+       difusión de la información personal hacia el público.
+
+p.30   Aunque las autoridades están obligadas a garantizar el derecho a la privacidad de todas
+       las personas, este derecho no es absoluto, puede ser restringido siempre que ello no se
+       haga de manera abusiva, arbitraria o desproporcional.
+
+       Cuando el derecho a la intimidad colisiona con el derecho a la información, es importante
+       considerar las actividades o actuaciones que realizan los sujetos involucrados en esa
+       contraposición. Es decir, a mayor exposición pública de esas personas, su derecho a la
+       intimidad se ve reducido, por lo que la perspectiva para el análisis de este conflicto es
+       diferente dependiendo del carácter de interés público que tengan sus actividades o
+       actuaciones.
+
+
+
+
+                                                  4
+          b) Concepto de persona pública
+
+p.31   La Primera Sala ha definido a las personas públicas o notoriamente conocidas como
+       aquéllas que, por circunstancias sociales, familiares, artísticas, deportivas, o bien porque
+       han difundido hechos y acontecimientos de su vida privada o cualquier otra situación
+       análoga, tienen proyección o notoriedad en una comunidad y, por ende, se someten
+       voluntariamente al riesgo de que sus actividades o su vida privada sean objeto de mayor
+       difusión, así como a la opinión y crítica de terceros, incluso aquélla que pueda ser
+       molesta, incómoda o hiriente.
+
+       El concepto de persona pública contempla a funcionarios o servidores públicos. Esto
+       resulta lógico, sus actividades son de relevancia para la sociedad porque sus labores se
+       relacionan con el manejo de las funciones del Estado. Por ello, la comunidad tiene interés
+       en que éstas se realicen de manera adecuada.
+
+          c) Derecho a la privacidad de los servidores públicos
+
+p.32   Dado el interés que las actividades y funciones de los servidores públicos tienen para la
+       comunidad, su derecho a la intimidad está más atenuado que el resto de la sociedad,
+       toda vez que están sujetos a un mayor escrutinio social, no sólo por sus actividades
+       oficiales o el ejercicio de sus funciones, sino también respecto de aquellos aspectos de
+       su vida privada que pudieran estar vinculados con el desempeño de su función y en
+       consecuencia, con el interés público.
+
+       Esta Corte ha sostenido que existen datos que guardan conexión con aspectos que son
+       deseables que la ciudadanía conozca, como son las actuaciones que los servidores
+       públicos realizan como parte de su labor.
+
+p.34   No obstante, el simple hecho de ser un servidor público no implica que todas sus
+       actividades o sus circunstancias sean de interés para la sociedad. En cada caso se
+       tendría que analizar si la actividad o circunstancia involucra un interés público. De ser así,
+       los hechos se verían más expuestos al escrutinio social.
+
+          d) Esferas de la privacidad de la información en la era digital
+
+
+
+
+                                                   5
+p.35   En el contexto de la era digital, pueden distinguirse tres tipos de esferas de privacidad de
+       la información:
+
+       i) La información estrictamente privada, la cual incluye aquélla que el emisor tiene la
+       voluntad de que sea privada, cuyo destinatario sería único y determinado. En esta
+       categoría se encuentran los mensajes y correos electrónicos.
+
+       ii) La información semiprivada o semipública, que sería toda aquélla que el emisor decide
+       mostrar a un destinatario o sujeto de su elección, por lo que no sería individualizada, de
+       forma que los destinatarios no tendrían derecho a hacerla pública o difundirla en una
+       esfera que no sea la que el emisor ha escogido. Es decir, los receptores no tendrían
+       facultad de disposición de esta información (por ejemplo, el contenido publicado en redes
+       sociales).
+
+       iii) La información pública que incluiría cualquier publicación que no tenga restricción de
+       acceso.
+
+       III. La interacción de los derechos a la información y a la privacidad
+
+       Esta Corte ha sostenido que los derechos fundamentales no son absolutos y su ejercicio
+       está sujeto a límites. El campo de acción relativo de estos preceptos se delimita a partir
+       de la existencia de otros derechos o fines constitucionales que también merecen tutela y
+       eficacia. Esto es así dado que existen derechos y libertades que en el ejercicio diario
+       pueden llegar a colisionar. Tal es el caso del derecho a la información y el derecho a la
+       privacidad y, en general, los llamados derechos a la personalidad.
+
+p.36   El debate político y la discusión pública de los asuntos de interés general se constituyen
+       como uno de los pilares en los que descansa el funcionamiento del sistema democrático,
+       razón por la cual se consideran como parte de un discurso especialmente valorado que,
+       como uno de sus principales efectos, “conduce a la protección reforzada del derecho de
+       acceso a la información sobre asuntos públicos”.
+
+       El derecho a la información relacionado con el acceso a temas referentes a la función
+       pública y la gestión estatal gozan de garantías reforzadas, razón por la cual las
+       autoridades deben procurar su maximización.
+
+
+
+
+                                                  6
+p.37   La Primera Sala ha sostenido que el nivel de protección al debate y al acceso a la
+       información de interés público puede provocar ciertas interferencias con el derecho a la
+       intimidad, particularmente de los servidores públicos, en su calidad de personas públicas,
+       ya que éstas, por dedicarse a actividades públicas o por el rol que desempeñan en una
+       sociedad democrática, están expuestas a un control de sus actividades y manifestaciones
+       más riguroso que aquellos particulares sin proyección alguna.
+
+       Esta situación no implica que las personas públicas carezcan de derecho a la intimidad,
+       sino que su estatus –derivado del tipo de actividades que realizan– las coloca en un
+       umbral de protección distinto al de las personas privadas. Sin que esta disminución en su
+       derecho a la intimidad pueda ir más allá del núcleo material del mismo. Además, que tal
+       limitación debe ser proporcional al resto de los derechos y principios constitucionales que
+       se pretende favorecer en cada caso concreto.
+
+p.39   El derecho a la privacidad de las personas públicas y en particular de los funcionarios
+       públicos se ve acotado por el derecho a la información y los principios democráticos que
+       subyacen a éste. Incluso se puede afirmar que el control social al que se encuentran
+       sujetos no versa exclusivamente sobre sus manifestaciones o actuaciones públicas, sino
+       que también puede extenderse a las actividades que realicen de forma privada.
+
+       Sin embargo, a fin de no transgredir el núcleo esencial de su derecho a la intimidad,
+       especialmente por lo que hace a las actividades que lleve a cabo en el ámbito privado,
+       es necesario que se valoren y sopesen los distintos preceptos constitucionales en tensión
+       y que, en todos los casos, se analice si la restricción en comento se justifica en aras de
+       favorecer el interés o la preocupación pública. Es decir, si se trata de una información
+       relevante para la discusión de los asuntos comunes que interesan a todos.
+
+          a) El ejercicio de estos derechos en internet y en las redes sociales (en
+             específico en la red social Twitter)
+
+p.41   Los niveles de interconexión que generan las redes sociales en la actualidad han
+       representado una vía de expansión del derecho a la libertad de expresión.
+
+p.42   Twitter no puede considerarse únicamente como una plataforma que promueve y
+       potencializa la libertad de expresión de los usuarios, sino que debe reconocerse también
+
+
+
+                                                  7
+          su labor en el fomento a los valores democráticos, por ejemplo, en la difusión de
+          contenidos de interés para la sociedad –entre los que se encuentra la información
+          gubernamental–, al igual que el debate de los asuntos de interés público.
+
+p.42-43   Varias libertades se han potencializado gracias a las oportunidades de fácil acceso,
+          expansión e inmediatez que internet y las redes sociales brindan. Sin embargo, debe
+          reconocerse que también es posible que se cometan abusos dentro de esos medios
+          virtuales. Por lo tanto, las interacciones realizadas dentro de la comunidad digital no
+          pueden ser ajenas al Derecho y resultará necesaria la intervención del Estado en los
+          casos en que se violenten derechos a los usuarios de la red.
+
+          Al tratarse de dos derechos fundamentales en colisión, esta intervención debe hacerse
+          bajo los parámetros jurisprudenciales referentes a las restricciones permisibles. Además,
+          en el caso del ejercicio de derechos en internet, la Segunda Sala determinó que existe
+          un principio relativo a que el flujo de información en línea debe restringirse lo mínimo
+          posible, esto es, en circunstancias excepcionales y proteger otros derechos humanos.
+
+   p.44   Si, en las redes sociales, un servidor público utiliza una cuenta de origen privada para
+          informar sobre sus actividades como funcionario, entonces, el análisis para determinar si
+          el bloqueo que realizó a la cuenta de otro usuario es o no restrictivo del derecho de acceso
+          a la información debe considerar el uso que el servidor público le dé a su cuenta en la
+          actualidad. Además, se debe considerar que las redes sociales y en específico Twitter es
+          un canal tanto para recibir como para obtener información.
+
+          IV. Estudio del caso en concreto
+
+   p.45   En este caso, en mayo de 2011, el ciudadano creó la cuenta con fines personales. Esto
+          es varios años antes de que accediera al cargo de fiscal general. Sin embargo, una vez
+          que fue nombrado fiscal general, a través de esa cuenta ha venido relatando las
+          actividades que realiza como servidor público.
+
+          Al incluir tuits relacionados con sus actividades como servidor público, decidió
+          voluntariamente colocarse en un nivel de publicidad y escrutinio distintos al de una
+          persona privada. Por esta razón, el propio funcionario fue quien libremente decidió extraer
+
+
+
+
+                                                     8
+       su cuenta de la esfera privada para trasladarla al ámbito público, con todos los contenidos
+       que preexistían en ella.
+
+       A esta conclusión se llega, para empezar, por el simple hecho de que la cuenta es descrita
+       con relación a su encargo: “Fiscal General del Estado de Veracruz, papá, esposo y
+       buscador constante de la justicia”. Además, porque la cuenta difunde información
+       referente a sus actividades como fiscal general, entre las cuales se encuentra la
+       asistencia a reuniones de trabajo y eventos públicos vinculados a su encargo.
+
+       En este sentido, el umbral de protección del derecho a la privacidad del que gozan las
+       personas privadas y sus respectivas cuentas en redes sociales se vio afectado por la
+       voluntad del propio fiscal general, al decidir utilizar su cuenta de Twitter como un canal
+       de comunicación con la sociedad.
+
+       De tal forma que, al ser una persona pública y particularmente un funcionario público, su
+       derecho a la intimidad se ve “desdibujado” en aras de favorecer el derecho a la
+       información. Esto es así porque los temas de interés general, como los relacionados con
+       el desempeño de su gestión gubernamental, están sometidos a un fuerte nivel de
+       escrutinio por parte de los medios de comunicación y la sociedad.
+
+p.46   Bloquear el acceso a un ciudadano a los contenidos ahí publicados representa una
+       restricción indebida a su derecho al acceso a la información.
+
+       En el asunto que nos ocupa, el fiscal general no expresa razones suficientes para
+       considerar que su cuenta de Twitter pueda ser clasificada como una cuenta privada, ni
+       mucho menos que la información ahí contenida sea de carácter reservado, cuya difusión
+       vulnere su derecho a la privacidad, ni que haya encontrado algún comportamiento
+       abusivo por parte del afectado.
+
+       Por ese hecho, la cuenta debe considerarse de interés general, protegida por el derecho
+       al acceso a la información, cuya restricción sólo puede estar apegada a los parámetros
+       de regularidad constitucional consistentes en: 1) estar previstas por ley, 2) perseguir un
+       fin legítimo y 3) ser idóneas, necesarias y proporcionales.
+
+
+
+
+                                                  9
+       Aunque en la cuenta no hay información sobre derechos humanos, desapariciones
+       forzadas o fosas clandestinas, por el solo hecho de ser el afectado un ciudadano, se le
+       debe garantizar el acceso a la información contenida en esa cuenta. El afectado, al ser
+       parte de una comunidad, está interesado en las gestiones que realicen los servidores
+       públicos, como es el caso del fiscal general.
+
+p.47   Además, el afectado es periodista, por lo que se le otorgan garantías reforzadas en la
+       indagación, búsqueda y obtención de todo tipo de información que pueda reportar por ser
+       de interés para la sociedad.
+
+p.48   Cabe señalar que existe la posibilidad de encontrar comportamientos abusivos derivados
+       de la propia naturaleza de esta red social, debido a que permite la comunicación bilateral
+       y el intercambio de mensajes, opiniones y publicaciones entre los usuarios.
+
+       Por ende, es posible que los comportamientos abusivos puedan ocasionar una medida
+       de restricción o bloqueo justificada, pero para que ésta sea válida será necesario que
+       dichas expresiones o conductas se encuentren excluidas de protección constitucional, en
+       términos de los parámetros jurisprudenciales que rigen en la materia.
+
+       Los comentarios que expresen críticas severas, provocativas o chocantes que puedan
+       llegar a ser indecentes, escandalosas, perturbadoras, inquietantes o causar algún tipo de
+       molestia, disgusto u ofensa de ninguna manera deben ser considerados comportamientos
+       abusivos por parte de los usuarios de la red.
+
+       V. Análisis sobre el conflicto entre los derechos a la privacidad y el acceso a la
+       información bajo los parámetros jurisprudenciales que rigen la materia
+
+          a) La información contenida en la cuenta debe ser de interés general para la
+             sociedad
+
+       En este asunto, se cumple este requisito en atención a las siguientes razones: primera,
+       la cuenta de Twitter objeto de la controversia pertenece a un funcionario público, el cual
+       no sólo ejerce actualmente el cargo de fiscal general, sino que, además, ha tomado
+       notoriedad pública en dicha entidad federativa. Segunda, el contenido que se difunde a
+
+
+
+
+                                                 10
+          través de dicha cuenta, entre otros temas, es referente a las actividades públicas que el
+          fiscal general realiza diariamente en cumplimiento de su gestión pública.
+
+p.48-49   La información contenida y difundida a través de la cuenta de Twitter del fiscal general
+          tiene relevancia pública o interés general en cuanto puede contribuir al debate en una
+          sociedad democrática al proyectar las actividades y expresiones que realiza este
+          personaje público.
+
+             b) La prevalencia del derecho a la información sobre el derecho a la intimidad
+                 debe ser proporcional y encontrarse justificada.
+
+   p.49   En este caso, el derecho a la información debe prevalecer sobre el derecho a la intimidad.
+          El bloqueo realizado por el funcionario público a la cuenta del periodista implicó una
+          restricción indebida al derecho al acceso de información del periodista.
+
+          Dicho bloqueo no se basó en la persecución de un fin constitucionalmente legítimo, pues,
+          aunque el fiscal general adujo que la información publicada en su cuenta de Twitter era
+          de carácter personal y pertenecía al ámbito de su vida privada, la realidad es que la
+          información ahí difundida reviste interés público. Esto es así porque cualquier otro usuario
+          está en condiciones de acceder a ella.
+
+          Tampoco es posible sostener que la orden de desbloquear al afectado sea una medida
+          desproporcional que afecte injustificadamente el derecho a la privacidad del servidor
+          público. En principio, porque fue él mismo quien voluntariamente se colocó en esa
+          posición de mayor escrutinio público y decidió utilizar ese medio digital como un canal de
+          comunión con la ciudadanía. No acreditó la necesidad de resguardar la información
+          difundida en su cuenta de Twitter de la injerencia de la sociedad. Sumado a la basta
+          jurisprudencia nacional e internacional referente a que la notoriedad de las personas
+          públicas les genera un umbral de protección de los derechos a la personalidad menos
+          extenso que el de las personas privadas. Sin que esta disminución represente una
+          limitación desproporcionada a su derecho a la intimidad.
+
+             c) La publicidad de la cuenta de Twitter del fiscal general está justificada.
+
+
+
+
+                                                    11
+p.49-50   La información difundida a través de la cuenta de Twitter del fiscal general es visible no
+          sólo para los usuarios de la red social, sino para cualquier persona con acceso a internet.
+          Esto debido a que la cuenta tiene una configuración abierta que permite que quien así lo
+          desee pueda visualizar su contenido. Fue el propio titular de la cuenta quien configuró la
+          privacidad abierta y determinó que todo lo ahí difundido esté al alcance de la sociedad.
+          Este servidor público se encontraba en aptitud de configurar una cuenta cerrada, lo cual
+          no ocurrió.
+
+          En ningún momento se alegó un comportamiento abusivo por parte del periodista que
+          pudiera justificar el bloqueo de la cuenta. Tampoco se argumentó que el acceso del
+          periodista al contenido de la cuenta transgrediera el núcleo material del derecho a la
+          privacidad del servidor público. La obligación de que el fiscal general desbloquee al
+          afectado no resulta desproporcionada ni afecta indebidamente sus derechos.
+
+          Por último, es preciso señalar que el fiscal general y su cuenta de Twitter adquirieron
+          notoriedad pública. El primero, al acceder al cargo público. La segunda, al ser utilizada
+          voluntariamente por su titular para difundir información referente al desempeño de su
+          gestión. Al hacerlo, estableció un canal de comunicación entre un funcionario público y la
+          ciudadanía.
+
+          En este sentido, el acto reclamado viola el derecho de acceso a la información del
+          periodista, en virtud de que la cuenta de Twitter contiene información sobre las
+          actividades que realiza el fiscal general. Dado que esa información es de interés público,
+          está sujeta a un escrutinio mayor por parte de la sociedad.
+
+                                               RESOLUCIÓN
+
+p.50-51   Dada la afectación, esta Corte determina confirmar la sentencia, y, en consecuencia, con
+          el fin de restituir al afectado completamente en el goce de su derecho de acceso a la
+          información, se deberá permitir su acceso a la cuenta del fiscal general en Twitter.
+
+
+
+
+                                                    12
+

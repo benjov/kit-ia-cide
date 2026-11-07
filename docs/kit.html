@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es" data-base=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descargar el kit</title>
+<meta name="description" content="Descarga el kit completo de la sesión 4: corpus, skill, plantillas, caso completo y scripts.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+<style>
+  .arbol { font-family: var(--mono); font-size: .86rem; line-height: 1.75; background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio); padding: 16px 18px; overflow-x: auto; white-space: pre; }
+  .arbol b { color: var(--acento); font-weight: 600; } .arbol i { color: var(--texto-suave); font-style: normal; }
+</style>
+</head>
+<body>
+<main class="contenedor angosto">
+  <section class="hero">
+    <div class="sobre">Descargas</div>
+    <h1>El kit completo</h1>
+    <p class="lead">Todo lo de la sesión en una carpeta: corpus, skill, plantillas, caso resuelto, auditoría y scripts opcionales.</p>
+    <p style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="boton" href="https://github.com/benjov/kit-ia-cide/archive/refs/heads/main.zip">⬇ Descargar ZIP</a>
+      <a class="boton sec" href="https://github.com/benjov/kit-ia-cide">Ver en GitHub</a>
+    </p>
+  </section>
+
+  <h2>¿Qué hay adentro?</h2>
+<div class="arbol"><b>kit-ia-cide/</b>
+├── README.md                 <i>← empieza aquí</i>
+├── <b>corpus/</b>
+│   ├── resumenes/            <i>102 resúmenes oficiales (.txt) · lo que codifica Claude</i>
+│   ├── sentencias/           <i>102 sentencias completas (.txt) · fuente para verificar</i>
+│   └── manifiesto_emblematicas.csv  <i>URL oficial + SHA-256 de cada archivo</i>
+├── <b>ejercicio/</b>
+│   ├── README.md             <i>las 10 variables para elegir</i>
+│   ├── muestra-20/           <i>los 20 documentos de la sesión</i>
+│   └── hoja-codificacion-humana.csv  <i>tus 6 documentos a mano</i>
+├── <b>skills/</b>
+│   ├── codificador-scjn/     <i>skill del caso, listo para instalar</i>
+│   └── plantilla-codificador/<i>para adaptar a tu variable o corpus</i>
+├── <b>caso-completo/</b>        <i>el caso resuelto, fase por fase</i>
+├── <b>auditoria/</b>            <i>protocolo + bitácora de decisiones</i>
+├── <b>plantilla-tu-corpus/</b>  <i>cómo replicar el flujo con tus datos</i>
+└── <b>scripts/</b>              <i>OPCIONAL · Python: descarga, verificación, kappa, API</i></div>
+
+  <h2>Instalar el skill del caso</h2>
+  <ol>
+    <li>Comprime la carpeta <code>skills/codificador-scjn</code> en un .zip (clic derecho → Comprimir).</li>
+    <li>Claude Desktop → <strong>Configuración → Capacidades</strong>: activa la ejecución de código y creación de archivos.</li>
+    <li>En la sección <strong>Skills</strong>, sube el .zip y actívalo.</li>
+    <li>Prueba en Cowork: <em>"Usa el skill codificador-scjn para codificar 2 documentos de ejercicio/muestra-20."</em></li>
+  </ol>
+
+  <h2>Carril B (opcional, con código)</h2>
+  <p>Si quieres reproducir el caso completo desde cero:</p>
+  <div class="arbol">pip install -r requirements.txt
+python scripts/descargar_corpus.py          <i># vuelve a bajar el corpus de la SCJN</i>
+python scripts/verificar_hashes.py --muestra 10
+cp .env.ejemplo .env                         <i># y pon tu API key</i>
+python scripts/codificar_batch.py enviar --modelos claude-haiku-5-5
+python scripts/codificar_batch.py recoger
+python scripts/verificar_citas.py caso-completo/04-resultados/corridas/&lt;archivo&gt;.jsonl
+python scripts/calcular_acuerdo.py &lt;humano.csv&gt; &lt;claude.jsonl&gt; --desacuerdos</div>
+  <p style="color:var(--texto-suave);font-size:.9rem">En la sesión 5 veremos cómo Claude Code hace todo esto por ti, de forma conversacional.</p>
+</main>
+<script src="assets/comun.js"></script>
+</body>
+</html>

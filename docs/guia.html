@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es" data-base=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de la sesión</title>
+<meta name="description" content="Paso a paso de la sesión 4 (actividad individual): qué hacer en cada fase, con qué herramienta y con qué prompt.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+<style>
+  .linea { position: relative; margin: 24px 0; padding-left: 34px; }
+  .linea::before { content: ""; position: absolute; left: 11px; top: 6px; bottom: 6px; width: 3px; background: var(--borde); border-radius: 3px; }
+  .paso { position: relative; margin-bottom: 22px; }
+  .paso::before { content: attr(data-n); position: absolute; left: -34px; top: 14px; width: 25px; height: 25px; border-radius: 50%; background: var(--acento); color: #fff;
+    font-size: .78rem; font-weight: 700; display: grid; place-items: center; }
+  .paso.pausa::before { background: var(--texto-suave); }
+  .hora { font-family: var(--mono); font-size: .8rem; color: var(--texto-suave); }
+  .prompt { position: relative; background: var(--superficie-2); border-radius: 10px; padding: 12px 14px; padding-right: 74px; margin: 10px 0; font-size: .92rem; }
+  .copiar { position: absolute; right: 8px; top: 8px; font-size: .78rem; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--borde); background: var(--superficie); color: var(--texto); cursor: pointer; }
+  .roles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  details summary { cursor: pointer; font-weight: 600; }
+</style>
+</head>
+<body>
+<main class="contenedor angosto">
+  <section class="hero">
+    <div class="sobre">Para participantes · actividad individual</div>
+    <h1>Guía de la sesión</h1>
+    <p class="lead">Dos horas y media, siete fases, una variable. Trabajas en tu propio equipo: eliges una variable, la agregas al caso y la llevas de la definición al hallazgo.</p>
+  </section>
+
+  <div class="aviso info"><strong>Antes de empezar:</strong> descarga y descomprime el <a href="kit.html">kit</a>. Vas a usar la carpeta <code>ejercicio/muestra-20/</code> (20 resúmenes), las fichas de <code>ejercicio/README.md</code> y la plantilla <code>skills/plantilla-codificador/</code>.</div>
+
+  <h2>Tú haces los dos papeles</h2>
+  <div class="roles">
+    <div class="tarjeta"><h3>🛠️ Diseñas</h3><p>Defines tu variable con Claude, pruebas el prompt, empaquetas el skill y codificas los 20 documentos con Cowork.</p></div>
+    <div class="tarjeta"><h3>✍️ Validas</h3><p>Codificas <strong>a mano y a ciegas</strong> los 6 documentos marcados <code>a_mano = si</code>, <strong>antes</strong> de ver lo que hizo Claude con ellos.</p></div>
+  </div>
+
+  <h2>Paso a paso</h2>
+  <div class="linea">
+    <div class="paso tarjeta" data-n="0"><span class="hora">0:00–0:20</span><h3>Ver el caso terminado y confirmar tu variable</h3>
+      <p>Recorremos el <a href="caso.html">caso completo</a> y el <a href="herramientas/auditor.html">auditor de citas</a>. Elige una de las 10 variables de <code>ejercicio/README.md</code> (o trae la tuya) y lee su ficha.</p></div>
+
+    <div class="paso tarjeta" data-n="1"><span class="hora">0:20–0:40 · Chat (Proyecto)</span><h3>Afinar la definición de tu variable</h3>
+      <p>Crea un Proyecto, sube <code>caso-completo/01-codebook.md</code> y 3 resúmenes de <code>muestra-20</code> (que no sean de los 6 <code>a_mano</code>). Luego:</p>
+      <div class="prompt">Voy a agregar la variable [VARIABLE] con esta definición inicial: [PEGAR DE LA FICHA]. Lee los 3 resúmenes y dime, con citas, en cuáles sería difícil aplicar mi definición y por qué.<button class="copiar">Copiar</button></div>
+      <div class="prompt">Ponte en el papel de un codificador escéptico. Encuentra 3 ambigüedades en mi definición y propón una regla de decisión para cada una.<button class="copiar">Copiar</button></div>
+      <div class="prompt">Reescribe la variable en el formato del codebook adjunto (tabla de códigos, regla de decisión, caso frontera). Máximo 5 códigos. Ponle versión 1.0.<button class="copiar">Copiar</button></div>
+      <p><strong>A los 0:38 congela tu codebook v1.0.</strong> A partir de aquí no lo cambias hasta validar.</p></div>
+
+    <div class="paso tarjeta" data-n="2"><span class="hora">0:40–0:55 · Console Workbench</span><h3>Probar el prompt antes de escalar</h3>
+      <p>Copia <code>caso-completo/02-prompt/system-prompt.md</code> en el system prompt y sustituye el codebook por el de tu variable. Prueba 2 documentos (no de los 6 <code>a_mano</code>) con <strong>Haiku 5.5</strong> y <strong>Sonnet 5.5</strong>. Anota: ¿coinciden? ¿Las citas son literales (búscalas con Ctrl+F)? ¿Cuántos tokens usó?</p></div>
+
+    <div class="paso pausa tarjeta" data-n="☕"><span class="hora">0:55–1:05</span><h3>Pausa</h3></div>
+
+    <div class="paso tarjeta" data-n="3"><span class="hora">1:05–1:20 · Skill</span><h3>Empaquetar en un skill</h3>
+      <ol><li>Copia la carpeta <code>skills/plantilla-codificador/</code>.</li>
+        <li>En <code>SKILL.md</code>: cambia <code>name</code> (p. ej. <code>codificador-evidencia</code>) y escribe una <code>description</code> específica.</li>
+        <li>Sustituye <code>referencias/codebook.md</code> por tu codebook 1.0.</li>
+        <li>En <code>scripts/verificar_citas.py</code> cambia la línea <code>VARIABLES = [...]</code> por el nombre de tu variable. Es la única línea de código que tocas.</li>
+        <li>Comprime la carpeta en .zip → Claude Desktop → Configuración → Capacidades → Skills → Subir.</li></ol>
+      <details><summary>¿Te atoraste? Atajo</summary><p>Usa el skill <code>codificador-scjn</code> tal cual y en Cowork pide: "además de las variables del codebook, codifica mi variable [pegar definición]".</p></details></div>
+
+    <div class="paso tarjeta" data-n="4"><span class="hora">1:20–1:45 · Cowork + tu hoja</span><h3>Claude codifica 20; tú codificas 6 a ciegas</h3>
+      <p>Abre Cowork, dale acceso a la carpeta del kit y escribe:</p>
+      <div class="prompt">Usa el skill [nombre] para codificar los archivos .txt de la carpeta ejercicio/muestra-20. Empieza con 3 documentos que no estén marcados a_mano = si en muestra.csv y muéstrame el resultado antes de seguir. Después codifica el resto sin mostrarme los resultados de los 6 documentos a_mano. Al terminar, verifica las citas, corrige las que no se encuentren y dame la distribución de mi variable por tipo de control.<button class="copiar">Copiar</button></div>
+      <p><strong>Mientras Cowork trabaja</strong>, abre <code>ejercicio/hoja-codificacion-humana.csv</code> y codifica los 6 documentos: carátula y síntesis, luego Ctrl+F con las palabras clave de tu variable. Copia la frase que justifica cada código. Cambia <code>variable</code> en el encabezado por el nombre de tu variable. Unos 4 minutos por documento.</p></div>
+
+    <div class="paso tarjeta" data-n="5"><span class="hora">1:45–2:00 · Cowork</span><h3>Validar: tú contra Claude</h3>
+      <div class="prompt">Esta es mi codificación a ciegas de 6 documentos (hoja-codificacion-humana.csv). Calcula el kappa contra tu codificación con el script del skill y explícame los desacuerdos uno por uno: ¿falló Claude, fallé yo o el codebook es ambiguo?<button class="copiar">Copiar</button></div>
+      <p>Antes de leer el kappa, juega 2 minutos con el <a href="herramientas/kappa.html">simulador</a>. Con n = 6, un solo desacuerdo mueve mucho el kappa: tómalo como ilustración del procedimiento, no como medida de confiabilidad.</p></div>
+
+    <div class="paso tarjeta" data-n="6"><span class="hora">2:00–2:18</span><h3>Tu nota y la puesta en común</h3>
+      <div class="prompt">Redacta una nota de una página con: (1) mi variable y qué cambié respecto de la definición inicial, (2) la distribución abstracto contra concreto con N, (3) el % de citas verificadas y el kappa con n = 6, (4) un desacuerdo interesante y (5) los límites de esta validación.<button class="copiar">Copiar</button></div>
+      <p>Llena tu fila en la hoja compartida, con <strong>una fricción</strong> del proceso. Veremos cómo definieron la misma variable distintas personas.</p></div>
+
+    <div class="paso tarjeta" data-n="7"><span class="hora">2:18–2:30</span><h3>Puente a la sesión 5</h3>
+      <p>¿Qué hiciste a mano que debería ser automático? ¿Qué no podrías repetir idéntico mañana? Esas fricciones son el temario de <strong>Claude Code</strong>.</p></div>
+  </div>
+</main>
+<script src="assets/comun.js"></script>
+<script>
+document.querySelectorAll(".copiar").forEach(b => b.addEventListener("click", async () => {
+  const t = b.parentElement.firstChild.textContent.trim();
+  try { await navigator.clipboard.writeText(t); b.textContent = "¡Copiado!"; } catch (e) { b.textContent = "Selecciona y copia"; }
+  setTimeout(() => (b.textContent = "Copiar"), 1600);
+}));
+</script>
+</body>
+</html>

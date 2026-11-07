@@ -1,0 +1,2879 @@
+                                    AMPARO EN REVISIÓN 1005/2018
+                                    QUEJOSO: **********
+                                    RECURRENTE: FISCAL GENERAL
+                                    DEL ESTADO DE VERACRUZ DE
+                                    IGNACIO DE LA LLAVE
+
+
+
+
+PONENTE: MINISTRO EDUARDO MEDINA MORA I.
+SECRETARIO: JUVENAL CARBAJAL DÍAZ
+Elaboraron: Guadalupe Jimena Sotelo Gutiérrez
+            Leticia Yatsuko Hosaka Martínez
+            Sofía Velasco García
+
+
+Vo.Bo.
+Ministro:
+
+
+Ciudad de México. La Segunda Sala de la Suprema Corte de Justicia de la
+Nación, en sesión del veinte de marzo de dos mil diecinueve, emite la
+siguiente:
+Cotejó
+
+                             SENTENCIA
+Mediante la cual se resuelve el recurso de revisión 1005/2018 interpuesto
+por el fiscal general del estado de Veracruz de Ignacio de la Llave en contra
+de la sentencia dictada el veinticinco de mayo de dos mil dieciocho dentro
+del juicio de amparo indirecto ********** por el Juzgado Décimo Octavo de
+Distrito en el estado de Veracruz. La resolución recurrida ampara y protege
+al quejoso contra los actos de la autoridad. La cuestión a resolver gira en
+torno a la interacción de dos derechos: el derecho a la privacidad (en el
+caso de servidores públicos) y el derecho de acceso a la información.
+¿Puede un servidor público bloquear a un ciudadano en Twitter? ¿Qué
+derecho debe prevalecer?
+
+Sumario
+1. Antecedentes judiciales
+2. Presupuestos procesales
+3. Hechos, demanda y juicio de amparo
+4. Estudio de los agravios de las causales de improcedencia (acto de
+   autoridad e inexistencia de agravio personal y directo)
+AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+     5. Marco jurídico
+        5.1. Derecho de acceso a la información
+        5.2. Derecho a la privacidad
+        5.3. La interacción de los derechos a la información y a la privacidad
+     6. Estudio de agravios en el caso concreto
+     7. Efectos de la sentencia
+
+
+                           1. ANTECEDENTES JUDICIALES
+
+1.   ********** promovió juicio de amparo indirecto contra la autoridad y acto
+     siguientes:
+
+2.   Autoridad responsable: Fiscal general del estado de Veracruz de Ignacio
+     de la Llave, Jorge Winckler Ortiz (en adelante, fiscal general).
+
+3.   Acto reclamado: El bloqueo en Twitter de la cuenta del fiscal general
+     (@AbogadoWinckler) a la cuenta del quejoso (**********).
+
+4.   El juez Décimo Octavo de Distrito en el estado de Veracruz admitió a trámite
+     la demanda y ordenó registrarla con el número de expediente **********.
+
+5.   El veinticinco de mayo de dos mil dieciocho, el juez del conocimiento
+     celebró audiencia constitucional y dictó sentencia en el sentido de conceder
+     el amparo solicitado. El juez firmó la resolución hasta el veintiocho de mayo
+     siguiente.
+
+6.   Inconforme con la resolución anterior, el subdirector de Amparo, Civil y
+     Penal de la Fiscalía General del estado de Veracruz de Ignacio de la Llave
+     interpuso recurso de revisión.
+
+7.   El magistrado presidente del Segundo Tribunal Colegiado en Materia
+     Administrativa del Séptimo Circuito admitió a trámite el recurso y ordenó su
+     registro con el número **********.
+
+8.   El juez Décimo Octavo de Distrito en el estado de Veracruz solicitó a la
+     Suprema Corte de Justicia de la Nación que ejerciera su facultad de
+     atracción para conocer y resolver el recurso de revisión.
+
+9.   El nueve de agosto de dos mil dieciocho, en sesión privada, los ministros
+     integrantes de esta Segunda Sala hicieron suya la solicitud formulada por
+     el juez de distrito.
+
+
+
+
+2
+                                                                                    AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+10.   En la sesión del diez de octubre de dos mil dieciocho, esta Segunda Sala
+      de la Suprema Corte de Justicia de la Nación resolvió ejercer la facultad de
+      atracción.
+
+11.   De conformidad con los artículos 73 párrafo segundo y 184 párrafo primero
+      de la Ley de Amparo, el proyecto de sentencia se hizo público, con la misma
+      anticipación que la publicación de las listas de los asuntos.
+
+12.   Escrito para trámite: Se agrega el escrito presentado por la organización
+      Article 19 México y Centroamérica en el que realizó diversas
+      manifestaciones, el cual se recibió el quince de marzo de dos mil diecinueve
+      en la oficina de certificación judicial y correspondencia con número de
+      registro 011828.
+
+                                      2. PRESUPUESTOS PROCESALES
+
+13.   2.1. Competencia. Esta Segunda Sala de la Suprema Corte de Justicia de
+      la Nación resulta legalmente competente para resolver el presente recurso
+      de revisión,1 porque se interpone contra una resolución dictada en audiencia
+      constitucional por un juez de distrito en un juicio de amparo indirecto,
+      respecto del que se solicitó a este Alto Tribunal el ejercicio de su facultad
+      de atracción, aunado a que se considera innecesaria la intervención del
+      Tribunal Pleno para tal efecto.
+
+14.   2.2. Legitimación. Este medio de impugnación se hizo valer por parte
+      legítima porque fue interpuesto por la autoridad responsable del juicio de
+      amparo indirecto de origen.2 Adicionalmente, en vista de que en la sentencia
+      recurrida se concedió la protección constitucional al quejoso, pues la
+      autoridad responsable (el fiscal general) tiene interés en que dicha
+      resolución sea modificada o revocada y, consecuentemente, es parte
+      legítima como recurrente.3
+
+15.   Debe apuntarse que la autoridad responsable interpuso el medio de
+      impugnación a través de Marco Antonio González Cuevas, subdirector de
+      Amparo, Civil y Penal de la Fiscalía General del estado de Veracruz de
+      Ignacio de la Llave (en adelante, el subdirector), quien, al rendir el informe
+      justificado, exhibió copia certificada de su nombramiento. Por tanto, está
+
+  1
+    Artículos 107 fracción VIII inciso a) y penúltimo párrafo de la Constitución Política de los Estados Unidos Mexicanos; 81
+  fracción I inciso e) y 83 de la Ley de Amparo en vigor; 21 fracción II inciso a) en relación con la diversa fracción XI de la
+  Ley Orgánica del Poder Judicial de la Federación; puntos primero, segundo fracción III y tercero del acuerdo General
+  5/2013 emitido por el Pleno de este Alto Tribunal.
+  2
+    Artículo 5 fracción II de la Ley de Amparo, Reglamentaria de los artículos 103 y 107 de la Constitución Política de los
+  Estados Unidos Mexicanos (en adelante, Ley de Amparo).
+  3
+    Artículos 81 fracción I inciso e) y 87 de la Ley de Amparo.
+
+
+
+
+                                                                                                                             3
+  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+      facultado para interponer este medio de defensa.4 Aunado a que, mediante
+      proveído del veintiocho de noviembre de dos mil diecisiete, el juez de distrito
+      recibió el informe justificado del fiscal general rendido por conducto del
+      subdirector.
+
+16.   De igual forma, debe considerarse que el subdirector tiene, entre sus
+      atribuciones, intervenir y atender los juicios de amparo en donde el fiscal
+      general haya sido señalado como autoridad responsable. 5 Por lo que
+      corresponde a aquél formular y firmar los recursos que deban interponerse
+      en representación del fiscal general.
+
+17.   2.3. Oportunidad. Ahora bien, el recurso de revisión es oportuno pues se
+      presentó dentro del plazo de diez días que dicta la ley.6
+
+18.   Sobre este aspecto, se debe apuntar que la sentencia recurrida fue
+      notificada a la autoridad responsable el martes veintinueve de mayo de dos
+      mil dieciocho7 y que dicha actuación surtió efectos el mismo día. 8 En
+      consecuencia, el plazo para interponer esta impugnación transcurrió del
+      miércoles treinta de mayo al martes doce de junio de dos mil dieciocho
+      (sin contar los días dos, tres, nueve y diez de junio por ser sábados y
+      domingos inhábiles).9
+
+19.   En estas condiciones, si el escrito de expresión de agravios se presentó el
+      martes doce de junio de dos mil dieciocho,10 entonces, el recurso de revisión
+      fue interpuesto oportunamente.
+
+                         3. HECHOS, DEMANDA Y JUICIO DE AMPARO
+
+20.   A continuación, se realizará una narrativa de los hechos que dieron origen
+      a la demanda de amparo indirecto, se revisarán los conceptos de violación
+      argumentados por el quejoso y la sentencia recurrida.
+
+21.   3.1. Hechos. ********** es periodista para diversos medios de comunicación
+            en los que realiza coberturas sobre temas vinculados con la
+            inseguridad, derechos humanos, desapariciones y fosas
+            clandestinas. Utiliza la red social Twitter (con el nombre de usuario
+            **********) como herramienta de trabajo, pues le permite difundir las
+
+  4
+    Artículo 9 primer párrafo de la Ley de Amparo.
+  5
+    Artículo 231 fracciones I y V del Reglamento de la Ley Orgánica de la Fiscalía General del estado de Veracruz de
+  Ignacio de la Llave.
+  6
+    Artículo 86 primer párrafo de la Ley de Amparo.
+  7
+    Amparo indirecto **********, foja 166.
+  8
+    Artículo 31 fracción I de la Ley de Amparo.
+  9
+    Artículo 19 de la Ley de Amparo y artículo 163 de la Ley Orgánica del Poder Judicial de la Federación.
+  10
+     Amparo en revisión 1005/2018, foja 3.
+
+
+
+
+  4
+                                                                             AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+               notas que redacta y mantener contacto con las autoridades del
+               estado de Veracruz.
+
+22.    3.2. Bloqueo en Twitter. El seis de octubre de dos mil diecisiete, el quejoso
+       (**********) se percató de que el fiscal general del estado de Veracruz Jorge
+       Winckler Ortiz (usuario @AbogadoWinckler), lo había bloqueado en la red
+       social Twitter, impidiéndole tener acceso a la información que el fiscal
+       general comparte como autoridad en su cuenta personal, información de
+       carácter público y de interés general.
+
+23.    3.3. Demanda de amparo indirecto. En contra de lo anterior, **********
+       promovió juicio de amparo, en el que argumentó en síntesis los siguientes
+       conceptos de violación:
+
+24.    En el primer concepto de violación, el quejoso refirió que el bloqueo que
+       sufrió su cuenta personal en Twitter para poder acceder a la cuenta del fiscal
+       general del estado de Veracruz vulnera su derecho de acceso a la
+       información como periodista, pues le impide conocer datos de interés
+       general vinculados al ejercicio del cargo público que ostenta la autoridad
+       responsable.
+
+25.    Señaló que el bloqueo a su cuenta constituye un acto de discriminación,
+       toda vez que, sin mediar procedimiento establecido en la ley, se violan en
+       su perjuicio los principios de legalidad y seguridad jurídica, pues se le
+       impide acceder a información de interés general vinculada con el ejercicio
+       del cargo público que ostenta la responsable.
+
+26.    Apuntó que el periodismo, en el contexto de una sociedad democrática,
+       representa una de las manifestaciones más importantes de la libertad de
+       expresión e información.
+
+27.    Citó la jurisprudencia P./J. 25/2007, con el rubro: LIBERTAD DE EXPRESIÓN.
+       DIMENSIONES DE SU CONTENIDO,           para sostener que este derecho
+                                           11
+
+
+       comprende tanto la libertad de expresar el pensamiento propio (dimensión
+       individual), como la posibilidad de buscar, recibir y difundir información de
+       toda índole.
+
+28.    También indicó que, si bien el derecho a la libertad de expresión no es
+       absoluto, los límites deben ser legítimos. Por lo que, en caso contrario, esas
+       restricciones deben considerarse inconstitucionales e inconvencionales,
+       razón por la cual deben ser eliminadas. Cualquier medida preventiva es
+
+  11
+    Jurisprudencia P./J. 25/2007, LIBERTAD DE EXPRESIÓN. DIMENSIONES DE SU CONTENIDO, Pleno, Semanario Judicial de la
+  Federación y su Gaceta, Novena Época, tomo XXV, mayo de 2007, p. 1520.
+
+
+
+
+                                                                                                                   5
+  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+         violatoria de la libertad de expresión, puesto que este tipo de control ha sido
+         determinado por la Convención Americana sobre Derechos Humanos como
+         un mecanismo de censura previa.
+
+29.      Resaltó que la autoridad responsable está obligada a difundir información
+         de interés público;12 no sólo en lo que concierne a las actividades llevadas
+         a cabo en el desempeño del encargo conferido, sino también en el
+         establecimiento de canales de comunicación con la ciudadanía a través de
+         plataformas digitales o de redes sociales como Twitter.
+
+30.      Argumentó que la autoridad responsable accedió a comunicarse con la
+         ciudadanía a través de Twitter, pues compartió en su cuenta personal
+         información inherente al desempeño de su encargo. Por ello,
+         voluntariamente, asumió las consecuencias normativas inherentes.
+
+31.      Señaló que el fiscal general, en su calidad de servidor público ‒y como
+         sujeto obligado de acuerdo a la Ley de Transparencia de Veracruz‒, tiene
+         la obligación de promover y respetar el acceso a la información de los
+         gobernados.
+
+32.      En el segundo concepto de violación, el quejoso expresó que el bloqueo
+         que sufrió en Twitter por parte del fiscal general viola su derecho a la libertad
+         de expresión, pues impide que, en su calidad de periodista, acceda a la
+         información que el fiscal general publica en su cuenta.
+
+33.      Sostuvo que los espacios digitales son fundamentales para la prensa,
+         medios y población en general por la rapidez con la que se puede acceder
+         y difundir la información en ellos. Razón por la cual, los medios digitales
+         permiten construir comunidades mejor informadas y contribuyen a la
+         creación de sociedades democráticas.
+
+34.      Argumentó que el bloqueo que el usuario @AbogadoWinckler impuso a su
+         cuenta (**********) constituye un acto arbitrario, discriminatorio, innecesario
+         y desproporcional.
+
+35.      En la especie, indicó que no se está en presencia de un supuesto de
+         excepción que justifique la restricción a la información publicada en la
+         cuenta del fiscal general.
+
+36.      3.4. Juicio de amparo. El juez Décimo Octavo de Distrito en el estado de
+         Veracruz conoció del juicio, lo admitió y registró bajo el expediente **********.
+
+  12
+       Artículos 1, 2, 4, 8 y 9, fracción VII, de la Ley de Transparencia y Acceso a la Información Pública para el Estado de
+       Veracruz (en adelante, Ley de Transparencia de Veracruz).
+
+
+
+
+  6
+                                                                                 AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+37.    El dieciocho de mayo de dos mil dieciocho, se realizó una inspección judicial
+       a la cuenta @AbogadoWinckler, de donde se advierte lo siguiente:
+
+38.        a) La descripción de la cuenta es: “Fiscal General del Estado de
+           Veracruz, papá, esposo y buscador constante de la justicia”.
+39.        b) Se unió a Twitter en mayo de dos mil once.
+40.        c) Las publicaciones que se encuentran en la cuenta corresponden a
+           tuits con información personal, tuits con información relacionada a las
+           actividades que ejerce como fiscal general del estado y retuits con
+           información proveniente de otras cuentas.
+41.    Mediante sentencia firmada el veintiocho de mayo de dos mil dieciocho, el
+       juez de distrito resolvió conceder el amparo al quejoso, con base en las
+       siguientes consideraciones:
+
+42.    En el considerando cuarto, el juez declaró infundada la causal de
+       improcedencia planteada en el informe justificado por la autoridad; pues el
+       fiscal argumentó que el bloqueo que impuso en Twitter a la cuenta del
+       quejoso no conforma un acto de autoridad, ni el de un particular realizando
+       actos equivalentes a los de una autoridad. Sin embargo, el juez advirtió que
+       el fiscal general está obligado por ley a promover la comunicación social y
+       a difundir información de interés público porque está vinculada a las
+       actividades que realiza en el encargo conferido. La normativa aplicable
+       establece que la autoridad deberá procurar canales de comunicación con
+       la ciudadanía a través de plataformas digitales, entre las que se encuentran
+       las redes sociales como Twitter.13
+
+43.    En este sentido, consideró que si la ley establece que el fiscal general tiene
+       la obligación de difundir información de interés público a través de la gestión
+       de la comunicación social inherente a la oficina pública que ocupa,
+       entonces, se actualiza la nota distintiva de autoridad para efectos del juicio
+       de amparo, pues la relación de supra a subordinación con un particular tiene
+       su nacimiento en el ordenamiento jurídico.
+
+44.    Asimismo, el juez observó que las normas referidas no obligan al fiscal
+       general a tener una cuenta en Twitter para interactuar con los gobernados.
+       Sin embargo, al utilizar su cuenta personal para difundir información
+       inherente al desempeño de su encargo, el fiscal decidió comunicarse con
+       la ciudadanía a través de dicho medio electrónico, por lo tanto,
+       voluntariamente asumió las consecuencias normativas correspondientes.
+
+  13
+    Artículos 2, 11, 13 y 51 de la Ley de Transparencia de Veracruz y artículos 2, 28, fracción II y 30, fracción XXV, del
+  Reglamento de la Ley Orgánica de la Fiscalía General del estado de Veracruz, en vigor desde el 1° de enero de 2018.
+
+
+
+
+                                                                                                                        7
+  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+45.   El juzgador consideró que el ejercicio de los cargos públicos es de interés
+      social. Esto provoca que el actuar de los funcionarios esté sujeto a un
+      escrutinio mayor por parte de la ciudadanía que el de quienes no
+      desempeñan ningún cargo público. Por lo tanto, si en una red social un
+      funcionario decide utilizar su cuenta personal para comunicarse con los
+      justiciables (en lugar de una cuenta perteneciente a la oficina bajo su
+      encargo), entonces, es evidente que debe asumir la responsabilidad de
+      garantizar el acceso a su cuenta a cualquier persona.
+
+46.   Además, la inspección judicial ofrecida por el quejoso a la cuenta
+      @AbogadoWinckler arrojó que en dicha cuenta Jorge Winckler Ortiz se
+      ostenta como fiscal general del estado de Veracruz y que comparte
+      información de interés general (como son publicaciones, acompañadas de
+      fotografías, sobre su desempeño en el trabajo y sus actividades como fiscal
+      general). Esta situación prueba plenamente que dicha cuenta no es
+      utilizada únicamente como cuenta personal, sino también como medio de
+      comunicación con la ciudadanía sobre su gestión como fiscal.
+
+47.   A todo esto se suma que el quejoso demostró mediante inspección judicial
+      que es reportero. Por lo tanto, tiene derecho a buscar y recibir información
+      de todo tipo. En consecuencia, la autoridad responsable tiene la obligación
+      de promover y respetar su acceso a la información, pues es servidor público
+      y como sujeto está obligado por la Ley de Transparencia estatal y por el
+      Reglamento de la Ley Orgánica de la Fiscalía General de Veracruz.
+
+48.   En el considerando quinto, el juez de distrito concluyó que el bloqueo
+      impuesto a la cuenta ********** por Jorge Winckler Ortiz viola el derecho a
+      la libertad de expresión del quejoso (en su modalidad de acceso a la
+      información de interés público), pues, como ya se dijo, las publicaciones
+      compartidas ahí reflejan las actividades que lleva a cabo la autoridad en el
+      puesto público que desempeña.
+
+49.   Esto es así sin que sea un obstáculo el alegato de la autoridad responsable,
+      quien aduce que el bloqueo en Twitter no viola el derecho de acceso a la
+      justicia del quejoso puesto que este último cuenta con otros mecanismos
+      para recibir dicha información. Al respecto, el juez estimó que, de acuerdo
+      con lo concluido por la Segunda Sala, la Constitución exige que el Estado
+      informe a las personas sobre aquellas cuestiones que puedan incidir en su
+      vida o en el ejercicio de sus derechos (información de interés público), sin
+      que sea necesaria solicitud o requerimiento por parte de los particulares.
+
+
+
+
+  8
+                                                         AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+   50.   Además, recalcó que la aludida información es compartida públicamente de
+         forma voluntaria por Jorge Winckler Ortiz en su cuenta personal de Twitter.
+
+   51.   Esto no implica que la autoridad responsable deba, obligatoriamente,
+         publicar toda la información generada por su actividad en el cargo a través
+         de Twitter, pues no existe una norma que así lo establezca. Tampoco se
+         implica que la libertad para denunciar ante la empresa de la propia red
+         social a los usuarios que violen los términos y condiciones de uso
+         aceptados esté restringida para el fiscal general.
+
+   52.   Por lo tanto, el juez consideró que, al bloquear el acceso a su cuenta en
+         Twitter, el fiscal general viola el derecho que tiene el quejoso a ser
+         informado.
+
+1. 53. En virtud de lo anterior, el juez Décimo Octavo de Distrito en el estado de
+         Veracruz concedió el amparo al quejoso, con el efecto de que el fiscal
+         general levante el bloqueo al usuario ********** y le permita el acceso a la
+         información que publica en su cuenta @AbogadoWinckler.
+
+   54.   3.5. Recurso de revisión. En contra de dicha sentencia, el fiscal general
+         del estado de Veracruz interpuso el presente recurso de revisión.
+
+   55.   En síntesis, en el recurso de revisión, el fiscal general, ahora recurrente,
+         expone los siguientes agravios:
+
+   56.   Primer agravio: Indebido análisis de la causal de improcedencia sobre
+         la existencia de un acto de autoridad para efectos del juicio de amparo.
+         La parte recurrente señala que el juez de distrito consideró erróneamente
+         que la persona física titular de la cuenta que bloqueó al quejoso actuó con
+         carácter de autoridad. Es decir, que el juez de distrito antepuso la figura de
+         fiscal general a la de persona titular de la cuenta de Twitter, inobservando
+         datos arrojados por la inspección ocular.
+
+   57.   Argumenta que el juez de distrito pasó por alto: i) que la cuenta se creó en
+         mayo de dos mil once (esto es, varios años antes del treinta de diciembre
+         de dos mil dieciséis, fecha en que tomó su encargo como fiscal general); ii)
+         que la cuenta bloqueadora no se encuentra verificada, por lo que no se
+         advierte que pueda considerarse como un medio de comunicación oficial
+         con la ciudadanía sobre su gestión como servidor público; iii) que en mayor
+         cantidad la cuenta @AbogadoWinckler presentó retuits (reenvíos
+         originados en otras cuentas) y tuits de información personal por parte del
+         titular de la cuenta; y iv) que en la cuenta no se encuentra información
+         relativa a temas de seguridad, derechos humanos, desapariciones y fosas
+
+
+                                                                                    9
+  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+       clandestinas en el estado de Veracruz, temas argumentados por el quejoso
+       en sus conceptos de violación.
+
+58.    Por tanto, sostiene que el acto reclamado no reúne las características de
+       un acto de autoridad para efectos del amparo, pues se trata de una cuenta
+       que se utiliza con fines personales y privados.
+
+59.    Asimismo, expone que las obligaciones del fiscal general ‒establecidas en
+       la Ley Orgánica de la Fiscalía estatal y en su Reglamento‒ se cumplen a
+       través de los sitios oficiales de la Fiscalía (el portal web:
+       http://comunicacion.fiscaliaveracruz.gob.mx, el perfil de Facebook:
+       fgeveracruz y la cuenta de Twitter: @fge_veracruz). Por lo que, sólo si el
+       quejoso se doliera de un bloqueo en alguno de estos tres sitios, se
+       consideraría un acto de autoridad, pues se relacionaría con el actuar del
+       Estado incumpliendo sus obligaciones de información a la sociedad.
+
+60.    Segundo agravio: Violación al principio de agravio personal y directo.
+       El recurrente aduce que el juez de distrito inobservó el principio de agravio
+       personal y directo mediante la incorrecta apreciación de las pruebas y
+       constancias del amparo.
+
+61.    Resalta que, en sus conceptos de violación, el quejoso estableció que el
+       bloqueo en Twitter por parte del fiscal general obstaculiza su labor
+       periodística. En particular, que dificulta la cobertura que realiza en temas de
+       seguridad, derechos humanos, desapariciones y fosas clandestinas en el
+       estado de Veracruz. Sin embargo, el recurrente señala que la mayor parte
+       de la información compartida en su cuenta no está vinculada a esos temas,
+       sino a información personal. Además, indica que no existe certeza de que
+       el contenido que el quejoso alega se le impide conocer sólo exista en su
+       cuenta.
+
+62.    Tercer agravio: Variación de la litis. El recurrente argumenta que el juez
+       de distrito modificó el contenido expresado en los conceptos de violación
+       del quejoso. Indica que, por un lado, el quejoso reclamó que se le impedía
+       el acceso a la cuenta @AbogadoWinckler y que sus temas de investigación
+       son seguridad, derechos humanos, desapariciones y fosas clandestinas.
+       Sin embargo, por el otro lado, los datos encontrados en la cuenta
+       corresponden a retuits y tuits sobre información personal. Por lo tanto,
+       sostiene, los datos publicados en la cuenta referida difieren
+       considerablemente de los que expuso el quejoso en sus conceptos de
+       violación.
+
+
+
+
+  10
+                                                        AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+63.     Cuarto agravio: Violación a la confidencialidad de la información.
+        El recurrente estima que el juez de distrito no realizó un estudio del tipo de
+        información a la que el quejoso tenía derecho a acceder con base en el
+        principio de proporcionalidad. Tampoco consideró el tipo de información
+        contenida en la cuenta @AbogadoWinckler. Sólo ordenó de manera total el
+        desbloqueo de la cuenta, a pesar de que ésta no contiene información
+        relacionada con el agravio del quejoso.
+
+64.     El recurrente indica que en la cuenta @AbogadoWinckler se encontraron
+        tres tipos de información: i) información reenviada; ii) información personal,
+        la cual es confidencial y iii) información que el a quo consideró de interés
+        público, pero que no se relaciona con el agravio del quejoso.
+
+65.     Expone que el juez debió analizar las características de la red social Twitter
+        y no sólo resolver de manera somera, pues la cuenta @AbogadoWinckler
+        es una cuenta personal: i) pertenece a una persona física, ii) carece de
+        verificación y iii) en ella se comparte información que las leyes catalogan
+        como confidencial. Por lo tanto, al otorgar al quejoso el acceso pleno y total
+        a la cuenta, el juez resolvió de forma desproporcional pues permite que el
+        quejoso tenga acceso a toda la información de la cuenta, a pesar de que
+        dicha información no tiene relación con lo solicitado por el tipo de
+        investigaciones que realiza como periodista.
+
+                    4. ESTUDIO DE LAS CAUSALES DE IMPROCEDENCIA
+
+66.     4.1. Acto de autoridad. En el primer agravio, el recurrente expone que el
+        acto reclamado (el bloqueo en Twitter por parte de @AbogadoWinckler a la
+        cuenta del quejoso) no es un acto de autoridad para efectos del juicio de
+        amparo, porque la cuenta es de carácter personal, fue creada antes de
+        ostentar el cargo de fiscal general y, además, existen medios oficiales a
+        través de los cuales el quejoso puede acceder a la información pública
+        general.
+
+67.     Este agravio es infundado por lo siguiente:
+
+68.     En el juicio de amparo tiene el carácter de autoridad responsable ‒con
+        independencia de su naturaleza formal‒ la que dicta, ordena, ejecuta o trata
+        de ejecutar el acto que crea, modifica o extingue situaciones jurídicas en
+        forma unilateral y obligatoria u omite el acto que de realizarse crearía,
+        modificaría o extinguiría dichas situaciones jurídicas.14
+
+  14
+       Ley de Amparo:
+
+
+
+
+                                                                                  11
+  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+69.     De igual forma, los particulares tienen el carácter de autoridad responsable
+        cuando realicen actos que afecten los derechos de los ciudadanos de forma
+        equiparable o equivalente a los de la autoridad y cuyas funciones estén
+        determinadas por una norma general.
+
+70.     Al respecto, en la jurisprudencia 2a./J. 164/2011, AUTORIDAD PARA LOS
+        EFECTOS DEL JUICIO DE AMPARO. NOTAS DISTINTIVAS, la Segunda Sala de la
+                                                             15
+
+
+        Suprema Corte de Justicia de la Nación concluyó que, para efectos de un
+        medio de control constitucional, las características que distinguen a un acto
+        de autoridad son las siguientes:
+
+71.     a) Que exista un ente, de hecho o de derecho, que establezca una relación
+        de supra a subordinación con un particular.
+
+72.     En la contradicción de tesis 76/99-SS, la Suprema Corte definió las
+        relaciones de supra a subordinación como aquéllas que se entablan entre
+        gobernantes y gobernados, por actuar los primeros en un plano superior a
+        los segundos, en beneficio del orden público y del interés social. Estas
+        relaciones se caracterizan por la unilateralidad y, por ello, la Constitución
+        Política de los Estados Unidos Mexicanos establece una serie de derechos
+        fundamentales así como limitaciones al actuar del gobernante. Esto debido
+        a que el órgano del Estado impone su voluntad sin necesidad de acudir a
+        los tribunales.
+
+73.     Para definir el concepto de acto de autoridad responsable, la Suprema
+        Corte también señaló que se debe atender a las distintas relaciones
+        jurídicas. Asimismo, se debe examinar si la relación que se somete a la
+        decisión de los órganos jurisdiccionales del amparo se ubica dentro de las
+        denominadas de supra a subordinación (que tienen como presupuesto que
+        el promovente tenga el carácter de gobernado y que el ente señalado como
+
+
+      Artículo 61. El juicio de amparo es improcedente: […]
+      XXIII. En los demás casos en que la improcedencia resulte de alguna disposición de la Constitución Política de los
+      Estados Unidos Mexicanos, o de esta Ley.
+      En relación con los diversos 1, fracción I, y 5, fracción II:
+      Artículo 1. El juicio de amparo tiene por objeto resolver toda controversia que se suscite:
+      I. Por normas generales, actos u omisiones de autoridad que violen los derechos humanos reconocidos y las garantías
+      otorgadas para su protección por la Constitución Política de los Estados Unidos Mexicanos, así como por los tratados
+      internacionales de los que el Estado Mexicano sea parte […]
+     Artículo 5. Son partes en el juicio de amparo: […]
+     II. La autoridad responsable, teniendo tal carácter, con independencia de su naturaleza formal, la que dicta, ordena,
+     ejecuta o trata de ejecutar el acto que crea, modifica o extingue situaciones jurídicas en forma unilateral y obligatoria;
+     u omita el acto que de realizarse crearía, modificaría o extinguiría dichas situaciones jurídicas.
+     Para los efectos de esta Ley, los particulares tendrán la calidad de autoridad responsable cuando realicen actos
+     equivalentes a los de autoridad, que afecten derechos en los términos de esta fracción, y cuyas funciones estén
+     determinadas por una norma general.
+  15
+     Jurisprudencia 2a./J. 164/2011, AUTORIDAD PARA LOS EFECTOS DEL JUICIO DE AMPARO. NOTAS DISTINTIVAS, Segunda Sala,
+  Semanario Judicial de la Federación y su Gaceta, Novena Época, tomo XXXIV, septiembre de 2011, p. 1089.
+
+
+
+
+  12
+                                                       AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+      autoridad actúe como superior) o si, por el contrario, dicha relación se
+      realiza entre iguales en un plano de coordinación.
+
+74.   b) Que la relación de supra a subordinación tenga su nacimiento en la ley,
+      lo que dota al ente de una facultad administrativa, cuyo ejercicio es
+      irrenunciable, al ser pública la fuente de esa potestad.
+
+75.   c) Que, con motivo de esa relación, el ente emita actos unilaterales a través
+      de los cuales cree, modifique o extinga por sí o ante sí, situaciones jurídicas
+      que afecten la esfera legal del particular.
+
+76.   d) Que, para emitir dichos actos, el ente no requiera acudir a los órganos
+      judiciales, ni precise del consenso de la voluntad del afectado.
+
+77.   Por tanto concluye que para efectos del juicio de amparo, una autoridad es
+      todo ente que ejerce facultades decisorias que le están atribuidas en la ley
+      y que, por ende, dichas facultades constituyen una potestad administrativa,
+      cuyo ejercicio es irrenunciable, al ser de naturaleza pública la fuente de tal
+      potestad.
+
+78.   En el caso específico, de acuerdo con la Ley Orgánica de la Fiscalía
+      General del estado de Veracruz de Ignacio de la Llave, la fiscalía es un
+      organismo dotado de personalidad jurídica y patrimonio propios, dotado de
+      autonomía (técnica, presupuestaria, de gestión y de emisión de reglas)
+      conforme a la cual sistematizará la información bajo su resguardo.
+
+79.   Ahora bien, los artículos 9 fracción VII, 11 fracción V, 13 y 51 de la Ley de
+      Transparencia y Acceso a la Información Pública de Veracruz disponen lo
+      siguiente (énfasis agregado):
+            Artículo 9. Son sujetos obligados en esta Ley: […]
+
+            VII. Los organismos autónomos del Estado; […]
+
+            Artículo 11. Para el cumplimiento de los objetivos de la presente Ley,
+            los sujetos obligados tendrán las siguientes obligaciones: […]
+
+            V. Publicar, actualizar y mantener disponible, de manera
+            proactiva, a través de los medios electrónicos con que cuenten,
+            la información a que se refiere esta Ley y, en general, toda aquella
+            que sea de interés público; […]
+
+            Artículo 13. La información referente a las obligaciones de
+            transparencia será puesta a disposición de los particulares por
+            cualquier medio que facilite su acceso, dando preferencia al uso de
+
+
+
+                                                                                 13
+  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+             sistemas computacionales y a las nuevas tecnologías de la
+             información.
+
+             Cuando la información se difunda en Internet, los sujetos obligados
+             utilizarán un lenguaje claro que facilite su comprensión por los
+             usuarios y que se encuentre basado en las directrices de gobierno
+             abierto; además, las páginas contarán con buscadores temáticos y
+             dispondrán de un respaldo con todos los registros electrónicos para
+             cualquier persona que los solicite, en formatos abiertos, debiendo
+             también ser interactivos, e incluirán mecanismos para evitar la
+             discriminación hacia las personas con debilidad visual.
+
+             Artículo 51. Los sujetos obligados establecerán canales de
+             comunicación con los ciudadanos, a través de las redes sociales y
+             plataformas digitales, que les permitan participar en la toma de
+             decisiones.
+80.    En tanto que el artículo 28 fracción II del Reglamento de la Ley Orgánica de
+       la Fiscalía General del estado de Veracruz, vigente desde el veinte de enero
+       de dos mil dieciocho, prevé:
+             Artículo 28. Atribuciones en Materia de Transparencia.
+             Las atribuciones en materia de transparencia y acceso a la
+             información comprenden: […]
+
+             II. Diseñar procedimientos que faciliten la tramitación y adecuada
+             atención a las solicitudes de acceso a la información pública; […]
+81.    De lo antes expuesto, se desprende que el fiscal general del estado de
+       Veracruz es un ente de derecho y que tiene entre las obligaciones
+       inherentes a su cargo la responsabilidad de promover la comunicación
+       social y difundir información de interés público vinculada con las actividades
+       llevadas a cabo en el desempeño del encargo conferido. Para lo cual,
+       establecerá la normativa y los canales de comunicación con la ciudadanía
+       a través de las plataformas digitales o de redes sociales.
+
+82.    Es decir, la ley establece que el fiscal tiene la obligación de difundir
+       información de interés público a través de la gestión de la comunicación
+       social inherente a la oficina pública que ocupa. En este sentido, se cumple
+       la nota distintiva de acto de autoridad porque la relación tiene su nacimiento
+       en una ley, lo que dota al ente de una facultad administrativa cuyo ejercicio
+       es irrenunciable porque la fuente de esa potestad es pública.
+
+83.    En efecto, el fiscal general tiene la obligación de difundir información sobre
+       las actividades que realiza en el desempeño de su encargo a través de los
+       medios de comunicación con que cuente. Esta obligación deriva de sus
+
+
+
+  14
+                                                                               AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+       funciones como servidor público y, en consecuencia, el particular tiene un
+       derecho correlativo al exigir el cumplimiento de dicha obligación.
+
+84.    Ahora bien, tal y como sostuvo el juez de distrito, las normas antes
+       transcritas no obligan al fiscal general a tener una cuenta en la red social
+       Twitter para interactuar con los gobernados. No obstante, si la autoridad
+       responsable decidió comunicarse con la ciudadanía a través de su cuenta
+       personal (al compartir por dicho medio información inherente al desempeño
+       de su encargo), resulta evidente que, por el tipo de información compartida,
+       el fiscal asumió voluntariamente las consecuencias normativas.
+
+85.    En efecto, de la sentencia recurrida y de la diligencia de inspección judicial16
+       se desprende:
+
+86.    a) Que la cuenta @AbogadoWinckler pertenece a Jorge Winckler Ortiz.
+
+87.    b) Que en la descripción de la cuenta, el usuario indicó “Fiscal General del
+       Estado de Veracruz, papá, esposo y buscador constante de la justicia”.
+
+88.    c) Que entre en sus tuits se encuentra información relativa a su encargo.
+       Por ejemplo, al día siguiente de su nombramiento compartió: “Ejerceré el
+       cargo d [sic] Fiscal General d#Veracruz, de forma tal que mis hijos se
+       sentirán orgullosos de ello”. Asimismo, se observa en otros tuits que incluye
+       información sobre sus actividades oficiales, como la participación o
+       asistencia a diferentes eventos, entre los que se encuentran: la Conferencia
+       Nacional de Procuración de Justicia en Tabasco, la Conferencia Nacional
+       de Procuración de Justicia de la Zona Sureste, el desfile del Día del Trabajo
+       (junto al gobernador del estado, Lic. Miguel Ángel Yunes Linares, y su
+       gabinete), la celebración del Patronato de la Fiscalía General del Estado
+       (FEG) para los hijos de los trabajadores de la fiscalía, etc. Estas
+       publicaciones se acompañan de fotografías.
+
+89.    En adición a lo anterior, al entrar a la cuenta @AbogadoWinckler en Twitter,
+       se observan los siguientes tuits (todos de dos mil diecinueve):17
+                FEBRERO, 23: #LerdoDeTejada              #AmigosDeTodaLaVida hace algún tiempo
+                                Cheque!!!
+
+                FEBRERO, 19: Le deseo todo el éxito posible al maestro Géiser Manuel Caso
+                                Molinari, por su designación como el primer Comisionado
+                                Estatal de Búsqueda en #Veracruz, en la @FGE_Veracruz
+
+  16
+    Juicio de amparo **********, fojas 34 y 89-92, respectivamente.
+  17
+    Hecho notorio en términos del artículo 88 del Código Federal de Procedimientos Civiles de aplicación supletoria a la
+  Ley de Amparo.
+
+
+
+
+                                                                                                                     15
+  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+                         encontraras todo el apoyo que necesites para el ejercicio de tu
+                         encomienda
+
+             FEBRERO, 15: #DerechosHumanos Concurso Interamericano de Derechos
+                         Humanos de American University #WashingtonCollegeOfLaw
+
+             FEBRERO, 12: La  @FGE_Veracruz trabajando de la mano con #SIPINA
+                         (Sistema de Protección Integral de Niñas, Niños y Adolecentes
+                         [sic] del Estado de #Veracruz). Colaboración y Coordinación,
+                         generará un #Veracruz mejor. A TRABAJAR!!!
+
+              FEBRERO, 2: La @FGE_Veracruz será la segunda a nivel nacional con
+                         contar con una Unidad de Análisis y Contexto, para investigar,
+                         así como erradicar la violencia contra las Mujeres en #Veracruz
+                         #EquipoFGE
+
+               ENERO, 8: Felicito al nuevo Fiscal General del Estado de #Tabasco Lic.
+                         Jaime Humberto Lastra Bastar, con quien trabajaré
+                         coordinadamente en el objetivo de procurar justicia y combatir
+                         la   impunidad    en     nuestro     país.    @FGETabasco
+                         @FGE_Veracruz
+
+90.    De lo anterior, se observa que @AbogadoWinckler no solo difunde en su
+       cuenta información personal, sino también contenidos sobre las funciones
+       y actividades que se derivan de su encargo.
+
+91.    Por ende, si bloquea la cuenta de uno de sus seguidores, está incumpliendo
+       su obligación de difundir información relativa a sus actividades. En
+       consecuencia, está restringiendo el derecho de acceso a la información del
+       usuario bloqueado. Situación que constituye un acto de autoridad para
+       efectos del juicio de amparo.
+
+92.    De tal forma que ‒como lo concluyó el juez de distrito en contra del acto
+       reclamado por el quejoso‒, al tratarse de un acto de autoridad era
+       procedente el juicio de amparo.
+
+93.    4.2. Inexistencia de un agravio personal y directo. En el segundo
+       agravio, el recurrente señala que el juez inobservó el principio de agravio
+       personal y directo puesto que el acto reclamado, el bloqueo en Twitter, no
+       causa una violación personal y directa al quejoso. Aduce que la información
+       no siempre es relativa a temas de seguridad, derechos humanos,
+       desapariciones o fosas clandestinas, que son los temas que el quejoso
+       identifica centrales para sus investigaciones periodísticas. También indica
+       que, en su mayoría, la información compartida en la cuenta no se origina
+
+
+
+  16
+                                                                               AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+       ahí, por lo que no existe certeza de que el quejoso no pueda encontrar en
+       otro lado la información que dice se le niega conocer.
+
+94.    El agravio antes sintetizado es infundado.
+
+95.    Aunque la cuenta @AbogadoWinckler no contenga información relativa a
+       los temas que el quejoso adujo o la información pueda encontrarse en otro
+       lado, se confirma que en dicha cuenta difunde contenidos sobre las
+       actividades que realiza como fiscal general y esa información debe ser
+       accesible para la comunidad, dado que es de interés para la población.
+
+96.    En efecto, toda persona tiene derecho al libre acceso a la información plural
+       y oportuna, así como a buscar, recibir y difundir información e ideas de toda
+       índole por cualquier medio de expresión.18
+
+97.    Sobre los requisitos para difundir información pública, la Segunda Sala
+       resolvió la tesis 2a. XXXIV/2018 (10a.) de rubro INFORMACIÓN PÚBLICA
+                                                              19
+       EMITIDA POR EL ESTADO. REQUISITOS PARA SU DIFUSIÓN. En ella se indica que
+       la información del Estado, de sus instituciones y funcionarios se podrá
+       difundir, entre otros, cuando sea de interés público, de relevancia pública o
+       de interés general, lo que se cumple si se vincula a temas de trascendencia
+       social o versa sobre personas de impacto público o social (es decir, sobre
+       aquellas personas que ejerzan o pretendan ejercer un cargo público,
+       desarrollen alguna actividad política por su profesión, por alguna relación
+       con la sociedad o para el desarrollo de la democracia).
+
+98.    En el caso particular, se comprueba que la cuenta @AbogadoWinckler es
+       usada por el fiscal general para comunicar tanto información personal,
+       como información sobre sus actividades como servidor público.20
+       Al compartir este último tipo de información por este medio, el ciudadano
+       Jorge Winckler Ortiz decidió de manera tácita utilizar su cuenta personal en
+       Twitter para informar cotidianamente a la sociedad sobre sus actividades
+       como fiscal general. En vista de que esta información es de relevancia, el
+       medio de difusión debe ser accesible para todos los gobernados, incluido
+       el quejoso.
+
+99.    Así, cuando el usuario @AbogadoWinckler bloqueó el acceso a la cuenta
+       del periodista quejoso, impidió que conociera datos de relevancia social.
+       Por lo tanto, violentó de forma personal y directa su derecho de acceso a la
+
+
+  18
+     Artículo 6, Constitución Política de los Estados Unidos Mexicanos.
+  19
+     Tesis 2a. XXXIV/2018 (10a.), INFORMACIÓN PÚBLICA EMITIDA POR EL ESTADO. REQUISITOS PARA SU DIFUSIÓN, Segunda
+     Sala, Gaceta del Semanario Judicial de la Federación, Décima Época, tomo II, mayo de 2018, p. 1695.
+  20
+     Juicio de amparo **********, inspección judicial y sentencia recurrida (párrafos 37-40 y 85-89 de este documento).
+
+
+
+
+                                                                                                                    17
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        información, pues se le está restringiendo su derecho a buscar información
+        sobre las labores de un servidor público.
+
+                                                   5. MARCO JURÍDICO
+
+100.    A efecto de dar respuesta a los agravios tercero y cuarto, esta Segunda
+        Sala desarrollará los siguientes puntos: i) derecho de acceso a la
+        información; ii) derecho a la privacidad, en específico de los servidores
+        públicos y iii) la interrelación de estos derechos cuando están en conflicto.
+
+101.    5.1. Derecho de acceso a la información
+
+102.    De conformidad con el parámetro de regularidad constitucional en relación
+        con el derecho a la libertad de expresión y de acceso a la información,21 esta
+        Corte ha establecido que el derecho a la información está inmerso en el
+        derecho a la libertad de pensamiento y de expresión, en tanto que
+        comprende la libertad de buscar, recibir y difundir informaciones e ideas de
+        toda índole, sin consideración de fronteras, ya sea oralmente, por escrito o
+        en forma impresa o artística, o por cualquier otro procedimiento de su
+        elección.
+
+103.    Concretamente, el artículo 6 constitucional prevé que toda la información
+        en posesión de cualquier autoridad, entidad, órgano y organismo federal,
+        estatal y municipal es pública y sólo podrá ser reservada temporalmente
+        por razones de interés público en los términos que fijen las leyes.
+
+104.    Asimismo, ese precepto establece que toda persona, sin acreditar interés
+        alguno o justificar su utilización, tendrá acceso gratuito a la información
+        pública, a sus datos personales o a la rectificación de éstos.
+
+105.    Para la efectiva tutela de este derecho, el artículo precisa que se
+        establecerán mecanismos de acceso a la información y procedimientos de
+        revisión expeditos, los cuales se sustanciarán ante órganos u organismos
+
+
+   21
+     Contenido, entre otros, en: i) los artículos 6 y 7 de la Constitución Política de los Estados Unidos Mexicanos, artículo
+   19 de la Convención Americana sobre Derechos Humanos y artículo 19 del Pacto Internacional de Derechos Civiles y
+   Políticos. ii) La acción de inconstitucionalidad 11/2013, resuelta por el Pleno de la Suprema Corte en sesión del 7 de julio
+   de 2014, bajo la ponencia del ministro Arturo Zaldívar Lelo de Larrea. iii) La jurisprudencia de la Corte Interamericana de
+   Derechos Humanos (Corte IDH) en temas de libertad de expresión y acceso a la información, donde destacan las
+   siguientes sentencias: Caso Gomes Lund y otros ["Guerrilha do Araguaia"] vs. Brasil, sentencia del 24 de noviembre de
+   2010; caso “La Última Tentación de Cristo” [Olmedo Bustos y otros] vs. Chile, sentencia del 5 de febrero de 2001; caso
+   Claude Reyes y otros vs. Chile, sentencia del 19 de septiembre de 2006; caso Palamara Iribarne vs. Chile, sentencia de
+   22 de noviembre de 2005; caso Ricardo Canese vs. Paraguay, sentencia del 31 de agosto de 2004; caso Herrera Ulloa
+   vs. Costa Rica, sentencia del 2 de julio de 2004; caso Ivcher Bronstein vs. Perú, sentencia del 6 de febrero de 2001; caso
+   Kimel vs. Argentina, sentencia del 2 de mayo de 2008; Caso Fontevecchia y D’Amico vs. Argentina, sentencia del 29 de
+   noviembre de 2011; Colegiación obligatoria de Periodistas (artículos 13 y 29 de la Convención Americana sobre Derechos
+   Humanos); Opinión Consultiva OC-5/85 de 13 de noviembre de 1985.
+
+
+
+
+   18
+                                                                                AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+          especializados e imparciales y con autonomía operativa, de gestión y de
+          decisión.
+
+106.      Adicionalmente, el derecho de acceso a la información constituye un
+          derecho fundamental por ser una prerrogativa básica e indispensable de
+          todo ser humano, circunstancia que fue corroborada por la Declaración
+          Universal de los Derechos Humanos y por el Pacto Internacional de
+          Derechos Civiles y Políticos, al plasmar lo siguiente:
+                    a) Declaración Universal de los Derechos Humanos
+                    Artículo 19. Todo individuo tiene derecho a la libertad de opinión y de
+                    expresión; este derecho incluye el no ser molestado a causa de sus
+                    opiniones, el de investigar y recibir informaciones y opiniones, y el de
+                    difundirlas, sin limitación de fronteras, por cualquier medio de
+                    expresión.
+                    b) Pacto Internacional de Derechos Civiles y Políticos [énfasis
+                    añadido]
+                    Artículo 19.2. Toda persona tiene derecho a la libertad de expresión;
+                    este derecho comprende la libertad de buscar, recibir y difundir
+                    informaciones e ideas de toda índole, sin consideración de
+                    fronteras, ya sea oralmente, por escrito o en forma impresa o
+                    artística, o por cualquier otro procedimiento de su elección.
+
+107.      En el ámbito de la Corte Interamericana de Derechos Humanos (en
+          adelante, la Corte IDH), sobre el derecho de acceso a la información al
+          resolver el caso Gomes Lund y otros [“Guerrilha do Araguaia”] vs. Brasil se
+          estableció:22
+                    [E]l artículo 13 de la Convención, al estipular expresamente los
+                    derechos a buscar y a recibir informaciones, protege el derecho que
+                    tiene toda persona a solicitar el acceso a la información bajo el control
+                    del Estado, con las salvedades permitidas bajo el régimen de
+                    restricciones de la Convención. Consecuentemente, dicho artículo
+                    ampara el derecho de las personas a recibir dicha información y la
+                    obligación positiva del Estado de suministrarla, de forma tal que la
+                    persona pueda tener acceso y conocer esa información o reciba una
+                    respuesta fundamentada cuando, por algún motivo permitido por la
+                    Convención, el Estado pueda limitar el acceso a la misma para el caso
+                    concreto. Dicha información debe ser entregada sin necesidad de
+                    acreditar un interés directo para su obtención o una afectación
+                    personal, salvo en los casos en que se aplique una legítima
+                    restricción. Su entrega a una persona puede permitir a su vez que la
+                    información circule en la sociedad de manera que pueda conocerla,
+
+   22
+        Corte IDH, caso Gomes Lund y otros ["Guerrilha do Araguaia"] vs. Brasil, sentencia del 24 de noviembre de 2010,
+        párrafo 197. Este criterio también es retomado en el caso Claude Reyes y otros vs. Chile.
+
+
+
+
+                                                                                                                    19
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+                    acceder a ella y valorarla […] De esta forma, el derecho a la libertad
+                    de pensamiento y de expresión contempla la protección del derecho
+                    de acceso a la información bajo el control del Estado, el cual también
+                    contiene de manera clara las dos dimensiones, individual y social, del
+                    derecho a la libertad de pensamiento y de expresión, las cuales deben
+                    ser garantizadas por el Estado de forma simultánea […]
+
+108.      Conviene resaltar que, al resolver el caso Fontevecchia y D’Amico vs.
+          Argentina, la Corte IDH reiteró que la jurisprudencia sustentada por dicho
+          órgano ha sido constante en señalar que quienes están bajo la protección
+          de la Convención Americana tienen el derecho de buscar, recibir y difundir
+          ideas e informaciones de toda índole, así como también de recibir y conocer
+          las informaciones e ideas difundidas por los demás.23
+
+109.      Sobre el derecho a la libre expresión, en el mismo caso citado en el párrafo
+          anterior, la Corte IDH concluyó que la profesión de periodista implica el
+          buscar, recibir y difundir información.
+
+110.      De las consideraciones sobre el derecho de acceso a la información que
+          realiza la Corte IDH se advierten las siguientes características:
+
+111.      a) Este derecho implica que la persona pueda buscar y recibir información.
+
+112.      b) Asimismo, este derecho incluye la posibilidad que tiene toda persona de
+          solicitar el acceso a la información que esté bajo control del Estado, con las
+          salvedades permitidas bajo el régimen de restricciones de la Convención.
+
+113.      c) Por tanto, este derecho conlleva dos obligaciones positivas para el
+          Estado: por un lado, suministrar la información a quien la solicite o, por el
+          otro, recibir respuesta fundamentada a la solicitud presentada, en caso de
+          que proceda la negativa de entrega por operar alguna excepción.
+
+114.      d) Esta información debe ser entregada sin necesidad de acreditar un
+          interés directo para su obtención o una afectación personal, salvo en los
+          casos en que se aplique una legítima restricción.
+
+115.      e) La actuación del Estado debe regirse por el principio de máxima
+          divulgación, el cual establece que toda información es accesible, sujeta a
+          un sistema restringido de excepciones.
+
+
+
+
+   23
+        Corte IDH, caso Fontevecchia y D’Amico vs. Argentina, sentencia del 29 de noviembre de 2011, párrafos 42 y 46.
+
+
+
+
+   20
+                                                                               AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+116.    Ahora bien, en el ámbito nacional, la Segunda Sala de la Suprema Corte de
+        Justicia de la Nación, al resolver el amparo directo en revisión 2931/2015,24
+        concluyó que este derecho posee dos dimensiones que implican una doble
+        función: una individual y otra social.
+
+117.    Por lo que hace a la dimensión individual, determinó el derecho que protege
+        y garantiza que las personas recolecten, difundan y publiquen información
+        con plena libertad, formando parte indisoluble de la autodeterminación de
+        los individuos, al ser una condición indispensable para la comprensión de
+        su existencia y de su entorno, fomentando la conformación de la
+        personalidad y del libre albedrío para el ejercicio de una voluntad razonada
+        en cualquier tipo de decisiones con trascendencia interna, o bien, externa.
+
+118.    En cuanto a la dimensión social, concluyó que el derecho a la información
+        constituye el pilar esencial sobre el cual se erige todo Estado democrático,
+        así como la condición fundamental para el progreso social e individual.
+        En ese sentido, el derecho no sólo permite y garantiza la difusión de
+        información e ideas que son recibidas favorablemente o consideradas
+        inofensivas e indiferentes, sino también aquéllas que pueden llegar a criticar
+        o perturbar al Estado o a ciertos individuos, fomentando el ejercicio de la
+        tolerancia y permitiendo la creación de un verdadero pluralismo social, en
+        tanto que privilegia la transparencia, la buena gestión pública y el ejercicio
+        de los derechos constitucionales en un sistema participativo, sin las cuales
+        no podrían existir las sociedades modernas y democráticas.
+
+119.    El criterio anterior dio origen a la tesis aislada 2a. LXXXIV/2016 (10a.) que
+        a la letra dice:25
+                 DERECHO A LA INFORMACIÓN. DIMENSIÓN INDIVIDUAL Y DIMENSIÓN
+                 COLECTIVA. El derecho a la información tiene una doble dimensión. Por
+                 un lado, tiene una dimensión individual, la cual protege y garantiza
+                 que las personas recolecten, difundan y publiquen información con
+                 plena libertad; formando parte indisoluble de la autodeterminación de
+                 los individuos, al ser una condición indispensable para la comprensión
+                 de su existencia y de su entorno; fomentando la conformación de la
+                 personalidad y del libre albedrío para el ejercicio de una voluntad
+                 razonada en cualquier tipo de decisiones con trascendencia interna,
+                 o bien, externa. Por otro lado, la dimensión colectiva del derecho a la
+                 información constituye el pilar esencial sobre el cual se erige todo
+
+
+   24
+      Resuelto en sesión del 13 de abril de 2016 por unanimidad de cuatro votos de los señores ministros Eduardo Medina
+   Mora I. (ponente), Javier Laynez Potisek, José Fernando Franco González Salas y Margarita Beatriz Luna Ramos. Los
+   ministros Margarita Beatriz Luna Ramos y José Fernando Franco González Salas se apartaron de consideraciones.
+   Ausente el ministro Alberto Pérez Dayán.
+   25
+      Tesis 2a. LXXXIV/2016 (10a.), DERECHO A LA INFORMACIÓN. DIMENSIÓN INDIVIDUAL Y DIMENSIÓN COLECTIVA, Segunda
+   Sala, Gaceta del Semanario Judicial de la Federación, Décima Época, tomo I, septiembre de 2016, p. 838.
+
+
+
+
+                                                                                                                    21
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+                 Estado democrático, así como la condición fundamental para el
+                 progreso social e individual.
+
+120.    Por su parte, las diversas resoluciones de la Asamblea General de la
+        Organización de los Estados Americanos26 han servido a la Corte IDH para
+        determinar que “el acceso a la información pública es un requisito
+        indispensable para el funcionamiento mismo de la democracia, una mayor
+        transparencia y una buena gestión pública, y que en un sistema
+        democrático representativo y participativo, la ciudadanía ejerce sus
+        derechos constitucionales a través de una amplia libertad de expresión y de
+        un libre acceso a la información”.27
+
+121.    Dentro del mismo análisis, al resolver el amparo directo en revisión
+        2931/2015, la Segunda Sala resolvió que, de acuerdo con el artículo 6
+        constitucional, el derecho a la información comprende distintos ámbitos:
+
+122.    i) DIFUNDIR. El derecho de informar consiste en la posibilidad de que
+        cualquier persona pueda exteriorizar o difundir, a través de cualquier medio,
+        la información, datos, registros o documentos que posea. Esto significa que,
+        por un lado, exige que el Estado no restrinja ni limite directa o
+        indirectamente el flujo de la información (obligaciones negativas) y que, por
+        el otro, requiere que el Estado fomente y propicie un discurso democrático
+        (obligaciones positivas).
+
+123.    ii) BUSCAR. El derecho de acceso a la información garantiza que todas
+        las personas puedan solicitar información al Estado respecto de los
+        archivos, registros, datos y documentos públicos, siempre que sea
+        solicitada por escrito, de manera pacífica y respetuosa. De manera similar,
+        por un lado exige que el Estado no obstaculice ni impida su búsqueda
+        (obligaciones negativas) y, por otro lado, requiere que establezca los
+        medios e instrumentos idóneos a través de los cuales las personas puedan
+        solicitar dicha información (obligaciones positivas).
+
+124.    iii) RECIBIR. El derecho a ser informado garantiza que todos los
+        miembros de la sociedad reciban libremente información plural y oportuna
+        que les permita ejercer plenamente sus derechos. Por una parte, obliga al
+        Estado a no restringir o limitar la recepción de cualquier información
+        (obligaciones negativas). Por otra parte, exige que el Estado informe a las
+
+   26
+      Resoluciones de la Asamblea General de la OEA (AG/RES) sobre “Acceso a la Información Pública: Fortalecimiento
+   de la Democracia”: AG/RES. 1932 (XXXIII-O/03) de 10 de junio de 2003; AG/RES. 2057 (XXXIV-O/04) de 8 de junio de
+   2004; AG/RES. 2121 (XXXV-O/05) de 7 de junio de 2005; AG/RES. 2252 (XXXVI-O/06) de 6 de junio de 2006, AG/RES.
+   2288 (XXXVII-O/07) de 5 de junio de 2007; AG/RES. 2418 (XXXVIII-O/08) de 3 de junio de 2008 y AG/RES. 2514 (XXXIX-
+   O/09) de 4 de junio de 2009.
+   27
+      Corte IDH, caso Gomes Lund y otros ["Guerrilha do Araguaia"] vs. Brasil, sentencia del 24 de noviembre de 2010,
+   párrafo 198.
+
+
+
+
+   22
+                                                                                  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        personas sobre aquellas cuestiones que puedan incidir en su vida o en el
+        ejercicio de sus derechos, sin que sea necesaria alguna solicitud o
+        requerimiento por parte de los particulares (obligaciones positivas).
+
+125.    En este sentido, el Estado debe garantizar el derecho de las personas a
+        acceder a la información pública, buscar, obtener y difundir libremente la
+        información en cualquiera de sus manifestaciones, ya sea en forma oral,
+        escrita o a través de medios electrónicos.
+
+126.    Esto es así pues el acceso a la información constituye una herramienta
+        esencial para concretar el principio de rendición de cuentas, así como la
+        transparencia en la gestión pública y mejorar la calidad de la democracia.28
+
+127.    En efecto, “si hay un principio elemental en el funcionamiento de la
+        administración pública contemporánea, es el de la publicidad y
+        transparencia, resultado de la relación entre el derecho ciudadano a tener
+        acceso a la información administrativa y la consiguiente obligación de los
+        órganos de la administración pública de informar y, en algunos casos, de
+        publicar informaciones de interés general”.29
+
+128.    La consolidación del Estado democrático de derecho exige que los
+        gobernantes desarrollen su gestión pública con total transparencia para que
+        los ciudadanos estén en condición de controlar el ejercicio del poder.
+
+129.    Como lo expresó el juez Louis Brandeis de la Corte Suprema de los Estados
+        Unidos: “la luz del sol es el mejor desinfectante”. Es decir, la publicidad
+        respecto de las actividades gubernamentales otorga a los ciudadanos la
+        posibilidad de controlar la eficiencia y la eficacia en la administración
+        pública. Para lo cual, la Constitución Política establece el derecho de
+        acceso a la información como derecho de los ciudadanos para ejercer dicho
+        control.
+
+130.    De ahí se comprende la relación entre transparencia gubernamental, el
+        acceso a la información y el acceso a la justicia, siendo los últimos dos
+        elementos la condición esencial para lograr el control del primero, es decir,
+        de la transparencia.30
+
+131.    Por otra parte, conviene precisar que la Suprema Corte, en el amparo
+        directo 2931/2015, concluyó que el derecho a ser informado no es absoluto,
+   28
+      Relatoría especial para la libertad de expresión. 2007. Estudio especial sobre el derecho de acceso a la información.
+   Organización de los Estados Americanos, Comisión IDH, Washington, p. 6.
+   29
+      Brewer-Carías, Allan R. 2017. “El principio de la transparencia en la actuación de la administración pública y su
+   distorsión en un régimen autoritario”. En Revista de derecho público, núm. 151-152, diciembre 2017, p. 117.
+   30
+      Brewer-Carías, Allan R. 2017. “El principio de la transparencia en la actuación de la administración pública y su
+   distorsión en un régimen autoritario”. En Revista de derecho público, núm. 151-152, diciembre 2017, p. 118.
+
+
+
+
+                                                                                                                        23
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+          pues a pesar de que el Estado tiene la obligación de informar a la población
+          sobre temas de interés y relevancia pública, también debe proteger y
+          garantizar el derecho al honor o el derecho a la privacidad de las personas.
+          No obstante, debe considerarse prevalente la posición del derecho a ser
+          informado, por resultar esencial para la formación de una opinión pública
+          libre, indispensable para el fomento y desarrollo de una verdadera
+          democracia.
+
+132.      Por tanto, aquellos casos en que el derecho a ser informado pueda entrar
+          en conflicto con el derecho al honor o el derecho a la privacidad, la decisión
+          de la autoridad sobre la difusión de cierta información debe basarse en el
+          cumplimiento de los siguientes requisitos:31
+                i) La información debe ser de relevancia pública o de interés general.
+                Cumple dicho requisito si contiene temas de trascendencia social, o bien, si
+                versa sobre personas con un impacto público o social.
+
+                ii) La información debe ser veraz. Este requisito no exige la demostración
+                de una verdad contundente, sino una certera aproximación a la realidad en el
+                momento en que se difunde. Es decir, la información que emita el Estado, sus
+                instituciones o funcionarios debe reflejar una diligente difusión de la verdad,
+                ya sea porque la autoridad emisora de la información utilice investigaciones,
+                datos, informes o estadísticas oficiales que sean propios de la autoridad que
+                difunde la información, o bien, de otras autoridades, así como por aquellos
+                hechos notorios para la sociedad.
+
+                iii) La información debe ser objetiva e imparcial. En ese sentido, se
+                requiere que la información difundida carezca de toda intervención de juicios
+                o valoraciones subjetivas que puedan considerarse propias de la libertad de
+                expresión y que, por tanto, no tengan por fin informar a la sociedad, sino
+                establecer una postura, opinión o crítica respecto a una persona, grupo o
+                situación determinada.
+
+133.      Al respecto, al resolver el Caso Ricardo Canese vs. Paraguay, la Corte IDH
+          determinó que el derecho a la libertad de expresión e información no es un
+          derecho absoluto, sino que puede ser objeto de restricciones a través de la
+          aplicación de responsabilidades ulteriores por el ejercicio abusivo de este
+          derecho, las cuales no deben de modo alguno limitar, más allá de lo
+          estrictamente necesario, el alcance pleno de la libertad de expresión y
+          convertirse en un mecanismo directo o indirecto de censura previa.32
+
+134.      Asimismo, en el caso Claude Reyes y otros vs. Chile, la Corte IDH estimó
+          que los requisitos que debe cumplir una restricción en esta materia son dos:
+
+   31
+        Amparo directo en revisión 2931/2015, pp. 49-51.
+   32
+        Corte IDH, caso Ricardo Canese vs. Paraguay, sentencia del 31 de agosto de 2004, párrafo 95.
+
+
+
+
+   24
+                                                                             AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+             i) La restricción debe estar previamente fijada por ley como medio para
+             asegurar que no queden al arbitrio del poder público y dichas leyes deben
+             dictarse por razones de interés general y con el propósito para el cual han
+             sido establecidas.
+             ii) La restricción establecida por ley debe responder a un objetivo permitido
+             por la Convención Americana. Al respecto, el artículo 13.2 de la Convención
+             permite que se realicen restricciones necesarias para asegurar “el respeto a
+             los derechos o a la reputación de los demás” o “la protección de la seguridad
+             nacional, el orden público o la salud o la moral públicas”.33
+
+135.    Por tanto, las restricciones que se impongan deben ser necesarias en una
+        sociedad democrática, lo que depende de que estén orientadas a satisfacer
+        un interés público imperativo.
+
+136.    Asimismo, la Corte IDH señala que entre las varias opciones que
+        potencialmente existan para alcanzar ese objetivo, debe escogerse aquélla
+        que restrinja en menor escala el derecho protegido. Es decir, la restricción
+        debe ser proporcional al interés que la justifica y debe ser conducente para
+        alcanzar el logro de ese legítimo objetivo, interfiriendo en la menor medida
+        posible en el efectivo ejercicio del derecho.
+
+137.    La Corte IDH observa que en una sociedad democrática es indispensable
+        que las autoridades estatales se rijan por el principio de máxima
+        divulgación, el cual establece la presunción de que toda información es
+        accesible y está sujeta a un sistema restringido de excepciones.
+
+138.    En consecuencia, corresponderá a cada Estado demostrar que al
+        establecer restricciones al acceso a la información bajo su control ha
+        cumplido con los anteriores requisitos.
+
+139.    5.2. Derecho a la privacidad (a la intimidad o a la vida privada)
+140.    5.2.1. Concepto del derecho a la privacidad
+141.    El derecho a la privacidad se define como aquél que todo individuo tiene de
+        separar aspectos de su vida privada del escrutinio público. Esto es,
+        corresponde al ámbito reservado frente a la acción y el conocimiento de los
+        demás, es el derecho que las personas tienen a no ser objeto de injerencias
+        en su vida privada, su familia, domicilio o su correspondencia.34
+
+
+
+   33
+     Corte IDH, caso Claude Reyes vs. Chile, sentencia del 19 de septiembre de 2016, párrafos 89 y 90.
+   34
+      García Ricci, Diego. 2013. “Artículo 16 Constitucional, derecho a la privacidad”. En Derechos humanos en la
+   Constitución. Comentarios de jurisprudencia constitucional e interamericana. México: Instituto de Investigaciones
+   Jurídicas, Suprema Corte de Justicia de la Nación y Fundación Konrad Adenauer. p. 1045.
+
+
+
+
+                                                                                                                 25
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+142.    De forma análoga, la Asamblea General de las Naciones Unidas lo define
+        como el derecho según el cual nadie debe ser objeto de injerencias
+        arbitrarias o ilícitas en su vida privada, su familia, su domicilio o su
+        correspondencia y el derecho a la protección contra tales injerencias.35
+
+143.    En relación con este derecho, la Suprema Corte de Justicia de la Nación ha
+        definido lo privado como aquello que no constituye vida pública. Es el
+        ámbito reservado frente a la acción y el conocimiento de los demás. Lo que
+        se desea compartir sólo con quienes uno elige. Las actividades de las
+        personas en la esfera particular, relacionadas con el hogar y la familia.
+
+144.    De lo anterior, se desprende que la privacidad es un elemento esencial de
+        la dignidad humana, razón por la cual, debe ser reconocida y protegida
+        tanto por los ordenamientos jurídicos internos como a nivel internacional.
+
+145.    En nuestro país, este derecho se encuentra regulado por la Constitución en
+        los artículos 6 párrafo primero, 7 y 16 párrafo primero.36 En el ámbito
+        internacional, lo protegen la Declaración Universal de los Derechos
+        Humanos (artículo 12), el Pacto Internacional de Derechos Civiles y
+        Políticos (artículo 17) y la Convención Americana sobre Derechos Humanos
+        (artículo 11).37
+
+   35
+      Asamblea General de las Naciones Unidas, resolución 69/166, El derecho a la privacidad en la era digital, 18 de
+   diciembre de 2014, p. 10.
+   36
+      Constitución Política de los Estados Unidos Mexicanos:
+   Artículo 6. La manifestación de las ideas no será objeto de ninguna inquisición judicial o administrativa, sino en el caso
+   de que ataque a la moral, la vida privada o los derechos de terceros, provoque algún delito, o perturbe el orden público;
+   el derecho de réplica será ejercido en los términos dispuestos por la ley. El derecho a la información será garantizado
+   por el Estado.
+   Artículo 7. Es inviolable la libertad de difundir opiniones, información e ideas, a través de cualquier medio. No se puede
+   restringir este derecho por vías o medios indirectos, tales como el abuso de controles oficiales o particulares, de papel
+   para periódicos, de frecuencias radioeléctricas o de enseres y aparatos usados en la difusión de información o por
+   cualesquiera otros medios y tecnologías de la información y comunicación encaminados a impedir la transmisión y
+   circulación de ideas y opiniones.
+   Ninguna ley ni autoridad puede establecer la previa censura, ni coartar la libertad de difusión, que no tiene más límites
+   que los previstos en el primer párrafo del artículo 6o. de esta Constitución. En ningún caso podrán secuestrarse los
+   bienes utilizados para la difusión de información, opiniones e ideas, como instrumento del delito.
+   Artículo 16. Nadie puede ser molestado en su persona, familia, domicilio, papeles o posesiones, sino en virtud de
+   mandamiento escrito de la autoridad competente, que funde y motive la causa legal del procedimiento. En los juicios y
+   procedimientos seguidos en forma de juicio en los que se establezca como regla la oralidad, bastará con que quede
+   constancia de ellos en cualquier medio que dé certeza de su contenido y del cumplimiento de lo previsto en este párrafo.
+   37
+      Declaración Universal de los Derechos Humanos:
+   Artículo 12. Nadie será objeto de injerencias arbitrarias en su vida privada, su familia, su domicilio o su correspondencia,
+   ni de ataques a su honra o a su reputación. Toda persona tiene derecho a la protección de la ley contra tales injerencias
+   o ataques.
+   Pacto Internacional de Derechos Civiles y Políticos:
+   Artículo 17. 1. Nadie será objeto de injerencias arbitrarias o ilegales en su vida privada, su familia, su domicilio o su
+   correspondencia, ni de ataques ilegales a su honra y reputación. 2. Toda persona tiene derecho a la protección de la ley
+   contra esas injerencias o esos ataques.
+   Convención Americana sobre Derechos Humanos:
+   Artículo 11. Protección de la Honra y de la Dignidad: 1. Toda persona tiene derecho al respeto de su honra y al
+   reconocimiento de su dignidad. 2. Nadie puede ser objeto de injerencias arbitrarias o abusivas en su vida privada, en la
+   de su familia, en su domicilio o en su correspondencia, ni de ataques ilegales a su honra o reputación. 3. Toda persona
+   tiene derecho a la protección de la ley contra esas injerencias o esos ataques.
+
+
+
+
+   26
+                                                                                 AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+146.    En este sentido, la noción de privacidad se relaciona con la esfera de la vida
+        de las personas en donde pueden expresar libremente su identidad, ya sea
+        en sus relaciones con los demás o en lo individual. La privacidad tiene una
+        vinculación con otros derechos. Entre otros, se relaciona con la
+        inviolabilidad de la correspondencia y de las comunicaciones en general, la
+        inviolabilidad del domicilio, las garantías respecto de los registros
+        personales y corporales, las relacionadas con la recopilación y registro de
+        información personal en bancos de datos y otros dispositivos.
+
+147.    Es decir, las personas tienen derecho a gozar de un ámbito de proyección
+        de su existencia que quede reservado de la invasión y de la mirada de los
+        demás. Este ámbito les concierne sólo a ellos y les provee de condiciones
+        adecuadas para el despliegue de su individualidad, para el desarrollo de su
+        autonomía y de su libertad. Las personas tienen derecho a mantener fuera
+        del conocimiento de los demás (o sólo dentro del círculo de sus personas
+        más próximas) ciertas manifestaciones o dimensiones de su existencia
+        (conducta, datos, información, objetos) y al correspondiente derecho a que
+        los demás no las invadan sin su consentimiento.
+
+148.    Sobre este derecho, en la tesis 2a. LXIII/2008, la Segunda Sala de la
+        Suprema Corte de Justicia de la Nación definió que el derecho a la
+        privacidad está protegido por la Constitución mexicana en el artículo 16,
+        primer párrafo, al señalar que se debe garantizar que los justiciables no
+        sean molestados en su persona, familia, papeles o posesiones, sino cuando
+        medie mandato de autoridad competente debidamente fundado y motivado,
+        lo que implica que se respete su ámbito de vida privada personal y familiar.38
+
+149.    En el ámbito internacional, relativo al concepto de derecho a la privacidad,
+        la Corte Constitucional de Colombia concluyó en la sentencia T-696/96:39
+               La intimidad, el espacio exclusivo de cada uno, es aquella órbita
+               reservada para cada persona y de que toda persona debe gozar, que
+               busca el aislamiento o inmunidad del individuo frente a la necesaria
+               injerencia de los demás, dada la sociabilidad natural del ser humano. Es
+               el área restringida inherente a toda persona o familia, que solamente
+               puede ser penetrada por extraños con el consentimiento de su titular o
+               mediando orden dictada por autoridad competente, en ejercicio de sus
+               funciones y de conformidad con la Constitución y la ley.
+
+
+   38
+     Tesis 2a. LXIII/2008, DERECHO A LA PRIVACIDAD O INTIMIDAD. ESTÁ PROTEGIDO POR EL ARTÍCULO 16, PRIMER PÁRRAFO, DE
+   LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS), Segunda Sala, Semanario Judicial de la Federación y su
+   Gaceta, Novena Época, tomo XXVII, mayo de 2008. p. 229.
+   39
+      Corte Constitucional de Colombia, sentencia del 5 de diciembre de 1996, p. 1.
+
+
+
+
+                                                                                                                  27
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+150.    En otra instancia internacional, al resolver el caso Fontevecchia y D’Amico
+        vs. Argentina, la Corte IDH determinó que el artículo 11.2 de la Convención
+        Americana protege al individuo frente a la posible interferencia arbitraria o
+        abusiva del Estado. Sin embargo, esto no significa que el Estado cumpla
+        sus obligaciones convencionales con el solo hecho de abstenerse de
+        realizar tales interferencias, sino que tiene el deber de brindar la protección
+        de la ley contra esas injerencias.40
+
+151.    En consecuencia, la Corte Interamericana concluyó que el Estado está
+        obligado a garantizar el derecho a la vida privada mediante acciones
+        positivas. Éstas pueden implicar que, en ciertos casos, se adopten medidas
+        para resguardar y proteger dicho derecho de interferencias de las
+        autoridades públicas o de las personas e instituciones privadas, incluyendo
+        los medios de comunicación.
+
+152.    En este sentido, la protección constitucional del derecho a la privacidad,
+        como lo ha sostenido esta Suprema Corte, implica poder conducir parte de
+        la vida de uno protegido de la mirada y las injerencias de los demás.41 Para
+        ello, guarda conexiones de variado tipo con pretensiones más concretas,
+        que los textos constitucionales actuales reconocen a veces como derechos
+        conexos, tales como: el derecho de poder tomar libremente ciertas
+        decisiones atinentes al propio plan de vida, el derecho a ver protegidas
+        ciertas manifestaciones de integridad física y moral, el derecho al honor o
+        reputación, el derecho a no ser presentado bajo una falsa apariencia, el
+        derecho a impedir la divulgación de ciertos hechos o la publicación no
+        autorizada de cierto tipo de fotografías, la protección contra el espionaje, la
+        protección contra el uso abusivo de las comunicaciones privadas o la
+        protección contra la divulgación de informaciones comunicadas o recibidas
+        de manera confidencial por un particular.
+
+153.    5.2.2. Elementos del derecho a la privacidad
+
+154.    En el caso Tristán Donoso vs. Panamá, la Corte IDH determinó que el
+        artículo 11.2 de la Convención Americana sobre Derechos Humanos
+        protege la vida privada y el domicilio de injerencias arbitrarias o abusivas.
+        Asimismo, el artículo reconoce que existe un ámbito personal que debe
+        estar a salvo de intromisiones por parte de extraños y que el honor personal
+        y familiar, así como el domicilio deben estar protegidos ante tales
+        injerencias. En dicha sentencia, la Corte IDH sostuvo que el ámbito de la
+        privacidad se caracteriza por quedar exento e inmune a las invasiones o
+   40
+     Corte IDH, caso Fontevecchia y D’Amico vs. Argentina, sentencia del 29 de noviembre de 2011, párrafos 48 y 49.
+   41
+      Tesis aislada 1a. CCXIV/2009 DERECHO A LA VIDA PRIVADA. SU CONTENIDO GENERAL Y LA IMPORTANCIA DE NO
+   DESCONTEXTUALIZAR LAS REFERENCIAS DE LA MISMA. Primera Sala, Semanario Judicial de la Federación y su Gaceta,
+   Novena Época, tomo XXX, diciembre de 2009, p. 277.
+
+
+
+
+   28
+                                                                                  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+          agresiones abusivas o arbitrarias por parte de terceros o de la autoridad
+          pública.42
+
+155.      Posteriormente, en el caso Fontevecchia y D’Amico vs. Argentina, la Corte
+          IDH reiteró su conclusión sobre el artículo 11 arriba mencionado:43
+
+                    [E]l artículo 11 de la Convención Americana reconoce que toda
+                    persona tiene, entre otros, derecho a la vida privada y prohíbe toda
+                    injerencia arbitraria o abusiva en ella, enunciando diversos ámbitos de
+                    la misma como la vida privada de sus familias, sus domicilios o sus
+                    correspondencias. El ámbito de la privacidad se caracteriza por
+                    quedar exento e inmune a las invasiones o agresiones abusivas o
+                    arbitrarias por parte de terceros o de la autoridad pública y
+                    comprende, entre otras dimensiones, tomar decisiones relacionadas
+                    con diversas áreas de la propia vida libremente, tener un espacio de
+                    tranquilidad personal, mantener reservados ciertos aspectos de la
+                    vida privada y controlar la difusión de información personal hacia el
+                    público.
+
+                    El artículo 11.2 de la Convención Americana protege al individuo
+                    frente a la posible interferencia arbitraria o abusiva del Estado. Sin
+                    embargo, eso no significa que el Estado cumpla sus obligaciones
+                    convencionales con el solo hecho de abstenerse de realizar tales
+                    interferencias. Además, el artículo 11.3 de la Convención impone a
+                    los Estados el deber de brindar la protección de la ley contra aquellas
+                    injerencias. En consecuencia, el Estado tiene la obligación de
+                    garantizar el derecho a la vida privada mediante acciones positivas, lo
+                    cual puede implicar, en ciertos casos, la adopción de medidas
+                    dirigidas a asegurar dicho derecho protegiéndolo de las interferencias
+                    de las autoridades públicas así como también de las personas o
+                    instituciones privadas, incluyendo los medios de comunicación.
+
+156.      De las conclusiones de la Corte IDH sostenidas en los casos anteriores se
+          puede desprender que el derecho a la privacidad tiene dos elementos:
+
+157.      i) El derecho a que la persona mantenga su ámbito personal (lo cual incluye
+          la vida de su familia, su domicilio o su correspondencia, entre otras
+          cuestiones) ajeno a toda injerencia o intromisión por parte de terceros
+          extraños.
+158.      ii) El derecho a mantener reservados ciertos aspectos de su vida privada y
+          controlar la difusión de la información personal hacia el público.
+
+
+
+   42
+        Corte IDH, caso Tristán Donoso vs. Panamá, sentencia del 27 de enero de 2009, párrafo 55.
+   43
+        Corte IDH, caso Fontevecchia y D’Amico vs. Argentina, sentencia del 29 de noviembre de 2011, párrafos 48 y 49.
+
+
+
+
+                                                                                                                         29
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+159.    De acuerdo con Diego García Ricci, esta dimensión se denomina “derecho
+        a la autodeterminación informativa” y es la que permite a los ciudadanos
+        intervenir activamente en la comunidad, pues ellos son quienes deciden
+        “cuándo participan en sociedad y cuándo se retiran”.44
+
+160.
+        5.2.3. Derecho a la privacidad en el caso de los servidores públicos
+
+161.    Ahora bien, aunque las autoridades están obligadas a garantizar el derecho
+        a la privacidad de todas las personas, este derecho no es absoluto, puede
+        ser restringido siempre que ello no se haga de manera abusiva, arbitraria o
+        desproporcional. A tal efecto, se han establecido parámetros sobre los
+        límites de este derecho, entre ellos, la atención al interés público que la
+        actuación de la persona involucrada tiene en la sociedad.
+
+162.    Al respecto, en la tesis aislada 1a. XLII/2010, con rubro: DERECHO A LA
+        INTIMIDAD O VIDA PRIVADA. NOCIÓN DE INTERÉS PÚBLICO, COMO CONCEPTO
+        LEGITIMADOR DE LAS INTROMISIONES SOBRE AQUÉL , la Primera Sala de la
+        Suprema Corte de Justicia de la Nación consideró que debe tomarse en
+        cuenta la relevancia pública de la información para la vida comunitaria.
+        Asimismo esta Suprema Corte concluyó en el amparo directo 19/2013 que
+        esta información puede tener relevancia pública por el hecho en sí sobre el
+        que se está informando o por la propia persona sobre la que versa la noticia.
+        Esta relevancia también puede depender de las situaciones históricas,
+        políticas, económicas y sociales, las cuales se actualizarán en cada caso
+        concreto.45
+
+163.    De tal forma que, cuando el derecho a la intimidad colisiona con el derecho
+        a la información, es importante considerar las actividades o actuaciones que
+        realizan los sujetos involucrados en esa contraposición. Es decir, a mayor
+        exposición pública de esas personas, su derecho a la intimidad se ve
+        reducido, por lo que la perspectiva para el análisis de este conflicto es
+        diferente dependiendo del carácter de interés público que tengan sus
+        actividades o actuaciones.
+
+
+
+
+   44
+      García Ricci, Diego. 2013. “Artículo 16 Constitucional, derecho a la privacidad”. En: Eduardo Ferrer Mac-Gregor
+   (coord.), Derechos humanos en la Constitución. Comentarios de jurisprudencia constitucional e interamericana. México:
+   Instituto de Investigaciones Jurídicas, Suprema Corte de Justicia de la Nación y Fundación Konrad Adenauer. p. 1046.
+   45
+      Tesis 1a. XLII/2010, DERECHO A LA INTIMIDAD O VIDA PRIVADA. NOCIÓN DE INTERÉS PÚBLICO, COMO CONCEPTO LEGITIMADOR
+   DE LAS INTROMISIONES SOBRE AQUÉL. Primera Sala, Semanario Judicial de la Federación y su Gaceta, Novena Época,
+   tomo XXXI, marzo de 2010, p. 923.
+
+
+
+
+   30
+                                                                                    AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+164.    5.2.4. Concepto de persona pública
+
+165.    Una persona pública es aquélla que por sus actividades, por su posición o
+        por casualidad se ha convertido en un objeto de atención.46
+
+166.    Asimismo, la persona pública se ha definido como aquélla que tiene algún
+        grado de notoriedad e importancia en la sociedad. Dicho de otro modo, es
+        una persona que, por su talento, fama o modo de vivir, tiene importancia
+        pública, incluso de manera ocasional. De acuerdo con esta definición, entre
+        las personas públicas se encuentran los políticos, los intelectuales, los
+        periodistas, los funcionarios públicos, los artistas, deportistas o aquellos
+        que hacen de su vida privada la principal herramienta de su actividad
+        profesional.47
+
+167.    En la tesis 1a. XLI/2010, la Primera Sala de la Suprema Corte de Justicia
+        de la Nación ha definido a las personas públicas o notoriamente conocidas
+        como aquéllas que, por circunstancias sociales, familiares, artísticas,
+        deportivas, o bien porque han difundido hechos y acontecimientos de su
+        vida privada o cualquier otra situación análoga, tienen proyección o
+        notoriedad en una comunidad y, por ende, se someten voluntariamente al
+        riesgo de que sus actividades o su vida privada sean objeto de mayor
+        difusión, así como a la opinión y crítica de terceros, incluso aquélla que
+        pueda ser molesta, incómoda o hiriente.48
+
+168.    Como ya se mencionó, el concepto de persona pública contempla a
+        funcionarios o servidores públicos. Esto resulta lógico, sus actividades son
+        de relevancia para la sociedad porque sus labores se relacionan con el
+        manejo de las funciones del Estado. Por ello, la comunidad tiene interés en
+        que éstas se realicen de manera adecuada.
+
+169.    Se entiende por servidor público aquella persona que presta sus servicios
+        al Estado, “con el propósito de atender alguna de las atribuciones, funciones
+        o tareas legalmente asignadas a aquél”.49 Esta misma definición resultaría
+        aplicable para los órdenes estatales y municipales.
+
+
+   46
+      Williams, Gary. 2004. “¿Protege el derecho constitucional a la privacidad en California a las figuras públicas de la
+   publicación de información confidencial personal?”. En: Carlos G. Gregorio y Sonia Navarro Solano (coords.) Internet y
+   Sistema Judicial en América Latina – Reglas de Heredia. Seminario Internet y Sistema Judicial en América Latina y el
+   Caribe, Heredia (Costa Rica), 8 y 9 de julio de 2003.
+   47
+      Malpartida Castillo, Víctor. 2010. Atracción fatal: intimidad e información. El derecho a la vida privada y el derecho de
+   la información. Perú: San Marcos. pp. 296-297.
+   48
+      Tesis 1a. XLI/2010, DERECHOS A LA PRIVACIDAD, A LA INTIMIDAD Y AL HONOR. SU PROTECCIÓN ES MENOS EXTENSA EN
+   PERSONAS PÚBLICAS QUE TRATÁNDOSE DE PERSONAS PRIVADAS O PARTICULARES. Primera Sala, Semanario Judicial de la
+   Federación y su Gaceta, Novena Época, tomo XXXI, marzo de 2010, p. 923.
+   49
+      García Ramírez, Sergio y Uribe Vargas, Erika. 2017. Derechos de los servidores públicos. 4a. ed. Colección ‘Nuestros
+   Derechos’. México: Instituto de Investigaciones Jurídicas, Instituto Nacional de Estudios Históricos de la Revolución de
+   México, Secretaría de Cultura e Instituto Nacional de Administración Pública. p. 5.
+
+
+
+
+                                                                                                                            31
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+170.    Al respecto, se ha mencionado que la condición de servidor público no sólo
+        es un privilegio, sino un deber. Esto es así por la importancia de las labores
+        que realizan los servidores públicos en beneficio de la comunidad. Así como
+        por el uso de los recursos públicos que manejan, motivo por el cual la
+        sociedad está interesada en las gestiones que realizan o las actividades de
+        su vida privada que pudieran estar vinculadas con el desempeño de su
+        función.50
+
+171.    5.2.5. Derecho a la privacidad de los servidores públicos
+
+172.    Dado el interés que las actividades y funciones de los servidores públicos
+        tienen para la comunidad, su derecho a la intimidad está más atenuado que
+        el resto de la sociedad, toda vez que están sujetos a un mayor escrutinio
+        social, no sólo por sus actividades oficiales o el ejercicio de sus funciones,
+        sino también respecto de aquellos aspectos de su vida privada que
+        pudieran estar vinculados con el desempeño de su función y en
+        consecuencia, con el interés público.
+
+173.    Esto es, el derecho a la privacidad de los servidores públicos es menos
+        extenso que el que le asiste al resto de los ciudadanos por motivos
+        exclusivamente ligados al tipo de actividad que desempeñan, ya que ello
+        puede otorgar interés a la comunidad.
+
+174.    En diversos asuntos, la Suprema Corte ha sostenido que existen datos que
+        guardan conexión con aspectos que son deseables que la ciudadanía
+        conozca, como son las actuaciones que los servidores públicos realizan
+        como parte de su labor.
+
+175.    En relación con el derecho a la privacidad de los personajes públicos, entre
+        los que se encuentran los funcionarios o servidores, la Corte Constitucional
+        de Colombia (sentencia T-696/96) concluyó que existe un
+        “desdibujamiento” en su intimidad, pues los miembros de la sociedad están
+        interesados en sus actuaciones, ya que éstas podrían afectar a la
+        comunidad.
+
+176.    En efecto, la Corte Constitucional colombiana en la sentencia T-696/96
+        señala:51
+
+                  Dicho desdibujamiento, sobra decirlo, en manera alguna puede ser
+                  absoluto. Si bien el ámbito exclusivo de los personajes públicos se
+                  reduce en razón de su calidad y, eventualmente, de las actividades
+   50
+      Aparicio Aldana, Rebeca Karina. 2015. “El derecho a la intimidad y derecho a transmitir información de los funcionarios
+   y servidores públicos en el ordenamiento jurídico español”. En: Revista Jurídica Thomson Reuters, Nº 118.
+   51
+      Corte Constitucional de Colombia, sentencia del 5 de diciembre de 1996, p.7 y p.10, respectivamente.
+
+
+
+
+   32
+                                                                                   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+                    que desarrollen, las cuales, se repite, inciden en un conglomerado
+                    social o son de interés general, no es posible pensar que lo hayan
+                    perdido y, en consecuencia, que no puedan ser titulares del derecho
+                    constitucional fundamental a la intimidad. No. Para diferenciar el
+                    campo que puede ser objeto de conocimiento general del que no
+                    puede serlo, en las condiciones señaladas, se requiere analizar la
+                    presencia de dos factores: primero, la actuación de la persona dentro
+                    de un ámbito público; y segundo, si lo hace con la intención de ser
+                    vista y escuchada por quienes allí se encuentran, cuya verificación
+                    permitirá pensar, como es lógico, que ella está actuando por fuera de
+                    su zona de privacidad y, al mismo tiempo, que pueden su imagen y
+                    manifestaciones ser captadas por quienes la rodean. [...]
+
+                    Tal interés no nace por el simple hecho de que la información recaiga
+                    sobre un hecho de público conocimiento, o porque la persona sobre
+                    quien se informa sea de proyección pública, o porque desarrolle
+                    determinada actividad en un recinto igualmente público. No. El interés
+                    general que eventualmente permita pasar por encima de la intimidad
+                    de los individuos y dar prevalencia al derecho a la información, no
+                    puede ser ajeno a los principios y valores contenidos en el primer
+                    artículo de la Carta Política, dentro de los cuales se encuentra, como
+                    se sabe, el respeto a la dignidad humana. En consecuencia,
+                    corresponde al juez en cada caso concreto, sopesar las
+                    circunstancias para objetivamente determinar si hay lugar al sacrificio
+                    de la intimidad de la persona en pro del interés general de la
+                    comunidad.
+
+177.      Tiempo después, en la sentencia T 437/04, la Corte colombiana confirmó
+          que, cuando se trata de personajes públicos, el examen sobre la
+          vulneración del derecho a la intimidad varía, pues “si bien es claro que éstos
+          tienen derecho a solicitar la protección de su derecho fundamental a la
+          intimidad, su espacio de privacidad, en virtud de su desarrollo social, se ve
+          reducido”.52 Incluso determina que en estos casos el derecho a la
+          información debe ser preferido, pues los medios de comunicación cumplen
+          con una función importante para la vigencia del sistema democrático, por lo
+          que es indispensable que gocen de una amplia libertad en la supervisión de
+          los poderes públicos.
+
+178.      Además, la Corte Constitucional de Colombia determina que las personas
+          públicas, al aceptar su situación social, consienten tácitamente una cierta
+          restricción de su derecho a la privacidad, ya que su papel de figura pública
+          los convierte en objeto de interés, por lo cual es de esperar que tanto sus
+
+
+   52
+        Corte Constitucional de Colombia, sentencia del 6 de mayo de 2004, p. 1.
+
+
+
+
+                                                                                                             33
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        actividades públicas como su vida privada sean observadas de manera
+        minuciosa por parte de la sociedad.
+
+179.    A este respecto, en la sentencia del caso Tristán Donoso vs. Panamá de la
+        Corte IDH, se concluyó que el derecho a la privacidad no es un derecho
+        absoluto y, por tanto, puede ser restringido por los Estados. Esto, siempre
+        que las injerencias no sean abusivas o arbitrarias. Por lo cual, el límite a
+        esas restricciones deben ser: i) estar previstas en ley; ii) perseguir un fin
+        legítimo y iii) cumplir con los requisitos de idoneidad, necesidad y
+        proporcionalidad, es decir, deben ser necesarias para una sociedad
+        democrática.53
+
+180.    Sobre el derecho a la privacidad de los funcionarios públicos, en el caso
+        Fontevecchia y D’Amico vs. Argentina, la Corte IDH determinó que estos
+        servidores, al igual que cualquier otra persona, están amparados por la
+        protección que les brinda el artículo 11 convencional. La difusión de
+        información sobre eventuales aspectos de su vida privada debe fundarse
+        en la consideración de dos criterios relevantes: “a) el diferente umbral de
+        protección de los funcionarios públicos, más aún de aquellos que son
+        elegidos popularmente, respecto de las figuras públicas y de los
+        particulares, y b) el interés público de las acciones que aquellos realizan”.54
+
+181.    El diferente umbral de protección del funcionario público se explica porque
+        se expone voluntariamente al escrutinio de la sociedad, por ello, existe un
+        mayor riesgo de sufrir afectaciones a su derecho a la vida privada. Así es,
+        los funcionarios están sujetos a un mayor escrutinio social, no sólo por sus
+        actividades oficiales o el ejercicio de sus funciones, sino también por
+        aspectos que, en principio, podrían estar vinculados a su vida privada, pero
+        que revelan asuntos de interés público. Es decir, este umbral no sólo se
+        asienta en la calidad del sujeto, sino en el interés público de todas las
+        actividades que realiza.55
+
+182.    No obstante lo anterior, del simple hecho de ser un servidor público no
+        implica que todas sus actividades o sus circunstancias sean de interés para
+        la sociedad. En cada caso se tendría que analizar si la actividad o
+        circunstancia involucra un interés público. De ser así, los hechos se verían
+        más expuestos al escrutinio social.
+
+
+
+
+   53
+      Corte IDH, caso Tristán Donoso vs. Panamá, sentencia del 27 de enero de 2009, párrafo 56.
+   54
+      Corte IDH, caso Fontevecchia y D’Amico vs. Argentina, sentencia del 29 de noviembre de 2011, párrafo 59.
+   55
+      A esta misma conclusión llegó la Corte IDH en el caso Herrera Ulloa vs. Costa Rica (párrafos 128 y 129) y en el caso
+   Tristán Donoso vs. Panamá (párrafo 115).
+
+
+
+
+   34
+                                                                                  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+183.    5.2.6. Esferas de la privacidad de la información en la era digital
+
+184.    En el contexto de la era digital, pueden distinguirse tres tipos de esferas de
+        privacidad de la información:56
+
+185.    i) La información estrictamente privada, la cual incluye aquélla que el emisor
+        tiene la voluntad de que sea privada, cuyo destinatario sería único y
+        determinado. En esta categoría se encuentran los mensajes y correos
+        electrónicos.
+
+186.    ii) La información semiprivada o semipública, que sería toda aquélla que el
+        emisor decide mostrar a un destinatario o sujeto de su elección, por lo que
+        no sería individualizada, de forma que los destinatarios no tendrían derecho
+        a hacerla pública o difundirla en una esfera que no sea la que el emisor ha
+        escogido. Es decir, los receptores no tendrían facultad de disposición de
+        esta información (por ejemplo, el contenido publicado en redes sociales).
+
+187.    iii) La información pública que incluiría cualquier publicación que no tenga
+        restricción de acceso.
+
+188.    5.3. La interacción de los derechos a la información y a la privacidad
+
+189.    Una vez analizados los núcleos materiales de los derechos a la información
+        y a la privacidad, así como sus alcances y garantías, tanto en el marco
+        jurídico nacional como en el internacional, es preciso entrar al estudio de la
+        forma en que estos derechos se interrelacionan.
+
+190.    Como lo ha sostenido este Alto Tribunal en múltiples ocasiones, los
+        derechos fundamentales no son absolutos y su ejercicio está sujeto a
+        límites. El campo de acción relativo de estos preceptos se delimita a partir
+        de la existencia de otros derechos o fines constitucionales que también
+        merecen tutela y eficacia. Esto es así dado que existen derechos y
+        libertades que en el ejercicio diario pueden llegar a colisionar. Tal es el caso
+        del derecho a la información y el derecho a la privacidad y, en general, los
+        llamados derechos a la personalidad.
+
+191.    En este apartado se abordará el estudio de las restricciones que sufre el
+        derecho a la privacidad frente al derecho a la información, particularmente
+        en lo referente al derecho a la privacidad de las “personas públicas”.
+
+   56
+     Milón Beltrán, Noemí. 2015. “Retos para la privacidad en la era digital. Análisis económica y filosófico política del
+   capitalismo contemporáneo”. En Revista digital de sociología del sistema tecnocientífico. Vol. 2 (5). España: Universidad
+   de Valladolid. p. 38.
+   .
+
+
+
+
+                                                                                                                         35
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+192.    La Relatoría Especial para la Libertad de Expresión de la Comisión
+        Interamericana de Derechos Humanos ha señalado que “el funcionamiento
+        de la democracia exige el mayor nivel posible de discusión pública sobre el
+        funcionamiento de la sociedad y del Estado en todos sus aspectos, esto es,
+        sobre los asuntos de interés público”.57 Para que esto sea posible es
+        necesario que las acciones y omisiones tanto del Estado como de sus
+        funcionarios se sujeten a un escrutinio riguroso de los órganos
+        gubernamentales de control, así como de la prensa, la opinión pública y los
+        ciudadanos.
+
+193.    De acuerdo con la Corte IDH, al resolver el caso Claude Reyes y otros vs.
+        Chile, para que los ciudadanos puedan ejercer el control sobre la gestión
+        pública es necesario que el Estado garantice el acceso a la información de
+        interés público bajo su control. A su vez, el pleno ejercicio de la libertad de
+        información tiene como consecuencia el fomento de otros valores
+        democráticos como la transparencia de las actividades del Estado, la
+        responsabilidad de los funcionarios públicos sobre sus actuaciones, a la par
+        de la construcción de una ciudadanía más participativa y en mejores
+        condiciones para elegir libremente a sus gobernantes.58
+
+194.    De esta forma, el debate político y la discusión pública de los asuntos de
+        interés general se constituyen como uno de los pilares en los que descansa
+        el funcionamiento del sistema democrático, razón por la cual se consideran
+        como parte de un discurso especialmente valorado que, como uno de sus
+        principales efectos, “conduce a la protección reforzada del derecho de
+        acceso a la información sobre asuntos públicos”.59
+
+195.    En este sentido, la Corte IDH ha expresado que, para que la sociedad en
+        su conjunto pueda ejercer el control democrático, es necesario que el actuar
+        del Estado se rija por los principios de publicidad y transparencia en la
+        gestión pública, que permita a los ciudadanos cuestionar, indagar y evaluar
+        si se está dando un adecuado cumplimiento de las funciones públicas.60
+
+196.    En consecuencia, se puede afirmar que el derecho a la información
+        relacionado con el acceso a temas referentes a la función pública y la
+        gestión estatal goza de garantías reforzadas, razón por la cual las
+        autoridades deben procurar su maximización.
+
+
+   57
+      Relatoría Especial para la Libertad de Expresión de la Comisión Interamericana de Derechos Humanos, Marco jurídico
+   interamericano sobre el derecho a la libertad de expresión, aprobado el 30 de diciembre de 2009, párrafo 33.
+   58
+      Criterio que también fue resuelto en el caso Herrera Ulloa vs. Costa Rica, sentencia de la Corte IDH del 2 de julio de
+   2004.
+   59
+      Relatoría Especial para la Libertad de Expresión de la Comisión Interamericana de Derechos Humanos, Marco jurídico
+   interamericano sobre el derecho a la libertad de expresión, aprobado el 30 de diciembre de 2009, párrafo 37.
+   60
+      Corte IDH, caso Claude Reyes y otros vs. Chile, sentencia del 19 de septiembre de 2006, párrafo 86.
+
+
+
+
+   36
+                                                                                AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+197.    Ahora, en la tesis emitida por la Primera Sala de la Suprema Corte de
+        Justicia de la Nación, de rubro: LIBERTAD DE EXPRESIÓN. QUIENES ASPIRAN A
+        UN CARGO PÚBLICO DEBEN CONSIDERARSE COMO PERSONAS PÚBLICAS Y , EN
+        CONSECUENCIA, SOPORTAR UN MAYOR NIVEL DE INTROMISIÓN EN SU VIDA
+        PRIVADA, se establece que el nivel de protección al debate y al acceso a la
+        información de interés público puede provocar ciertas interferencias con el
+        derecho a la intimidad, particularmente de los servidores públicos, en su
+        calidad de personas públicas, ya que éstas, por dedicarse a actividades
+        públicas o por el rol que desempeñan en una sociedad democrática, están
+        expuestas a un control de sus actividades y manifestaciones más riguroso
+        que aquellos particulares sin proyección alguna.61
+
+198.    Como también se destaca en el Marco jurídico interamericano sobre el
+        derecho a la libertad de expresión, emitido por la Relatoría Especial para la
+        Libertad de Expresión: “los funcionarios públicos y quienes aspiran a serlo,
+        en una sociedad democrática, tienen un umbral distinto de protección, que
+        les expone en mayor grado al escrutinio y a la crítica del público, lo cual se
+        justifica por el carácter de interés público de las actividades que realizan,
+        porque se han expuesto voluntariamente a un escrutinio más exigente, y
+        porque tiene una enorme capacidad de controvertir la información a través
+        de su poder de convocatoria pública”.62
+
+199.    Esta situación no implica que las personas públicas carezcan de derecho a
+        la intimidad, sino que su estatus –derivado del tipo de actividades que
+        realizan– las coloca en un umbral de protección distinto al de las personas
+        privadas. Sin que esta disminución en su derecho a la intimidad pueda ir
+        más allá del núcleo material del mismo. Además que tal limitación debe ser
+        proporcional al resto de los derechos y principios constitucionales que se
+        pretende favorecer en cada caso concreto.
+
+200.    Al respecto, la Sala de lo Civil del Tribunal Supremo español determinó que
+        los derechos a la intimidad personal y familiar se encuentran limitados por
+        las libertades de expresión e información y que esta limitación se produce
+        cuando existe un conflicto entre uno y otro derecho que debe ser resuelto
+        mediante técnicas de ponderación constitucional, teniendo en cuenta las
+        circunstancias del caso.63
+
+
+
+
+   61
+     Tesis 1a. CCXXIII/2013 (10a.), LIBERTAD DE EXPRESIÓN. QUIENES ASPIRAN A UN CARGO PÚBLICO DEBEN CONSIDERARSE
+   COMO PERSONAS PÚBLICAS Y, EN CONSECUENCIA, SOPORTAR UN MAYOR NIVEL DE INTROMISIÓN EN SU VIDA PRIVADA, Primera
+   Sala, Semanario Judicial de la Federación y su Gaceta, Décima Época, libro XXII, tomo I, julio de 2013, p. 562.
+   62
+      Relatoría Especial para la Libertad de Expresión de la Comisión Interamericana de Derechos Humanos, Marco jurídico
+   interamericano sobre el derecho a la libertad de expresión, aprobado el 30 de diciembre de 2009, párrafo 40.
+   63
+      Sala de lo Civil del Tribunal Supremo español, recurso 96/2007, sentencia del 28 de junio de 2011.
+
+
+
+
+                                                                                                                     37
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+201.    En la misma resolución, la Sala de lo Civil del Tribunal Supremo español
+        señala que las técnicas para ponderar un conflicto entre estos derechos
+        debe considerar, entre otros, los siguientes parámetros:
+
+202.    a) La ponderación debe tener en cuenta si la información tiene relevancia
+        pública o interés general, en la medida que pueda contribuir al debate en
+        una sociedad democrática cuando se proyecta sobre personas que
+        desempeñan un cargo público o tienen una personalidad política y ejercen
+        funciones oficiales, lo cual es sustancialmente distinto de la simple
+        satisfacción de la curiosidad humana por conocer la vida de otros, aunque
+        se trate de personas con notoriedad pública que no ejerzan tales funciones.
+
+203.    b) Para considerar la prevalencia del derecho a la información sobre el
+        derecho a la intimidad debe tenerse en cuenta el principio de
+        proporcionalidad con el interés público en los aspectos de ésta que se
+        difunden y la forma en que tiene lugar la difusión.
+
+204.    c) La ponderación entre los derechos en conflicto debe efectuarse teniendo
+        en cuenta si la publicación de los datos de la vida privada está justificada
+        por los usos sociales o hay base para sostener que el afectado adoptó
+        pautas de comportamiento en relación con su ámbito íntimo que permita
+        entender que, con sus propios actos, lo despojó total o parcialmente del
+        carácter privado o doméstico.
+
+205.    Vinculado a este tema, en el caso Kimel vs. Argentina, la Corte IDH
+        resolvió:64
+                  [E]n una sociedad democrática los funcionarios públicos están más
+                  expuestos al escrutinio y la crítica del público. Este diferente umbral
+                  de protección se explica porque se han expuesto voluntariamente a
+                  un escrutinio más exigente. Sus actividades salen del dominio de la
+                  esfera privada para insertarse en la esfera del debate público. Este
+                  umbral no se asienta en la calidad del sujeto, sino en el interés público
+                  de las actividades que realiza […]
+
+206.    Asimismo, en el caso Herrera Ulloa vs. Costa Rica, la misma Corte dio
+        pautas para afirmar que, si bien los derechos a la personalidad de los
+        funcionarios públicos o de las personas públicas –entre los que se
+        encuentran el derecho al honor y a la intimidad– sí deben ser jurídicamente
+        protegidos, su espectro de protección debe ser acorde con los principios del
+        pluralismo democrático.
+
+
+   64
+     Corte IDH, caso Kimel vs. Argentina, sentencia del 2 de mayo de 2008, párrafo 86. Este criterio fue reiterado en el caso
+   Tristán Donoso vs. Panamá, sentencia del 27 de enero de 2009.
+
+
+
+
+   38
+                                                                                   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+207.      Respecto del umbral de protección de los derechos a la personalidad de los
+          personajes públicos también se ha pronunciado el Tribunal Europeo de
+          Derechos Humanos, quien en repetidas ocasiones ha sostenido que los
+          límites de la crítica aceptable son más amplios en lo que respecta a un
+          político como tal que a un individuo privado. Asimismo, señala que en el
+          caso de los políticos es inevitable que sus palabras y hechos se sometan a
+          un riguroso escrutinio por parte de la sociedad en general, razón por la cual
+          deben demostrar un mayor grado de tolerancia.65
+
+208.      De acuerdo con la Corte IDH, las razones que justifican esta diferencia en
+          el umbral de protección no recaen en la calidad del sujeto, sino en el
+          carácter de interés público que conllevan las actividades o actuaciones de
+          una persona determinada. Esto significa que “las personas que influyen en
+          cuestiones de interés público se han expuesto voluntariamente a un
+          escrutinio público más exigente y, consecuentemente, se ven expuestos a
+          un mayor riesgo de sufrir críticas, ya que sus actividades salen del dominio
+          de la esfera privada para insertarse en la esfera del debate público”. 66
+
+209.      A partir de estas consideraciones es válido concluir que el derecho a la
+          privacidad de las personas públicas y en particular de los funcionarios
+          públicos se ve acotado por el derecho a la información y los principios
+          democráticos que subyacen a éste. Incluso se puede afirmar que el control
+          social al que se encuentran sujetos no versa exclusivamente sobre sus
+          manifestaciones o actuaciones públicas, sino que también puede
+          extenderse a las actividades que realicen de forma privada.
+
+210.      Sin embargo, a fin de no transgredir el núcleo esencial de su derecho a la
+          intimidad, especialmente por lo que hace a las actividades que lleve a cabo
+          en el ámbito privado, es necesario que se valoren y sopesen los distintos
+          preceptos constitucionales en tensión y que, en todos los casos, se analice
+          si la restricción en comento se justifica en aras de favorecer el interés o la
+          preocupación pública. Es decir, si se trata una información relevante para
+          la discusión de los asuntos comunes que interesan a todos.
+
+211.      Tal y como lo expuso la Corte IDH en el caso Tristán Donoso vs. Panamá,
+          en este tipo de asuntos, los jueces deben ponderar los derechos afectados
+          –en este caso el derecho a la privacidad– con el valor que tiene en una
+          sociedad democrática el debate abierto sobre temas de interés o
+          preocupación pública.
+
+
+
+   65
+        Tribunal Europeo de Derechos Humanos, caso Lingens vs. Austria, sentencia del 8 de julio de 1996, párrafo 42.
+   66
+        Corte IDH, caso Herrera Ulloa vs. Costa Rica, sentencia del 2 de julio de 2004, párrafo 129.
+
+
+
+
+                                                                                                                        39
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+212.    Es decir, la importancia de exponer a la luz pública las actuaciones o
+        manifestaciones privadas de un servidor público está condicionada a la
+        existencia de un legítimo interés de la sociedad “de mantenerse informada,
+        de conocer lo que incide sobre el funcionamiento del Estado, o afecta
+        intereses o derechos generales, o le acarrea consecuencias importantes”.67
+
+213.    5.3.1. El ejercicio de estos derechos en internet y en las redes sociales (en
+        específico en la red social Twitter)
+
+214.    Una vez expuesto el marco normativo general acerca de los derechos a la
+        información y a la privacidad, así como las posibles interferencias que el
+        primero de ellos provoca en la esfera del segundo, es preciso reafirmar que
+        estas consideraciones también son aplicables en el ámbito del internet y de
+        las redes sociales.
+
+215.    Antes de analizar la interrelación entre estos derechos en las redes sociales
+        y, en específico en Twitter, es importante definir qué se entiende por éstas.
+
+216.    5.3.1.1. Redes sociales
+
+217.    Desde hace varios años, las nuevas tecnologías de la información y el
+        internet tienen un gran impacto en la vida de las personas y las sociedades
+        en su conjunto, debido a que han facilitado el acceso a bienes y servicios,
+        y han generado la interconexión de las personas a nivel mundial.
+
+218.    Entre los avances tecnológicos se encuentra la creación de nuevos canales
+        de comunicación que han permitido la construcción de redes sociales en el
+        mundo digital.
+
+219.    Las redes sociales se definen como:68
+                 [A]quellos servicios de la sociedad de la información que ofrecen a los
+                 usuarios una plataforma de comunicación a través de Internet para
+                 que éstos generen un perfil con sus datos personales, facilitando la
+                 creación de redes en base a criterios comunes y permitiendo la
+                 conexión e interacción con otros usuarios.
+
+220.    Las redes sociales se han constituido como un medio que permite a las
+        personas expresarse de manera más amplia y desinhibida, compartir
+        información o acceder a ella de forma casi inmediata, así como establecer
+        espacios de colaboración. Todo esto en constante interacción con los
+
+   67
+     Corte IDH, caso Tristán Donoso vs. Panamá, sentencia del 27 de enero de 2009, párrafo 121.
+   68
+     Ortiz López, Paula. 2013. “Redes sociales: funcionamiento y tratamiento de información personal”. En: Derecho y redes
+   sociales, 2ª. ed. España: Civitas - Thomson Reuters. p. 22.
+
+
+
+
+   40
+                                                                                  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        demás usuarios. Sin duda alguna, el auge de estas plataformas ha
+        modificado radicalmente la forma en que las personas se relacionan e
+        interactúan en la sociedad. El resultado ha sido que la información que los
+        usuarios comparten pueda ser consultada por cientos de miles de personas.
+
+221.    En el caso de las redes sociales, los usuarios asumen un doble papel: el de
+        consumidor y el de creador, pues por una parte consumen información, pero
+        también aportan datos.69
+
+222.    Los niveles de interconexión que generan las redes sociales en la
+        actualidad han representado una vía de expansión del derecho a la libertad
+        de expresión. Tan es así, que incluso ha llevado a muchos a calificarla como
+        “la nueva plaza pública”70 donde se plantean y discuten los temas de interés
+        general. La construcción de esta nueva comunidad virtual, a la cual acuden
+        las personas como una de sus principales fuentes de información e
+        interacción, no ha pasado desapercibida para comerciantes, personajes
+        públicos y gobernantes, quienes han visto y han aprovechado las
+        oportunidades que ofrece su exposición en estas plataformas.
+
+223.    De esta forma, a partir del uso del internet y las plataformas de redes
+        sociales, se ha ido erigiendo un espacio en el que diariamente los usuarios
+        se asocian, realizan transacciones, colaboran y, principalmente, se
+        expresan y acceden a todo tipo de información.
+
+224.    Ahora, debe resaltarse que el ejercicio de los derechos establecidos en la
+        Constitución y los tratados internacionales se practica tanto en el mundo
+        real como en el mundo digital, sin que se manifieste un cambio en la
+        naturaleza o una diminución de estos derechos.
+
+225.    5.3.1.2. Twitter
+
+226.    Twitter es una plataforma microblogging,71 a través de la cual las personas
+        pueden comunicarse mediante la publicación de mensajes cortos. En esta
+        plataforma, los interesados pueden gestionar una cuenta de usuario y
+        configurarla de forma privada, dando acceso a su contenido únicamente a
+        las personas que se les autorice expresamente para tal efecto, o bien de
+
+
+   69
+      Ortiz López, Paula. 2013. “Redes sociales: funcionamiento y tratamiento de información personal”. En: Derecho y redes
+   sociales, 2ª. ed. España: Civitas – Thomson Reuters. p. 23.
+   70
+      Véase Ansuátegui, Javier. 2017. “Los contextos de la libertad de expresión: paradigmas y nuevas fronteras”. En: Teoría
+   y derecho: revista del pensamiento jurídico, número 21, pp. 140-143.
+   Presno, Miguel y Teruel, Germán. 2017. La libertad de expresión en América y Europa. Lisboa: Editorial Juruá, p. 66.
+   71
+      El sistema de microblogging consiste en escribir con un tope de cierto número de caracteres, interactuar con otros
+   usuarios mediante respuestas o mensajes privados, anunciar cosas, promociones, entre otras cuestiones
+   (https://estwitter.com/microblogging, fecha de consulta: febrero de 2019).
+
+
+
+
+                                                                                                                         41
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        forma pública, permitiendo que cualquier usuario de la red pueda acceder
+        a sus contenidos.
+
+227.    Entre otras funciones, Twitter ha sido utilizada para comentar y debatir
+        temas de todo tipo. Esto ha provocado que se convierta, por un lado, en
+        una de las principales fuentes de información para muchas personas y, por
+        el otro, en una herramienta poderosa para la divulgación de información.
+        Tal es la relevancia de esta plataforma, que medios de comunicación,
+        instituciones gubernamentales y personajes de la vida pública nacional e
+        internacional la utilizan diariamente para comunicar asuntos de interés para
+        la sociedad. Incluso partidos políticos y candidatos han trasladado a este
+        ámbito sus estrategias de campaña a fin de contar con una mayor presencia
+        en el electorado.
+
+228.    En este sentido, Twitter no puede considerarse únicamente como una
+        plataforma que promueve y potencializa la libertad de expresión de los
+        usuarios, sino que debe reconocerse también su labor en el fomento a los
+        valores democráticos, por ejemplo, en la difusión de contenidos de interés
+        para la sociedad –entre los que se encuentra la información
+        gubernamental–, al igual que el debate de los asuntos de interés público.
+
+229.    5.3.2. Interrelación del derecho a la información y el derecho a la privacidad
+        en las redes sociales
+
+230.    Varias libertades se han potencializado gracias a las oportunidades de fácil
+        acceso, expansión e inmediatez que internet y las redes sociales brindan.72
+        Sin embargo, debe reconocerse que también es posible que se cometan
+        abusos dentro de esos medios virtuales gracias a las mismas razones. Por
+        lo tanto, las interacciones realizadas dentro de la comunidad digital no
+        pueden ser ajenas al Derecho y resultará necesaria la intervención del
+        Estado en los casos en que se violenten derechos a los usuarios de la red.
+
+231.    Al tratarse de dos derechos fundamentales en colisión, esta intervención
+        debe hacerse bajo los parámetros jurisprudenciales referentes a las
+        restricciones permisibles.73 Además, en el caso del ejercicio de derechos en
+        internet, la Segunda Sala determinó que existe un principio relativo a que el
+        flujo de información en línea debe restringirse lo mínimo posible, esto es,
+
+
+
+   72
+      Jubany, Olga y Malin Roiha. 2018. Las palabras son armas. Discurso de odio en la red. Barcelona: Universidad de
+   Barcelona.
+   73
+      Tesis 2a. CV/2017 (10a.), LIBERTAD DE EXPRESIÓN Y OPINIÓN EJERCIDAS A TRAVÉS DE LA RED ELECTRÓNICA (INTERNET).
+   RESTRICCIONES PERMISIBLES. Segunda Sala, Gaceta del Semanario Judicial de la Federación, Décima Época, libro XLIII,
+   tomo II, junio de 2017, p. 1439.
+
+
+
+
+   42
+                                                                                AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        en circunstancias excepcionales y limitadas, previstas en la ley, para
+        proteger otros derechos humanos.74
+
+232.    Ahora bien, en relación con el uso de redes sociales por parte de servidores
+        públicos, la Corte del Distrito de Nueva York75 concluyó que, si bien Twitter
+        es una compañía privada, podía establecerse que el Ejecutivo de los
+        Estados Unidos de Norteamérica y el señor Scavino (los demandados en
+        ese caso) ejercían control sobre varios aspectos de la cuenta
+        @realDonaldTrump. Esto se comprueba en que podían manejar el
+        contenido de los tuits que eran enviados, podían impedir, a través del
+        bloqueo, que otros usuarios –entre ellos los demandantes– tuvieran acceso
+        a esa cuenta y podían participar en el espacio interactivo que se genera con
+        los tuits enviados.
+
+233.    Asimismo, concluyó que el control que ejercen el Ejecutivo y el señor
+        Scavino sobre la cuenta @realDonaldTrump es un tema de carácter
+        gubernamental, en vista de que la cuenta es presentada como “Donald J.
+        Trump, Presidente de los Estados Unidos de América número 45”.
+        Adicionalmente, observó que los tuits provenientes de dicha cuenta
+        constituyen registros oficiales que deben ser preservados bajo el Acta de
+        Registros Presidenciales, puesto que se vinculan a actividades que realiza
+        derivadas de su gestión precisamente como presidente.
+
+234.    De igual forma, determinó que aunque en un principio la cuenta
+        @realDonaldTrump tuvo origen con carácter de privada, el uso que se le
+        daba en la actualidad tenía un mayor peso en el análisis para determinar si
+        era o no restrictivo del derecho de libertad de expresión de los demandados
+        que se les haya bloqueado de esa cuenta.
+
+235.    Por otra parte, señaló que la cuenta @realDonaldTrump es un foro público,
+        en el cual puede haber restricciones que sólo serán admisibles si están
+        encaminadas a lograr un interés público.
+
+236.    Un criterio similar fue sostenido por la Sala Constitucional de Costa Rica al
+        determinar que, con la aparición de nuevas tecnologías, se crearon
+        espacios que –si bien de origen son privados– son utilizados por las
+        autoridades para comunicar información de naturaleza pública e interactuar
+        con los ciudadanos. En este sentido, consideró que “las redes sociales
+        como Facebook, no sólo proveen información, sino que, además, son un
+        canal para expresarse. Por ello, es que no puede una autoridad pública
+
+   74
+     Tesis 2a. CII/2017 (10a.), FLUJO DE INFORMACIÓN EN RED ELECTRÓNICA (INTERNET). PRINCIPIO DE RESTRICCIÓN MÍNIMA
+   POSIBLE. Segunda Sala, Gaceta del Semanario Judicial de la Federación, Décima Época, libro XLIII, tomo II, junio de
+   2017, p. 1433.
+   75
+      Corte del Distrito de Nueva York, caso 1:17-cv-05202-NRB, sentencia del 23 de mayo de 2018, pp. 42-44, 49-50 y 62.
+
+
+
+
+                                                                                                                     43
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+          válidamente bloquear de Facebook a un usuario, sin que exista una razón
+          que lo justifique de por medio”.76
+
+237.      Si bien las resoluciones de la Corte del Distrito de Nueva York y de la Sala
+          Constitucional de Costa Rica, a las que se hizo referencia en los párrafos
+          anteriores, no constituyen precedentes obligatorios ni son orientadores para
+          resolver los problemas jurídicos de índole nacional, sí son ilustrativos, en
+          función de la naturaleza global de las redes sociales y en cuanto analizan
+          temas relacionados con los derechos a la privacidad y al acceso a la
+          información, particularmente por lo que se refiere a la interacción de los
+          servidores públicos con los ciudadanos a través de este tipo de medios
+          digitales.
+238.      En este sentido si, en las redes sociales, un servidor público utiliza una
+          cuenta de origen privada para informar sobre sus actividades como
+          funcionario, entonces, el análisis para determinar si el bloqueo que realizó
+          a la cuenta de otro usuario es o no restrictivo del derecho de acceso a la
+          información debe considerar el uso que el servidor público le dé a su cuenta
+          en la actualidad. Además, se debe considerar que las redes sociales y en
+          específico Twitter es un canal tanto para recibir como para obtener
+          información.
+
+                        6. ESTUDIO DE AGRAVIOS EN EL CASO CONCRETO
+
+239.      En los agravios tercero y cuarto del recurso de revisión, el recurrente
+          expone, en términos generales, que parte de la información contenida en
+          su cuenta es de carácter personal, por lo que es desproporcional que el juez
+          de distrito haya ordenado que se desbloqueara la cuenta del usuario
+          ********** para que tuviera acceso total a la cuenta @AbogadoWinckler.
+          Adicionalmente, indica que el resto de los datos contenidos en esa cuenta
+          no se relacionan con derechos humanos, desapariciones forzadas ni fosas
+          clandestinas que son los temas de investigación que el quejoso argumenta,
+          por lo que el bloqueo no le ocasiona un agravio personal y directo.
+
+240.      Los argumentos antes sintetizados son infundados por las siguientes
+          razones:
+
+241.      En el caso que nos ocupa, el fiscal general del estado de Veracruz, Jorge
+          Winckler Ortiz, usuario de la cuenta @AbogadoWinckler en la red social
+          Twitter, bloqueó al ciudadano **********, usuario de la diversa cuenta
+          **********. Se debe analizar si el referido bloqueo entre usuarios vulnera el
+          derecho humano de acceso a la información, por privar a los usuarios de la
+
+   76
+        Sala Constitucional de la Corte Suprema de Justicia de Costa Rica, caso Nº 03871, sentencia del 9 de marzo de 2018.
+
+
+
+
+   44
+                                                        AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+       citada plataforma electrónica de allegarse de datos y contenidos que se
+       refieran a los actos de la fiscalía estatal o, por el contrario, si la resolución
+       recurrida, que obliga al recurrente a desbloquear al ciudadano **********,
+       contraviene el derecho a la privacidad del ciudadano Jorge Winckler Ortiz,
+       fiscal general del estado de Veracruz.
+
+242.   En primer lugar, es importante resaltar que en mayo de dos mil once el
+       ciudadano Jorge Winckler Ortiz creó su cuenta con fines personales. Esto
+       es varios años antes de que accediera al cargo de fiscal general. Sin
+       embargo, una vez que fue nombrado fiscal general, a través de esa cuenta
+       ha venido relatando las actividades que realiza como servidor público
+       (según se expuso en los párrafos 87-88 de este documento).
+
+243.   Al incluir tuits relacionados con sus actividades como servidor público,
+       decidió voluntariamente colocarse en un nivel de publicidad y escrutinio
+       distintos al de una persona privada. Por esta razón, el propio funcionario
+       fue quien libremente decidió extraer su cuenta de la esfera privada para
+       trasladarla al ámbito público, con todos los contenidos que preexistían en
+       ella.
+
+244.   A esta conclusión se llega, para empezar, por el simple hecho de que la
+       cuenta es descrita con relación a su encargo: “Fiscal General del Estado de
+       Veracruz, papá, esposo y buscador constante de la justicia”. Además,
+       porque la cuenta difunde información referente a sus actividades como
+       fiscal, entre las cuales se encuentra la asistencia a reuniones de trabajo y
+       eventos públicos vinculados a su encargo.
+
+245.   En este sentido, el umbral de protección del derecho a la privacidad del que
+       gozan las personas privadas y sus respectivas cuentas en redes sociales
+       se vio afectado por la voluntad del propio fiscal, al decidir utilizar su cuenta
+       de Twitter como un canal de comunicación con la sociedad.
+
+246.   De tal forma que, al ser una persona pública y particularmente un
+       funcionario público, su derecho a la intimidad se ve “desdibujado” en aras
+       de favorecer el derecho a la información. Esto es así porque los temas de
+       interés general, como los relacionados con el desempeño de su gestión
+       gubernamental, están sometidos a un fuerte nivel de escrutinio por parte de
+       los medios de comunicación y la sociedad.
+
+247.   Si el ciudadano Jorge Winckler Ortiz utiliza su cuenta personal
+       @AbogadoWinckler para dar a conocer algunas actividades que realiza en
+       su carácter de fiscal general, es claro que esa información es de interés
+
+
+
+
+                                                                                  45
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        público y, por ende, está expuesto a un mayor escrutinio y control por parte
+        de la sociedad.
+
+248.    Luego, bloquear el acceso a un ciudadano a los contenidos ahí publicados
+        representa una restricción indebida a su derecho al acceso a la información.
+
+249.    Lo expuesto anteriormente no implica que el derecho a la privacidad de los
+        servidores públicos deba ser limitado en todos los casos, ya que existe un
+        contenido mínimo de este derecho que debe ser respetado.
+
+250.    En el asunto que nos ocupa, el recurrente no expresa razones suficientes
+        para considerar que su cuenta de Twitter pueda ser clasificada como una
+        cuenta privada, ni mucho menos que la información ahí contenida sea de
+        carácter reservado, cuya difusión vulnere su derecho a la privacidad, ni que
+        haya encontrado algún comportamiento abusivo por parte del quejoso.
+
+251.    Por otra parte, el recurrente también señala que la sentencia le causa
+        agravio debido a que el juzgador no toma en cuenta la naturaleza de la
+        información contenida en su cuenta y de la red social Twitter respecto a los
+        niveles de privacidad que ésta ofrece. Por ende, al obligarlo a desbloquear
+        la cuenta del quejoso no sólo le estaría dando acceso a los contenidos
+        relativos al ejercicio de su función pública, sino también a aquellos de índole
+        personal o a otro tipo de mensajes como los copiados y compartidos de las
+        cuentas de otras personas.
+
+252.    Si bien derivado del efecto del amparo se le otorgaría al quejoso acceso a
+        toda la información que se publica en la cuenta @AbogadoWinckler, esto
+        no contraviene el derecho a la privacidad del recurrente. En primer lugar,
+        porque éste no acreditó la necesidad de proteger del conocimiento general
+        dichas publicaciones. En segundo lugar, porque, como ya se mencionó, en
+        la actualidad esa cuenta también se utiliza para proporcionar información
+        sobre sus actividades como fiscal general. Por ese hecho, la cuenta debe
+        considerarse de interés general, protegida por el derecho al acceso a la
+        información, cuya restricción sólo puede estar apegada a los parámetros de
+        regularidad constitucional consistentes en: 1) estar previstas por ley, 2)
+        perseguir un fin legítimo y 3) ser idóneas, necesarias y proporcionales.
+
+253.    En este sentido, aunque en la cuenta no hay información sobre derechos
+        humanos, desapariciones forzadas o fosas clandestinas, por el solo hecho
+        de ser el quejoso un ciudadano, se le debe garantizar el acceso a la
+        información contenida en esa cuenta. El quejoso, al ser parte de una
+        comunidad, está interesado en las gestiones que realicen los servidores
+        públicos, como es el caso del fiscal general.
+
+
+
+   46
+                                                                            AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+254.    Además, el quejoso es periodista, como se acreditó en el juicio de amparo
+        de origen, por lo que se le otorgan garantías reforzadas en la indagación,
+        búsqueda y obtención de todo tipo de información que pueda reportar por
+        ser de interés para la sociedad.
+
+255.    Sobre este tema, el Tribunal Europeo de Derechos Humanos, al resolver el
+        caso Von Hannover vs. Alemania concluyó:77
+                [L]a prensa juega un papel esencial en una sociedad democrática:
+                aunque no debe traspasar ciertos límites, referentes concretamente a
+                la protección de la reputación y a los derechos de los demás, sí le
+                corresponde, sin embargo, comunicar dentro del respeto de sus
+                deberes y responsabilidades, informaciones e ideas sobre todas las
+                cuestiones de interés general.
+
+256.    Asimismo, este Tribunal ha pronunciado su famosa teoría sobre el papel
+        que juega la prensa en “su rol esencial de «perro guardián» en una
+        democracia contribuyendo a «comunicar ideas e informaciones sobre
+        cuestiones de interés público».
+
+257.    En este mismo sentido, en la tesis aislada 1a. CCXVI/2009, de rubro:
+        LIBERTADES DE EXPRESIÓN E INFORMACIÓN. LOS MEDIOS DE COMUNICACIÓN DE
+        MASAS JUEGAN UN PAPEL ESENCIAL EN EL DESPLIEGUE DE SU FUNCIÓN
+                                            78
+        COLECTIVA, la Primera Sala expresó:
+
+                [L]a libertad de prensa es una piedra angular en el despliegue de la
+                vertiente social o colectiva de las libertades de expresión e información.
+                Los medios de comunicación social se cuentan entre los forjadores
+                básicos de la opinión pública en las democracias actuales y es
+                indispensable que tengan aseguradas las condiciones para incorporar
+                y difundir las más diversas informaciones y opiniones. Ello hace
+                necesario, específicamente, garantizar a los periodistas el goce de
+                condiciones adecuadas para desempeñar su trabajo.
+
+258.    De tal forma que, si a través de la cuenta de Twitter @AbogadoWinckler,
+        Jorge Winckler Ortiz ha compartido contenidos de distinta índole, entre los
+        que destaca la información referente a sus actividades como servidor
+        público, entonces las publicaciones hechas en esa cuenta constituyen
+        información de interés general, al estar relacionada con la gestión pública y
+        el funcionamiento de la institución a la que representa y, por tanto, pueden
+
+
+   77
+      Tribunal Europeo de Derechos Humanos, caso Von Hannover vs. Alemania, sentencia del 24 de junio de 2004, sec.
+   3a.
+   78
+      Tesis 1a. CCXVI/2009, LIBERTADES DE EXPRESIÓN E INFORMACIÓN. LOS MEDIOS DE COMUNICACIÓN DE MASAS JUEGAN UN
+   PAPEL ESENCIAL EN EL DESPLIEGUE DE SU FUNCIÓN COLECTIVA. Primera Sala, Semanario Judicial de la Federación y su
+   Gaceta, Novena Época, tomo XXX, diciembre de 2009, p. 288.
+
+
+
+
+                                                                                                                47
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        ser objeto de seguimiento y reporte por periodistas y medios de
+        comunicación.
+
+259.    Finalmente, cabe señalar que existe la posibilidad de encontrar
+        comportamientos abusivos derivados de la propia naturaleza de esta red
+        social, debido a que permite la comunicación bilateral y el intercambio de
+        mensajes, opiniones y publicaciones entre los usuarios. Por esta razón, el
+        receptor de estos contenidos puede estar expuesto a amenazas, injurias,
+        calumnias, coacciones o incitaciones a la violencia, mismas que pueden ir
+        dirigidas tanto al titular de la cuenta como a otros usuarios que interactúen
+        en ella.
+
+260.    Por ende, es posible que los comportamientos abusivos puedan ocasionar
+        una medida de restricción o bloqueo justificada, pero para que ésta sea
+        válida será necesario que dichas expresiones o conductas se encuentren
+        excluidas de protección constitucional, en términos de los parámetros
+        jurisprudenciales que rigen en la materia.
+
+261.    Debe dejarse claro que los comentarios que expresen críticas severas,
+        provocativas o chocantes que puedan llegar a ser indecentes,
+        escandalosas, perturbadoras, inquietantes o causar algún tipo de molestia,
+        disgusto u ofensa de ninguna manera deben ser considerados
+        comportamientos abusivos por parte de los usuarios de la red.79
+
+262.    A modo de conclusión y con el propósito de reforzar el sentido de esta
+        decisión, se realizará un análisis sobre si en el caso concreto se cumplen
+        los parámetros, explicados con anterioridad, sobre el conflicto presentado
+        entre los derechos a la privacidad y al acceso a la información.
+
+263.    a) La información contenida en la cuenta debe ser de interés general
+        para la sociedad. En este asunto, se cumple este requisito en atención a
+        las siguientes razones: primera, la cuenta de Twitter objeto de la
+        controversia pertenece a un funcionario público, el cual no sólo ejerce
+        actualmente el cargo de fiscal general, sino que, además, ha tomado
+        notoriedad pública en dicha entidad federativa. Segunda, el contenido que
+        se difunde a través de dicha cuenta, entre otros temas, es referente a las
+        actividades públicas que el fiscal general realiza diariamente en
+        cumplimiento de su gestión pública.
+
+264.    En consecuencia, se puede afirmar que la información contenida y difundida
+        a través de la cuenta de Twitter @AbogadoWinckler tiene relevancia pública
+
+   79
+     Jurisprudencia 1a./J. 31/2013 (10a.). LIBERTAD DE EXPRESIÓN. LA CONSTITUCIÓN NO RECONOCE EL DERECHO AL INSULTO,
+   Primera Sala, Semanario Judicial de la Federación y su Gaceta, Décima Época, libro XIX, tomo I, abril de 2013, p. 537.
+
+
+
+
+   48
+                                                     AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+       o interés general en cuanto puede contribuir al debate en una sociedad
+       democrática al proyectar las actividades y expresiones que realiza este
+       personaje público.
+
+265.   b) La prevalencia del derecho a la información sobre el derecho a la
+       intimidad debe ser proporcional y encontrarse justificada. En este caso
+       el derecho a la información debe prevalecer sobre el derecho a la intimidad.
+       En la especie, el bloqueo realizado por el funcionario público a la cuenta
+       ********** implicó una restricción indebida al derecho al acceso de
+       información del periodista.
+
+266.   Esto en virtud de que dicho bloqueo no se basó en la persecución de un fin
+       constitucionalmente legítimo, pues, aunque el fiscal general adujo que la
+       información publicada en su cuenta de Twitter era de carácter personal y
+       pertenecía al ámbito de su vida privada, la realidad es que, como ha
+       quedado de manifiesto a lo largo de esta resolución, la información ahí
+       difundida reviste interés público. Esto es así porque cualquier otro usuario
+       está en condiciones de acceder a ella. En este sentido, no se colma el
+       primer elemento referente a la existencia de un interés constitucionalmente
+       legítimo.
+
+267.   Por otra parte, tampoco es posible sostener que la orden de desbloquear al
+       quejoso sea una medida desproporcional que afecte injustificadamente el
+       derecho a la privacidad del servidor público. En principio, porque fue él
+       mismo quien voluntariamente se colocó en esa posición de mayor escrutinio
+       público y decidió utilizar ese medio digital como un canal de comunión con
+       la ciudadanía. No acreditó la necesidad de resguardar la información
+       difundida en su cuenta de Twitter de la injerencia de la sociedad. Sumado
+       a la basta jurisprudencia nacional e internacional referente a que la
+       notoriedad de las personas públicas les genera un umbral de protección de
+       los derechos a la personalidad menos extenso que el de las personas
+       privadas. Sin que esta disminución represente una limitación
+       desproporcionada a su derecho a la intimidad.
+
+268.   c) La publicidad de la cuenta de Twitter @AbogadoWinckler está
+       justificada. En este punto debe decirse que la información difundida a
+       través de la cuenta @AbogadoWinckler es visible no sólo para los usuarios
+       de la red social, sino para cualquier persona con acceso a internet. Esto
+       debido a que la cuenta tiene una configuración abierta que permite que
+       quien así lo desee pueda visualizar su contenido.
+
+269.   Debe desatacarse que fue el propio titular de la cuenta quien configuró la
+       privacidad abierta y determinó que todo lo ahí difundido esté al alcance de
+
+
+
+                                                                               49
+   AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+        la sociedad. Este servidor público se encontraba en aptitud de configurar
+        una cuenta cerrada, lo cual no ocurrió.
+
+270.    Debe destacarse, adicionalmente, que en ningún momento alegó el
+        recurrente un comportamiento abusivo por parte del periodista que pudiera
+        justificar el bloqueo de la cuenta. Tampoco se argumentó que el acceso del
+        periodista al contenido de la cuenta transgrediera el núcleo material del
+        derecho a la privacidad del servidor público.
+
+271.    En consecuencia, resulta pertinente determinar que, en este caso, debe
+        prevalecer el derecho a la información del periodista sobre el derecho a la
+        intimidad del servidor público. Reiterando que la obligación de que este
+        último desbloquee al primero no resulta desproporcionada ni afecta
+        indebidamente sus derechos.
+
+272.    Por último es preciso señalar que el fiscal general y su cuenta de Twitter
+        @AbogadoWinckler adquirieron notoriedad pública. El primero, al acceder
+        al cargo público. La segunda, al ser utilizada voluntariamente por su titular
+        para difundir información referente al desempeño de su gestión. Al hacerlo,
+        estableció un canal de comunicación entre un funcionario público y la
+        ciudadanía.
+
+273.    En este sentido, el acto reclamado viola el derecho de acceso a la
+        información del quejoso, en virtud de que la cuenta @AbogadoWinckler
+        contiene información sobre las actividades que realiza Jorge Winckler Ortiz,
+        en su calidad de fiscal general. Dado que esa información es de interés
+        público, está sujeta a un escrutinio mayor por parte de la sociedad.
+
+                             7. EFECTOS DE LA SENTENCIA
+
+274.    En consecuencia, con el fin de restituir al quejoso completamente en el goce
+        de su derecho de acceso a la información, se deberá permitir el acceso a
+        ********** a la cuenta @AbogadoWinckler en Twitter.
+
+275.    En virtud de que el cumplimiento de las sentencias en amparo son de orden
+        público, en caso de que la autoridad responsable se niegue a desbloquear
+        de Twitter al usuario del quejoso **********, el juez de distrito está obligado
+        a seguir el procedimiento que establecen los artículos 192 a 198 de la Ley
+        de Amparo.
+
+276.    Ahora bien, el artículo 192 de la Ley de Amparo establece que las
+        ejecutorias deben ser cumplidas puntualmente. Para el supuesto de que la
+        autoridad responsable no acate lo ordenado en la presente ejecutoria, el
+
+
+
+   50
+                                                  AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+  juez de distrito podrá tomar las medidas necesarias para el cumplimiento.
+  Entre esas medidas se encuentra el requerir directamente a la red social
+  Twitter, a través de su representación legal en México, con el fin de que sea
+  ésta la encargada de quitar el bloqueo que el usuario ********** tiene para
+  acceder a la cuenta del usuario @AbogadoWinckler.
+
+       Por lo expuesto y fundado, se resuelve:
+
+       PRIMERO. En la materia de la revisión competencia de esta Segunda
+  Sala de la Suprema Corte de Justicia de la Nación, se confirma la sentencia
+  recurrida.
+
+       SEGUNDO. La Justicia de la Unión ampara y protege a ********** en
+  contra de la autoridad y el acto precisados en el resultando primero, para los
+  efectos establecidos en el fallo impugnado y en esta ejecutoria.
+
+       Notifíquese; con testimonio de esta ejecutoria, vuelvan los autos al
+  Tribunal de origen y, en su oportunidad, archívese el expediente.
+
+     Así lo resolvió la Segunda Sala de la Suprema Corte de Justicia de la
+Nación, por unanimidad de cuatro votos de los señores ministros Alberto
+Pérez Dayán, Eduardo Medina Mora I. (ponente), José Fernando Franco
+González Salas y Presidente Javier Laynez Potisek. El ministro José
+Fernando Franco González Salas emitió su voto con reservas. El ministro
+presidente Javier Laynez Potisek formulará voto concurrente.
+
+    Firman los Ministros Presidente y Ponente, con la Secretaria de
+Acuerdos de la Segunda Sala que autoriza y da fe.
+
+
+
+
+                PRESIDENTE DE LA SEGUNDA SALA:
+
+
+
+
+                MINISTRO JAVIER LAYNEZ POTISEK.
+
+
+
+
+                                                                            51
+AMPARO EN REVISIÓN 1005/2018
+
+
+
+
+                                           PONENTE:
+
+
+
+
+                      MINISTRO EDUARDO MEDINA MORA I.
+
+
+
+
+                            SECRETARIA DE ACUERDOS:
+
+
+
+
+                               JAZMÍN BONILLA GARCÍA.
+
+
+
+
+En términos de lo dispuesto por el Pleno de la Suprema Corte de Justicia de la Nación en su
+sesión del veinticuatro de abril de dos mil siete, y conforme a lo previsto en los artículos 3, fracción
+II, 13, 14 y 18 de la Ley Federal de Transparencia y Acceso a la Información Pública
+Gubernamental, así como en el segundo párrafo del artículo 9º del Reglamento de la Suprema
+Corte de Justicia de la Nación y del Consejo de la Judicatura Federal, en esta versión pública se
+suprima la información considerada legalmente como reservada o confidencial que encuadra en
+esos supuestos normativos.
+
+
+
+
+52
+

@@ -1,0 +1,5 @@
+variable,codigo,abstracto_si,abstracto_n,concreto_si,concreto_n,p_fisher
+proporcionalidad,si,7,9,28,86,0.011
+fuentes_internacionales,corte_idh,5,9,30,86,0.282
+perspectiva_genero,si,3,9,8,86,0.067
+resultado,protege,3,9,54,86,0.149

@@ -1,0 +1,57 @@
+{
+  "msgbatch_014S8d2rDTCFdRoYV8MRANvM": {
+    "modelo": "claude-opus-5-5",
+    "enviado": "2026-11-06T20:41:46",
+    "n": 102,
+    "recogido": true,
+    "archivo": "caso-completo/04-resultados/corridas/20261106-batch_claude-opus-5-5.jsonl",
+    "costo_usd": 4.26,
+    "tokens": {
+      "entrada": 1245612,
+      "cache": 553076,
+      "salida": 165856
+    },
+    "errores": []
+  },
+  "msgbatch_01DNctzGEPNBU4Xcbw6a2Job": {
+    "modelo": "claude-sonnet-5-5",
+    "enviado": "2026-11-06T20:41:47",
+    "n": 102,
+    "recogido": true,
+    "archivo": "caso-completo/04-resultados/corridas/20261106-batch_claude-sonnet-5-5.jsonl",
+    "costo_usd": 1.68,
+    "tokens": {
+      "entrada": 1245612,
+      "cache": 553076,
+      "salida": 75710
+    },
+    "errores": []
+  },
+  "msgbatch_01BeGcu6JMqHtuccbRW9MYXj": {
+    "modelo": "claude-haiku-5-5",
+    "enviado": "2026-11-06T20:41:49",
+    "n": 102,
+    "recogido": true,
+    "archivo": "caso-completo/04-resultados/corridas/20261106-batch_claude-haiku-5-5.jsonl",
+    "costo_usd": 0.13,
+    "tokens": {
+      "entrada": 1222066,
+      "cache": 525696,
+      "salida": 254561
+    },
+    "errores": [
+      [
+        "AD-9-2018",
+        "max_tokens"
+      ],
+      [
+        "AR-659-2017",
+        "max_tokens"
+      ],
+      [
+        "AI-35-2014",
+        "max_tokens"
+      ]
+    ]
+  }
+}

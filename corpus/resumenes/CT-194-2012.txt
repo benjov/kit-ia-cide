@@ -1,0 +1,383 @@
+ Este resumen contiene la carátula, la síntesis y el extracto de una sentencia de la Suprema Corte de Justicia
+ de la Nación. Para facilitar la lectura del extracto, se realizaron modificaciones al texto original de la misma.
+ Este documento tiene fines informativos, por lo que carece de efectos vinculantes.
+
+
+
+
+  INVIOLABILIDAD DE LAS COMUNICACIONES A TRAVÉS DE TELÉFONO CELULAR
+
+
+CASO: Contradicción de Tesis 194/2012
+
+
+MINISTRO PONENTE: Guillermo I. Ortiz Mayagoita
+
+
+SENTENCIA EMITIDA POR: Primera Sala de la Suprema Corte de Justicia de la Nación
+
+
+FECHA: 10 de octubre de 2012
+
+
+TEMAS: Inviolabilidad de las comunicaciones, inviolabilidad de las comunicaciones a través de
+teléfono celular o medios electrónicos, artículo 16 constitucional, comunicaciones privadas
+como medios probatorios.
+
+CITA DE LA SENTENCIA: Suprema Corte de Justicia de la Nación, Contradicción de Tesis
+194/2012, Primera Sala, Min. Guillermo I. Ortiz Mayagoita, sentencia de 10 de octubre de 2012,
+México.
+
+
+El texto íntegro de la sentencia puede consultarse en el siguiente enlace:
+https://www.scjn.gob.mx/derechos-humanos/sites/default/files/sentencias-
+emblematicas/sentencia/2022-01/CT194-2012.pdf
+
+
+CITA SUGERIDA PARA ESTE DOCUMENTO: Suprema Corte de Justicia de la Nación,
+Extracto del Contradicción de Tesis 194/2012, Centro de Estudios Constitucionales, México.
+                   SÍNTESIS DE LA CONTRADICCIÓN DE TESIS 194/2012
+
+
+ANTECEDENTES: El 8 de mayo de 2012 se denunció ante esta Suprema Corte de Justicia de
+la Nación (la Corte) la posible contradicción de tesis entre el criterio sostenido por un tribunal
+colegiado de Cuernavaca y el criterio sostenido por un tribunal colegiado en Chihuahua, ambos
+al resolver respectivos amparos directos. En dichas decisiones se discutió sobre la facultad de
+la autoridad ministerial o los agentes a su mando para revisar, extraer o utilizar como medio de
+prueba los archivos electrónicos almacenados en el teléfono celular propiedad del detenido
+relacionado con la comisión de un delito.
+
+
+CUESTIÓN A RESOLVER: Determinar el criterio que debe prevalecer en cuanto a si constituye
+o no una violación a la intervención de comunicaciones privadas, preservada en el artículo 16
+de la Constitución, el que la autoridad ministerial o los agentes a su mando revisen, extraigan o
+utilicen como medio de prueba los archivos electrónicos almacenados en forma de texto, audio,
+imagen o video, del teléfono celular propiedad del detenido relacionado con la comisión de un
+delito.
+
+
+RESOLUCIÓN DEL CASO: Se resolvió que sí existe contradicción de tesis, esencialmente, por
+las siguientes razones. En virtud del artículo 16 de la Constitución, para intervenir una
+comunicación privada se requiere autorización exclusiva de la autoridad judicial federal, a
+petición de la autoridad federal que faculte la ley o del titular del Ministerio Público de la entidad
+federativa correspondiente. A partir de ello, todas las formas existentes de comunicación y
+aquéllas que sean fruto de la evolución tecnológica, deben quedar protegidas por el derecho
+fundamental a la inviolabilidad de las comunicaciones privadas; como sucede con el teléfono
+móvil en el que se guarda información clasificada como privada por esta Corte; además, el
+objeto de protección constitucional no hace referencia únicamente al proceso de comunicación,
+sino también a aquellos datos que identifican la comunicación. En este sentido, el registro de
+los números marcados por un usuario de la red telefónica, la identidad de los comunicantes o
+la duración de la llamada telefónica, llevado a cabo sin las garantías necesarias para la
+restricción del derecho fundamental al secreto de las comunicaciones, puede provocar su
+
+
+                                                  I
+vulneración. Derivado de ello, las pruebas obtenidas, directa o indirectamente violando
+derechos fundamentales, no surtirán efecto alguno. Esta afirmación afecta tanto a las pruebas
+obtenidas por los poderes públicos, como a aquéllas obtenidas, por su cuenta y riesgo, por un
+particular. En esa tesitura, si la autoridad encargada de la investigación, al detenerla, advierte
+que traía consigo un teléfono celular, está facultada para decretar el aseguramiento de ese
+objeto y solicitar a la autoridad judicial la intervención de las comunicaciones privadas, en los
+términos como lo describe la norma constitucional citada; de manera que si esa actividad se
+realiza sin que exista esa autorización judicial, cualquier prueba que se extraiga, o bien, la que
+derive de ésta, será considerada como ilícita y no tendrá valor jurídico alguno. En consecuencia,
+se estableció que debía prevalecer con carácter de jurisprudencia el criterio establecido en los
+siguientes términos: “DERECHO A LA INVIOLABILIDAD DE LAS COMUNICACIONES
+PRIVADAS. SU ÁMBITO DE PROTECCIÓN SE EXTIENDE A LOS DATOS ALMACENADOS
+EN EL TELÉFONO MÓVIL ASEGURADO A UNA PERSONA DETENIDA Y SUJETA A
+INVESTIGACIÓN POR LA POSIBLE COMISIÓN DE UN DELITO”.
+
+
+VOTACIÓN: La Primera Sala resolvió el presente asunto unanimidad de cinco votos de la
+ministra Olga Sánchez Cordero de García Villegas, los ministros Arturo Zaldívar Lelo de Larrea,
+José Ramón Cossío Díaz, Guillermo I. Ortiz Mayagoitia y Jorge Mario Pardo Rebolledo (se
+reservó el derecho de formular voto concurrente).
+
+
+Los votos formulados pueden consultarse en el siguiente enlace:
+https://www2.scjn.gob.mx/ConsultaTematica/PaginasPub/DetallePub.aspx?AsuntoID=138865
+
+
+
+
+                                                II
+                        EXTRACTO DE LA CONTRADICCIÓN DE TESIS 194/2012
+    p.1   Ciudad de México. La Primera Sala de la Suprema Corte de Justicia de la Nación (esta
+          Corte), en sesión de 10 de octubre de 2012, emite la siguiente sentencia.
+
+                                              ANTECEDENTES
+
+    p.1   El 8 de mayo de 2012 se denunció ante esta Corte la posible contradicción de tesis entre
+          el criterio sostenido por un tribunal colegiado en Cuernavaca y el criterio sostenido por un
+          tribunal colegiado en Chihuahua, ambos al resolver respectivos amparos directos.
+
+    p.6   El amparo directo resuelto por el tribunal colegiado de Chihuahua dio lugar a la tesis
+          aislada de rubro “Intervención de comunicaciones privadas. No la constituye el hecho de
+          que el ministerio público indague sobre la información que contienen los teléfonos
+          celulares relacionados con la comisión de un delito”.
+
+   p.12   Por su parte, el amparo directo resuelto por el tribunal colegiado de Cuernavaca dio origen
+          a la tesis aislada de rubro “Derecho a la inviolabilidad de comunicaciones privadas. El
+          hecho de que el juez competente pueda, excepcionalmente, en la persecución e
+          investigación de los delitos, ordenar la intromisión a teléfonos celulares, no implica que el
+          ministerio público pueda exigir a los agentes investigadores la reproducción de los
+          archivos electrónicos que contenga el teléfono móvil de un detenido”.
+
+                                            ESTUDIO DE FONDO
+
+p.20-21   Con la finalidad de establecer y determinar si existe o no la contradicción de tesis
+          denunciada, se estima conveniente analizar las consideraciones y argumentaciones
+          siguientes: (a) Los tribunales contendientes, al resolver las cuestiones litigiosas
+          presentadas, se vieron en la necesidad de ejercer el arbitrio judicial a través de un
+          ejercicio interpretativo para llegar a una solución determinada; b) De la lectura de los
+          aspectos destacados en las ejecutorias mencionadas, se desprende que la interpretación
+          realizada por los tribunales colegiados contendientes versó sobre un mismo problema
+          jurídico, cuyas características y antecedentes resultan ser esencialmente idénticos. No
+
+
+
+
+                                                     1
+       obstante lo anterior, la conclusión a la que arribaron ambos tribunales no fue en el mismo
+       sentido jurídico.
+
+p.21   Al resolverse el amparo directo por el tribunal colegiado de Chihuahua, se determinó no
+       otorgarlo y, en lo que interesa, expuso que la revisión de la información contenida en los
+       teléfonos celulares relacionados con la comisión de un delito no constituye una
+       intervención de comunicaciones privadas, cuya inviolabilidad preserva el artículo 16 de la
+       Constitución Federal y, por tanto, no se requiere del consentimiento de los inculpados
+       para que la autoridad investigadora indague la información que contienen.
+
+p.22   Por su parte, de lo resuelto en el amparo directo por el tribunal colegiado de Cuernavaca,
+       se determinó conceder la protección de la justicia federal solicitada, para lo cual razonó
+       que el derecho a la privacidad o intimidad está protegido por el artículo 16, párrafo
+       primero, de la Constitución Federal, por lo que los archivos electrónicos almacenados en
+       teléfonos celulares merecen la protección que se les otorga a las comunicaciones
+       privadas, ya que actualmente, a través de esos medios, pueden resguardarse datos
+       privados e íntimos de las personas, en forma de texto, audio, imagen o video, los cuales,
+       de revelarse a terceros, pueden llegar a afectar la intimidad y privacidad de alguien, en
+       ocasiones, con mayor gravedad y trascendencia que la intervención a una comunicación
+       verbal o escrita, o incluso a un domicilio particular.
+
+       Así, tratándose de la persecución e investigación de delitos, excepcionalmente el juez
+       competente podrá ordenar la intromisión a los teléfonos celulares, pero en ningún caso
+       el Ministerio Público puede exigir a los agentes investigadores que reproduzcan los
+       archivos electrónicos que contenga el teléfono celular de algún detenido.
+
+p.23   En ese orden de ideas, queda evidenciado que no obstante que los antecedentes y
+       elementos jurídicos a evaluar resultan esencialmente iguales, en el aspecto especifico
+       del orden de estudio apuntado los órganos jurisdiccionales concluyeron con posiciones
+       jurídicas discrepantes.
+
+       Con base en lo anterior, queda acreditada la existencia de la contradicción de tesis.
+
+
+
+
+                                                   2
+          I.     Marco constitucional e interpretación del derecho a la inviolabilidad de
+                 las comunicaciones privadas
+
+       De las consideraciones de ambos tribunales, se advierte que se puede dar lugar a la
+       formulación de una pregunta genuina acerca de si ¿constituye o no una violación a la
+       intervención de comunicaciones privadas, preservada en el artículo 16 de la Constitución
+       Federal, el que la autoridad ministerial o los agentes a su mando revisen, extraigan o
+       utilicen como medio de prueba los archivos electrónicos almacenados en forma de texto,
+       audio, imagen o video, del teléfono celular que traía consigo el detenido relacionado con
+       la comisión de un delito?
+
+p.24   Así, esta Corte señala que en principio la inviolabilidad de las comunicaciones privadas
+       está resguardada en el artículo 16 de la Constitución Federal.
+
+p.25   Respecto al tema de la inviolabilidad de las comunicaciones privadas, se ha sostenido
+       que se trata de un derecho fundamental. Sin embargo, para saber el ámbito de protección
+       constitucional, es indispensable dotar de contenido a ese derecho fundamental, es por
+       ello que cabría preguntarse ¿cuáles son sus límites materiales? y ¿qué tipo de
+       comunicaciones se encuentran protegidas por este derecho?
+
+       Las respuestas a esas interrogantes han quedado aclaradas por esta Corte, al resolver
+       por unanimidad de cinco votos el Amparo Directo en Revisión 1621/2010.
+
+p.26   En la referida sentencia, se sostuvo que la comprensión del régimen constitucional de
+       este derecho nos obliga a distinguir sus elementos configuradores: Al respecto, se
+       sostuvo que a pesar de ser una manifestación más de aquellos derechos que preservan
+       al individuo de un ámbito de actuación libre de injerencias de terceros –como sucede con
+       el derecho a la intimidad, a la inviolabilidad del domicilio     o la protección de datos
+       personales-, el derecho a la inviolabilidad de las comunicaciones privadas posee una
+       autonomía propia reconocida por la Constitución. En cuanto a su objeto, se dijo que el
+       derecho a la inviolabilidad de las comunicaciones se configura como una garantía formal,
+       esto es, las comunicaciones resultan protegidas con independencia de su contenido. En
+
+
+
+
+                                                 3
+       este sentido, no se necesita en modo alguno analizar el contenido de la comunicación, o
+       de sus circunstancias, para determinar su protección por el derecho fundamental.
+
+p.27   En definitiva, esta Corte ha sostenido que, lo que se encuentra prohibido por el párrafo
+       decimosegundo del artículo 16 de la Constitución es la intercepción o el conocimiento
+       antijurídico de una comunicación ajena. La violación de este derecho se consuma en el
+       momento en que se escucha, se graba, se almacena, se lee o se registra –sin el
+       consentimiento de los interlocutores-, una comunicación ajena, con independencia de
+       que, con posterioridad, se difunda el contenido de la conversación interceptada.
+
+       Se agrega que, respecto a esta última cuestión, es conveniente enfatizar en que la
+       reserva de las comunicaciones se impone sólo frente a terceros, de tal forma que el
+       levantamiento del secreto por uno de los participantes en la comunicación no se considera
+       una violación a este derecho fundamental. Lo anterior no resulta óbice para que, en su
+       caso, se configure una violación al derecho a la intimidad dependiendo, como se señaló
+       anteriormente, del contenido concreto de la conversación divulgada.
+
+p.28   A fin de garantizar la reserva que se predica de todo proceso comunicativo privado, la
+       Primera Sala de esta Corte enfatizó en el Amparo Directo en Revisión 1621/2010 que
+       resultaba indispensable que los datos externos de la comunicación también sean
+       protegidos. Esto se debe a que, si bien es cierto que los datos no se refieren al contenido
+       de la comunicación, también lo es que en muchas ocasiones ofrecen información sobre
+       las circunstancias en que se ha producido la comunicación, afectando así, de modo
+       directo o indirecto, la privacidad de los comunicantes.
+
+p.29   En lo que hace al ámbito temporal de protección de las comunicaciones privadas, se
+       destaca que es importante señalar que la inviolabilidad de las comunicaciones se
+       extiende también con posterioridad al momento en el que se produce la comunicación.
+       Esto resulta de especial importancia en aquellos casos en los que el mensaje se
+       materializa en un objeto una vez finalizado el proceso comunicativo, ya que existen
+       muchos medios de comunicación que, por su naturaleza, conservan el contenido de las
+       conversaciones.
+
+
+
+                                                  4
+       Por otra parte, resulta importante advertir dos cuestiones. En primer término, que la
+       intercepción de las comunicaciones privadas requiere de la intención del tercero ajeno a
+       la misma. Esto es, se debe intervenir conscientemente en el proceso comunicativo y no
+       como consecuencia de un error o casualidad. En este último caso, no se produciría
+       consecuencia jurídica alguna, si aquél que interviene fortuitamente en una comunicación
+       ajena, no difunde el contenido de la misma o afecta otro derecho. En segundo lugar, que
+       la violación al derecho fundamental en estudio requiere un medio de transmisión del
+       mensaje distinto de la palabra o gesto percibido directamente entre dos individuos, esto
+       último, con independencia –otra vez-, de la posible violación al derecho a la intimidad.
+
+p.30   En lo que respecta al medio a través del cual se realiza la comunicación objeto de
+       protección –aspecto importante para el desarrollo de la presente contradicción de tesis-,
+       se señala que nuestra Constitución no limita los medios a través de los cuales se puede
+       producir la comunicación objeto de protección del derecho fundamental en estudio. Esto
+       resulta acorde con la finalidad de la norma, que no es otra que la libertad de las
+       comunicaciones, siendo que ésta puede ser conculcada por cualquier medio o artificio
+       técnico desarrollado a la luz de las nuevas tecnologías.
+
+p.31   Asimismo, se asevera que el ámbito de actuación de un individuo, libre de injerencias de
+       terceros, no se encuentra protegido únicamente por la inviolabilidad de las
+       comunicaciones privadas, dado que se trata de una garantía formal que protege el
+       proceso comunicativo con independencia del contenido de los mensajes. Sin embargo,
+       existe otro derecho fundamental, el de intimidad, que protege un ámbito propio y
+       reservado de las personas que se pretende mantener ajeno al conocimiento de terceros.
+
+p.34   Por tales razones, se concluye que todo elemento probatorio que pretenda deducirse de
+       la violación de derechos fundamentales es de imposible valoración en nuestro
+       ordenamiento. La ineficacia de la prueba no sólo afecta a las pruebas obtenidas
+       directamente en el acto constitutivo de la violación de un derecho fundamental, sino
+       también a las adquiridas a partir o a resultas de aquéllas, aunque en su consecución se
+       hayan cumplido todos los requisitos constitucionales. Tanto unas como otras han sido
+
+
+
+
+                                                 5
+       conseguidas gracias a la violación de un derecho fundamental –las primeras de forma
+       directa y las segundas de modo indirecto-, por lo que, en pura lógica, de acuerdo con la
+       regla de exclusión, no pueden ser utilizadas en el proceso.
+
+          II.    Inviolabilidad de las comunicaciones a través de teléfono celular
+
+p.41   Al respecto, “teléfono celular” se define como un dispositivo móvil, pequeño, con
+       capacidades de procesamiento (cada vez más parecidos a una PC), móviles y portátiles,
+       con conexión permanente o intermitente a una red (internet), con memoria limitada,
+       diseñados para llevar a cabo funciones generales, como de correo electrónico, hablar por
+       teléfono, mensajes, manejo de imágenes, música y video.
+
+p.42   Así, se destaca que cualquier persona que cuente con un celular, tiene el derecho de
+       guardar información en la memoria del aparato, por lo que, acorde a los alcances que
+       esta Corte determinó respecto a la reserva de las comunicaciones protegida por el artículo
+       16 de la Carta Magna, esa información se clasifica como privada, es decir, que pertenece
+       exclusivamente a la intimidad de la persona; es por ello que se dijo que la reserva de las
+       comunicaciones se impone sólo frente a terceros, de tal forma que el levantamiento del
+       secreto por uno de los participantes en la comunicación no se considera una violación a
+       este derecho fundamental.
+
+p.43   Debe expresarse que esta Corte no es ajena a la circunstancia particular que se suscita
+       actualmente en nuestro país, con el mal uso de los teléfonos celulares, pues la
+       experiencia en el conocimiento de los asuntos, revelan las prácticas delictivas que se
+       originan con su utilización, en este ámbito, encontramos la proliferación de extorsiones,
+       chantajes, secuestros, etc.
+
+       Es por ello que el legislador en el referido artículo 16 constitucional, impuso como límite
+       para la inviolabilidad de las comunicaciones privadas, su intervención previa autorización
+       exclusiva por parte de la autoridad judicial federal, a petición de la autoridad federal que
+       faculte la ley o del titular del Ministerio Público de la entidad federativa correspondiente.
+
+
+
+
+                                                   6
+p.44   En esa tesitura, si la autoridad encargada de la investigación de un delito, advierte que
+       cualquier detenido tiene en su poder un teléfono celular y el mismo pudo haber sido
+       utilizado como medio para fines antisociales, está constitucionalmente facultada para
+       solicitar a la autoridad judicial la intervención de las comunicaciones privadas
+       almacenadas en ese dispositivo, en los términos descritos en el citado artículo 16.
+
+       La información que se extraiga, vía autorización judicial, de los archivos electrónicos, ya
+       sea en forma de texto, audio, imagen o video, relacionada estrictamente con la posible
+       comisión de un hecho delictivo, puede ser incorporada al procedimiento penal y, por ende,
+       será lícita.
+
+       Sin embargo, si esa actividad de búsqueda y obtención de información se realiza sin la
+       autorización judicial correspondiente, cualquier prueba que se extraiga, o bien, la que
+       derive de ésta, será considerada como ilícita, como lo definió esta Corte en el precedente
+       de que se trata, pues en dicho supuesto se actuó fuera de los márgenes constitucionales
+       permitidos, por lo que al tratarse de comunicaciones privadas, todas las formas existentes
+       de comunicación y aquéllas que sean fruto de la evolución tecnológica, deben quedar
+       protegidas por el derecho fundamental a su inviolabilidad.
+
+p.45   Con base en tales razonamientos, se puede concluir que en términos del artículo 16
+       constitucional, para intervenir una comunicación privada, se requiere autorización
+       exclusiva por parte de la autoridad judicial federal, a petición de la autoridad federal que
+       faculte la ley o del titular del Ministerio Público de la entidad federativa correspondiente,
+       por lo que todas las formas existentes de comunicación y aquéllas que sean fruto de la
+       evolución tecnológica, deben quedar protegidas por el derecho fundamental a su
+       inviolabilidad; tal como sucede con el teléfono móvil en el que se guarda información que
+       ha sido clasificada como privada por esta Corte, de ahí que el ámbito de protección se
+       extiende a los datos almacenados en ese dispositivo, ya sea en forma de texto, audio,
+       imagen o video.
+
+
+
+
+                                                   7
+   p.46   Partiendo de lo anterior, no existe razón para restringir ese derecho a cualquier persona
+          por su sola calidad de haber sido detenida y estar sujeta a investigación por la posible
+          comisión de un delito.
+
+          En conclusión, si la autoridad encargada de la investigación, al detenerla, advierte que
+          traía consigo un teléfono celular, está facultada para decretar el aseguramiento de ese
+          objeto y solicitar a la autoridad judicial la intervención de las comunicaciones privadas, en
+          los términos como lo describe la norma constitucional citada; de manera que si esa
+          actividad se realiza sin que exista esa autorización judicial, cualquier prueba que se
+          extraiga, o bien, la que derive de ésta, será considerada como ilícita y no tendrá valor
+          jurídico alguno.
+
+                                                RESOLUCIÓN
+
+p.46-48   De acuerdo con lo anterior, debe prevalecer con carácter de jurisprudencia el criterio
+          establecido por esta Corte en los siguientes términos: “Derecho a la inviolabilidad de las
+          comunicaciones privadas. Su ámbito de protección se extiende a los datos almacenados
+          en el teléfono móvil asegurado a una persona detenida y sujeta a investigación por la
+          posible comisión de un delito.”
+
+   -
+
+
+
+
+                                                     8
+

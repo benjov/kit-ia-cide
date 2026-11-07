@@ -1,0 +1,9 @@
+# Secretos
+.env
+# Entornos
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# PDFs originales: se regeneran con scripts/descargar_corpus.py y se verifican con verificar_hashes.py
+corpus/pdf/

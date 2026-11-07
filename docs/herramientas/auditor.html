@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es" data-base="..">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auditor de citas</title>
+<meta name="description" content="Revisa, resaltada en el texto original, cada cita con la que Claude justificó sus códigos.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/estilo.css">
+<style>
+  .panel { display: grid; grid-template-columns: 360px 1fr; gap: 16px; align-items: start; }
+  .texto { background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio); padding: 18px 20px; max-height: 78vh; overflow: auto;
+    font-family: var(--serif); font-size: .98rem; line-height: 1.65; white-space: pre-wrap; word-wrap: break-word; }
+  mark { background: var(--alerta-suave); color: inherit; border-bottom: 2px solid var(--alerta); padding: 0 1px; border-radius: 3px; scroll-margin: 120px; }
+  mark.activa { background: color-mix(in srgb, var(--alerta) 35%, transparent); }
+  .codigos { position: sticky; top: 72px; display: grid; gap: 8px; }
+  .cod { background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px; padding: 10px 12px; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
+  .cod:hover { border-color: var(--acento); }
+  .cod .var { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--texto-suave); }
+  .cod .val { font-weight: 700; }
+  .cod q { display: block; font-size: .85rem; color: var(--texto-suave); margin-top: 4px; }
+  .selectores { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; }
+  @media (max-width: 860px) { .panel { grid-template-columns: 1fr; } .codigos { position: static; } .texto { max-height: none; } }
+</style>
+</head>
+<body>
+<main class="contenedor">
+  <section class="hero">
+    <div class="sobre">Herramienta · Auditoría · Control 2</div>
+    <h1>Auditor de citas</h1>
+    <p class="lead">Cada código que asignó Claude trae una cita del documento. Aquí puedes ver si la cita <strong>existe literalmente</strong>, dónde está y qué dice el contexto. Haz clic en un código para saltar a su evidencia.</p>
+  </section>
+  <div class="selectores">
+    <div><label for="doc">Sentencia</label><select id="doc"></select></div>
+    <div><label for="mod">Codificador</label><select id="mod"></select></div>
+  </div>
+  <div id="meta" style="margin:14px 0"></div>
+  <div class="panel">
+    <div class="codigos" id="codigos"></div>
+    <div class="texto" id="texto" tabindex="0" aria-label="Texto del resumen oficial">Cargando…</div>
+  </div>
+</main>
+<script src="../assets/comun.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const VARS = { promovente: "Promovente", resultado: "Resultado", derecho_principal: "Derecho principal",
+  fuentes_internacionales: "Fuentes internacionales", proporcionalidad: "Proporcionalidad", perspectiva_genero: "Perspectiva de género" };
+let DATA;
+function patron(cita) {
+  const palabras = cita.normalize("NFC").trim().split(/\s+/).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/["“”«»]/g, '["“”«»]'));
+  return new RegExp(palabras.join("[\\s\\-]+"), "i");
+}
+async function mostrar() {
+  const id = $("doc").value, mod = $("mod").value, d = DATA.docs[id], c = d.cod[mod];
+  history.replaceState(null, "", `#${id}|${mod}`);
+  $("meta").innerHTML = `<strong>${KIT.esc(d.caso)}</strong> · ${KIT.esc(d.titulo)} <span class="etiqueta ${d.tipo === "AI" ? "azul" : ""}">${d.tipo === "AI" ? "control abstracto" : "control concreto"}</span>
+    · <a href="${d.url_resumen}" target="_blank" rel="noopener">resumen oficial (PDF)</a> · <a href="${d.url_sentencia}" target="_blank" rel="noopener">sentencia completa (PDF)</a>`;
+  let texto = (await fetch(`../data/textos/${id}.txt`).then(r => r.text())).normalize("NFC");
+  // 1) Buscar todas las citas en el texto original; 2) resaltar sin traslapes
+  const tarjetas = [], rangos = [];
+  Object.entries(VARS).forEach(([v, nombre], k) => {
+    if (!c || !c[v]) return;
+    const { codigo, cita, confianza } = c[v];
+    let estado = "sin cita (ausencia)", clase = "";
+    if (cita) {
+      const m = patron(cita).exec(texto);
+      if (m) { rangos.push({ ini: m.index, fin: m.index + m[0].length, k, t: `${nombre}: ${codigo}` }); estado = "✓ cita verificada"; clase = "ok"; }
+      else { estado = "✗ cita NO encontrada"; clase = "error"; }
+    }
+    tarjetas.push(`<button class="cod" type="button" data-k="${k}">
+      <div class="var">${nombre}</div><div class="val">${KIT.esc(codigo)} <span class="etiqueta ${clase}">${estado}</span> <span class="etiqueta">${KIT.esc(confianza || "")}</span></div>
+      ${cita ? `<q>${KIT.esc(cita)}</q>` : ""}</button>`);
+  });
+  if (c && c.nota) tarjetas.push(`<div class="tarjeta" style="padding:12px;font-size:.88rem"><strong>Nota del codificador:</strong> ${KIT.esc(c.nota)}</div>`);
+  if (!c) tarjetas.push(`<div class="aviso">Este codificador no tiene datos para este documento.</div>`);
+  rangos.sort((a, b) => a.ini - b.ini);
+  let html = "", pos = 0;
+  for (const r of rangos) {
+    if (r.ini < pos) { r.k2 = true; continue; }  // traslapa con otra cita: queda dentro del resaltado anterior
+    html += KIT.esc(texto.slice(pos, r.ini)) + `<mark id="m${r.k}" title="${KIT.esc(r.t)}">${KIT.esc(texto.slice(r.ini, r.fin))}</mark>`;
+    pos = r.fin;
+  }
+  html += KIT.esc(texto.slice(pos));
+  $("codigos").innerHTML = tarjetas.join("");
+  $("texto").innerHTML = html;
+  rangos.filter(r => r.k2).forEach(r => {
+    const prev = rangos.filter(x => !x.k2 && x.ini <= r.ini).pop();
+    if (prev) { const el = document.getElementById("m" + prev.k); el.dataset.alias = ((el.dataset.alias || "") + ` m${r.k}`).trim(); }
+  });
+  $("codigos").querySelectorAll(".cod").forEach(b => b.addEventListener("click", () => {
+    const m = document.getElementById("m" + b.dataset.k) || document.querySelector(`[data-alias~="m${b.dataset.k}"]`); if (!m) return;
+    document.querySelectorAll("mark").forEach(x => x.classList.remove("activa"));
+    m.classList.add("activa"); m.scrollIntoView({ behavior: "smooth", block: "center" });
+  }));
+}
+KIT.json("../data/codificaciones.json").then(d => {
+  DATA = d;
+  const ids = Object.keys(d.docs).sort((a, b) => (d.docs[a].tipo === "AI" ? 0 : 1) - (d.docs[b].tipo === "AI" ? 0 : 1) || a.localeCompare(b));
+  $("doc").innerHTML = ids.map(i => `<option value="${i}">${d.docs[i].tipo === "AI" ? "★ " : ""}${KIT.esc(d.docs[i].caso)} — ${KIT.esc(d.docs[i].titulo.slice(0, 60))}</option>`).join("");
+  $("mod").innerHTML = d.codificadores.map(m => `<option value="${m.id}">${KIT.esc(m.nombre)}</option>`).join("");
+  const [hid, hmod] = decodeURIComponent(location.hash.slice(1)).split("|");
+  if (d.docs[hid]) $("doc").value = hid;
+  if (hmod) $("mod").value = hmod;
+  $("doc").addEventListener("change", mostrar); $("mod").addEventListener("change", mostrar);
+  mostrar();
+}).catch(() => { $("texto").textContent = "No se pudieron cargar los datos. Si abriste el archivo localmente, sírvelo con: python -m http.server (desde la carpeta docs/)."; });
+</script>
+</body>
+</html>
