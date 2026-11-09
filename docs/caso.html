@@ -65,7 +65,7 @@
   <section class="panel-fase" data-fase="2" role="tabpanel" hidden>
     <h2>Fase 2 · Prototipo del prompt (Workbench)</h2>
     <div class="rejilla-2">
-      <div class="tarjeta"><h3>Qué hicimos</h3><ol><li>System prompt con el codebook como variable.</li><li>Salida forzada a JSON con un esquema (cada variable: código, cita, confianza).</li><li>Prueba con 3 documentos difíciles y los tres modelos.</li><li>Medimos tokens: unos 19,000 de entrada y 1,750 de salida por documento.</li><li><em>Get code</em> → el mismo prompt pasó a <code>scripts/codificar_api.py</code>.</li></ol></div>
+      <div class="tarjeta"><h3>Qué hicimos</h3><ol><li>System prompt con el codebook como variable.</li><li>Salida forzada a JSON con un esquema (cada variable: código, cita, confianza).</li><li>Prueba con 3 documentos difíciles y los tres modelos.</li><li>Medimos tokens: unos 19,000 de entrada y 1,750 de salida por documento.</li><li><em>Get code</em> → el mismo prompt pasó a <code>scripts/codificar_api.py</code> (carril B; en la sesión no lo necesitas).</li></ol></div>
       <div class="tarjeta"><h3>El caso que nos enseñó algo</h3><p>En la <strong>AI 148/2017</strong> (aborto), la Corte valida un artículo e invalida otros. La regla del codebook dice <code>mixto</code>. Opus lo aplicó y explicó en su nota por qué no era <code>protege</code>. Ese documento quedó como caso de prueba permanente.</p>
         <p><a href="herramientas/auditor.html#AI-148-2017|claude-opus-5-5">Verlo en el auditor →</a></p></div>
     </div>
@@ -84,7 +84,7 @@
 
   <section class="panel-fase" data-fase="4" role="tabpanel" hidden>
     <h2>Fase 4 · Escalar: tres modelos, 102 documentos</h2>
-    <p>Para el caso usamos la <strong>Batch API</strong> (50% más barata). En la sesión harás lo mismo con Cowork sobre 20 documentos.</p>
+    <p>Para el caso usamos la <strong>Batch API</strong> (50% más barata), con código, porque comparamos 3 modelos sobre 102 documentos. En la sesión harás lo mismo con Cowork sobre 20 documentos, sin programar: Claude ejecuta la verificación de citas y el kappa dentro del skill.</p>
     <div class="tabla-env"><table><thead><tr><th>Modelo</th><th class="num">Documentos</th><th class="num">Citas verificadas</th><th class="num">Códigos con confianza baja</th><th class="num">Costo real (Batch)</th></tr></thead><tbody id="t-modelos"></tbody></table></div>
     <h3>¿Coinciden los modelos entre sí? (kappa, 102 documentos)</h3>
     <div class="tabla-env"><table class="calor"><thead id="h-entre"></thead><tbody id="t-entre"></tbody></table></div>
@@ -93,11 +93,37 @@
   </section>
 
   <section class="panel-fase" data-fase="5" role="tabpanel" hidden>
-    <h2>Fase 5 · Validación contra la referencia humana</h2>
+    <h2>Fase 5 · Validación contra la referencia humana (SIMULADA)</h2>
     <div class="aviso"><strong>⚠️ Codificación humana SIMULADA.</strong> Para este ejercicio didáctico, la referencia "humana" (20 documentos) se generó con un procedimiento documentado: parte de los códigos de Opus e introduce desacuerdos plausibles, con más probabilidad donde Claude declaró baja confianza (<a href="https://github.com/benjov/kit-ia-cide/blob/main/scripts/simular_codificacion_humana.py">script</a>). Por eso el kappa de Opus está <strong>inflado por construcción</strong>. En tu ejercicio, la referencia es real: la haces tú, a ciegas, antes de ver a Claude.</div>
     <h3>Kappa de cada modelo contra la referencia (n = 20)</h3>
     <div class="ley"><span><i style="background:var(--ok)"></i>≥ 0.61 se reporta</span><span><i style="background:var(--alerta)"></i>0.41–0.60 con advertencia</span><span><i style="background:var(--error)"></i>&lt; 0.41 no se reporta</span></div>
     <div class="tabla-env"><table class="calor"><thead id="h-ref"></thead><tbody id="t-ref"></tbody></table></div>
+    <figure class="diagrama">
+      <h4>Kappa de Opus con su intervalo de confianza del 95%, contra los umbrales del protocolo</h4>
+      <div class="bosque">
+      <div class="fila"><span><code>promovente</code></span>
+        <div class="pista" title="promovente: κ = 1.00, IC 95% [1.00, 1.00], se reporta" role="img" aria-label="promovente: κ = 1.00, IC 95% [1.00, 1.00], se reporta"><i class="umbral cero" style="left:16.7%"></i><i class="umbral" style="left:50.8%"></i><i class="umbral" style="left:67.5%"></i><i class="ic" style="left:100.0%;width:0.6%"></i><i class="pt ok" style="left:100.0%"></i></div>
+        <span class="val">κ = 1.00 · se reporta<small>IC [1.00, 1.00]</small></span></div>
+      <div class="fila"><span><code>resultado</code></span>
+        <div class="pista" title="resultado: κ = 0.75, IC 95% [0.49, 1.00], se reporta" role="img" aria-label="resultado: κ = 0.75, IC 95% [0.49, 1.00], se reporta"><i class="umbral cero" style="left:16.7%"></i><i class="umbral" style="left:50.8%"></i><i class="umbral" style="left:67.5%"></i><i class="ic" style="left:57.9%;width:42.1%"></i><i class="pt ok" style="left:78.9%"></i></div>
+        <span class="val">κ = 0.75 · se reporta<small>IC [0.49, 1.00]</small></span></div>
+      <div class="fila"><span><code>derecho_principal</code></span>
+        <div class="pista" title="derecho_principal: κ = 0.65, IC 95% [0.40, 0.85], se reporta" role="img" aria-label="derecho_principal: κ = 0.65, IC 95% [0.40, 0.85], se reporta"><i class="umbral cero" style="left:16.7%"></i><i class="umbral" style="left:50.8%"></i><i class="umbral" style="left:67.5%"></i><i class="ic" style="left:50.2%;width:37.7%"></i><i class="pt ok" style="left:70.6%"></i></div>
+        <span class="val">κ = 0.65 · se reporta<small>IC [0.40, 0.85]</small></span></div>
+      <div class="fila"><span><code>fuentes_internacionales</code></span>
+        <div class="pista" title="fuentes_internacionales: κ = 0.71, IC 95% [0.38, 0.93], se reporta" role="img" aria-label="fuentes_internacionales: κ = 0.71, IC 95% [0.38, 0.93], se reporta"><i class="umbral cero" style="left:16.7%"></i><i class="umbral" style="left:50.8%"></i><i class="umbral" style="left:67.5%"></i><i class="ic" style="left:48.3%;width:45.8%"></i><i class="pt ok" style="left:75.8%"></i></div>
+        <span class="val">κ = 0.71 · se reporta<small>IC [0.38, 0.93]</small></span></div>
+      <div class="fila"><span><code>proporcionalidad</code></span>
+        <div class="pista" title="proporcionalidad: κ = 0.40, IC 95% [-0.04, 0.79], no se reporta" role="img" aria-label="proporcionalidad: κ = 0.40, IC 95% [-0.04, 0.79], no se reporta"><i class="umbral cero" style="left:16.7%"></i><i class="umbral" style="left:50.8%"></i><i class="umbral" style="left:67.5%"></i><i class="ic" style="left:13.5%;width:69.2%"></i><i class="pt error" style="left:50.0%"></i></div>
+        <span class="val">κ = 0.40 · no se reporta<small>IC [-0.04, 0.79]</small></span></div>
+      <div class="fila"><span><code>perspectiva_genero</code></span>
+        <div class="pista" title="perspectiva_genero: κ = 1.00, IC 95% [1.00, 1.00], se reporta" role="img" aria-label="perspectiva_genero: κ = 1.00, IC 95% [1.00, 1.00], se reporta"><i class="umbral cero" style="left:16.7%"></i><i class="umbral" style="left:50.8%"></i><i class="umbral" style="left:67.5%"></i><i class="ic" style="left:100.0%;width:0.6%"></i><i class="pt ok" style="left:100.0%"></i></div>
+        <span class="val">κ = 1.00 · se reporta<small>IC [1.00, 1.00]</small></span></div>
+        <div class="fila ejes"><span></span><div class="eje"><span style="left:16.7%">0</span><span style="left:50.8%">0.41</span><span style="left:67.5%">0.61</span><span style="left:100.0%">1</span></div><span></span></div>
+      </div>
+      <div class="ley" style="margin-top:10px"><span><i style="background:var(--ok)"></i>≥ 0.61 se reporta</span><span><i style="background:var(--alerta)"></i>0.41–0.60 con advertencia</span><span><i style="background:var(--error)"></i>&lt; 0.41 no se reporta</span></div>
+      <figcaption>El punto es el kappa (n = 20, referencia SIMULADA); la línea, su IC del 95% por bootstrap; las líneas punteadas, los umbrales fijados antes de ver resultados. La decisión se toma con el punto, como dice el protocolo, pero el intervalo muestra cuánta incertidumbre hay: el de <code>proporcionalidad</code> va de −0.04 a 0.79, compatible con acuerdo nulo y con acuerdo sustancial. Un IC de [1.00, 1.00] no es certeza: con acuerdo perfecto, ninguna remuestra puede desviarse y el bootstrap no capta la incertidumbre. Con 6 documentos, como en tu ejercicio, los intervalos suelen ir de 0 a 1, y si uno de los dos usa un solo código el script no da intervalo. Son métricas de referencia: se profundizan en la sesión 5 (evaluaciones, Claude Code y Claude Science). Datos: <a href="https://github.com/benjov/kit-ia-cide/blob/main/caso-completo/05-validacion/confiabilidad-opus.csv"><code>confiabilidad-opus.csv</code></a> · <a href="conceptos.html#metricas">qué es el intervalo</a>.</figcaption>
+    </figure>
     <div class="tarjeta" style="margin-top:16px"><h3>Decisión que tomamos</h3><p><code>proporcionalidad</code> no pasa el umbral fijado <em>antes</em> de ver resultados. Al revisar los desacuerdos, las notas del propio Claude señalaban la ambigüedad: en la AI 25/2016, la AI 87/2015 y la AI 54/2018, la Corte <strong>enuncia</strong> los estándares de necesidad y proporcionalidad, pero <strong>no aplica un test por etapas</strong>. ¿Eso cuenta como "sí"? El codebook v1.0 no lo decía. Se agregó una regla (v1.1), que <strong>debe validarse con una muestra nueva</strong> antes de reportar H1.</p></div>
     <div class="tarjeta" style="margin-top:16px"><h3>🔎 La auditoría también encontró errores en la fuente</h3><p>Al codificar, Opus advirtió en sus notas que la carátula oficial del resumen de la <strong>AI 35/2014</strong> cita "Acción de Inconstitucionalidad 22/2016… 2 de octubre de 2019", que es otro caso. La de la <strong>AI 148/2017</strong> fecha la sentencia en 2017, aunque se emitió en 2021. Lo verificamos: es cierto. <strong>Los documentos oficiales también tienen errores</strong>, y un flujo con citas verificables los saca a la luz.</p></div>
   </section>

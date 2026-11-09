@@ -45,22 +45,52 @@
 
   <h2>Instalar el skill del caso</h2>
   <ol>
-    <li>Comprime la carpeta <code>skills/codificador-scjn</code> en un .zip (clic derecho → Comprimir).</li>
-    <li>Claude Desktop → <strong>Configuración → Capacidades</strong>: activa la ejecución de código y creación de archivos.</li>
+    <li>Descomprime el kit (Mac: doble clic; Windows: clic derecho → <em>Extraer todo</em>).</li>
+    <li>Comprime la carpeta <code>skills/codificador-scjn</code> en un .zip (Mac: clic derecho → <em>Comprimir</em>; Windows: clic derecho → <em>Enviar a → Carpeta comprimida</em>).</li>
+    <li>En Claude (Desktop o claude.ai) → <strong>Configuración → Capacidades</strong>: activa la ejecución de código y creación de archivos.</li>
     <li>En la sección <strong>Skills</strong>, sube el .zip y actívalo.</li>
-    <li>Prueba en Cowork: <em>"Usa el skill codificador-scjn para codificar 2 documentos de ejercicio/muestra-20."</em></li>
+    <li>Prueba en Cowork (solo Claude Desktop), en una tarea nueva con la carpeta del kit: <em>"Usa el skill codificador-scjn para codificar 2 documentos de ejercicio/muestra-20."</em></li>
   </ol>
 
+  <p>No necesitas Python: los scripts de verificación de citas y kappa del skill los ejecuta Claude dentro de Cowork.</p>
+
+  <h2 id="verifica">Verifica el kit tú mismo (Claude ejecuta los scripts)</h2>
+  <p>No tienes que creerle al kit. Cada afirmación del caso se puede comprobar ejecutando un script, y no necesitas programar: abre <strong>Cowork</strong> con la carpeta del kit, pega el prompt y pide la salida literal. Si prefieres la terminal, el comando está al lado. Todo esto es gratis y no gasta créditos de API.</p>
+  <figure class="diagrama">
+    <h4>Quién hace qué cuando verificas</h4>
+    <div class="cadena">
+      <div class="nodo"><b>Tú</b>Pegas el prompt de la tabla en Cowork, con la carpeta del kit abierta.</div><span class="fl">prompt</span>
+      <div class="nodo acento"><span class="donde">entorno aislado</span><b>Claude en Cowork</b>Ejecuta el script del kit. No lo reescribe ni lo "mejora".</div><span class="fl">ejecuta</span>
+      <div class="nodo"><span class="donde">scripts/</span><b>El script</b>Calcula hashes, busca citas o compara archivos. Es determinista: siempre da lo mismo con los mismos datos.</div><span class="fl">salida literal</span>
+      <div class="nodo ok"><b>Tú comparas</b>La salida literal contra la columna "Debes ver".</div>
+    </div>
+    <figcaption>El veredicto lo da el script, no la explicación de Claude. Por eso los prompts piden la salida literal (o "la comparación con el kit", que es salida literal del script): si Claude resume, puede equivocarse al resumir; si copia la salida, puedes compararla número por número. Quien programe puede ejecutar los mismos comandos en una terminal (carril B) y debe obtener exactamente lo mismo.</figcaption>
+  </figure>
+  <div class="tabla-env"><table>
+    <thead><tr><th>Qué compruebas</th><th>Prompt para Cowork</th><th>Debes ver</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Procedencia</strong>: los PDF son idénticos a los de la SCJN (<a href="conceptos.html#corpus">¿qué es un SHA-256?</a>)</td><td><em>"Ejecuta scripts/verificar_hashes.py --muestra 3 y muéstrame la salida literal."</em></td><td><code>Coinciden: 6 · No coinciden: 0</code></td></tr>
+      <tr><td><strong>Generación del corpus</strong>: el script de descarga funciona y produce el mismo texto</td><td><em>"Ejecuta scripts/descargar_corpus.py --muestra 3 --destino mi-trabajo/corpus-prueba y muéstrame la comparación con el kit. No toques la carpeta corpus/."</em></td><td><code>PDF idénticos (SHA-256): 6</code> y <code>Textos idénticos: 6</code>, en menos de un minuto</td></tr>
+      <tr><td><strong>Citas</strong>: todas existen literalmente (<a href="conceptos.html#citas">¿por qué importa?</a>)</td><td><em>"Ejecuta scripts/verificar_citas.py con la corrida batch de Opus de caso-completo/04-resultados/corridas/ y muéstrame la salida literal."</em></td><td><code>Citas verificadas: 431/431 (100.0%)</code></td></tr>
+      <tr><td><strong>Kappa y métricas</strong> contra la referencia SIMULADA (<a href="conceptos.html#kappa">¿qué es kappa?</a> · <a href="conceptos.html#metricas">otras métricas</a>)</td><td><em>"Ejecuta scripts/calcular_acuerdo.py con caso-completo/05-validacion/gold-standard-SIMULADO.csv y la corrida batch de Opus, con --desacuerdos --detalle. Muéstrame la salida literal y después explícame los desacuerdos y la matriz de confusión de proporcionalidad."</em></td><td>proporcionalidad κ = 0.40, IC 95% [−0.04, 0.79], α = 0.42, F1 macro 0.70</td></tr>
+      <tr><td><strong>Todo el caso</strong>: de las salidas crudas a las tablas, el memo y este sitio (<a href="conceptos.html#reproducibilidad">reproducibilidad</a>)</td><td><em>"Ejecuta scripts/analizar_resultados.py --salida mi-trabajo/reproduccion y muéstrame la comparación final con el kit."</em></td><td><code>Archivos idénticos: 108 · distintos: 0</code></td></tr>
+    </tbody>
+  </table></div>
+  <p style="color:var(--texto-suave);font-size:.9rem">Si Cowork dice que no tiene internet hacia <code>scjn.gob.mx</code>, es una restricción de su entorno. Descarga tú el PDF desde el navegador (la URL está en el manifiesto) y pide: <em>"Ejecuta scripts/verificar_hashes.py --pdf mi-trabajo/&lt;archivo&gt;.pdf y muéstrame la salida literal"</em>. Los comandos para terminal, cómo volver a codificar con la API y lo que cuesta están en <a href="https://github.com/benjov/kit-ia-cide/blob/main/scripts/README.md"><code>scripts/README.md</code></a>.</p>
+
   <h2>Carril B (opcional, con código)</h2>
-  <p>Si quieres reproducir el caso completo desde cero:</p>
+  <p>No se usa en la sesión. Si quieres reproducir el caso completo desde cero con la API desde una terminal:</p>
   <div class="arbol">pip install -r requirements.txt
-python scripts/descargar_corpus.py          <i># vuelve a bajar el corpus de la SCJN</i>
+python scripts/descargar_corpus.py --muestra 3 --destino mi-trabajo/corpus-prueba   <i># prueba sin tocar el kit</i>
+python scripts/descargar_corpus.py          <i># regenera el corpus completo (sobrescribe corpus/)</i>
 python scripts/verificar_hashes.py --muestra 10
 cp .env.ejemplo .env                         <i># y pon tu API key</i>
+python scripts/codificar_api.py --modelo claude-haiku-5-5 --limite 1 --salida mi-trabajo/api
 python scripts/codificar_batch.py enviar --modelos claude-haiku-5-5
 python scripts/codificar_batch.py recoger
 python scripts/verificar_citas.py caso-completo/04-resultados/corridas/&lt;archivo&gt;.jsonl
-python scripts/calcular_acuerdo.py &lt;humano.csv&gt; &lt;claude.jsonl&gt; --desacuerdos</div>
+python scripts/calcular_acuerdo.py &lt;humano.csv&gt; &lt;claude.jsonl&gt; --desacuerdos --detalle
+python scripts/analizar_resultados.py --salida mi-trabajo/reproduccion</div>
   <p style="color:var(--texto-suave);font-size:.9rem">En la sesión 5 veremos cómo Claude Code hace todo esto por ti, de forma conversacional.</p>
 </main>
 <script src="assets/comun.js"></script>

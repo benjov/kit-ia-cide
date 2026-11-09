@@ -13,6 +13,11 @@ Uso:
   python scripts/codificar_api.py                                # todo el corpus, Opus 5.5
   python scripts/codificar_api.py --modelo claude-haiku-5-5      # mismo corpus, otro modelo
   python scripts/codificar_api.py --ids AI-148-2017 AR-1064-2019 # documentos específicos
+  python scripts/codificar_api.py --modelo claude-haiku-5-5 --limite 1 --salida mi-trabajo/api
+                                                                 # prueba sin tocar las corridas del caso
+
+También puedes pedirle a Claude en Cowork que lo ejecute (ver scripts/README.md). La key
+la pones tú en .env; nunca la pegues en el chat. Cada ejecución gasta tus créditos de API.
 
 Salida: caso-completo/04-resultados/corridas/<fecha>_<modelo>.jsonl  (una línea por documento)
         y un resumen en pantalla con tokens y costo estimado.
@@ -29,7 +34,8 @@ import os
 import sys
 from pathlib import Path
 
-import anthropic
+# `anthropic` se importa dentro de main(), después de leer los argumentos: así `--help`
+# responde al instante aunque el SDK tarde en cargar.
 
 RAIZ = Path(__file__).resolve().parent.parent
 
@@ -112,7 +118,12 @@ def main() -> None:
     ap.add_argument("--modelo", default="claude-opus-5-5", choices=sorted(PRECIOS))
     ap.add_argument("--limite", type=int, help="codificar solo los primeros N documentos")
     ap.add_argument("--ids", nargs="*", help="codificar solo estos IDs")
+    ap.add_argument("--salida", type=Path, default=SALIDA, help="carpeta de salida (por omisión, las corridas del caso)")
     args = ap.parse_args()
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        sys.exit("Falta ANTHROPIC_API_KEY: copia .env.ejemplo como .env en la raíz del kit y pon tu key.")
+    global anthropic
+    import anthropic
 
     system = PROMPT.read_text(encoding="utf-8").replace("{{CODEBOOK}}", CODEBOOK.read_text(encoding="utf-8"))
     docs = [r for r in csv.DictReader(MANIFIESTO.open(encoding="utf-8")) if r["archivo_resumen"]]
@@ -123,9 +134,9 @@ def main() -> None:
     if not docs:
         sys.exit("No hay documentos que codificar.")
 
-    SALIDA.mkdir(parents=True, exist_ok=True)
+    args.salida.mkdir(parents=True, exist_ok=True)
     marca = dt.datetime.now().strftime("%Y%m%d-%H%M")
-    destino = SALIDA / f"{marca}_{args.modelo}.jsonl"
+    destino = args.salida / f"{marca}_{args.modelo}.jsonl"
     client = anthropic.Anthropic()
     tin = tout = tcache = 0
     errores = []
@@ -157,7 +168,7 @@ def main() -> None:
 
     pin, pout = PRECIOS[args.modelo]
     costo = (tin * pin + tcache * pin * 0.1 + tout * pout) / 1e6
-    print(f"\nSalida: {destino.relative_to(RAIZ)}")
+    print(f"\nSalida: {destino}")
     print(f"Tokens: entrada={tin:,}  caché={tcache:,}  salida={tout:,}  →  costo estimado ≈ US${costo:.2f}")
     if errores:
         print(f"Errores ({len(errores)}): " + ", ".join(e[0] for e in errores))

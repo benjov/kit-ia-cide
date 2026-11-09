@@ -55,6 +55,9 @@ CODIFICADORES = ["H1-simulado", "H2-simulado"]
 
 
 def main() -> None:
+    if len(sys.argv) == 2 and sys.argv[1] in ("-h", "--help"):
+        print(__doc__)
+        return
     if len(sys.argv) != 2:
         sys.exit(__doc__)
     claude = {json.loads(l)["id"]: json.loads(l) for l in Path(sys.argv[1]).read_text(encoding="utf-8").splitlines() if l.strip()}

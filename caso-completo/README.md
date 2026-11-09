@@ -2,15 +2,17 @@
 
 El caso resuelto de punta a punta, para ver cómo se ve terminado antes de hacer el propio. **Versión navegable con gráficas**: [sitio → Caso completo](https://benjov.github.io/kit-ia-cide/caso.html).
 
-| Fase | Archivo | Herramienta |
-|---|---|---|
-| 0 · Pregunta y corpus | este README + [`../corpus/manifiesto_emblematicas.csv`](../corpus/manifiesto_emblematicas.csv) | — |
-| 1 · Codebook | [`01-codebook.md`](01-codebook.md) | Chat (Proyecto) |
-| 2 · Prompt | [`02-prompt/`](02-prompt/) | Console Workbench |
-| 3 · Skill | [`../skills/codificador-scjn/`](../skills/codificador-scjn/) | Skills |
-| 4 · Escalar | [`04-resultados/`](04-resultados/) | API Batch (en la sesión: Cowork) |
-| 5 · Validar | [`05-validacion/`](05-validacion/) | Scripts / Cowork |
-| 6 · Comunicar | [`06-memo-metodologico.md`](06-memo-metodologico.md) | Chat |
+| Fase | Archivo | Cómo se hizo en el caso | Cómo lo haces tú en la sesión (sin código) |
+|---|---|---|---|
+| 0 · Pregunta y corpus | este README + [`../corpus/manifiesto_emblematicas.csv`](../corpus/manifiesto_emblematicas.csv) | Script de descarga (`descargar_corpus.py`) | Ya está hecho: usas `ejercicio/muestra-20/`. Si quieres comprobarlo, pídele a Cowork que ejecute el script en modo de prueba ([`scripts/README.md`](../scripts/README.md)) |
+| 1 · Codebook | [`01-codebook.md`](01-codebook.md) | Chat con Proyecto | Chat con Proyecto (claude.ai o Desktop) |
+| 2 · Prompt | [`02-prompt/`](02-prompt/) | Workbench | Workbench (Claude Console, navegador) |
+| 3 · Skill | [`../skills/codificador-scjn/`](../skills/codificador-scjn/) | Skills | Cowork arma el .zip; lo subes en Configuración → Capacidades → Skills |
+| 4 · Escalar | [`04-resultados/`](04-resultados/) | API Batch: 102 documentos × 3 modelos (carril B) | Cowork con tu skill, 20 documentos (solo Desktop) |
+| 5 · Validar | [`05-validacion/`](05-validacion/) | Scripts (carril B) | Cowork: Claude ejecuta los mismos scripts dentro del skill |
+| 6 · Comunicar | [`06-memo-metodologico.md`](06-memo-metodologico.md) | Chat | Chat o Cowork |
+
+La Batch API se usó porque el caso compara 3 modelos sobre 102 documentos. Para la escala de la sesión, Cowork basta.
 
 ## Fase 0 · Pregunta y corpus
 
@@ -21,6 +23,8 @@ El caso resuelto de punta a punta, para ver cómo se ve terminado antes de hacer
 **Cómo llegamos a esta pregunta** (y no a la original): ver [bitácora D1](../auditoria/bitacora-decisiones.md).
 
 ## Reproducir el caso (carril B, opcional)
+
+Sin terminal: pídele a Cowork *"Ejecuta scripts/analizar_resultados.py --salida mi-trabajo/reproduccion y muéstrame la comparación final con el kit"*. Debe decir `Archivos idénticos: 108 · distintos: 0`. Con terminal, desde cero (gasta créditos de API):
 
 ```bash
 pip install -r requirements.txt

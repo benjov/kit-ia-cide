@@ -12,7 +12,16 @@ Uso:
   python scripts/verificar_citas.py <archivo>.jsonl --csv auditoria/reporte_citas.csv
 
 Funciona con la salida de codificar_api.py y con el CSV que produce el skill en Cowork
-(columnas <variable>_codigo y <variable>_cita).
+(columnas <variable>_codigo y <variable>_cita). **Detecta solas las variables** a partir de
+los encabezados: no hay que editar el script para usar una variable nueva.
+Acepta CSV separados por coma o por punto y coma (Excel en español), con o sin BOM.
+
+Un código vacío de cita se acepta si indica ausencia: `no`, `ninguna`, `ninguno`,
+`no_identificable`, o cualquier código que empiece con `no_` o `ningun` (p. ej.
+`no_invocado`, `ninguno_explicito`). Puedes agregar otros con --ausencia.
+
+Si lo ejecuta Claude dentro de un skill (Cowork o Chat con ejecución de código), tú no
+necesitas instalar Python: corre en el entorno de Claude.
 Requisitos: solo Python 3.10+ (sin dependencias).
 """
 from __future__ import annotations
@@ -26,8 +35,33 @@ import unicodedata
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
+# Variables del caso completo (las usa analizar_resultados.py). Para otros archivos, el
+# script detecta las variables solo (ver detectar_variables).
 VARIABLES = ["promovente", "resultado", "derecho_principal", "fuentes_internacionales", "proporcionalidad", "perspectiva_genero"]
-AUSENCIA = {"ninguna", "no", "no_identificable"}
+AUSENCIA = {"ninguna", "ninguno", "no", "no_identificable", "no_aplica", "no_cita", "no_invocado"}
+
+
+def es_ausencia(codigo: str, extra: set[str] = frozenset()) -> bool:
+    c = (codigo or "").strip().lower()
+    return c in AUSENCIA or c in extra or c.startswith("no_") or c.startswith("ningun")
+
+
+def leer_csv(path: Path) -> list[dict]:
+    """Lee un CSV tolerando BOM y separador ';' (Excel en español)."""
+    texto = path.read_text(encoding="utf-8-sig")
+    primera = texto.splitlines()[0] if texto else ""
+    sep = ";" if primera.count(";") > primera.count(",") else ","
+    return [{(k or "").strip(): (v or "") for k, v in r.items()} for r in csv.DictReader(texto.splitlines(), delimiter=sep)]
+
+
+def detectar_variables(filas: list[dict]) -> list[str]:
+    """Variables presentes: claves que son {codigo, cita} en JSONL o columnas <var>_codigo en CSV."""
+    vistas: list[str] = []
+    for f in filas:
+        for k, v in f.items():
+            if isinstance(v, dict) and "codigo" in v and k not in vistas:
+                vistas.append(k)
+    return vistas
 
 
 def normalizar(s: str) -> str:
@@ -53,11 +87,12 @@ def cargar(path: Path) -> list[dict]:
     if path.suffix == ".jsonl":
         return [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines() if l.strip()]
     filas = []
-    for r in csv.DictReader(path.open(encoding="utf-8")):
-        fila = {"id": r["id"]}
-        for v in VARIABLES:
-            if f"{v}_codigo" in r:
-                fila[v] = {"codigo": r[f"{v}_codigo"], "cita": r.get(f"{v}_cita", "")}
+    for r in leer_csv(path):
+        fila = {"id": r["id"].strip()}
+        for col in r:
+            if col.endswith("_codigo"):
+                v = col[: -len("_codigo")]
+                fila[v] = {"codigo": r[col].strip(), "cita": r.get(f"{v}_cita", "")}
         filas.append(fila)
     return filas
 
@@ -67,9 +102,15 @@ def main() -> None:
     ap.add_argument("resultados", type=Path)
     ap.add_argument("--corpus", type=Path, default=RAIZ / "corpus" / "resumenes")
     ap.add_argument("--csv", type=Path, help="guardar el detalle en un CSV")
+    ap.add_argument("--ausencia", nargs="*", default=[], help="otros códigos que indican ausencia (cita vacía permitida)")
     args = ap.parse_args()
 
     filas = cargar(args.resultados)
+    variables = detectar_variables(filas)
+    extra = {a.lower() for a in args.ausencia}
+    if not variables:
+        sys.exit("No encontré variables: el archivo necesita columnas <variable>_codigo y <variable>_cita.")
+    print(f"Variables detectadas: {', '.join(variables)}")
     detalle, ok, mal, vacias_indebidas = [], 0, 0, 0
     for f in filas:
         fuente = args.corpus / f"{f['id']}.txt"
@@ -78,12 +119,12 @@ def main() -> None:
             continue
         texto = fuente.read_text(encoding="utf-8")
         tnorm = normalizar(texto)
-        for v in VARIABLES:
+        for v in variables:
             if v not in f:
                 continue
             codigo, cita = f[v]["codigo"], (f[v].get("cita") or "").strip()
             if not cita:
-                estado = "sin_cita_ok" if codigo in AUSENCIA else "sin_cita_FALTA"
+                estado = "sin_cita_ok" if es_ausencia(codigo, extra) else "sin_cita_FALTA"
                 vacias_indebidas += estado == "sin_cita_FALTA"
             elif normalizar(cita) in tnorm:
                 estado = "verificada"
@@ -102,7 +143,7 @@ def main() -> None:
     for d in detalle:
         if d["estado"] in ("NO_ENCONTRADA", "sin_cita_FALTA"):
             print(f"  ✗ {d['id']:<16} {d['variable']:<24} {d['estado']:<15} «{d['cita'][:80]}»")
-    if args.csv:
+    if args.csv and detalle:
         args.csv.parent.mkdir(parents=True, exist_ok=True)
         with args.csv.open("w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, fieldnames=list(detalle[0]))

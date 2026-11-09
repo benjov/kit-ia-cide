@@ -1,7 +1,7 @@
-variable,n,acuerdo,kappa,interpretacion
-promovente,20,1.0,1.0,casi perfecto
-resultado,20,0.85,0.747,sustancial
-derecho_principal,20,0.7,0.647,sustancial
-fuentes_internacionales,20,0.8,0.71,sustancial
-proporcionalidad,20,0.7,0.4,aceptable
-perspectiva_genero,20,1.0,1.0,casi perfecto
+variable,n,acuerdo,kappa,kappa_ic95_inf,kappa_ic95_sup,alfa_krippendorff,ac1_gwet,f1_macro,interpretacion
+promovente,20,1.0,1.0,1.0,1.0,1.0,1.0,1.0,casi perfecto
+resultado,20,0.85,0.747,0.495,1.0,0.753,0.787,0.766,sustancial
+derecho_principal,20,0.7,0.647,0.402,0.854,0.654,0.672,0.61,sustancial
+fuentes_internacionales,20,0.8,0.71,0.38,0.929,0.715,0.741,0.866,sustancial
+proporcionalidad,20,0.7,0.4,-0.038,0.792,0.415,0.4,0.7,aceptable
+perspectiva_genero,20,1.0,1.0,1.0,1.0,1.0,1.0,1.0,casi perfecto

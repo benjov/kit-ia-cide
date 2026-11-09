@@ -2,6 +2,8 @@
 
 Cada participante trabaja **solo/a, en su propio equipo**. Eliges **una variable nueva** (de las 10 de abajo o una tuya) y la llevas por todo el flujo: codebook → prompt → skill → Cowork → validación → hallazgo.
 
+**Todo se hace desde las aplicaciones de Claude**: Chat con Proyecto (claude.ai o Desktop), Workbench (Claude Console, en el navegador), Skills (Configuración → Capacidades) y Cowork (solo Claude Desktop). No necesitas terminal ni Python: los scripts de auditoría los ejecuta Claude dentro de Cowork. El paso a paso, con dónde se abre cada herramienta, está en la [guía de la sesión](https://benjov.github.io/kit-ia-cide/guia.html).
+
 **Tu corpus**: [`muestra-20/`](muestra-20/), con 20 resúmenes: las 9 acciones de inconstitucionalidad (control abstracto) y 11 amparos elegidos al azar con semilla 2026 (control concreto). La lista está en [`muestra-20/muestra.csv`](muestra-20/muestra.csv).
 
 ## Tú haces los dos papeles: diseñas y validas
@@ -13,7 +15,9 @@ Sin equipo, la validación humana la haces tú, con una regla: **codificas a man
 | Los **6 marcados `a_mano = si`** en `muestra.csv` (3 AI y 3 amparos, los más cortos) | **Tú, a ciegas**, en [`hoja-codificacion-humana.csv`](hoja-codificacion-humana.csv), y también Claude | Mientras Cowork trabaja (fase 4). No mires sus resultados de esos 6 hasta terminar tu hoja |
 | Los otros 14 | Solo Claude | Fase 4 |
 
-**Cómo codificar rápido (unos 4 minutos por documento)**: lee la carátula y la síntesis (la primera página). Luego busca con Ctrl+F las palabras clave de tu variable y copia la frase que justifica tu código en la columna `variable_cita`. Cambia `variable` en el encabezado por el nombre de tu variable (p. ej. `evidencia_codigo`).
+**Cómo codificar rápido (unos 4 minutos por documento)**: abre la hoja con Excel, Numbers o Google Sheets. Cambia `variable` por el nombre de tu variable en los encabezados (p. ej. `evidencia_codigo` y `evidencia_cita`). Abre cada `.txt` con TextEdit o el Bloc de notas, lee la carátula y la síntesis (la primera página), busca con Ctrl+F las palabras clave de tu variable y copia la frase que justifica tu código en la columna de cita. Guarda la hoja en `mi-trabajo/` como CSV o como .xlsx; Cowork lee ambos formatos, también el CSV con `;` que guarda Excel en español.
+
+**Por qué así** (detalles y referencias en [Conceptos](https://benjov.github.io/kit-ia-cide/conceptos.html#humana)): tu codificación es la *referencia* contra la que se mide a Claude. Tiene que ser a ciegas porque, si ves sus códigos antes, tiendes a confirmarlos y el acuerdo sale inflado. El kappa de Cohen mide ese acuerdo descontando el que ocurriría por azar.
 
 **Límites que debes declarar**:
 
@@ -46,6 +50,7 @@ Cada ficha trae una **definición inicial** a propósito imperfecta: parte del e
 **Pregunta**: ¿El razonamiento de la Corte usa datos, estadísticas, estudios o peritajes?
 **Códigos iniciales**: `datos_estadisticos` · `estudios_academicos` · `peritajes` · `ninguna`
 **Por qué importa**: es la pregunta más "de ciencias sociales" de todas. ¿La Corte usa nuestro trabajo?
+**Trampa**: ¿cuenta un dato que solo aparece en los alegatos o en la síntesis del caso, y no en el razonamiento de la Corte?
 
 ### 5 · Órdenes al legislador
 **Pregunta**: ¿La sentencia ordena o exhorta a un poder legislativo a legislar o modificar una ley?
@@ -56,6 +61,7 @@ Cada ficha trae una **definición inicial** a propósito imperfecta: parte del e
 **Pregunta**: ¿De qué orden de gobierno es la norma o el acto que se revisa?
 **Códigos iniciales**: `federal` · `estatal` · `municipal` · `mixto` · `no_aplica`
 **Por qué importa**: federalismo judicial. ¿La Corte es más estricta con los estados?
+**Trampa**: en los amparos el acto puede ser de una autoridad local que aplica una ley federal. ¿Se codifica la norma o el acto?
 
 ### 7 · Categoría sospechosa
 **Pregunta**: ¿La Corte identifica una categoría sospechosa (art. 1º, último párrafo) y aplica escrutinio estricto por ello?
@@ -71,6 +77,7 @@ Cada ficha trae una **definición inicial** a propósito imperfecta: parte del e
 **Pregunta**: ¿Cómo caracteriza la Corte la actuación de la autoridad o del legislador?
 **Códigos iniciales**: `critico_explicito` · `neutral_tecnico` · `deferente`
 **Por qué importa**: es una variable **interpretativa**. Esperamos un kappa más bajo. ¿Qué nos dice eso del uso de LLM en variables latentes?
+**Trampa**: el lenguaje judicial es formal casi siempre. ¿Qué frase concreta distingue "crítico" de "neutral", y la puedes citar?
 
 ### 10 · Diálogo jurisprudencial interno
 **Pregunta**: ¿La Corte se apoya en sus propios precedentes (tesis o jurisprudencia de la SCJN)?

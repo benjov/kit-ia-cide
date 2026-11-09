@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guía de la sesión</title>
-<meta name="description" content="Paso a paso de la sesión 4 (actividad individual): qué hacer en cada fase, con qué herramienta y con qué prompt.">
+<meta name="description" content="Paso a paso de la sesión 4 (actividad individual): qué hacer en cada fase, en qué aplicación de Claude y con qué prompt. Sin programar.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/estilo.css">
 <style>
@@ -19,6 +19,7 @@
   .copiar { position: absolute; right: 8px; top: 8px; font-size: .78rem; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--borde); background: var(--superficie); color: var(--texto); cursor: pointer; }
   .roles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
   details summary { cursor: pointer; font-weight: 600; }
+  .porque { font-size: .92rem; background: var(--azul-suave); border-radius: 8px; padding: 8px 12px; }
 </style>
 </head>
 <body>
@@ -26,10 +27,49 @@
   <section class="hero">
     <div class="sobre">Para participantes · actividad individual</div>
     <h1>Guía de la sesión</h1>
-    <p class="lead">Dos horas y media, siete fases, una variable. Trabajas en tu propio equipo: eliges una variable, la agregas al caso y la llevas de la definición al hallazgo.</p>
+    <p class="lead">Dos horas y media, siete fases, una variable. Trabajas en tu propio equipo: eliges una variable y la llevas de la definición al hallazgo, solo con las aplicaciones de Claude.</p>
   </section>
 
-  <div class="aviso info"><strong>Antes de empezar:</strong> descarga y descomprime el <a href="kit.html">kit</a>. Vas a usar la carpeta <code>ejercicio/muestra-20/</code> (20 resúmenes), las fichas de <code>ejercicio/README.md</code> y la plantilla <code>skills/plantilla-codificador/</code>.</div>
+  <div class="aviso info"><strong>Todo se hace desde las aplicaciones de Claude.</strong> No necesitas terminal, Python ni git, y no editas código. Los scripts de auditoría (verificar citas, calcular kappa) los ejecuta <strong>Claude dentro de Cowork</strong>, como parte del skill. La terminal y Claude Code son para la sesión 5.</div>
+
+  <p>¿Términos como codebook, kappa o referencia humana? Cada fase trae un recuadro <strong>¿Por qué?</strong> y los fundamentos completos, con referencias, están en <a href="conceptos.html">Conceptos</a>.</p>
+
+  <h2>¿Dónde se hace cada cosa?</h2>
+  <div class="tabla-env"><table>
+    <thead><tr><th>Herramienta</th><th>Dónde la abres</th><th>¿claude.ai o Desktop?</th><th>Fases</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Chat con Proyecto</strong></td><td>Barra lateral → <em>Proyectos</em> → <em>Nuevo proyecto</em></td><td>Cualquiera de los dos</td><td>1 y 6</td></tr>
+      <tr><td><strong>Workbench</strong></td><td><strong>Claude Console</strong> en el navegador (<code>platform.claude.com</code>) → <em>Workbench</em>. Usa tus créditos de API</td><td>Ninguno: es otra página, con otro inicio de sesión</td><td>2</td></tr>
+      <tr><td><strong>Skills</strong></td><td><em>Configuración → Capacidades → Skills</em></td><td>Cualquiera (el skill queda en tu cuenta)</td><td>3</td></tr>
+      <tr><td><strong>Cowork</strong></td><td>Pestaña <em>Cowork</em> de la app; eliges la carpeta del kit</td><td><strong>Solo Claude Desktop</strong></td><td>3, 4 y 5</td></tr>
+      <tr><td><strong>Ejecución de código y creación de archivos</strong></td><td><em>Configuración → Capacidades</em> (actívala una vez)</td><td>Cualquiera</td><td>Es lo que hace funcionar el skill</td></tr>
+      <tr><td>Hoja de cálculo</td><td>Excel, Numbers o Google Sheets</td><td>—</td><td>4 (tu codificación a mano)</td></tr>
+      <tr><td>Sitio del kit</td><td>Este sitio, en el navegador</td><td>—</td><td>0 y 5</td></tr>
+    </tbody>
+  </table></div>
+
+  <figure class="diagrama">
+    <h4>Qué pasa de una aplicación a otra (todo queda en tu carpeta <code>mi-trabajo/</code>)</h4>
+    <div class="cadena vert">
+      <div class="nodo"><span class="donde">claude.ai o Desktop</span><b>1 · Chat con Proyecto</b><span class="cuerpo">Diseñas y congelas tu variable.<span class="archivo">codebook.md</span></span></div><span class="fl">lo descargas</span>
+      <div class="nodo"><span class="donde">Console · navegador</span><b>2 · Workbench</b><span class="cuerpo">Pruebas el prompt en 2 documentos y 2 modelos.<span class="archivo">tus notas: tokens, citas</span></span></div><span class="fl">si falla, ajustas antes de congelar</span>
+      <div class="nodo acento"><span class="donde">Solo Desktop</span><b>3 · Cowork arma el skill</b><span class="cuerpo">Copia la plantilla con tu codebook.<span class="archivo">codificador-[mi-variable].zip</span></span></div><span class="fl">lo subes en Configuración → Skills</span>
+      <div class="nodo acento"><span class="donde">Solo Desktop</span><b>4 · Cowork codifica 20</b><span class="cuerpo">Y verifica las citas con el script del skill.<span class="archivo">resultados_codificacion.csv</span></span></div><span class="fl">+ tu hoja a ciegas</span>
+      <div class="nodo acento"><span class="donde">Solo Desktop</span><b>5 · Cowork valida</b><span class="cuerpo">Kappa, métricas y desacuerdos.<span class="archivo">hoja-codificacion-humana</span></span></div><span class="fl">los números</span>
+      <div class="nodo ok"><span class="donde">Chat o Cowork</span><b>6 · Tu nota</b><span class="cuerpo">Variable, distribución, kappa, límites.<span class="archivo">nota.docx</span></span></div>
+    </div>
+    <figcaption>Las cajas guinda son Cowork, que solo existe en Claude Desktop. Workbench es la única parada fuera de las apps: es una página de Claude Console en el navegador, con otro inicio de sesión. Ningún paso te pide abrir una terminal; los scripts los ejecuta Claude dentro de Cowork.</figcaption>
+  </figure>
+
+  <h2>Antes de la sesión (10 minutos)</h2>
+  <ol>
+    <li><strong>Descarga el kit</strong>: <a href="https://github.com/benjov/kit-ia-cide/archive/refs/heads/main.zip">kit-ia-cide-main.zip</a>. Descomprímelo: en Mac, con doble clic; en Windows, con clic derecho → <em>Extraer todo</em>. Te queda una carpeta <code>kit-ia-cide-main</code>; déjala en <em>Documentos</em>.</li>
+    <li>Dentro de esa carpeta, crea una carpeta nueva llamada <code>mi-trabajo</code>. Ahí guardarás tu codebook, tu skill y tus resultados.</li>
+    <li>Actualiza <strong>Claude Desktop</strong>, entra con tu cuenta Pro y confirma que ves la pestaña <strong>Cowork</strong>.</li>
+    <li>En <em>Configuración → Capacidades</em>, activa <strong>ejecución de código y creación de archivos</strong>.</li>
+    <li>Entra a <strong>Claude Console</strong> (<code>platform.claude.com</code>) y confirma que ves tus créditos.</li>
+    <li>Lee las 10 variables de <code>ejercicio/README.md</code> (puedes leerlas <a href="https://github.com/benjov/kit-ia-cide/blob/main/ejercicio/README.md">en GitHub</a>) y llega con una elegida.</li>
+  </ol>
 
   <h2>Tú haces los dos papeles</h2>
   <div class="roles">
@@ -39,45 +79,95 @@
 
   <h2>Paso a paso</h2>
   <div class="linea">
-    <div class="paso tarjeta" data-n="0"><span class="hora">0:00–0:20</span><h3>Ver el caso terminado y confirmar tu variable</h3>
-      <p>Recorremos el <a href="caso.html">caso completo</a> y el <a href="herramientas/auditor.html">auditor de citas</a>. Elige una de las 10 variables de <code>ejercicio/README.md</code> (o trae la tuya) y lee su ficha.</p></div>
+    <div class="paso tarjeta" data-n="0"><span class="hora">0:00–0:20 · Navegador</span><h3>Ver el caso terminado y confirmar tu variable</h3>
+      <p>Recorremos el <a href="caso.html">caso completo</a> y el <a href="herramientas/auditor.html">auditor de citas</a>. Confirma tu variable de <code>ejercicio/README.md</code> (o trae la tuya) y lee su ficha.</p>
+      <p style="color:var(--texto-suave);font-size:.9rem">El caso completo se corrió con la Batch API (102 documentos × 3 modelos), que es la ruta con código. Tú haces lo mismo, a menor escala, desde la app.</p>
+      <details><summary>Opcional: verifica tú el corpus y el caso</summary><p>En Cowork puedes pedirle a Claude que ejecute los scripts del kit: que vuelva a descargar 3 documentos de la SCJN y compruebe su huella SHA-256, que verifique las 431 citas de Opus o que reproduzca todas las tablas del caso. Los prompts y lo que debes ver están en <a href="kit.html#verifica">Descargar kit → Verifica el kit</a>. Por qué importa: <a href="conceptos.html#corpus">procedencia</a> y <a href="conceptos.html#reproducibilidad">reproducibilidad</a>.</p></details></div>
 
-    <div class="paso tarjeta" data-n="1"><span class="hora">0:20–0:40 · Chat (Proyecto)</span><h3>Afinar la definición de tu variable</h3>
-      <p>Crea un Proyecto, sube <code>caso-completo/01-codebook.md</code> y 3 resúmenes de <code>muestra-20</code> (que no sean de los 6 <code>a_mano</code>). Luego:</p>
+    <div class="paso tarjeta" data-n="1"><span class="hora">0:20–0:40 · Chat con Proyecto (claude.ai o Desktop)</span><h3>Afinar la definición de tu variable</h3>
+      <p>Crea un Proyecto (<em>Proyectos → Nuevo proyecto</em>) y, en su panel de conocimiento, sube desde la carpeta del kit <code>caso-completo/01-codebook.md</code> y 3 resúmenes de <code>ejercicio/muestra-20/</code> que no sean de los 6 <code>a_mano</code>; por ejemplo, <code>AI-29-2011.txt</code>, <code>ADR-496-2014.txt</code> y <code>AR-1422-2015.txt</code>. Abre un chat dentro del Proyecto y pide:</p>
       <div class="prompt">Voy a agregar la variable [VARIABLE] con esta definición inicial: [PEGAR DE LA FICHA]. Lee los 3 resúmenes y dime, con citas, en cuáles sería difícil aplicar mi definición y por qué.<button class="copiar">Copiar</button></div>
       <div class="prompt">Ponte en el papel de un codificador escéptico. Encuentra 3 ambigüedades en mi definición y propón una regla de decisión para cada una.<button class="copiar">Copiar</button></div>
-      <div class="prompt">Reescribe la variable en el formato del codebook adjunto (tabla de códigos, regla de decisión, caso frontera). Máximo 5 códigos. Ponle versión 1.0.<button class="copiar">Copiar</button></div>
-      <p><strong>A los 0:38 congela tu codebook v1.0.</strong> A partir de aquí no lo cambias hasta validar.</p></div>
+      <div class="prompt">Escribe mi codebook v1.0 con el formato del codebook adjunto, pero solo con mi variable: tabla de códigos (máximo 5), regla de decisión, casos frontera, reglas generales y un formato de salida JSON con los campos codigo, cita y confianza. Entrégamelo como un archivo descargable llamado codebook.md.<button class="copiar">Copiar</button></div>
+      <p class="porque"><strong>¿Por qué un codebook?</strong> Es la operacionalización de tu concepto y, con un LLM, es literalmente el prompt: cada ambigüedad que dejes la resuelve el modelo por ti, sin avisar y quizá de forma distinta en cada documento. <a href="conceptos.html#codebook">Más</a></p>
+      <p>Descarga el archivo y guárdalo como <code>mi-trabajo/codebook.md</code>. <strong>A los 0:38 congela tu codebook v1.0.</strong> A partir de aquí no lo cambias hasta validar.</p></div>
 
-    <div class="paso tarjeta" data-n="2"><span class="hora">0:40–0:55 · Console Workbench</span><h3>Probar el prompt antes de escalar</h3>
-      <p>Copia <code>caso-completo/02-prompt/system-prompt.md</code> en el system prompt y sustituye el codebook por el de tu variable. Prueba 2 documentos (no de los 6 <code>a_mano</code>) con <strong>Haiku 5.5</strong> y <strong>Sonnet 5.5</strong>. Anota: ¿coinciden? ¿Las citas son literales (búscalas con Ctrl+F)? ¿Cuántos tokens usó?</p></div>
+    <div class="paso tarjeta" data-n="2"><span class="hora">0:40–0:55 · Workbench en Claude Console (navegador)</span><h3>Probar el prompt antes de escalar</h3>
+      <ol>
+        <li>Entra a <code>platform.claude.com</code> → <strong>Workbench</strong> y crea un prompt nuevo.</li>
+        <li>En el <strong>system prompt</strong>, pega el texto de <code>caso-completo/02-prompt/system-prompt.md</code> (ábrelo con TextEdit o el Bloc de notas, o <a href="https://github.com/benjov/kit-ia-cide/blob/main/caso-completo/02-prompt/system-prompt.md">en GitHub</a>). Donde dice <code>{{CODEBOOK}}</code>, pega tu <code>codebook.md</code>.</li>
+        <li>En el <strong>mensaje del usuario</strong>, pega esta plantilla. Workbench detecta <code>{{ID}}</code> y <code>{{DOCUMENTO}}</code> como variables:
+          <div class="prompt" style="white-space:pre-wrap">&lt;documento id="{{ID}}"&gt;
+{{DOCUMENTO}}
+&lt;/documento&gt;
+
+Codifica este documento según el codebook. Responde solo con el JSON del formato de salida.<button class="copiar">Copiar</button></div></li>
+        <li>En el panel de <strong>variables</strong>, escribe el ID (p. ej. <code>AI-148-2017</code>) y pega el texto del archivo <code>.txt</code> correspondiente.</li>
+        <li>Ejecuta con <strong>Haiku 5.5</strong> y luego con <strong>Sonnet 5.5</strong>. Repite con un segundo documento (p. ej. <code>ADR-2044-2008</code>). No uses ninguno de los 6 <code>a_mano</code>.</li>
+        <li>Anota: ¿coinciden los modelos? ¿Las citas son literales (búscalas con Ctrl+F en el .txt)? ¿Cuántos tokens usó? Con eso, la <a href="herramientas/costos.html">calculadora de costos</a> estima el costo de escalar.</li>
+      </ol>
+      <p class="porque"><strong>¿Por qué probar antes de escalar?</strong> Es más barato descubrir aquí que el modelo parafrasea las citas o confunde dos códigos, que hacerlo después de 20 o de 3,000 documentos. Comparar dos modelos te dice además si tu variable es frágil. <a href="conceptos.html#costos">Tokens y costos</a></p>
+      <p style="color:var(--texto-suave);font-size:.9rem">Workbench tiene un botón <em>Get code</em>. Hoy no lo necesitas: ese código es para la sesión 5.</p>
+      <details><summary>¿Sin créditos o sin acceso a Console?</summary><p>Haz esta fase en un chat de tu Proyecto: pega el system prompt con tu codebook, adjunta un documento y pide el JSON. Repite con otro modelo usando el selector de modelo del chat. No verás los tokens; anótalo como límite.</p></details></div>
 
     <div class="paso pausa tarjeta" data-n="☕"><span class="hora">0:55–1:05</span><h3>Pausa</h3></div>
 
-    <div class="paso tarjeta" data-n="3"><span class="hora">1:05–1:20 · Skill</span><h3>Empaquetar en un skill</h3>
-      <ol><li>Copia la carpeta <code>skills/plantilla-codificador/</code>.</li>
-        <li>En <code>SKILL.md</code>: cambia <code>name</code> (p. ej. <code>codificador-evidencia</code>) y escribe una <code>description</code> específica.</li>
-        <li>Sustituye <code>referencias/codebook.md</code> por tu codebook 1.0.</li>
-        <li>En <code>scripts/verificar_citas.py</code> cambia la línea <code>VARIABLES = [...]</code> por el nombre de tu variable. Es la única línea de código que tocas.</li>
-        <li>Comprime la carpeta en .zip → Claude Desktop → Configuración → Capacidades → Skills → Subir.</li></ol>
-      <details><summary>¿Te atoraste? Atajo</summary><p>Usa el skill <code>codificador-scjn</code> tal cual y en Cowork pide: "además de las variables del codebook, codifica mi variable [pegar definición]".</p></details></div>
+    <div class="paso tarjeta" data-n="3"><span class="hora">1:05–1:20 · Cowork (Desktop) + Configuración → Skills</span><h3>Empaquetar en un skill</h3>
+      <p><strong>a) Cowork arma el skill.</strong> En Claude Desktop abre <strong>Cowork</strong>, elige la carpeta <code>kit-ia-cide-main</code> y escribe:</p>
+      <div class="prompt">Copia la carpeta skills/plantilla-codificador a mi-trabajo/codificador-[mi-variable]. En la copia: (1) reemplaza referencias/codebook.md por mi-trabajo/codebook.md; (2) en SKILL.md cambia name a codificador-[mi-variable] y escribe una description específica para mi variable; (3) ajusta la sección Salida con el nombre de mi variable; (4) borra el recuadro "Cómo usar esta plantilla". No edites los scripts. Después comprime la carpeta en mi-trabajo/codificador-[mi-variable].zip y muéstrame el SKILL.md final.<button class="copiar">Copiar</button></div>
+      <p>Lee el <code>SKILL.md</code> que te muestra: la <code>description</code> es lo que Claude lee para decidir si usa el skill. Los scripts no se tocan: detectan solos el nombre de tu variable.</p>
+      <p class="porque"><strong>¿Por qué un skill?</strong> Convierte tu prompt en un procedimiento fijo y versionado: el mismo codebook, las mismas reglas de salida y la misma auditoría en cada ejecución, compartible con un coautor. <a href="conceptos.html#herramientas">Glosario</a></p>
+      <p><strong>b) Tú lo instalas.</strong> <em>Configuración → Capacidades → Skills</em> → subir skill → elige <code>mi-trabajo/codificador-[mi-variable].zip</code> → actívalo. Para que Cowork lo vea, abre una <strong>tarea nueva</strong> de Cowork.</p>
+      <details><summary>Sin Cowork: hazlo a mano</summary><ol>
+        <li>Copia y pega la carpeta <code>skills/plantilla-codificador</code> dentro de <code>mi-trabajo/</code> y cámbiale el nombre.</li>
+        <li>Abre <code>SKILL.md</code> con TextEdit (en Mac, <em>Formato → Convertir a texto normal</em>) o con el Bloc de notas. Cambia <code>name</code> y <code>description</code> y borra el recuadro de instrucciones.</li>
+        <li>Reemplaza <code>referencias/codebook.md</code> por tu <code>codebook.md</code>.</li>
+        <li>Comprime la carpeta: en Mac, clic derecho → <em>Comprimir</em>; en Windows, clic derecho → <em>Enviar a → Carpeta comprimida</em>. Súbela en <em>Configuración → Capacidades → Skills</em>.</li></ol></details>
+      <details><summary>¿Te atoraste? Atajo</summary><p>Comprime e instala tal cual <code>skills/codificador-scjn</code>, y en Cowork pide: <em>"Además de las variables del codebook, codifica mi variable con esta definición: [pegar tu codebook]"</em>. La verificación de citas y el kappa incluyen tu variable sin cambiar nada.</p></details></div>
 
-    <div class="paso tarjeta" data-n="4"><span class="hora">1:20–1:45 · Cowork + tu hoja</span><h3>Claude codifica 20; tú codificas 6 a ciegas</h3>
-      <p>Abre Cowork, dale acceso a la carpeta del kit y escribe:</p>
-      <div class="prompt">Usa el skill [nombre] para codificar los archivos .txt de la carpeta ejercicio/muestra-20. Empieza con 3 documentos que no estén marcados a_mano = si en muestra.csv y muéstrame el resultado antes de seguir. Después codifica el resto sin mostrarme los resultados de los 6 documentos a_mano. Al terminar, verifica las citas, corrige las que no se encuentren y dame la distribución de mi variable por tipo de control.<button class="copiar">Copiar</button></div>
-      <p><strong>Mientras Cowork trabaja</strong>, abre <code>ejercicio/hoja-codificacion-humana.csv</code> y codifica los 6 documentos: carátula y síntesis, luego Ctrl+F con las palabras clave de tu variable. Copia la frase que justifica cada código. Cambia <code>variable</code> en el encabezado por el nombre de tu variable. Unos 4 minutos por documento.</p></div>
+    <div class="paso tarjeta" data-n="4"><span class="hora">1:20–1:45 · Cowork (Desktop) + tu hoja de cálculo</span><h3>Claude codifica 20; tú codificas 6 a ciegas</h3>
+      <p>En la tarea nueva de Cowork, con la carpeta del kit, escribe:</p>
+      <div class="prompt">Usa el skill [nombre] para codificar los archivos .txt de la carpeta ejercicio/muestra-20. Empieza con 3 documentos que no estén marcados a_mano = si en muestra.csv y muéstrame el resultado antes de seguir. Después codifica el resto sin mostrarme los resultados de los 6 documentos a_mano. Guarda resultados_codificacion.csv en mi-trabajo/. Al terminar, verifica las citas con el script del skill, corrige las que no se encuentren y dame la distribución de mi variable por tipo de control.<button class="copiar">Copiar</button></div>
+      <p><strong>Mientras Cowork trabaja</strong> (minimiza la ventana para no ver los resultados), abre <code>ejercicio/hoja-codificacion-humana.csv</code> con Excel, Numbers o Google Sheets. Cambia <code>variable</code> por el nombre de tu variable en los encabezados <code>variable_codigo</code> y <code>variable_cita</code>, y codifica los 6 documentos: carátula y síntesis, luego Ctrl+F con las palabras clave de tu variable, y copia la frase que justifica cada código. Unos 4 minutos por documento. Guárdala en <code>mi-trabajo/</code>, como CSV o como .xlsx: Cowork lee las dos.</p>
+      <figure class="diagrama">
+        <h4>Dos codificaciones en paralelo, sin verse</h4>
+        <div class="docs20" role="img" aria-label="20 documentos: 3 de prueba, 6 para codificar a mano y 11 más"><i class="prueba"></i><i class="prueba"></i><i class="mano"></i><i class="prueba"></i><i></i><i class="mano"></i><i></i><i></i><i></i><i class="mano"></i><i></i><i></i><i class="mano"></i><i></i><i></i><i class="mano"></i><i></i><i></i><i class="mano"></i><i></i></div>
+        <div class="ley-d"><span><i class="prueba"></i>3 de prueba (no <code>a_mano</code>): los revisas primero</span><span><i class="mano"></i>6 <code>a_mano = si</code>: los codificas tú</span><span><i></i>11 más: solo Claude</span></div>
+        <div class="carriles" style="margin-top:12px">
+          <div class="carril"><h5>🤖 Cowork</h5>Codifica los 20 con tu skill y verifica las citas. <strong>No te muestra</strong> los 6 marcados <code>a_mano</code>.</div>
+          <div class="carril"><h5>✍️ Tú, en tu hoja de cálculo</h5>Codificas los 6 con el mismo codebook, copiando la frase que justifica cada código, <strong>sin ver</strong> lo de Claude.</div>
+        </div>
+        <div class="converge">↓</div>
+        <div class="carril" style="text-align:center"><strong>Fase 5</strong>: se juntan los 6 documentos que codificaron los dos → kappa, matriz de confusión y desacuerdos</div>
+        <figcaption>La posición de los cuadros es ilustrativa: cuáles son los 6 lo dice la columna <code>a_mano</code> de <code>ejercicio/muestra-20/muestra.csv</code>. Si ves los códigos de Claude antes de terminar tu hoja, el acuerdo deja de medir algo: tiendes a confirmar lo que ya viste.</figcaption>
+      </figure>
+      <p class="porque"><strong>¿Por qué a mano y a ciegas?</strong> La codificación humana es la referencia contra la que se mide a Claude. Si ves sus códigos antes, tiendes a confirmarlos (sesgo de anclaje) y el acuerdo sale inflado. Y cada código de Claude trae una cita literal porque así un error del modelo se puede <em>detectar</em>. <a href="conceptos.html#humana">Codificación humana</a> · <a href="conceptos.html#citas">Citas verificables</a></p></div>
 
-    <div class="paso tarjeta" data-n="5"><span class="hora">1:45–2:00 · Cowork</span><h3>Validar: tú contra Claude</h3>
-      <div class="prompt">Esta es mi codificación a ciegas de 6 documentos (hoja-codificacion-humana.csv). Calcula el kappa contra tu codificación con el script del skill y explícame los desacuerdos uno por uno: ¿falló Claude, fallé yo o el codebook es ambiguo?<button class="copiar">Copiar</button></div>
-      <p>Antes de leer el kappa, juega 2 minutos con el <a href="herramientas/kappa.html">simulador</a>. Con n = 6, un solo desacuerdo mueve mucho el kappa: tómalo como ilustración del procedimiento, no como medida de confiabilidad.</p></div>
+    <div class="paso tarjeta" data-n="5"><span class="hora">1:45–2:00 · Cowork (Desktop)</span><h3>Validar: tú contra Claude</h3>
+      <div class="prompt">Esta es mi codificación a ciegas de 6 documentos (mi-trabajo/hoja-codificacion-humana). Calcula el kappa contra tu codificación con el script del skill, sin cambiar ninguno de mis códigos, y explícame los desacuerdos uno por uno: ¿falló Claude, fallé yo o el codebook es ambiguo?<button class="copiar">Copiar</button></div>
+      <p class="porque"><strong>¿Qué es el kappa?</strong> El acuerdo entre tú y Claude, descontando el que ocurriría por azar: κ = (p<sub>o</sub> − p<sub>e</sub>)/(1 − p<sub>e</sub>). Con n = 6, un desacuerdo baja κ de 1.00 a 0.67. Si una categoría domina, κ puede ser 0 aunque coincidan en el 83% de los documentos. Un kappa alto indica confiabilidad, no validez. <a href="conceptos.html#kappa">Kappa, con ejemplos</a> · <a href="conceptos.html#confiabilidad">Confiabilidad no es validez</a> · <a href="conceptos.html#desacuerdos">Desacuerdos</a></p>
+      <p>Claude ejecuta el script dentro de Cowork: tú no corres nada. Antes de leer el kappa, juega 2 minutos con el <a href="herramientas/kappa.html">simulador</a>. Con n = 6, un solo desacuerdo mueve mucho el kappa: tómalo como ilustración del procedimiento, no como medida de confiabilidad.</p>
+      <details><summary>Opcional, si te sobra tiempo: ¿Claude infla o subestima tu variable?</summary><p>Pide: <em>"Ahora corre el script con el detalle, tomando mi hoja como referencia, y explícame en lenguaje llano la matriz de confusión, la precisión y la exhaustividad."</em> La <strong>precisión</strong> dice, de lo que Claude marcó como X, cuánto lo era; la <strong>exhaustividad</strong>, de tus X, cuántos encontró. Estas métricas son de referencia: se profundizan en la sesión 5 (evaluaciones, Claude Code y Claude Science). <a href="conceptos.html#metricas">Más métricas, con ejemplos</a></p></details></div>
 
-    <div class="paso tarjeta" data-n="6"><span class="hora">2:00–2:18</span><h3>Tu nota y la puesta en común</h3>
-      <div class="prompt">Redacta una nota de una página con: (1) mi variable y qué cambié respecto de la definición inicial, (2) la distribución abstracto contra concreto con N, (3) el % de citas verificadas y el kappa con n = 6, (4) un desacuerdo interesante y (5) los límites de esta validación.<button class="copiar">Copiar</button></div>
-      <p>Llena tu fila en la hoja compartida, con <strong>una fricción</strong> del proceso. Veremos cómo definieron la misma variable distintas personas.</p></div>
+    <div class="paso tarjeta" data-n="6"><span class="hora">2:00–2:18 · Cowork o Chat</span><h3>Tu nota y la puesta en común</h3>
+      <div class="prompt">Redacta una nota de una página con: (1) mi variable y qué cambié respecto de la definición inicial, (2) la distribución abstracto contra concreto con N, (3) el % de citas verificadas y el kappa con n = 6, (4) un desacuerdo interesante y (5) los límites de esta validación. Guárdala como mi-trabajo/nota.docx.<button class="copiar">Copiar</button></div>
+      <p class="porque"><strong>¿Qué límites declarar?</strong> n = 6; eres tú quien escribió el codebook; los documentos se eligieron por cortos; el corpus es una selección no aleatoria; la unidad es el resumen, no la sentencia. <a href="conceptos.html#inferencia">Inferencia y generalización</a></p>
+      <p>Llena tu fila en la hoja compartida (el enlace lo da el equipo docente), con <strong>una fricción</strong> del proceso. Veremos cómo definieron la misma variable distintas personas.</p></div>
 
     <div class="paso tarjeta" data-n="7"><span class="hora">2:18–2:30</span><h3>Puente a la sesión 5</h3>
-      <p>¿Qué hiciste a mano que debería ser automático? ¿Qué no podrías repetir idéntico mañana? Esas fricciones son el temario de <strong>Claude Code</strong>.</p></div>
+      <p>¿Qué hiciste a mano que debería ser automático? ¿Qué no podrías repetir idéntico mañana? Esas fricciones son el temario de la sesión 5: <strong>evaluaciones</strong> (cómo medir con rigor las respuestas de un LLM, más allá del kappa de hoy), <strong>Claude Code</strong> (versionar y re-ejecutar el flujo) y <strong>Claude Science</strong>.</p></div>
   </div>
+
+  <h2>Si algo falla</h2>
+  <div class="tabla-env"><table>
+    <thead><tr><th>Problema</th><th>Qué haces (sin salir de la app)</th></tr></thead>
+    <tbody>
+      <tr><td>No ves Cowork (versión vieja o sin Desktop)</td><td>Usa un chat de tu Proyecto con el skill activado: adjunta 6 a 10 resúmenes (incluidos los 6 <code>a_mano</code>) y el mismo prompt. Con la ejecución de código activada, Claude corre los mismos scripts del skill</td></tr>
+      <tr><td>El skill no se activa</td><td>Escribe "usa el skill [nombre]" o pega el contenido de <code>SKILL.md</code> como primer mensaje</td></tr>
+      <tr><td>Claude dice que no puede ejecutar código</td><td>Revisa <em>Configuración → Capacidades</em>. Si sigue sin poder, pide que verifique las citas buscándolas en el texto y lo declare en el reporte</td></tr>
+      <tr><td>Llegas al límite de uso de Pro</td><td>Reduce a 10 documentos, incluidos los 6 <code>a_mano</code></td></tr>
+    </tbody>
+  </table></div>
 </main>
 <script src="assets/comun.js"></script>
 <script>

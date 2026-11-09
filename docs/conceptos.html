@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="es" data-base=".">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conceptos y fundamentos</title>
+<meta name="description" content="Los fundamentos metodológicos de la sesión: codebook, codificación humana, confiabilidad y validez, kappa de Cohen, α, AC1, precisión, exhaustividad y F1, citas verificables, procedencia, reproducibilidad con LLM e inferencia, con referencias.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css">
+<style>
+  .indice { columns: 2 220px; column-gap: 24px; padding-left: 18px; }
+  .indice li { margin: 3px 0; break-inside: avoid; }
+  section.concepto { scroll-margin-top: 80px; }
+  .en-sesion { font-size: .9rem; color: var(--texto-suave); border-top: 1px dashed var(--borde); padding-top: 8px; margin-top: 12px; }
+  .formula { font-family: var(--mono); background: var(--superficie-2); border-radius: 8px; padding: 10px 14px; overflow-x: auto; }
+  .refs li { margin: 6px 0; font-size: .93rem; }
+  td.c, th.c { text-align: center; }
+</style>
+</head>
+<body>
+<main class="contenedor angosto">
+  <section class="hero">
+    <div class="sobre">Fundamentos · para leer antes, durante o después</div>
+    <h1>Conceptos y fundamentos</h1>
+    <p class="lead">Un LLM no cambia los estándares del análisis de contenido; los hace más fáciles de incumplir sin darse cuenta. Aquí está el porqué de cada paso de la sesión, con sus límites y la literatura de referencia.</p>
+  </section>
+
+  <ol class="indice">
+    <li><a href="#analisis">Análisis de contenido y el LLM como codificador</a></li>
+    <li><a href="#codebook">Codebook: por qué y cómo</a></li>
+    <li><a href="#corpus">Unidad de análisis, corpus y procedencia</a></li>
+    <li><a href="#citas">Evidencia textual verificable</a></li>
+    <li><a href="#humana">Codificación humana y referencia</a></li>
+    <li><a href="#confiabilidad">Confiabilidad no es validez</a></li>
+    <li><a href="#kappa">Kappa de Cohen</a></li>
+    <li><a href="#metricas">Más allá del kappa: otras métricas de evaluación</a></li>
+    <li><a href="#desacuerdos">Desacuerdos y sobreajuste</a></li>
+    <li><a href="#confianza">La confianza que declara el modelo</a></li>
+    <li><a href="#reproducibilidad">Reproducibilidad con LLM</a></li>
+    <li><a href="#inferencia">Inferencia: Fisher, potencia y generalización</a></li>
+    <li><a href="#costos">Tokens y costos</a></li>
+    <li><a href="#herramientas">Glosario de herramientas</a></li>
+    <li><a href="#referencias">Referencias</a></li>
+  </ol>
+
+  <section class="concepto" id="analisis">
+    <h2>1. Análisis de contenido y el LLM como codificador</h2>
+    <p>El análisis de contenido es una técnica para hacer inferencias replicables y válidas a partir de textos (Krippendorff, 2018). Lo que lo distingue de una lectura experta es que las reglas de clasificación son explícitas, de modo que otra persona, con las mismas reglas, llegaría a los mismos códigos.</p>
+    <p>En esta sesión el LLM ocupa el lugar de un <strong>codificador</strong>: aplica un codebook escrito por ti, igual que lo haría un asistente de investigación entrenado. No es un método nuevo de medición. Por eso se le exige lo mismo que a un asistente: reglas explícitas, evidencia de cada decisión y una comparación sistemática contra codificación humana.</p>
+    <p>La evidencia empírica es mixta. En algunas tareas de anotación, los LLM igualan o superan a trabajadores de <em>crowdsourcing</em> (Gilardi, Alizadeh y Kubli, 2023). En otras, sobre todo las interpretativas, quedan lejos de expertos (Ziems et al., 2024). El desempeño varía por tarea y por conjunto de datos, así que <strong>tiene que validarse en cada aplicación</strong> (Pangakis, Wolken y Fasching, 2023). Es el viejo principio de Grimmer y Stewart (2013) para el texto como dato: <em>validate, validate, validate</em>.</p>
+    <p class="en-sesion">En la sesión: toda la secuencia (codebook → prueba → escala → validación) existe para que el resultado del LLM pueda auditarse como el de cualquier codificador.</p>
+  </section>
+
+  <section class="concepto" id="codebook">
+    <h2>2. Codebook: por qué y cómo</h2>
+    <p>El codebook es la <strong>operacionalización</strong> de tus conceptos: traduce "la Corte aplica un test de proporcionalidad" a reglas que se puedan aplicar a un texto concreto. Sin él no hay replicabilidad, porque cada lector aplicaría su propio criterio implícito. Tampoco hay confiabilidad medible, porque no se sabe con qué regla se compara.</p>
+    <p>Con un LLM, el codebook importa todavía más: <strong>es el prompt</strong>. Toda ambigüedad del codebook se convierte en una decisión que el modelo toma por ti, en silencio y quizá de forma distinta en cada documento.</p>
+    <p>Un codebook útil tiene, por variable (Neuendorf, 2017):</p>
+    <ul>
+      <li><strong>Pregunta y definición</strong> del constructo.</li>
+      <li><strong>Códigos mutuamente excluyentes y exhaustivos</strong>: cada documento cabe en uno y solo uno. Para lograrlo suelen hacer falta <code>otro</code> o <code>no_identificable</code>.</li>
+      <li><strong>Regla de decisión</strong>: qué cuenta como evidencia. Por ejemplo, "solo el razonamiento de la Corte, no los alegatos de las partes".</li>
+      <li><strong>Casos frontera</strong> resueltos, con un ejemplo. Es la parte que más crece con el uso.</li>
+      <li><strong>Versión</strong>. Cada cambio sube el número y queda registrado, con su porqué, en la bitácora.</li>
+    </ul>
+    <figure class="diagrama">
+      <h4>El ciclo del codebook, y dónde se rompe si no tienes cuidado</h4>
+      <div class="cadena vert">
+        <div class="nodo"><b>1 · Definir</b><span class="cuerpo">Pregunta, códigos, regla de decisión, casos frontera.<span class="archivo">codebook v1.0</span></span></div><span class="fl">probar</span>
+        <div class="nodo"><b>2 · Pilotear</b><span class="cuerpo">3 a 5 documentos que <em>no</em> se usarán para validar.</span></div><span class="fl">congelar</span>
+        <div class="nodo acento"><b>3 · Congelar y codificar</b><span class="cuerpo">Claude codifica todo; tú, a ciegas, la submuestra.</span></div><span class="fl">comparar</span>
+        <div class="nodo"><b>4 · Validar</b><span class="cuerpo">Kappa contra el umbral fijado antes; desacuerdos uno por uno.</span></div><span class="fl">diagnosticar</span>
+        <div class="nodo"><b>5 · Revisar</b><span class="cuerpo">Regla nueva para el caso ambiguo, con su porqué en la bitácora.<span class="archivo">codebook v1.1</span></span></div>
+      </div>
+      <div class="regreso">La v1.1 vuelve al paso 3 con una <strong>muestra nueva</strong>. Si la validas con los mismos documentos que usaste para corregirla, el acuerdo sube por construcción (sobreajuste) y deja de medir algo.</div>
+      <figcaption>En el caso: v1.0 dio κ = 0.40 en <code>proporcionalidad</code> (paso 4); el análisis de desacuerdos produjo la regla v1.1 (paso 5, bitácora D8), que queda pendiente de validar con otra muestra.</figcaption>
+    </figure>
+    <p><strong>Congelar antes de validar.</strong> El codebook se fija antes de ver la codificación de validación, por la misma lógica que un preregistro: si ajustas las reglas mirando los resultados, el acuerdo que midas después ya no dice nada sobre las reglas originales.</p>
+    <p class="en-sesion">En la sesión: fase 1 (Chat). Las definiciones iniciales de las 10 variables están incompletas a propósito: tu trabajo es encontrar sus ambigüedades. Ejemplo resuelto: <a href="https://github.com/benjov/kit-ia-cide/blob/main/caso-completo/01-codebook.md">codebook del caso</a> y bitácora D8.</p>
+  </section>
+
+  <section class="concepto" id="corpus">
+    <h2>3. Unidad de análisis, corpus y procedencia</h2>
+    <p><strong>Unidad de análisis</strong>: lo que se codifica. Aquí es el <em>resumen oficial</em> de cada sentencia, elaborado por la DGDH de la SCJN, no la sentencia completa (bitácora D2). Es una fuente secundaria: lo que el resumen omite, Claude no lo ve. La marca <code>p.N</code> del resumen remite al párrafo de la sentencia, para verificar ahí.</p>
+    <p><strong>Selección</strong>: las 102 sentencias son las que la SCJN eligió como <em>emblemáticas</em>. No son una muestra aleatoria, así que los resultados describen esa colección y no la jurisprudencia en general. El corpus quedó así porque los buscadores con más acciones de inconstitucionalidad bloquean la descarga automatizada, y se decidió no evadir esa protección (bitácora D1). El acceso a los datos definió la pregunta, y eso también se reporta.</p>
+    <p><strong>Procedencia y SHA-256</strong>: el manifiesto registra, para cada documento, la URL oficial, la fecha de descarga y la huella SHA-256 del PDF. SHA-256 es una función criptográfica (NIST, 2015) que asigna a cada archivo una cadena de 64 caracteres. Si cambia un solo byte, la huella cambia por completo, y en la práctica es imposible fabricar otro archivo con la misma huella.</p>
+    <p>Volver a calcularla demuestra que tu PDF es <em>idéntico</em> al registrado. No demuestra dos cosas: que la extracción de texto del PDF sea perfecta (bitácora D10: encabezados de página en el texto) ni que el documento oficial no tenga errores (bitácora D9: dos carátulas oficiales con datos de otro caso).</p>
+    <p class="en-sesion">Para verificarlo sin programar: pídele a Cowork que ejecute <code>verificar_hashes.py</code> o <code>descargar_corpus.py</code> en modo de prueba (<a href="kit.html#verifica">Descargar kit → Verifica el kit</a>).</p>
+  </section>
+
+  <section class="concepto" id="citas">
+    <h2>4. Evidencia textual verificable</h2>
+    <p>Un LLM puede producir texto plausible que no está en la fuente: parafrasear una cita, "mejorarla" o inventarla. Para que eso sea <strong>detectable</strong>, cada código lleva una cita <strong>literal</strong> de 5 a 40 palabras. Un programa la busca en el documento, ignorando solo espacios, saltos de línea y guiones de corte de palabra. Si no aparece, es un error y se revisa.</p>
+    <figure class="diagrama">
+      <h4>La cadena de evidencia: de la sentencia al hallazgo</h4>
+      <div class="cadena vert">
+        <div class="nodo"><span class="donde">scjn.gob.mx</span><b>Resumen oficial</b><span class="cuerpo">PDF publicado por la DGDH.<span class="chk">✓ URL y fecha en el manifiesto</span></span></div><span class="fl">SHA-256</span>
+        <div class="nodo"><span class="donde">corpus/</span><b>PDF y texto</b><span class="cuerpo">La huella prueba que el PDF es idéntico al oficial.<span class="chk">✓ verificar_hashes.py</span></span></div><span class="fl">Claude lee</span>
+        <div class="nodo acento"><span class="donde">resultados</span><b>Código + cita literal</b><span class="cuerpo">Cada código trae la frase que lo justifica.<span class="chk">✓ verificar_citas.py: la cita existe</span><span class="chk no">⚠ que la justifique: lectura humana</span></span></div><span class="fl">validar</span>
+        <div class="nodo"><span class="donde">05-validacion</span><b>Acuerdo con la referencia</b><span class="cuerpo">Kappa y desacuerdos contra tu codificación a ciegas.<span class="chk">✓ calcular_acuerdo.py</span></span></div><span class="fl">analizar</span>
+        <div class="nodo ok"><span class="donde">memo</span><b>Hallazgo</b><span class="cuerpo">Solo con variables que pasaron el umbral.<span class="chk">✓ analizar_resultados.py reproduce todo</span></span></div>
+      </div>
+      <figcaption>Cada eslabón deja un archivo que alguien más puede comprobar, y los ✓ los comprueba un script, que Cowork puede ejecutar por ti. El eslabón débil es el marcado con ⚠: un programa sabe si una frase está en el texto, pero no si es la frase correcta. Por eso la validación humana no se puede saltar.</figcaption>
+    </figure>
+    <p>La verificación garantiza que la cita <strong>existe</strong>, no que <strong>justifique</strong> el código: una frase real puede estar mal interpretada o sacada de los alegatos y no del razonamiento de la Corte. Esa segunda pregunta solo la responde la lectura humana; de eso se encarga la validación.</p>
+    <p>En el caso, Opus tuvo 431 de 431 citas verificadas y Sonnet 418 de 421. Las 3 fallas de Sonnet se revisaron a mano: dos fueron errores reales del modelo, entre ellos un "embellecimiento" del texto, y una fue un falso positivo del verificador causado por un encabezado de página (bitácora D10).</p>
+    <p class="en-sesion">En la sesión: el skill verifica sus citas al terminar y reporta el % antes y después de corregir. El <a href="herramientas/auditor.html">auditor</a> muestra cada cita resaltada en su texto.</p>
+  </section>
+
+  <section class="concepto" id="humana">
+    <h2>5. Codificación humana y referencia</h2>
+    <p>En ciencias sociales se dice <em>codificación</em>; en aprendizaje automático, <em>anotación</em> o <em>etiquetado</em>. Es lo mismo: una persona aplica el codebook a un documento. Una submuestra codificada por humanos sirve de <strong>referencia</strong> (a veces se le llama <em>gold standard</em>) contra la que se compara al modelo.</p>
+    <p>"Referencia" no significa "verdad". La categoría verdadera de un documento no se observa; lo que se observa es si dos codificadores coinciden. Por eso el kappa mide <em>acuerdo</em>, y los desacuerdos se analizan sin suponer de antemano quién se equivocó.</p>
+    <p>Requisitos de una referencia útil:</p>
+    <ul>
+      <li><strong>A ciegas</strong>: quien codifica no ve antes los códigos del modelo. Si los ve, tiende a confirmarlos: es el sesgo de anclaje, o de automatización (Parasuraman y Manzey, 2010), y el acuerdo medido queda inflado.</li>
+      <li><strong>Mismo codebook y misma versión</strong> que usó el modelo.</li>
+      <li><strong>Independencia</strong>: idealmente, la persona no escribió el codebook, porque quien lo escribió conoce intenciones que no están en el texto.</li>
+      <li><strong>Muestra</strong> suficiente y estratificada por los grupos que vas a comparar.</li>
+    </ul>
+    <div class="aviso"><strong>Dos advertencias de honestidad.</strong> (1) En el caso completo, la referencia es <strong>SIMULADA</strong> a partir de los códigos de Opus (bitácora D7), así que sus kappa están inflados por construcción y solo ilustran el procedimiento. (2) En tu ejercicio, la referencia es real pero tiene tres límites que debes declarar: n = 6, eres tú quien escribió el codebook y los documentos se eligieron por cortos, no al azar.</div>
+    <p class="en-sesion">En la sesión: fase 4. Codificas a mano 6 documentos mientras Cowork trabaja, sin ver sus resultados.</p>
+  </section>
+
+  <section class="concepto" id="confiabilidad">
+    <h2>6. Confiabilidad no es validez</h2>
+    <p><strong>Confiabilidad</strong>: ¿se obtiene el mismo código al repetir la medición? Krippendorff (2018) distingue tres tipos:</p>
+    <ul>
+      <li><em>estabilidad</em>: el mismo codificador en dos momentos;</li>
+      <li><em>reproducibilidad</em>: dos codificadores distintos;</li>
+      <li><em>exactitud</em>: contra un estándar conocido.</li>
+    </ul>
+    <p>El kappa humano–Claude mide reproducibilidad.</p>
+    <p><strong>Validez</strong>: ¿el código mide el concepto que dices medir? Un codebook mal planteado puede producir acuerdo perfecto sobre algo irrelevante. La confiabilidad es condición necesaria, pero no suficiente.</p>
+    <figure class="diagrama">
+      <h4>Confiabilidad y validez: la analogía de la diana</h4>
+      <div class="dianas"><figure><svg class="sv" viewBox="0 0 120 120" role="img" aria-label="Diana con impactos agrupados en el centro"><circle class="aro" cx="60" cy="60" r="56"/><circle class="aro" cx="60" cy="60" r="40"/><circle class="aro" cx="60" cy="60" r="24"/><circle class="centro" cx="60" cy="60" r="10"/><circle class="punto" cx="60.4" cy="65.0" r="4.2"/><circle class="punto" cx="56.3" cy="64.0" r="4.2"/><circle class="punto" cx="59.0" cy="59.0" r="4.2"/><circle class="punto" cx="67.6" cy="60.6" r="4.2"/><circle class="punto" cx="59.8" cy="62.9" r="4.2"/><circle class="punto" cx="64.5" cy="59.9" r="4.2"/><circle class="punto" cx="62.4" cy="56.1" r="4.2"/><circle class="punto" cx="58.5" cy="58.2" r="4.2"/><circle class="punto" cx="54.7" cy="54.0" r="4.2"/></svg><p><b>Confiable y válido</b>Coinciden entre sí y le atinan al concepto. Es lo que buscamos.</p></figure><figure><svg class="sv" viewBox="0 0 120 120" role="img" aria-label="Diana con impactos agrupados lejos del centro"><circle class="aro" cx="60" cy="60" r="56"/><circle class="aro" cx="60" cy="60" r="40"/><circle class="aro" cx="60" cy="60" r="24"/><circle class="centro" cx="60" cy="60" r="10"/><circle class="punto" cx="79.3" cy="33.4" r="4.2"/><circle class="punto" cx="86.7" cy="28.8" r="4.2"/><circle class="punto" cx="83.4" cy="29.0" r="4.2"/><circle class="punto" cx="88.4" cy="38.8" r="4.2"/><circle class="punto" cx="89.4" cy="36.0" r="4.2"/><circle class="punto" cx="85.6" cy="36.9" r="4.2"/><circle class="punto" cx="81.0" cy="38.6" r="4.2"/><circle class="punto" cx="79.0" cy="36.6" r="4.2"/><circle class="punto" cx="86.8" cy="38.2" r="4.2"/></svg><p><b>Confiable, no válido</b>Coinciden siempre… en el error. Dos modelos con el mismo sesgo, o un codebook que mide otra cosa.</p></figure><figure><svg class="sv" viewBox="0 0 120 120" role="img" aria-label="Diana con impactos dispersos alrededor del centro"><circle class="aro" cx="60" cy="60" r="56"/><circle class="aro" cx="60" cy="60" r="40"/><circle class="aro" cx="60" cy="60" r="24"/><circle class="centro" cx="60" cy="60" r="10"/><circle class="punto" cx="55.7" cy="68.7" r="4.2"/><circle class="punto" cx="56.2" cy="54.6" r="4.2"/><circle class="punto" cx="44.2" cy="56.4" r="4.2"/><circle class="punto" cx="78.9" cy="67.2" r="4.2"/><circle class="punto" cx="77.6" cy="64.2" r="4.2"/><circle class="punto" cx="66.7" cy="63.2" r="4.2"/><circle class="punto" cx="31.7" cy="74.5" r="4.2"/><circle class="punto" cx="68.6" cy="68.5" r="4.2"/><circle class="punto" cx="31.2" cy="30.4" r="4.2"/></svg><p><b>Válido en promedio, no confiable</b>Alrededor del concepto, pero cada codificación cae en otro lado. Un codebook ambiguo.</p></figure><figure><svg class="sv" viewBox="0 0 120 120" role="img" aria-label="Diana con impactos dispersos y desviados del centro"><circle class="aro" cx="60" cy="60" r="56"/><circle class="aro" cx="60" cy="60" r="40"/><circle class="aro" cx="60" cy="60" r="24"/><circle class="centro" cx="60" cy="60" r="10"/><circle class="punto" cx="59.6" cy="49.7" r="4.2"/><circle class="punto" cx="92.9" cy="36.3" r="4.2"/><circle class="punto" cx="58.1" cy="43.0" r="4.2"/><circle class="punto" cx="85.2" cy="60.5" r="4.2"/><circle class="punto" cx="59.8" cy="24.6" r="4.2"/><circle class="punto" cx="88.6" cy="51.1" r="4.2"/><circle class="punto" cx="101.0" cy="58.7" r="4.2"/><circle class="punto" cx="76.5" cy="39.9" r="4.2"/><circle class="punto" cx="66.2" cy="26.9" r="4.2"/></svg><p><b>Ni lo uno ni lo otro</b>Dispersos y desviados. Ninguna métrica rescata esta variable.</p></figure></div>
+      <figcaption>Cada punto es una codificación del mismo documento; el centro es el concepto que quieres medir. El kappa solo ve qué tan <strong>agrupados</strong> están los puntos (confiabilidad); no ve dónde está el centro. Que Opus y Sonnet coincidan (κ entre 0.83 y 0.95) descarta el panel 3, pero no distingue el 1 del 2: eso exige lectura humana y una definición clara del constructo.</figcaption>
+    </figure>
+    <p><strong>Acuerdo entre modelos</strong>: que los tres modelos coincidan entre sí (κ entre 0.79 y 1.00 en el caso; Opus–Sonnet, entre 0.83 y 0.95) dice que el resultado no depende mucho del modelo elegido. No dice que sea correcto, porque dos modelos pueden compartir el mismo error, sobre todo si aprendieron de datos parecidos. Sirve para detectar <em>variables frágiles</em>, no para validar.</p>
+  </section>
+
+  <section class="concepto" id="kappa">
+    <h2>7. Kappa de Cohen</h2>
+    <p>El % de acuerdo engaña porque parte del acuerdo ocurre por azar. Si el 90% de los documentos son "no", dos codificadores que dicen "no" casi siempre coinciden mucho sin leer con cuidado. El kappa de Cohen (1960) descuenta ese acuerdo esperado por azar:</p>
+    <div class="formula">κ = (p<sub>o</sub> − p<sub>e</sub>) / (1 − p<sub>e</sub>)</div>
+    <p>Aquí p<sub>o</sub> es la proporción de documentos en que coinciden, y p<sub>e</sub> es la proporción en que coincidirían por azar dadas sus distribuciones marginales: p<sub>e</sub> = Σ<sub>k</sub> P(A = k)·P(B = k). Se lee como "qué fracción del acuerdo posible por encima del azar se logró". κ = 1 es acuerdo perfecto, κ = 0 es lo esperable por azar, y κ &lt; 0 es peor que el azar.</p>
+
+    <h3>Ejemplo con n = 6 (tu caso)</h3>
+    <p>Variable sí/no. Tú codificas "sí" en 2 documentos; Claude, en 3. Coinciden en 5 de 6.</p>
+    <div class="tabla-env"><table>
+      <thead><tr><th></th><th class="c">Claude: sí</th><th class="c">Claude: no</th><th class="c">Total tuyo</th></tr></thead>
+      <tbody>
+        <tr><th>Tú: sí</th><td class="c">2</td><td class="c">0</td><td class="c">2</td></tr>
+        <tr><th>Tú: no</th><td class="c">1</td><td class="c">3</td><td class="c">4</td></tr>
+        <tr><th>Total Claude</th><td class="c">3</td><td class="c">3</td><td class="c">6</td></tr>
+      </tbody>
+    </table></div>
+    <div class="formula">p<sub>o</sub> = 5/6 = 0.833<br>p<sub>e</sub> = (2/6)(3/6) + (4/6)(3/6) = 0.500<br>κ = (0.833 − 0.500) / (1 − 0.500) = 0.67</div>
+    <p>Un solo desacuerdo baja κ de 1.00 a 0.67. Un intervalo de confianza del 95% va de cerca de 0.07 a 1 con la fórmula asintótica (poco fiable con n tan pequeño) y de 0.00 a 1.00 por bootstrap, que es lo que reporta el script del kit (ver <a href="#metricas">la sección 8</a>). Por eso, con n = 6, el kappa <strong>ilustra el procedimiento</strong> pero no mide la confiabilidad.</p>
+
+    <figure class="diagrama">
+      <h4>Qué descuenta el kappa: el mismo 83% de acuerdo, dos kappas</h4>
+      <div class="k-fila"><span>Ejemplo 1 (n = 6)<br><small style="color:var(--texto-suave)">p<sub>o</sub> = 0.83, p<sub>e</sub> = 0.50</small></span>
+        <div class="barra-k" role="img" aria-label="50% acuerdo por azar, 33% acuerdo por encima del azar, 17% desacuerdo"><span class="azar" style="width:50%">azar 50%</span><span class="encima" style="width:33.3%">por encima del azar 33%</span><span class="desac" style="width:16.7%">desac. 17%</span></div>
+        <b class="k">κ = 0.67</b></div>
+      <div class="k-fila"><span>Paradoja (n = 6)<br><small style="color:var(--texto-suave)">p<sub>o</sub> = 0.83, p<sub>e</sub> = 0.83</small></span>
+        <div class="barra-k" role="img" aria-label="83% acuerdo por azar, 0% por encima del azar, 17% desacuerdo"><span class="azar" style="width:83.3%">azar 83%</span><span class="desac" style="width:16.7%">desac. 17%</span></div>
+        <b class="k">κ = 0.00</b></div>
+      <figcaption>La barra completa son los 6 documentos. Lo rayado es el acuerdo que se esperaría solo por las distribuciones de cada codificador; el kappa ignora esa parte y pregunta qué fracción del resto (lo que <em>no</em> se explica por azar) es acuerdo: κ = verde / (verde + rojo) = 0.33 / 0.50 = 0.67. En la paradoja casi todo es "no", el azar ya explica el 83% y no queda acuerdo por encima de él.</figcaption>
+    </figure>
+    <h3>La paradoja de la prevalencia</h3>
+    <p>Ahora una variable rara: tú codificas "sí" en 1 documento y Claude dice "no" en los 6. Coinciden en 5 de 6, el mismo 83%, pero p<sub>e</sub> = (1/6)(0) + (5/6)(6/6) = 0.833 y κ = 0. Cuando una categoría domina, el kappa puede ser bajo aunque el acuerdo observado sea alto (Feinstein y Cicchetti, 1990). Reporta siempre <strong>kappa, % de acuerdo y la distribución</strong> de la variable. Puedes explorarlo en el <a href="herramientas/kappa.html">simulador</a>.</p>
+
+    <h3>Umbrales: una convención, no un hecho</h3>
+    <p>La escala más citada (Landis y Koch, 1977) es: 0.21–0.40 aceptable, 0.41–0.60 moderado, 0.61–0.80 sustancial y 0.81–1 casi perfecto. Los propios autores la presentaron como arbitraria. Krippendorff (2018), para su α, propone confiar en variables con α ≥ 0.80 y sacar conclusiones tentativas entre 0.667 y 0.80.</p>
+    <p>El kit usa 0.61 para reportar y 0.41 para reportar con advertencia. Lo importante no es el número exacto sino <strong>fijarlo antes de ver resultados</strong> y respetarlo. En el caso, <code>proporcionalidad</code> no se reporta (κ = 0.40), aunque daba el resultado "bonito".</p>
+
+    <h3>Alternativas</h3>
+    <p>El α de Krippendorff admite más de dos codificadores, datos faltantes y variables ordinales o de intervalo, y es el estándar en comunicación (Hayes y Krippendorff, 2007). El AC1 de Gwet es menos sensible a la prevalencia. Aquí usamos kappa porque hay dos codificadores, variables nominales y es la medida más conocida en las disciplinas de la audiencia. Para un trabajo publicable, conviene reportar también α. El script del kit calcula los tres; se explican en la <a href="#metricas">sección siguiente</a>.</p>
+  </section>
+
+  <section class="concepto" id="metricas">
+    <h2>8. Más allá del kappa: otras métricas de evaluación</h2>
+    <div class="aviso info"><strong>Referencia introductoria.</strong> En esta sesión basta con el kappa y el análisis de desacuerdos. Lo que sigue sirve para leer la literatura y para quien quiera ir más allá; la evaluación de respuestas de LLM y otras métricas de desempeño se tratan a fondo en la sesión 5 (evaluaciones, Claude Code y Claude Science).</div>
+    <p>En la literatura de procesamiento de lenguaje natural (NLP), que es donde se evalúan los LLM como anotadores, casi nunca se reporta solo kappa. Se usan métricas que vienen de la recuperación de información y que tienen equivalentes conocidos en epidemiología y psicometría. Conviene distinguir dos preguntas:</p>
+    <ul>
+      <li><strong>¿Coinciden?</strong> Es la confiabilidad. Las medidas son <em>simétricas</em>: da igual quién es A y quién es B. Son κ, α y AC1.</li>
+      <li><strong>¿Acierta B contra una referencia?</strong> Es la validez de criterio. Las medidas son <em>asimétricas</em>, porque una de las dos codificaciones se trata como la verdad. Son precisión, exhaustividad y F1. Solo tienen sentido si la referencia es buena; en el ejercicio, tu codificación a ciegas hace ese papel.</li>
+    </ul>
+
+    <h3>La matriz de confusión</h3>
+    <p>Es la tabla de contingencia de la <a href="#kappa">sección anterior</a>, con un nombre que viene del aprendizaje automático: filas para la referencia, columnas para el codificador evaluado. La diagonal son los acuerdos; las celdas de fuera dicen <em>qué se confunde con qué</em>. Con muchas categorías es lo primero que hay que mirar, porque un kappa de 0.65 puede venir de errores dispersos o de una sola confusión sistemática (en el caso, Opus manda a <code>otro</code> dos sentencias que la referencia codifica como <code>igualdad_no_discriminacion</code>).</p>
+
+    <h3>Precisión, exhaustividad y F1</h3>
+    <p>Con el ejemplo de n = 6 (tú = referencia; Claude dice "sí" en 3 documentos, de los que 2 lo son, y tú dijiste "sí" en 2):</p>
+    <div class="tabla-env"><table>
+      <thead><tr><th>Métrica</th><th>Pregunta</th><th>Cuenta para "sí"</th><th>Equivalente conocido</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Precisión</strong></td><td>De lo que Claude marcó como "sí", ¿cuánto lo era?</td><td>2/3 = 0.67</td><td>Valor predictivo positivo</td></tr>
+        <tr><td><strong>Exhaustividad</strong> (<em>recall</em>)</td><td>De los "sí" de la referencia, ¿cuántos encontró Claude?</td><td>2/2 = 1.00</td><td>Sensibilidad</td></tr>
+        <tr><td><strong>F1</strong></td><td>Un solo número que exige las dos</td><td>2·0.67·1/(0.67+1) = 0.80</td><td>Media armónica de las dos</td></tr>
+        <tr><td><strong>Exactitud</strong> (<em>accuracy</em>)</td><td>¿En qué proporción coincide?</td><td>5/6 = 0.83</td><td>El % de acuerdo</td></tr>
+      </tbody>
+    </table></div>
+    <figure class="diagrama">
+      <h4>La matriz de confusión del ejemplo, con lo que mide cada métrica</h4>
+      <div class="matriz-c" role="img" aria-label="Matriz de confusión: 2 verdaderos positivos, 0 falsos negativos, 1 falso positivo, 3 verdaderos negativos">
+        <div></div><div class="enc">Claude: sí</div><div class="enc">Claude: no</div><div class="c4"></div>
+        <div class="enc">Tú: sí</div>
+        <div class="celda vp"><b>2</b>acierto en "sí"<br><small>verdadero positivo</small></div>
+        <div class="celda fn"><b>0</b>Claude no lo vio<br><small>falso negativo</small></div>
+        <div class="nota-r"><span class="fl-r">← </span>fila: <strong>exhaustividad</strong><br>2 / (2 + 0) = 1.00</div>
+        <div class="enc">Tú: no</div>
+        <div class="celda fp"><b>1</b>Claude lo inventó<br><small>falso positivo</small></div>
+        <div class="celda"><b>3</b>acierto en "no"<br><small>verdadero negativo</small></div>
+        <div class="c4"></div>
+        <div></div><div class="nota-p">↑ columna: <strong>precisión</strong><br>2 / (2 + 1) = 0.67</div><div></div><div class="c4"></div>
+      </div>
+      <figcaption>Las filas son tu codificación (la referencia); las columnas, la de Claude. La <strong>exhaustividad</strong> se lee en la fila "Tú: sí": de tus "sí", cuántos encontró Claude. La <strong>precisión</strong> se lee en la columna "Claude: sí": de sus "sí", cuántos eran. Los falsos positivos inflan la cifra que vas a reportar; los falsos negativos la reducen. El kappa resume las cuatro celdas en un número y pierde esa dirección.</figcaption>
+    </figure>
+    <p>La distinción importa para la pregunta de investigación. Si vas a contar cuántas sentencias citan a la Corte IDH, un codificador con baja precisión <strong>infla</strong> la cifra, y uno con baja exhaustividad la <strong>subestima</strong>. El % de acuerdo no dice en qué dirección va el sesgo; precisión y exhaustividad sí.</p>
+    <p><strong>F1 macro</strong> promedia el F1 de cada código sin ponderar por su frecuencia, así que una categoría rara pesa lo mismo que una común. En el ejemplo de la paradoja (un "sí" que Claude no detecta), el acuerdo es 83%, pero el F1 de "sí" es 0 y el F1 macro baja a 0.45. Es otra forma de ver lo que el kappa ya advertía: el codificador no encuentra justo lo que te interesa. La versión <em>ponderada</em> o <em>micro</em> está dominada por las categorías frecuentes y se parece mucho a la exactitud.</p>
+
+    <h3>El α de Krippendorff y el AC1 de Gwet</h3>
+    <ul>
+      <li><strong>α de Krippendorff</strong>: como el kappa, compara el desacuerdo observado con el esperado por azar, pero estima el azar con los valores de <em>los dos</em> codificadores juntos, y admite más codificadores, datos faltantes y escalas ordinales. En el ejemplo de n = 6, α = 0.69 (κ = 0.67). Es la medida que se pide en comunicación y ciencia política (Hayes y Krippendorff, 2007), y sus umbrales (0.667 y 0.80) son los más citados.</li>
+      <li><strong>AC1 de Gwet</strong> (2008): estima el azar de forma que no se dispara cuando una categoría domina. En el ejemplo de la paradoja, κ = 0 y α = 0, pero AC1 = 0.80. Tiene críticos: con prevalencias extremas, un codificador que dice "no" a todo obtiene un AC1 alto sin haber encontrado nada. Por eso no sustituye al kappa; lo complementa.</li>
+    </ul>
+    <p>Ninguna medida es "la correcta". Si discrepan mucho, la discrepancia es el hallazgo: casi siempre indica una distribución muy desbalanceada, y lo honesto es reportar las dos cosas y la distribución.</p>
+
+    <h3>Intervalos de confianza</h3>
+    <p>Un kappa sin intervalo invita a leer de más. El script del kit calcula un IC del 95% por <strong>bootstrap</strong> (Efron y Tibshirani, 1993): remuestrea los documentos con reemplazo 2,000 veces, con semilla fija para que el resultado sea reproducible, y toma los percentiles 2.5 y 97.5. En el caso, <code>proporcionalidad</code> tiene κ = 0.40 con IC [−0.04, 0.79]: el dato es compatible con un acuerdo nulo y con uno sustancial. Con n = 6, el IC suele ir de 0 a 1. Ese es el argumento cuantitativo de por qué tu kappa del ejercicio es ilustrativo. Si uno de los dos codificadores usó un solo código en todos los documentos (por ejemplo, Claude dijo "no" a los 6), el bootstrap no puede mostrar variación y el script no reporta intervalo ("—").</p>
+
+    <h3>¿Sirve la confianza que declara el modelo?</h3>
+    <p>Una comprobación sencilla de calibración es el % de acuerdo con la referencia según el nivel de confianza que declaró Claude. Si es útil, el acuerdo debe ser mayor en "alta" que en "baja". En el caso, con Opus, <code>derecho_principal</code> da 90% en "alta" (n = 10), 56% en "media" y 0% en "baja" (n = 1). <strong>Cuidado</strong>: la referencia del caso es simulada y se construyó metiendo más desacuerdos donde Claude declaró confianza baja (bitácora D7), así que en el caso esa relación existe <em>por construcción</em>. En tus datos, con una referencia real, es una prueba empírica genuina.</p>
+
+    <h3>Métricas propias de un LLM</h3>
+    <ul>
+      <li><strong>Tasa de citas verificadas</strong> (Opus: 431 de 431). Mide la <em>fidelidad</em>: que la evidencia exista en el texto. No mide la exactitud del código (ver <a href="#citas">sección 4</a>).</li>
+      <li><strong>Acuerdo entre modelos o entre corridas</strong>: mide la estabilidad del instrumento, no su validez (ver <a href="#confiabilidad">sección 6</a>).</li>
+      <li><strong>Tasa de respuestas fallidas o truncadas</strong>: en el caso, Haiku truncó 3 de 102 (bitácora D11). Un documento que falla y se descarta en silencio es un sesgo de selección.</li>
+    </ul>
+
+    <h3>Qué reportar</h3>
+    <div class="tabla-env"><table>
+      <thead><tr><th>Siempre</th><th>Si hay referencia humana</th><th>Si el trabajo es para publicar</th></tr></thead>
+      <tbody><tr>
+        <td>N, distribución de cada variable, % de acuerdo, κ con IC 95%, tasa de citas verificadas</td>
+        <td>Matriz de confusión, precisión y exhaustividad por código, F1 macro</td>
+        <td>α de Krippendorff, confiabilidad entre dos personas antes de comparar con Claude, y la regla de decisión escrita <em>antes</em> de ver los resultados</td>
+      </tr></tbody>
+    </table></div>
+    <p>Elige <strong>una</strong> métrica como criterio de decisión y fíjala antes, como hace el <a href="https://github.com/benjov/kit-ia-cide/blob/main/auditoria/protocolo.md">protocolo</a> con el kappa. Con varias métricas a la mano, es fácil escoger después la que favorece el resultado: en el caso, <code>proporcionalidad</code> tiene κ = 0.40 y α = 0.42. Si después de ver los datos se aplicara a α el mismo corte de 0.41, la variable entraría con advertencia; con los umbrales propios de α (0.667 y 0.80) tampoco pasaría. No se reporta porque el criterio registrado era κ, y cambiar de métrica a posteriori es una forma de ajustar el criterio al resultado.</p>
+    <p class="en-sesion"><strong>En la sesión</strong>: es opcional. Si en la fase 5 te sobra tiempo, pídele a Cowork el "detalle" del script de acuerdo y verás tu matriz de confusión, precisión y exhaustividad. Con 6 documentos, léelos como un diagnóstico de qué confunde Claude, no como una estimación.</p>
+  </section>
+
+  <section class="concepto" id="desacuerdos">
+    <h2>9. Desacuerdos y sobreajuste</h2>
+    <p>El kappa dice <em>cuánto</em> difieren los codificadores; los desacuerdos dicen <em>por qué</em>. Para cada uno hay tres diagnósticos:</p>
+    <ul>
+      <li><strong>Falló Claude</strong>: aplicó mal una regla clara.</li>
+      <li><strong>Falló la persona</strong>: el error humano también existe.</li>
+      <li><strong>El codebook es ambiguo</strong>: la regla admite las dos lecturas. Es el diagnóstico más frecuente y el más útil, porque produce un caso frontera nuevo y una versión nueva del codebook.</li>
+    </ul>
+    <p><strong>Sobreajuste</strong>: si corriges el codebook mirando los desacuerdos de una muestra y vuelves a medir el kappa <em>en esa misma muestra</em>, el acuerdo sube por construcción. El codebook nuevo se valida con una muestra <strong>nueva</strong>. Por eso la regla v1.1 de proporcionalidad del caso sigue "pendiente de validar".</p>
+  </section>
+
+  <section class="concepto" id="confianza">
+    <h2>10. La confianza que declara el modelo</h2>
+    <p>Cada código lleva una confianza (alta, media o baja) que el propio modelo declara. No es una probabilidad calibrada: no significa "acierto el 90% de las veces cuando digo alta". Úsala como una <strong>señal para priorizar la revisión humana</strong>. Si sirve o no, se comprueba con el acuerdo por nivel de confianza (<a href="#metricas">sección 8</a>). El protocolo del kit trata como ambigua una variable si más del 20% de sus códigos tienen confianza baja.</p>
+    <p>En el caso, las notas de Claude en los documentos de confianza baja fueron las que revelaron la ambigüedad de <code>proporcionalidad</code>.</p>
+  </section>
+
+  <section class="concepto" id="reproducibilidad">
+    <h2>11. Reproducibilidad con LLM</h2>
+    <p>Un LLM no es determinista: el mismo prompt puede dar respuestas distintas en dos ejecuciones, y los proveedores actualizan o retiran modelos. Con un modelo propietario, además, no puedes inspeccionar ni congelar el instrumento, un problema que se ha señalado como ético y científico (Spirling, 2023).</p>
+    <p>En consecuencia, "reproducible" aquí significa tres cosas:</p>
+    <ul>
+      <li><strong>Procedimiento versionado</strong>: codebook, prompt y skill con número de versión; modelo con identificador exacto (<code>claude-opus-5-5</code>) y fecha.</li>
+      <li><strong>Salidas archivadas</strong>: cada respuesta cruda se guarda (<code>corridas/*.jsonl</code>) con el SHA-256 de su fuente. Lo que se audita es lo que efectivamente produjo el modelo.</li>
+      <li><strong>Análisis determinista</strong> a partir de esas salidas: <code>analizar_resultados.py --salida</code> regenera las 108 tablas y archivos del caso y comprueba que sean idénticos a los publicados.</li>
+    </ul>
+    <p>Lo que no se puede prometer es que una nueva corrida dé exactamente los mismos códigos. Lo que sí se puede medir es <em>cuánto</em> cambian, por ejemplo con el acuerdo entre corridas o entre modelos.</p>
+  </section>
+
+  <section class="concepto" id="inferencia">
+    <h2>12. Inferencia: Fisher, potencia y generalización</h2>
+    <p>Para comparar proporciones entre 9 AI y 86 amparos se usa la <strong>prueba exacta de Fisher</strong>. Con celdas pequeñas, la aproximación de χ² no es confiable. Fisher calcula, condicionando en los totales marginales, qué tan probable sería una tabla igual de desequilibrada o más si la vía procesal no tuviera relación con la variable.</p>
+    <p>Hay tres cautelas que el memo del caso hace explícitas:</p>
+    <ul>
+      <li><strong>Potencia</strong>: con 9 AI, cada sentencia mueve la proporción 11 puntos. La ausencia de diferencia significativa no es evidencia de ausencia de diferencia.</li>
+      <li><strong>Comparaciones múltiples</strong>: se prueban 4 hipótesis. Con Bonferroni, el umbral sería 0.05/4 = 0.0125.</li>
+      <li><strong>Población</strong>: el corpus no es una muestra aleatoria. El valor p se lee como una medida de qué tan inusual es la asociación <em>dentro de esta colección</em> bajo independencia, no como una inferencia a toda la jurisprudencia de la SCJN.</li>
+    </ul>
+    <p>Y antes que todo: una prueba sobre una variable mal medida no informa nada. Por eso la confiabilidad se evalúa <em>antes</em> que los hallazgos.</p>
+  </section>
+
+  <section class="concepto" id="costos">
+    <h2>13. Tokens y costos</h2>
+    <p>Los modelos procesan <strong>tokens</strong>, fragmentos de palabra; en español, una palabra equivale en promedio a algo más de un token. El costo es tokens de entrada × precio de entrada + tokens de salida × precio de salida, y varía mucho entre modelos.</p>
+    <p>La <strong>Batch API</strong> procesa solicitudes de forma asíncrona con 50% de descuento. La <strong>caché del prompt</strong> abarata el texto que se repite en cada solicitud, como el codebook. En el caso, un resumen promedió unos 19,000 tokens de entrada y 1,750 de salida, y las tres corridas completas costaron US$6.07. Haz la cuenta para tu corpus con la <a href="herramientas/costos.html">calculadora</a> y verifica los precios vigentes antes de citarlos.</p>
+  </section>
+
+  <section class="concepto" id="herramientas">
+    <h2>14. Glosario de herramientas</h2>
+    <div class="tabla-env"><table>
+      <thead><tr><th>Término</th><th>Qué es</th><th>Dónde</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Prompt / system prompt</strong></td><td>Las instrucciones que recibe el modelo. El system prompt fija el papel y las reglas (aquí, el codebook); el mensaje del usuario trae el documento</td><td>Todas</td></tr>
+        <tr><td><strong>Proyecto</strong></td><td>Un espacio de Chat con archivos de conocimiento e instrucciones compartidos entre conversaciones</td><td>claude.ai o Desktop</td></tr>
+        <tr><td><strong>Workbench</strong></td><td>Banco de pruebas de prompts: variables, comparación de modelos, conteo de tokens y costo</td><td>Claude Console (navegador)</td></tr>
+        <tr><td><strong>Skill</strong></td><td>Una carpeta con instrucciones (<code>SKILL.md</code>), referencias y scripts que Claude carga cuando la tarea lo pide. Convierte un buen prompt en un procedimiento reutilizable y compartible</td><td>Configuración → Capacidades</td></tr>
+        <tr><td><strong>Cowork</strong></td><td>Modo en que Claude trabaja sobre una carpeta de tu equipo: lee y escribe archivos y ejecuta código en un entorno aislado</td><td>Solo Claude Desktop</td></tr>
+        <tr><td><strong>Conector</strong></td><td>Acceso de Claude a un servicio externo (Drive, por ejemplo) mediante MCP</td><td>Configuración → Conectores</td></tr>
+        <tr><td><strong>API / Batch API</strong></td><td>Acceso programático a los modelos; Batch procesa lotes de forma asíncrona y más barata</td><td>Carril B (código)</td></tr>
+        <tr><td><strong>Claude Code</strong></td><td>Agente de programación en terminal: versiona, re-ejecuta y escala el flujo</td><td>Sesión 5</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="concepto" id="referencias">
+    <h2>Referencias</h2>
+    <ul class="refs">
+      <li>Cohen, J. (1960). A coefficient of agreement for nominal scales. <em>Educational and Psychological Measurement</em>, 20(1), 37–46.</li>
+      <li>Efron, B., y Tibshirani, R. J. (1993). <em>An Introduction to the Bootstrap</em>. Chapman &amp; Hall.</li>
+      <li>Feinstein, A. R., y Cicchetti, D. V. (1990). High agreement but low kappa: I. The problems of two paradoxes. <em>Journal of Clinical Epidemiology</em>, 43(6), 543–549.</li>
+      <li>Gilardi, F., Alizadeh, M., y Kubli, M. (2023). ChatGPT outperforms crowd workers for text-annotation tasks. <em>PNAS</em>, 120(30), e2305016120.</li>
+      <li>Grimmer, J., y Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. <em>Political Analysis</em>, 21(3), 267–297.</li>
+      <li>Grimmer, J., Roberts, M. E., y Stewart, B. M. (2022). <em>Text as Data: A New Framework for Machine Learning and the Social Sciences</em>. Princeton University Press.</li>
+      <li>Gwet, K. L. (2008). Computing inter-rater reliability and its variance in the presence of high agreement. <em>British Journal of Mathematical and Statistical Psychology</em>, 61(1), 29–48.</li>
+      <li>Hayes, A. F., y Krippendorff, K. (2007). Answering the call for a standard reliability measure for coding data. <em>Communication Methods and Measures</em>, 1(1), 77–89.</li>
+      <li>Krippendorff, K. (2018). <em>Content Analysis: An Introduction to Its Methodology</em> (4.ª ed.). SAGE.</li>
+      <li>Landis, J. R., y Koch, G. G. (1977). The measurement of observer agreement for categorical data. <em>Biometrics</em>, 33(1), 159–174.</li>
+      <li>Neuendorf, K. A. (2017). <em>The Content Analysis Guidebook</em> (2.ª ed.). SAGE.</li>
+      <li>NIST (2015). <em>Secure Hash Standard (SHS)</em>, FIPS PUB 180-4.</li>
+      <li>Pangakis, N., Wolken, S., y Fasching, N. (2023). Automated annotation with generative AI requires validation. arXiv:2306.00176.</li>
+      <li>Parasuraman, R., y Manzey, D. H. (2010). Complacency and bias in human use of automation: An attentional integration. <em>Human Factors</em>, 52(3), 381–410.</li>
+      <li>Spirling, A. (2023). Why open-source generative AI models are an ethical choice for science. <em>Nature</em>, 616, 413.</li>
+      <li>Ziems, C., Held, W., Shaikh, O., Chen, J., Zhang, Z., y Yang, D. (2024). Can large language models transform computational social science? <em>Computational Linguistics</em>, 50(1), 237–291.</li>
+    </ul>
+  </section>
+</main>
+<script src="assets/comun.js"></script>
+</body>
+</html>

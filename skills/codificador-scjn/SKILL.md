@@ -36,24 +36,35 @@ Usa UTF-8 y comillas dobles en los campos de texto.
 
 ## Auditoría (siempre, al terminar)
 
-1. Ejecuta la verificación de citas:
+Los scripts están en la carpeta `scripts/` **de este skill** y los ejecutas tú, Claude, en tu entorno (Cowork, o Chat con ejecución de código). La persona usuaria no necesita Python ni terminal: nunca le pidas que ejecute un comando. Los scripts detectan solos las variables a partir de los encabezados `<variable>_codigo` y `<variable>_cita`, así que funcionan igual con la variable nueva de un participante: no los edites.
+
+1. Verifica las citas:
 
    ```
-   python scripts/verificar_citas.py resultados_codificacion.csv --corpus <carpeta de los .txt> --csv auditoria_citas.csv
+   python <ruta de este skill>/scripts/verificar_citas.py resultados_codificacion.csv --corpus <carpeta de los .txt> --csv auditoria_citas.csv
    ```
+
+   Si el codebook usa un código de ausencia que no empieza con `no_` ni con `ningun` (por ejemplo `otro_sin_cita`), agrégalo con `--ausencia <código>`.
 
 2. Si hay citas **NO_ENCONTRADA**, vuelve a leer ese documento, corrige la cita (cópiala literal) o cambia el código si ya no se sostiene. Repite la verificación hasta que todas las citas sean encontradas, o explica por qué alguna no puede corregirse.
-3. Reporta al usuario, en lenguaje no técnico:
+3. Reporta en lenguaje no técnico:
    - Cuántos documentos codificaste y la distribución de cada variable (una tabla corta).
    - El % de citas verificadas **antes y después** de la corrección. Ese dato importa: muestra cuánto se equivocó el modelo en la primera pasada.
    - Los documentos con confianza `baja`: son candidatos a revisión humana.
-4. Si el usuario tiene una codificación humana (por ejemplo `gold-standard.csv` o `hoja-codificacion-humana.csv` del ejercicio), calcula el acuerdo:
+4. Si la persona tiene una codificación humana (por ejemplo `gold-standard-SIMULADO.csv` o `hoja-codificacion-humana.csv` del ejercicio), calcula el acuerdo:
 
    ```
-   python scripts/calcular_acuerdo.py <humano.csv> resultados_codificacion.csv --desacuerdos
+   python <ruta de este skill>/scripts/calcular_acuerdo.py <humano.csv> resultados_codificacion.csv --desacuerdos
    ```
 
-   Explica el kappa en una frase ("0.72 = acuerdo sustancial") y comenta 2 o 3 desacuerdos concretos: ¿falló Claude, falló el humano o el codebook es ambiguo?
+   Pon **primero la hoja humana**. Solo si la persona pide el detalle, agrega `--detalle`: el archivo A es la referencia para la matriz de confusión, la precisión, la exhaustividad y el F1.
+
+   - Si la hoja humana viene en `.xlsx`, conviértela a CSV antes; si viene separada por `;` (Excel en español), el script la lee sin problema.
+   - Si la hoja conserva el encabezado genérico `variable_codigo`, empareja con `--renombrar variable=<nombre de la variable>`. **No cambies ningún código humano.**
+   - Explica el kappa en una frase ("0.72 = acuerdo sustancial") y comenta los desacuerdos concretos: ¿falló Claude, falló la persona o el codebook es ambiguo?
+   - Por omisión, explica solo el kappa (con su IC si el script lo da) y los desacuerdos. Las demás columnas (α, AC1) y el detalle son **referenciales**: explícalos en lenguaje llano solo si la persona lo pide, por ejemplo la precisión como "de lo que marqué como X, cuánto lo era" y la exhaustividad como "de los X de la persona, cuántos encontré". Si N < 30, di que los números son ilustrativos. No elijas a posteriori la métrica que mejor se ve: el criterio de decisión es el que la persona fijó antes (en el kit, κ).
+
+Si en tu entorno no puedes ejecutar código, dilo explícitamente, verifica cada cita buscándola en el texto y calcula el kappa a mano mostrando la tabla de contingencia. Declara en el reporte que la verificación no fue automática.
 
 ## Gráficas (si el usuario las pide)
 

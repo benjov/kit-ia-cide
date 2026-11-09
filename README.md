@@ -9,10 +9,27 @@
 | Si eres… | Empieza en |
 |---|---|
 | Participante de la sesión | [`docs/guia.html`](https://benjov.github.io/kit-ia-cide/guia.html) y las variables de [`ejercicio/README.md`](ejercicio/README.md) |
+| Quieres entender los fundamentos (codebook, kappa, codificación humana, reproducibilidad) | [Conceptos y fundamentos](https://benjov.github.io/kit-ia-cide/conceptos.html), con referencias |
+| Quieres verificar o reproducir el kit tú mismo | [`scripts/README.md`](scripts/README.md): prompts para que Cowork ejecute cada script, o comandos para terminal |
 | Quieres ver el caso terminado | [`caso-completo/`](caso-completo/) o [en el sitio](https://benjov.github.io/kit-ia-cide/caso.html) |
 | Quieres usarlo con tu corpus | [`plantilla-tu-corpus/README.md`](plantilla-tu-corpus/README.md) |
 | Facilitas la sesión | [`facilitador/guion.md`](facilitador/guion.md) |
 | Co-docente que va a revisar o adaptar el kit | [`facilitador/para-co-docente.md`](facilitador/para-co-docente.md) |
+
+## Sin programar
+
+**Toda la sesión se hace desde las aplicaciones de Claude.** No necesitas terminal, Python ni git.
+
+| Herramienta | Dónde | Para qué fase |
+|---|---|---|
+| Chat con Proyecto | claude.ai o Claude Desktop | 1 · Codebook, 6 · Nota |
+| Workbench | Claude Console, en el navegador (`platform.claude.com`), con tus créditos de API | 2 · Prompt |
+| Skills | Configuración → Capacidades → Skills (claude.ai o Desktop) | 3 · Skill |
+| Cowork | **Solo Claude Desktop** | 3 · Armar el skill, 4 · Codificar, 5 · Validar |
+
+Los scripts de verificación de citas y de kappa vienen dentro del skill y **los ejecuta Claude en Cowork**; detectan solos tu variable.
+
+La carpeta `scripts/` tiene todo lo demás: la descarga del corpus desde la SCJN, la verificación de hashes, la recodificación por API y la reproducción del caso completo. **Cualquiera puede pedirle a Cowork que los ejecute** para comprobar que funcionan y que el caso se reproduce (108 de 108 archivos idénticos). Quien prefiera la terminal tiene los comandos. Ver [`scripts/README.md`](scripts/README.md).
 
 ## La pregunta del caso
 
@@ -21,7 +38,7 @@ Cuando la SCJN protege derechos humanos, **¿argumenta distinto en control abstr
 ## El flujo
 
 ```
-Pregunta y corpus → Codebook (Chat) → Prompt (Workbench) → Skill → Escalar (Cowork / API Batch) → Validar (kappa) → Memo
+Pregunta y corpus → Codebook (Chat) → Prompt (Workbench) → Skill → Escalar (Cowork) → Validar (kappa, en Cowork) → Memo (Chat)
 ```
 
 ## Contenido

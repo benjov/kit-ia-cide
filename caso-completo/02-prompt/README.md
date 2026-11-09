@@ -2,9 +2,9 @@
 
 **Objetivo**: convertir el codebook en un prompt que produzca JSON válido y verificable, compararlo entre modelos y estimar el costo **antes** de escalar.
 
-## Paso a paso (unos 25 min en la sesión)
+## Paso a paso (unos 15 min en la sesión; los pasos 7 y 8 son para después)
 
-1. Entra a **Claude Console → Workbench**.
+1. Entra a **Claude Console** en el navegador (`platform.claude.com`; es otra página, no la app de Claude) → **Workbench**. Usa tus créditos de API.
 2. En **System prompt**, pega el contenido de [`system-prompt.md`](system-prompt.md).
 3. Sustituye `{{CODEBOOK}}` por el contenido de [`../01-codebook.md`](../01-codebook.md), o déjalo como variable y pégalo en el panel de variables.
 4. En el mensaje del usuario, escribe:
@@ -22,18 +22,18 @@
    - ¿Coinciden los códigos?
    - ¿Las citas son literales? Búscalas con Ctrl+F en el documento.
    - Tokens de entrada y de salida, y el costo que muestra Workbench.
-7. Agrega **3 casos de prueba** (en Workbench, "Evaluate" o "Test cases") con los documentos de la tabla de abajo, cuyo código correcto ya conocemos. Ejecuta la evaluación.
-8. Cuando el prompt pase los casos, haz clic en **Get code**. No necesitas usar ese código hoy: es la llave para escalar en la sesión 5.
+7. *Para después de la sesión*: agrega **3 casos de prueba** (en Workbench, "Evaluate" o "Test cases") con los documentos de la tabla de abajo, cuyo código correcto ya conocemos. Ejecuta la evaluación.
+8. Opcional: el botón **Get code** muestra el código equivalente. No lo necesitas hoy ni hay que ejecutarlo: es la llave para escalar en la sesión 5.
 
-## Casos de prueba sugeridos (gold standard)
+## Casos de prueba sugeridos
 
-Codificados a mano por el equipo docente. Úsalos para detectar regresiones cuando cambies el prompt.
+El de `AI-148-2017` lo verificó el equipo docente leyendo la sentencia. Los otros dos vienen de la referencia **SIMULADA** del caso (bitácora D7): sirven para practicar, no como verdad. Úsalos para detectar regresiones cuando cambies el prompt.
 
 | Documento | Variable que pone a prueba | Por qué es difícil |
 |---|---|---|
 | `AI-148-2017` | `resultado` | Valida un artículo e invalida otros → debe ser `mixto`, no `protege` |
-| (ver `../05-validacion/gold-standard.csv`) | `fuentes_internacionales` | Las partes citan tratados pero la Corte no siempre los cita |
-| (ver `../05-validacion/gold-standard.csv`) | `promovente` | Varios promoventes de distinto tipo |
+| (ver `../05-validacion/gold-standard-SIMULADO.csv`) | `fuentes_internacionales` | Las partes citan tratados pero la Corte no siempre los cita |
+| (ver `../05-validacion/gold-standard-SIMULADO.csv`) | `promovente` | Varios promoventes de distinto tipo |
 
 ## Lo que aprendimos al prototipar (bitácora del caso)
 

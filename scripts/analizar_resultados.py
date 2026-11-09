@@ -9,12 +9,22 @@ Hace, en este orden:
   4. Hallazgos: tablas cruzadas control abstracto vs. concreto con prueba exacta de Fisher.
   5. Escribe caso-completo/04-resultados/*.csv y docs/data/*.json (+ textos para el auditor).
 
-Uso:  python scripts/analizar_resultados.py
+Uso:
+  python scripts/analizar_resultados.py                              # regenera las tablas del kit
+  python scripts/analizar_resultados.py --salida mi-trabajo/reproduccion  # prueba de reproducibilidad
+
+Con --salida, NO toca los archivos del kit: escribe todo en esa carpeta y al final compara,
+archivo por archivo, lo que generó con lo que trae el kit. Si todo coincide, los números
+del caso (memo, sitio) se reproducen exactamente a partir de las corridas crudas.
+
+Si se lo pides a Claude en Cowork, lo ejecuta él: no necesitas instalar nada.
 Requisitos: solo Python 3.10+.
 """
 from __future__ import annotations
 
+import argparse
 import csv
+import hashlib
 import json
 import math
 import shutil
@@ -30,6 +40,7 @@ CORRIDAS = RAIZ / "caso-completo" / "04-resultados" / "corridas"
 RES = RAIZ / "caso-completo" / "04-resultados"
 VAL = RAIZ / "caso-completo" / "05-validacion"
 DATA = RAIZ / "docs" / "data"
+VAL_OUT = VAL  # con --salida, se escribe en otra carpeta
 MODELOS = {"claude-opus-5-5": "Opus 5.5", "claude-sonnet-5-5": "Sonnet 5.5", "claude-haiku-5-5": "Haiku 5.5"}
 PRINCIPAL = "claude-opus-5-5"
 PRECIOS = {"claude-opus-5-5": (4.00, 20.00), "claude-sonnet-5-5": (2.00, 10.00), "claude-haiku-5-5": (0.10, 0.50)}  # USD/millón
@@ -66,6 +77,16 @@ def cargar_corridas() -> dict[str, dict[str, dict]]:
 
 
 def main() -> None:
+    global RES, VAL_OUT, DATA
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--salida", type=Path, help="carpeta donde escribir (no toca el kit) y comparar con el kit")
+    args = ap.parse_args()
+    originales = {"04-resultados": RES, "05-validacion": VAL, "data": DATA}
+    if args.salida:
+        RES, VAL_OUT, DATA = args.salida / "04-resultados", args.salida / "05-validacion", args.salida / "data"
+        for d in (RES, VAL_OUT):
+            d.mkdir(parents=True, exist_ok=True)
+
     corr = cargar_corridas()
     manifiesto = {r["id"]: r for r in csv.DictReader((RAIZ / "corpus" / "manifiesto_emblematicas.csv").open(encoding="utf-8"))}
     gold = {r["id"]: r for r in csv.DictReader((VAL / "gold-standard-SIMULADO.csv").open(encoding="utf-8"))}
@@ -141,7 +162,7 @@ def main() -> None:
         w.writerow(["variable", "codigo", "abstracto_si", "abstracto_n", "concreto_si", "concreto_n", "p_fisher"])
         for h in resumen["hallazgos"]:
             w.writerow([h["variable"], h["codigo"], h["abstracto"]["si"], h["abstracto"]["n"], h["concreto"]["si"], h["concreto"]["n"], f"{h['p_fisher']:.3f}"])
-    with (VAL / "confiabilidad.csv").open("w", newline="", encoding="utf-8") as fh:
+    with (VAL_OUT / "confiabilidad.csv").open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=["modelo", "variable", "n", "acuerdo", "kappa"])
         w.writeheader()
         w.writerows({**k, "acuerdo": round(k["acuerdo"], 3), "kappa": round(k["kappa"], 3)} for k in resumen["kappa_vs_referencia"])
@@ -179,6 +200,22 @@ def main() -> None:
     print("\nHallazgos (Opus):")
     for h in resumen["hallazgos"]:
         print(f"  {h['etiqueta']:<34} abstracto {h['abstracto']['si']}/{h['abstracto']['n']}  concreto {h['concreto']['si']}/{h['concreto']['n']}  p={h['p_fisher']:.3f}")
+
+    if args.salida:
+        nuevos = {"04-resultados": RES, "05-validacion": VAL_OUT, "data": DATA}
+        print(f"\nComparación con el kit (lo generado en {args.salida} contra lo publicado):")
+        iguales = distintos = 0
+        for clave, carpeta in nuevos.items():
+            for f in sorted(x for x in carpeta.rglob("*") if x.is_file()):
+                kit = originales[clave] / f.relative_to(carpeta)
+                h = lambda x: hashlib.sha256(x.read_bytes()).hexdigest()
+                if kit.exists() and h(kit) == h(f):
+                    iguales += 1
+                else:
+                    distintos += 1
+                    print(f"  ✗ distinto: {clave}/{f.relative_to(carpeta)}")
+        print(f"  Archivos idénticos: {iguales} · distintos: {distintos}")
+        print("  ✓ El caso se reproduce exactamente." if not distintos else "  Revisa los archivos distintos.")
 
 
 if __name__ == "__main__":

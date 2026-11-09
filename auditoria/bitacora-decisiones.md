@@ -90,3 +90,45 @@ Además, en el AR 166/2019 Sonnet asignó un código sustantivo de `derecho_prin
   - los documentos se eligieron por su longitud, no al azar.
 - **Comparación**: unas 5 personas eligen la misma variable sin coordinarse, así que en la puesta en común se compara cómo la definió cada una y qué kappa obtuvo.
 - **Consecuencia**: el caso completo no cambia. La referencia simulada se regeneró con la nueva ruta y salió idéntica.
+
+### D13 · 2026-11-09 · La ruta del participante se hace solo desde las aplicaciones de Claude
+
+- **Problema**: en la revisión aparecieron pasos que exigían salir de la app. El más grave: los scripts del skill traían las 6 variables del caso escritas en el código. La guía pedía editar `VARIABLES` en `verificar_citas.py` para que la variable del participante contara, y por el atajo (`codificador-scjn` + "agrega mi variable") la verificación de citas y el kappa **ignoraban la variable nueva sin avisar**. Además, la guía no decía dónde se abre cada herramienta (claude.ai, Desktop o Console), ni cómo pasar el codebook del Chat a la carpeta.
+- **Cambios**:
+  - `verificar_citas.py` y `calcular_acuerdo.py` (en `scripts/` y en los dos skills) detectan solos las variables por los encabezados `<variable>_codigo`. Leen CSV con `;` y BOM (Excel en español), aceptan como ausencia cualquier código que empiece con `no_` o `ningun` (más `--ausencia`), y `calcular_acuerdo.py` acepta `--renombrar variable=<nombre>` y avisa cuando no hay nada que comparar.
+  - Los `SKILL.md` indican que **Claude** ejecuta los scripts en su entorno y nunca le pide a la persona que corra comandos. Si no puede ejecutar código, lo declara.
+  - Guía: tabla "¿Dónde se hace cada cosa?", sección "Antes de la sesión" y carpeta `mi-trabajo/`. Además, Cowork arma el .zip del skill (fase 3), los pasos de Workbench vienen completos, el codebook se descarga como archivo desde el Chat y el plan B no sale de la app.
+- **Verificación**: el caso completo da los mismos números con los scripts nuevos (Opus 431/431; los mismos kappa de `confiabilidad-opus.csv`), y `docs/data/` no cambió. Se probó con una variable nueva (`evidencia`), una cita falsa y una hoja humana con `;`, BOM y encabezado genérico.
+- **Criterio que queda**: Workbench (Claude Console, en el navegador) se mantiene en la fase 2 porque no requiere código y los participantes tienen créditos. Si no hay acceso, la fase se hace en Chat.
+- **Pendiente**: probar en una cuenta Pro el prompt de la fase 3 (que Cowork genere el .zip) y la instalación del skill.
+
+### D14 · 2026-11-09 · Scripts verificables desde Cowork y página de conceptos
+
+- **Qué**: cualquier participante, programe o no, debe poder comprobar el kit pidiéndole a Claude que ejecute los scripts. La audiencia (docentes con doctorado) necesita además los fundamentos de cada paso.
+- **Cambios en los scripts**:
+  - `descargar_corpus.py`: modo de prueba con `--muestra N`, `--ids` y `--destino`. No toca el kit, y al final compara el SHA-256 de cada PDF y el texto extraído contra el manifiesto. Las descargas parciales sin `--destino` se rechazan, para no reemplazar el manifiesto del kit por uno incompleto. Corrige también el nombre del manifiesto en el docstring.
+  - `verificar_hashes.py`: `--ids` y `--pdf`. Este último verifica un PDF bajado a mano desde el navegador, para entornos sin internet, y reconoce el documento por su huella. Además da mensajes claros si no hay red o aparece una protección anti-bots, y se detiene sin evadirla.
+  - `analizar_resultados.py --salida`: reproduce el caso en otra carpeta y compara archivo por archivo con el kit.
+  - `codificar_api.py --salida`: prueba por API sin tocar las corridas del caso; avisa si falta la key.
+- **Verificado el 2026-11-09**, contra la SCJN real:
+  - `verificar_hashes.py --muestra 3`: 6/6 coinciden;
+  - `descargar_corpus.py --muestra 3 --destino …`: 102 fichas en el índice, 6/6 PDF y 6/6 textos idénticos, en unos 40 s;
+  - `analizar_resultados.py --salida`: 108/108 archivos idénticos.
+  - `codificar_api.py` no se ejecutó, para no gastar créditos; solo se comprobó que compila.
+- **Documentación**: `scripts/README.md` (prompt para Cowork, comando y resultado esperado para cada script), sección "Verifica el kit" en `docs/kit.html` y `docs/conceptos.html`, que cubre codebook, codificación humana, confiabilidad contra validez, kappa con ejemplos de n = 6, citas, procedencia, confianza, reproducibilidad con LLM, inferencia y costos, con referencias. La guía tiene un recuadro "¿Por qué?" en cada fase.
+- **Pendiente**: confirmar si el entorno de Cowork tiene salida a `scjn.gob.mx` y `api.anthropic.com`. Si no la tiene, la ruta es `verificar_hashes.py --pdf`, y la API queda solo para terminal.
+
+### D15 · 2026-11-09 · Métricas de evaluación más allá del kappa
+
+- **Qué**: la audiencia no viene del NLP, pero la literatura que evalúa LLM como anotadores reporta precisión, exhaustividad (recall), F1 y α de Krippendorff, no solo kappa. Para que alguien pueda leer esa literatura y defender su validación hacía falta calcular esas métricas y explicarlas.
+- **Cambios**:
+  - `calcular_acuerdo.py` (en `scripts/` y en los dos skills) reporta por variable el IC 95% del kappa (bootstrap de percentiles, 2,000 remuestras, semilla 2026), el α de Krippendorff nominal y el AC1 de Gwet.
+  - Con `--detalle`, el script toma A como referencia y agrega la matriz de confusión, la precisión, la exhaustividad y el F1 por código, el F1 macro y el % de acuerdo por nivel de confianza declarado.
+  - La función `kappa()` no cambió, y `analizar_resultados.py` sigue dando 108 de 108 archivos idénticos. `confiabilidad-opus.csv` se regeneró con las columnas nuevas; los kappas son los mismos.
+  - `docs/conceptos.html` tiene una sección nueva, §8 «Más allá del kappa», con ejemplos de n = 6 y una tabla de qué reportar. Las secciones siguientes se renumeraron de 9 a 14.
+  - El simulador de kappa muestra α, AC1, precisión, exhaustividad y F1, y compara las métricas contra la referencia humana y contra la "verdad" simulada.
+  - También se actualizaron la guía (fase 5), el guion, el protocolo, los `SKILL.md`, `05-validacion/README.md`, `scripts/README.md` y `docs/kit.html`.
+- **Criterio que queda**: el criterio de decisión sigue siendo **solo el kappa**, porque así se fijó antes de ver los datos. Las demás métricas se reportan sin decidir. Si a posteriori se aplicara a α el corte de 0.41 del kappa, `proporcionalidad` (α = 0.42) entraría con advertencia; con los umbrales propios de α (0.667) no pasaría. No se reporta.
+- **Alcance (ajuste tras la auditoría previa al commit)**: las métricas complementarias son **referenciales**; se profundizan en la sesión 5 (evaluaciones, Claude Code y Claude Science). En la sesión, la fase 5 se queda con kappa y desacuerdos; el detalle (matriz, precisión, exhaustividad) es opcional y α/AC1 solo se explican si la persona pregunta. El IC se omite («—») cuando uno de los codificadores usa un solo código, porque el bootstrap no puede estimar la variación.
+- **Advertencia**: en el caso, el acuerdo es mayor cuando la confianza es alta *por construcción*, porque la referencia simulada (D7) mete más desacuerdos donde la confianza es baja. Así se declara en los textos.
+- **También**: las variables 4, 6 y 9 de `ejercicio/README.md` no tenían "trampa", aunque el material del taller de docencia (artifact externo de la sesión 4) dice que las 10 la traen. Se agregó a las tres. También se corrigió en Conceptos el rango de acuerdo entre modelos: 0.79–1.00 es el de los tres pares, no el de Opus–Sonnet (0.83–0.95).

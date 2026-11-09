@@ -8,6 +8,7 @@
     ["index.html", "Inicio"],
     ["guia.html", "Guía de la sesión"],
     ["caso.html", "Caso completo"],
+    ["conceptos.html", "Conceptos"],
     ["herramientas/auditor.html", "Auditor de citas"],
     ["herramientas/kappa.html", "Simulador kappa"],
     ["herramientas/costos.html", "Costos"],

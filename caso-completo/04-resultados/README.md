@@ -9,6 +9,6 @@
 | `resultados_opus.csv` | Corrida principal en formato plano (abre en Excel), con la marca `p.N` de la sentencia por cita |
 | `hallazgos.csv` | Tablas abstracto contra concreto con prueba exacta de Fisher |
 
-**En la sesión** harás esta fase con **Cowork** y el skill, sobre 20 documentos. El resultado es un CSV con las mismas columnas.
+**En la sesión** harás esta fase con **Cowork** (Claude Desktop) y el skill, sobre 20 documentos, sin código. El resultado es un CSV con las mismas columnas. Los comandos de abajo son del carril B (opcional).
 
 Regenerar todo: `python scripts/analizar_resultados.py`

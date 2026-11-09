@@ -19,7 +19,7 @@ Sesión 4 (2.5 h, en vivo, unas 50 personas de ciencias sociales con Claude Pro 
 2. [`facilitador/guion.md`](guion.md): minuto a minuto, checklist previo y plan B. Ahí está el reparto **conduce / circula** entre las dos.
 3. [`ejercicio/README.md`](../ejercicio/README.md): las 10 variables para elegir y cómo se hace la validación individual.
 4. [`caso-completo/06-memo-metodologico.md`](../caso-completo/06-memo-metodologico.md): el caso resuelto en dos páginas.
-5. [`auditoria/bitacora-decisiones.md`](../auditoria/bitacora-decisiones.md) (D1–D11): por qué el kit es como es.
+5. [`auditoria/bitacora-decisiones.md`](../auditoria/bitacora-decisiones.md) (D1–D13): por qué el kit es como es.
 6. [`CLAUDE.md`](../CLAUDE.md): el contexto del proyecto para Claude (y para ti). Contiene las reglas que no hay que romper.
 
 ## 3. Qué es real, qué es simulado y qué ya se verificó
@@ -48,8 +48,8 @@ En orden de prioridad:
 1. **Tiempos del guion.** ¿Caben las fases 1–4 en 85 minutos para alguien que no programa? ¿Son realistas **4 minutos por documento** a mano (síntesis + Ctrl+F)?
 2. **Las 10 variables** de `ejercicio/README.md`. ¿Son observables en los resúmenes? ¿Alguna es jurídicamente imprecisa? ¿Cambiarías alguna por una más cercana a sus disciplinas?
 3. **El codebook del caso** (`caso-completo/01-codebook.md`), sobre todo C3 (derecho principal) y C5 (proporcionalidad, regla v1.1).
-4. **Prueba en vivo de Cowork** con tu cuenta Pro: instala el skill `codificador-scjn` y córrelo sobre `ejercicio/muestra-20/`. Anota cuánto tarda; es la referencia del plan B.
-5. **Tono y claridad** de la guía del participante (sitio → Guía).
+4. **Prueba en vivo de Cowork** con tu cuenta Pro: instala el skill `codificador-scjn` y córrelo sobre `ejercicio/muestra-20/`. Anota cuánto tarda; es la referencia del plan B. Prueba también la **ruta sin código** de la guía (bitácora D13): que Cowork arme el .zip del skill a partir de la plantilla, y que calcule el kappa con una hoja guardada desde Excel.
+5. **Tono y claridad** de la guía del participante (sitio → Guía) y de la página [Conceptos](https://benjov.github.io/kit-ia-cide/conceptos.html). ¿Está al nivel de una audiencia con doctorado? ¿Falta o sobra algún concepto o referencia?
 
 ## 6. Cómo trabajar el kit con Claude
 

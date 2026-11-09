@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Simulador de kappa</title>
-<meta name="description" content="Simulador interactivo del kappa de Cohen: acuerdo observado, acuerdo por azar y paradoja de la prevalencia.">
+<meta name="description" content="Simulador interactivo del kappa de Cohen, el α de Krippendorff, el AC1 de Gwet y la precisión, exhaustividad y F1: acuerdo por azar, paradoja de la prevalencia y el efecto de una referencia ruidosa.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/estilo.css">
 <style>
@@ -14,7 +14,7 @@
   .desac { background: var(--error); }
   .leyenda { display: flex; gap: 14px; flex-wrap: wrap; font-size: .85rem; color: var(--texto-suave); margin: 10px 0; }
   .leyenda i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 5px; }
-  .medidor { height: 16px; border-radius: 8px; background: linear-gradient(90deg, var(--error) 0 20%, var(--alerta) 20% 40%, #c9a227 40% 60%, color-mix(in srgb, var(--ok) 70%, #fff) 60% 80%, var(--ok) 80%); position: relative; margin: 28px 0 6px; }
+  .medidor { height: 16px; border-radius: 8px; background: linear-gradient(90deg, var(--error) 0 20%, var(--alerta) 20% 40%, color-mix(in srgb, var(--alerta) 55%, var(--ok)) 40% 60%, color-mix(in srgb, var(--ok) 70%, var(--superficie)) 60% 80%, var(--ok) 80%); position: relative; margin: 28px 0 6px; }
   .aguja { position: absolute; top: -10px; width: 4px; height: 36px; background: var(--texto); border-radius: 2px; transition: left .5s; }
   .escala { display: flex; justify-content: space-between; font-size: .75rem; color: var(--texto-suave); }
   .presets { display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0; }
@@ -56,6 +56,12 @@
         <div class="metrica"><small>Acuerdo esperado por azar</small><b id="pe"></b></div>
         <div class="metrica"><small>Kappa</small><b id="k"></b></div>
       </div>
+      <div class="metricas">
+        <div class="metrica"><small>α de Krippendorff</small><b id="alfa"></b></div>
+        <div class="metrica"><small>AC1 de Gwet</small><b id="ac1"></b></div>
+        <div class="metrica"><small>F1 de "sí" (humano = referencia)</small><b id="f1"></b></div>
+      </div>
+      <p style="font-size:.85rem;color:var(--texto-suave);margin-top:6px">Precisión de Claude en "sí": <b id="prec"></b> · exhaustividad (recall): <b id="rec"></b>. <a href="../conceptos.html#metricas">¿Qué es cada una?</a></p>
       <div class="medidor"><div class="aguja" id="aguja"></div></div>
       <div class="escala"><span>&lt;0.2 leve</span><span>0.4 moderado</span><span>0.6 sustancial</span><span>0.8 casi perfecto</span></div>
       <p id="lectura" style="margin-top:14px"></p>
@@ -75,7 +81,14 @@
     </div>
   </div>
 
-  <div class="aviso info"><strong>Para llevar a tu proyecto:</strong> reporta siempre <em>kappa y % de acuerdo y la distribución</em> de la variable. En el caso completo, las variables con prevalencia extrema (como <code>perspectiva_genero</code>) tienen kappas inestables con N=20.</div>
+  <h2>Contra la referencia… y contra la verdad</h2>
+  <p>Precisión y exhaustividad toman al humano como si fuera la verdad. Pero en este simulador el humano también se equivoca, así que podemos comparar con la verdad que en la vida real no vemos:</p>
+  <div class="tabla-env"><table>
+    <thead><tr><th>Métricas de Claude en "sí"</th><th>Contra el humano (lo que medirás)</th><th>Contra la verdad (lo que quisieras saber)</th></tr></thead>
+    <tbody id="verdad"></tbody></table></div>
+  <p style="font-size:.9rem;color:var(--texto-suave)">Sube los errores del humano y mira cómo Claude "empeora" sin cambiar nada: una referencia ruidosa castiga al codificador evaluado. Por eso la referencia se construye con cuidado (a ciegas, con codebook) y se reporta su propia confiabilidad cuando hay dos personas.</p>
+
+  <div class="aviso info"><strong>Para llevar a tu proyecto:</strong> reporta siempre <em>kappa y % de acuerdo y la distribución</em> de la variable, con su intervalo de confianza; si hay una referencia humana, también precisión, exhaustividad y F1 por código. Aquí son de referencia: se profundizan en la sesión 5 (evaluaciones, Claude Code y Claude Science). En el caso completo, las variables con prevalencia extrema (como <code>perspectiva_genero</code>) tienen kappas inestables con N=20.</div>
 </main>
 <script src="../assets/comun.js"></script>
 <script>
@@ -95,6 +108,25 @@ function calcular() {
   const celdas = [...Array(n[0]).fill("si-si"), ...Array(n[2]).fill("desac"), ...Array(n[1]).fill("no-no")];
   $("mapa").innerHTML = celdas.map(c => `<span class="${c}"></span>`).join("");
   $("po").textContent = KIT.pct(po); $("pe").textContent = KIT.pct(pe); $("k").textContent = k.toFixed(2);
+  // α de Krippendorff (límite de muestra grande) y AC1 de Gwet: el azar se calcula con la distribución conjunta
+  const pi = (pa + pb) / 2;
+  const de = 1 - (pi * pi + (1 - pi) * (1 - pi));
+  const alfa = de <= 0 ? 1 : 1 - (1 - po) / de;
+  const pe1 = 2 * pi * (1 - pi), ac1 = (po - pe1) / (1 - pe1);
+  // Precisión, exhaustividad y F1 de "sí", con el humano como referencia y con la verdad
+  const prf = (vp, marcados, reales) => {
+    const pr = marcados ? vp / marcados : NaN, re = reales ? vp / reales : NaN;
+    return [pr, re, pr + re ? 2 * pr * re / (pr + re) : NaN];
+  };
+  const [prH, reH, f1H] = prf(ss, pb, pa);
+  const vpV = p * (1 - eb);                 // Claude dice sí y la verdad es sí
+  const [prV, reV, f1V] = prf(vpV, pb, p);
+  const d2 = x => isNaN(x) ? "—" : x.toFixed(2);
+  $("alfa").textContent = alfa.toFixed(2); $("ac1").textContent = ac1.toFixed(2); $("f1").textContent = d2(f1H);
+  $("prec").textContent = d2(prH); $("rec").textContent = d2(reH);
+  $("verdad").innerHTML = `<tr><th>Precisión</th><td>${d2(prH)}</td><td>${d2(prV)}</td></tr>
+    <tr><th>Exhaustividad (recall)</th><td>${d2(reH)}</td><td>${d2(reV)}</td></tr>
+    <tr><th>F1</th><td>${d2(f1H)}</td><td>${d2(f1V)}</td></tr>`;
   $("aguja").style.left = `calc(${Math.min(Math.max(k, 0), 1) * 100}% - 2px)`;
   const etq = k >= .81 ? "casi perfecto" : k >= .61 ? "sustancial" : k >= .41 ? "moderado" : k >= .21 ? "aceptable" : k >= 0 ? "leve" : "peor que el azar";
   let txt = `Acuerdo <strong>${etq}</strong>.`;

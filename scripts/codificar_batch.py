@@ -22,9 +22,8 @@ import json
 import sys
 import time
 
-import anthropic
-from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
-from anthropic.types.messages.batch_create_params import Request
+# `anthropic` se importa dentro de main(), después de leer los argumentos: así `--help`
+# responde al instante aunque el SDK tarde en cargar.
 
 from codificar_api import (CODEBOOK, CODEBOOK_VERSION, MANIFIESTO, PRECIOS, PROMPT, PROMPT_VERSION, RAIZ, SALIDA,
                            esquema)
@@ -110,6 +109,10 @@ def main() -> None:
     e.add_argument("--limite", type=int)
     sub.add_parser("recoger")
     args = ap.parse_args()
+    global anthropic, MessageCreateParamsNonStreaming, Request
+    import anthropic
+    from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+    from anthropic.types.messages.batch_create_params import Request
     enviar(args.modelos, args.limite) if args.cmd == "enviar" else recoger()
 
 
