@@ -22,12 +22,13 @@
 
 | Herramienta | Dónde | Para qué fase |
 |---|---|---|
-| Chat con Proyecto | claude.ai o Claude Desktop | 1 · Codebook, 6 · Nota |
-| Workbench | Claude Console, en el navegador (`platform.claude.com`), con tus créditos de API | 2 · Prompt |
+| Chat con Proyecto | claude.ai o Claude Desktop | 1 · Codebook, 2 · Prompt (en un Proyecto de prueba, comparando modelos con el selector), 6 · Nota |
 | Skills | Configuración → Capacidades → Skills (claude.ai o Desktop) | 3 · Skill |
 | Cowork | **Solo Claude Desktop** | 3 · Armar el skill, 4 · Codificar, 5 · Validar |
 
 Los scripts de verificación de citas y de kappa vienen dentro del skill y **los ejecuta Claude en Cowork**; detectan solos tu variable.
+
+**¿Usas Claude Desktop en modo desarrollador con tu API key (inferencia de terceros)?** Todo el ejercicio funciona, haciendo cada fase en Cowork y sin instalar el skill: ver [guía → Si usas tu API key](https://benjov.github.io/kit-ia-cide/guia.html#modo-api).
 
 La carpeta `scripts/` tiene todo lo demás: la descarga del corpus desde la SCJN, la verificación de hashes, la recodificación por API y la reproducción del caso completo. **Cualquiera puede pedirle a Cowork que los ejecute** para comprobar que funcionan y que el caso se reproduce (108 de 108 archivos idénticos). Quien prefiera la terminal tiene los comandos. Ver [`scripts/README.md`](scripts/README.md).
 
@@ -38,7 +39,7 @@ Cuando la SCJN protege derechos humanos, **¿argumenta distinto en control abstr
 ## El flujo
 
 ```
-Pregunta y corpus → Codebook (Chat) → Prompt (Workbench) → Skill → Escalar (Cowork) → Validar (kappa, en Cowork) → Memo (Chat)
+Pregunta y corpus → Codebook (Chat) → Prompt (Chat, Proyecto de prueba) → Skill → Escalar (Cowork) → Validar (kappa, en Cowork) → Memo (Chat)
 ```
 
 ## Contenido

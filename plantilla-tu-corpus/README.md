@@ -9,7 +9,7 @@ El caso de la SCJN es un ejemplo. El flujo funciona igual con discursos legislat
 | 1 | **Pregunta** que se responda con variables observables en el texto | — | Puedes escribir qué resultado contradiría tu hipótesis |
 | 2 | **Corpus** en `.txt` (o `.pdf` y `.docx`), un archivo por documento, con un **manifiesto** (id, fuente, URL o referencia, fecha) | Cowork puede ayudarte a convertir y renombrar | Cada documento tiene ID y procedencia |
 | 3 | **Codebook** v0.1 → v1.0 con [`../skills/plantilla-codificador/referencias/plantilla-codebook.md`](../skills/plantilla-codificador/referencias/plantilla-codebook.md) | Chat (Proyecto) | 3–6 variables, cada una con regla de decisión y un caso frontera |
-| 4 | **Prompt** probado en 3–5 documentos y 2 modelos | Workbench | Los códigos coinciden con tu juicio y las citas son literales |
+| 4 | **Prompt** probado en 3–5 documentos y 2 modelos | Chat (Proyecto de prueba, un chat nuevo por modelo) | Los códigos coinciden con tu juicio y las citas son literales |
 | 5 | **Skill** a partir de [`../skills/plantilla-codificador/`](../skills/plantilla-codificador/) | Desktop → Skills | Claude lo activa solo cuando le pides codificar |
 | 6 | **Muestra de validación** (≥ 20 documentos, estratificada) codificada a ciegas por ti o por un asistente | Hoja de cálculo | La tienes **antes** de ver los resultados de Claude |
 | 7 | **Codificación completa** + verificación de citas + kappa | Cowork (o API Batch si son cientos o miles) | ≥ 95% de citas verificadas y kappa ≥ 0.61 en cada variable que reportes |

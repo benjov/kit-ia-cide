@@ -38,7 +38,7 @@ Registro cronológico de las decisiones metodológicas. Formato: **qué** se dec
 
 - **Qué**: los 102 documentos se codificaron con Opus 5.5, Sonnet 5.5 y Haiku 5.5 mediante la Batch API (50% de descuento). La prueba previa con 3 documentos en tarifa normal costó US$0.34.
 - **Por qué**: la estimación inicial (unos US$4) subestimó el tamaño de los resúmenes. Con datos reales (unos 19,000 tokens de entrada por documento), los tres modelos en tarifa normal costaban unos US$17. Batch bajó el costo a la mitad sin cambiar el resultado.
-- **Lección**: mide en el Workbench antes de estimar. Nuestra primera estimación se equivocó por un factor de 4.
+- **Lección**: mide con una prueba pequeña (aquí, 3 documentos) antes de estimar. Nuestra primera estimación se equivocó por un factor de 4.
 
 ### D7 · 2026-11-06 · Referencia humana SIMULADA
 
@@ -99,7 +99,7 @@ Además, en el AR 166/2019 Sonnet asignó un código sustantivo de `derecho_prin
   - Los `SKILL.md` indican que **Claude** ejecuta los scripts en su entorno y nunca le pide a la persona que corra comandos. Si no puede ejecutar código, lo declara.
   - Guía: tabla "¿Dónde se hace cada cosa?", sección "Antes de la sesión" y carpeta `mi-trabajo/`. Además, Cowork arma el .zip del skill (fase 3), los pasos de Workbench vienen completos, el codebook se descarga como archivo desde el Chat y el plan B no sale de la app.
 - **Verificación**: el caso completo da los mismos números con los scripts nuevos (Opus 431/431; los mismos kappa de `confiabilidad-opus.csv`), y `docs/data/` no cambió. Se probó con una variable nueva (`evidencia`), una cita falsa y una hoja humana con `;`, BOM y encabezado genérico.
-- **Criterio que queda**: Workbench (Claude Console, en el navegador) se mantiene en la fase 2 porque no requiere código y los participantes tienen créditos. Si no hay acceso, la fase se hace en Chat.
+- **Criterio que queda**: la fase 2 se hacía en Workbench (Claude Console). D16 lo reemplaza por Chat.
 - **Pendiente**: probar en una cuenta Pro el prompt de la fase 3 (que Cowork genere el .zip) y la instalación del skill.
 
 ### D14 · 2026-11-09 · Scripts verificables desde Cowork y página de conceptos
@@ -132,3 +132,23 @@ Además, en el AR 166/2019 Sonnet asignó un código sustantivo de `derecho_prin
 - **Alcance (ajuste tras la auditoría previa al commit)**: las métricas complementarias son **referenciales**; se profundizan en la sesión 5 (evaluaciones, Claude Code y Claude Science). En la sesión, la fase 5 se queda con kappa y desacuerdos; el detalle (matriz, precisión, exhaustividad) es opcional y α/AC1 solo se explican si la persona pregunta. El IC se omite («—») cuando uno de los codificadores usa un solo código, porque el bootstrap no puede estimar la variación.
 - **Advertencia**: en el caso, el acuerdo es mayor cuando la confianza es alta *por construcción*, porque la referencia simulada (D7) mete más desacuerdos donde la confianza es baja. Así se declara en los textos.
 - **También**: las variables 4, 6 y 9 de `ejercicio/README.md` no tenían "trampa", aunque el material del taller de docencia (artifact externo de la sesión 4) dice que las 10 la traen. Se agregó a las tres. También se corrigió en Conceptos el rango de acuerdo entre modelos: 0.79–1.00 es el de los tres pares, no el de Opus–Sonnet (0.83–0.95).
+
+### D16 · 2026-11-09 · La fase 2 sale de Workbench y pasa a Chat
+
+- **Qué**: Workbench vive en Claude Console (`platform.claude.com`), que no es claude.ai ni Claude Desktop: otra página, otro inicio de sesión y créditos de API. Eso contradecía la regla de la sesión (D13): todo desde las aplicaciones de Claude.
+- **Cambio**: la fase 2 se hace en un **Proyecto de prueba** sin archivos. Sus instrucciones son el system prompt con el codebook, se adjunta un documento por chat y se comparan modelos con el selector, un chat nuevo por modelo. El costo de escalar se estima con la calculadora del sitio, que trae los tokens medidos en el caso.
+- **Costo de la decisión**: el Chat no muestra tokens ni guarda casos de prueba, y además agrega su propio contexto al de las instrucciones del Proyecto, así que el resultado puede diferir algo del de la API. Se declara como límite. Medir y evaluar de forma sistemática queda para la sesión 5 (evaluaciones, Claude Code y Claude Science).
+- **Consecuencia**: los créditos de API ya no son requisito de la sesión; solo los usa el carril B (`codificar_api.py`, `codificar_batch.py`).
+- **Archivos**: guía (tabla de herramientas, diagrama, "Antes de la sesión" y fase 2), caso, inicio, Conceptos (glosario), `README.md`, `caso-completo/README.md`, `02-prompt/README.md`, `ejercicio/README.md`, `plantilla-tu-corpus/README.md`, guion, `para-co-docente.md` y `CLAUDE.md`.
+
+### D17 · 2026-11-09 · Ruta para Claude Desktop con inferencia de terceros (API key)
+
+- **Qué**: algunos participantes usan Claude Desktop en modo desarrollador (*Configure Third-Party Inference*, proveedor `anthropic`) para gastar sus créditos de API en lugar de los límites de Pro. Había que comprobar que todo el ejercicio se pudiera hacer desde ahí.
+- **Qué dice la documentación oficial** (claude.com/docs/third-party/claude-desktop, consultada el 2026-11-09):
+  - Confirma Cowork con carpetas permitidas, la ejecución de código en su máquina virtual, la creación y descarga de archivos, el selector de modelo (con los modelos de *Model list*) y los conectores.
+  - No documenta las instrucciones ni el conocimiento de los Proyectos, ni dónde sube el usuario un skill en .zip. Tampoco dice si la máquina virtual trae Python.
+  - El Chat puede requerir activarse, el historial es local y la máquina virtual no tiene red salvo *Allowed egress hosts*. Desde el 2026-11-10 la vista unificada es la predeterminada.
+- **Cambio**: la guía tiene una sección "Si usas tu API key" con la configuración, una prueba de un minuto (Python, script, escritura en `mi-trabajo/`), una tabla de qué cambia por fase y un prompt de la fase 2 para Cowork. En este modo, todo pasa por Cowork: el codebook se lee desde la carpeta y el skill no se instala, porque Cowork sigue el `SKILL.md` desde `mi-trabajo/` (los dos `SKILL.md` aclaran que sus rutas son relativas a su carpeta). También se actualizaron `docs/kit.html`, `scripts/README.md`, `README.md`, `ejercicio/README.md`, el guion (instrucción previa, checklist y plan B) y `para-co-docente.md`.
+- **Costo**: en este modo se paga cada token, también los de Cowork. La guía da una estimación **no medida** de US$2–5 por sesión con Sonnet 5.5. Hay que medirla en el ensayo.
+- **Pendiente**: probar la ruta completa en este modo (checklist del guion). Nada de esto se ha ejecutado en una app con inferencia de terceros.
+

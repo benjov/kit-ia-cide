@@ -6,7 +6,7 @@ El caso resuelto de punta a punta, para ver cómo se ve terminado antes de hacer
 |---|---|---|---|
 | 0 · Pregunta y corpus | este README + [`../corpus/manifiesto_emblematicas.csv`](../corpus/manifiesto_emblematicas.csv) | Script de descarga (`descargar_corpus.py`) | Ya está hecho: usas `ejercicio/muestra-20/`. Si quieres comprobarlo, pídele a Cowork que ejecute el script en modo de prueba ([`scripts/README.md`](../scripts/README.md)) |
 | 1 · Codebook | [`01-codebook.md`](01-codebook.md) | Chat con Proyecto | Chat con Proyecto (claude.ai o Desktop) |
-| 2 · Prompt | [`02-prompt/`](02-prompt/) | Workbench | Workbench (Claude Console, navegador) |
+| 2 · Prompt | [`02-prompt/`](02-prompt/) | Proyecto de prueba en Chat; tokens medidos después con la API (carril B) | Chat con un Proyecto de prueba y el selector de modelo (claude.ai o Desktop) |
 | 3 · Skill | [`../skills/codificador-scjn/`](../skills/codificador-scjn/) | Skills | Cowork arma el .zip; lo subes en Configuración → Capacidades → Skills |
 | 4 · Escalar | [`04-resultados/`](04-resultados/) | API Batch: 102 documentos × 3 modelos (carril B) | Cowork con tu skill, 20 documentos (solo Desktop) |
 | 5 · Validar | [`05-validacion/`](05-validacion/) | Scripts (carril B) | Cowork: Claude ejecuta los mismos scripts dentro del skill |

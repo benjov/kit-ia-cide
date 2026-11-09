@@ -63,9 +63,9 @@
   </section>
 
   <section class="panel-fase" data-fase="2" role="tabpanel" hidden>
-    <h2>Fase 2 · Prototipo del prompt (Workbench)</h2>
+    <h2>Fase 2 · Prototipo del prompt (Chat con Proyecto de prueba)</h2>
     <div class="rejilla-2">
-      <div class="tarjeta"><h3>Qué hicimos</h3><ol><li>System prompt con el codebook como variable.</li><li>Salida forzada a JSON con un esquema (cada variable: código, cita, confianza).</li><li>Prueba con 3 documentos difíciles y los tres modelos.</li><li>Medimos tokens: unos 19,000 de entrada y 1,750 de salida por documento.</li><li><em>Get code</em> → el mismo prompt pasó a <code>scripts/codificar_api.py</code> (carril B; en la sesión no lo necesitas).</li></ol></div>
+      <div class="tarjeta"><h3>Qué hicimos</h3><ol><li>System prompt con el codebook, pegado como instrucciones de un Proyecto sin archivos.</li><li>Salida en JSON (cada variable: código, cita, confianza).</li><li>Prueba con 3 documentos difíciles y los tres modelos, un chat nuevo por prueba.</li><li>El mismo prompt pasó a <code>scripts/codificar_api.py</code> (carril B; en la sesión no lo necesitas), que fuerza el JSON con un esquema y registra los tokens: unos 19,000 de entrada y 1,750 de salida por documento.</li></ol></div>
       <div class="tarjeta"><h3>El caso que nos enseñó algo</h3><p>En la <strong>AI 148/2017</strong> (aborto), la Corte valida un artículo e invalida otros. La regla del codebook dice <code>mixto</code>. Opus lo aplicó y explicó en su nota por qué no era <code>protege</code>. Ese documento quedó como caso de prueba permanente.</p>
         <p><a href="herramientas/auditor.html#AI-148-2017|claude-opus-5-5">Verlo en el auditor →</a></p></div>
     </div>

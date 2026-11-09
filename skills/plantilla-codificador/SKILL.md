@@ -5,6 +5,8 @@ description: REEMPLAZA ESTA DESCRIPCIÓN. Di qué documentos codifica (p. ej. "d
 
 # Mi codificador · plantilla del Kit IA-CIDE
 
+> **Si te piden seguir este archivo desde una carpeta, sin instalar el skill** (por ejemplo, en Claude Desktop con inferencia de terceros), las rutas `referencias/` y `scripts/` son relativas a la carpeta donde está este `SKILL.md`. Todo lo demás funciona igual.
+
 > **Cómo usar esta plantilla** (sin programar)
 > 1. Cambia `name` (minúsculas y guiones) y `description` arriba.
 > 2. Sustituye `referencias/codebook.md` por tu codebook (usa `referencias/plantilla-codebook.md` como guía).

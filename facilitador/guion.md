@@ -1,13 +1,13 @@
 # Guion del facilitador · Sesión 4 "Del codebook al hallazgo" (150 min)
 
-**Audiencia**: unas 50 personas · **Formato**: en vivo, **actividad individual**. Cada participante replica el flujo en su propio equipo con una variable que elige. · **Requisitos**: Claude Pro (Desktop) + créditos de API.
+**Audiencia**: unas 50 personas · **Formato**: en vivo, **actividad individual**. Cada participante replica el flujo en su propio equipo con una variable que elige. · **Requisitos**: Claude Pro (Desktop). Los créditos de API solo hacen falta para el carril B opcional.
 
-**Regla de la sesión: todo se hace desde las aplicaciones de Claude** (claude.ai, Claude Desktop con Cowork y Claude Console en el navegador). Nadie abre una terminal ni edita código: los scripts de auditoría los ejecuta Claude dentro de Cowork como parte del skill. La tabla "¿Dónde se hace cada cosa?" de la [guía](https://benjov.github.io/kit-ia-cide/guia.html) es la referencia para resolver dudas.
+**Regla de la sesión: todo se hace desde las aplicaciones de Claude** (claude.ai o Claude Desktop; Cowork solo en Desktop). Nadie abre una terminal ni edita código: los scripts de auditoría los ejecuta Claude dentro de Cowork como parte del skill. La tabla "¿Dónde se hace cada cosa?" de la [guía](https://benjov.github.io/kit-ia-cide/guia.html) es la referencia para resolver dudas.
 
 | Fase | Aplicación | ¿claude.ai o Desktop? |
 |---|---|---|
 | 1 · Codebook | Chat con Proyecto | Cualquiera |
-| 2 · Prompt | Workbench, en Claude Console (`platform.claude.com`) | Navegador; otro inicio de sesión |
+| 2 · Prompt | Chat con un Proyecto de prueba (instrucciones = system prompt) y el selector de modelo | Cualquiera |
 | 3 · Skill | Cowork arma el .zip; se instala en Configuración → Capacidades → Skills | Cowork: solo Desktop |
 | 4 · Escalar | Cowork + hoja de cálculo (Excel, Numbers o Sheets) | Solo Desktop |
 | 5 · Validar | Cowork (Claude ejecuta los scripts del skill) | Solo Desktop |
@@ -22,7 +22,7 @@ Facilitan dos docentes: una persona **conduce** (demo y tiempos) y la otra **cir
   1. descargar y descomprimir el ZIP del kit, y crear dentro la carpeta `mi-trabajo/`;
   2. actualizar Claude Desktop y confirmar que ven la pestaña **Cowork**;
   3. activar en Configuración → Capacidades la **ejecución de código y creación de archivos**;
-  4. entrar a Claude Console (`platform.claude.com`) y confirmar que ven créditos;
+  4. si usan Claude Desktop en modo desarrollador con su API key: configurar y hacer la prueba de la sección [Si usas tu API key](https://benjov.github.io/kit-ia-cide/guia.html#modo-api) de la guía;
   5. **leer las 10 variables de `ejercicio/README.md` y llegar con una elegida** (o con una propia).
 
   Todo esto está en la sección "Antes de la sesión" de la guía.
@@ -30,8 +30,9 @@ Facilitan dos docentes: una persona **conduce** (demo y tiempos) y la otra **cir
 - [ ] Probar Cowork con `ejercicio/muestra-20/` y el skill `codificador-scjn` en una cuenta Pro. Anotar cuánto tarda (referencia para el plan B).
 - [ ] Probar en una cuenta Pro **la ruta completa sin código** de la guía: el prompt de la fase 3 (Cowork arma el .zip del skill), la instalación del .zip, y la fase 5 con una hoja humana guardada desde Excel en español (separador `;`).
 - [ ] Ejecutar en Cowork, con una cuenta Pro, las verificaciones de `scripts/README.md` (hashes, descarga en modo de prueba, citas, `analizar_resultados.py --salida`). Anotar si el entorno de Cowork tiene salida a `scjn.gob.mx`: si no la tiene, la alternativa es `verificar_hashes.py --pdf`.
+- [ ] Probar la ruta completa también en Claude Desktop en **modo desarrollador con una API key** (inferencia de terceros): configurar *Model list* con los tres modelos, hacer la prueba de Python de la guía y las fases 1 a 5 en Cowork, con el skill leído desde la carpeta. Anotar el costo real de la fase 4 y corregir la estimación de la guía (US$2–5 con Sonnet). Desde el 2026-11-10 la app usa la vista unificada: revisar que los nombres de menú de la guía sigan coincidiendo.
 - [ ] Preparar una hoja compartida (Forms o Sheets) con **una fila por persona**: variable, % "sí" abstracto, % "sí" concreto, kappa (n = 6), % citas verificadas, fricción.
-- [ ] Tener abiertos: el sitio (caso completo y auditor), Workbench con el prompt cargado y Cowork con la carpeta lista.
+- [ ] Tener abiertos: el sitio (caso completo y auditor), un Proyecto de prueba con el system prompt del caso en sus instrucciones, y Cowork con la carpeta lista.
 
 ## Minuto a minuto
 
@@ -40,7 +41,7 @@ Facilitan dos docentes: una persona **conduce** (demo y tiempos) y la otra **cir
 | 0:00–0:12 | **Apertura** | "Así se ve terminado" | Demo del sitio: flujo animado → caso completo → **auditor de citas** (mostrar una cita verificada y explicar la marca p.N) → hallazgos. Pregunta detonadora: *"¿Le creerían a este resultado? ¿Por qué?"* | Abre el sitio en su equipo y sigue la demo |
 | 0:12–0:20 | **0 · Corpus** | De dónde salen los datos | Contar la historia del muro anti-bots (bitácora D1). Mostrar el manifiesto con hashes. | Abre `ejercicio/muestra-20/`, confirma su variable y lee su ficha |
 | 0:20–0:40 | **1 · Codebook** (Chat) | Mejorar la definición de la variable | Mostrar los prompts sugeridos (abajo). | Crea un Proyecto en Claude, sube el codebook del caso y 3 resúmenes, y refina su variable. **A los 0:38 congela su v1.0** |
-| 0:40–0:55 | **2 · Prompt** (Workbench) | Probar antes de escalar | Demo de 3 min: variables, Haiku contra Sonnet, costo por documento, *Get code*. | Prueba el prompt de su variable con 2 documentos (que **no** sean de los 6 `a_mano`) y 2 modelos; anota tokens |
+| 0:40–0:55 | **2 · Prompt** (Chat, Proyecto de prueba) | Probar antes de escalar | Demo de 3 min: Proyecto sin archivos con el system prompt en sus instrucciones, un chat nuevo por modelo (Haiku contra Sonnet) y costo de escalar con la calculadora del sitio. | Prueba el prompt de su variable con 2 documentos (que **no** sean de los 6 `a_mano`) y 2 modelos; anota si coinciden y si las citas son literales |
 | 0:55–1:05 | *Pausa* | | | |
 | 1:05–1:20 | **3 · Skill** (Cowork + Configuración) | Empaquetar | Mostrar `skills/plantilla-codificador/`: qué cambia (nombre, descripción, codebook) y qué **no** se toca (los scripts detectan solos la variable). Demo: el prompt de la guía para que Cowork arme el .zip, y cómo se sube en Configuración → Capacidades → Skills. | Pide a Cowork que adapte la plantilla y genere el .zip; lo sube y abre una tarea nueva de Cowork. Si se atora, usa `codificador-scjn` tal cual (ver plan B) |
 | 1:20–1:45 | **4 · Escalar** (Cowork) + **codificación a ciegas** | Claude codifica 20; tú codificas 6 | Recordar: primero 3 documentos y revisar, luego el resto. **Mientras Cowork trabaja, cada quien codifica a mano sus 6 documentos `a_mano`** sin mirar lo que hace Claude. | Lanza Cowork. Mientras corre, llena `hoja-codificacion-humana.csv` (unos 4 min por documento: síntesis + Ctrl+F) |
@@ -76,7 +77,9 @@ Después de llenar la hoja:
 | Claude dice que no puede ejecutar código | Configuración → Capacidades → activar la ejecución de código y creación de archivos; abrir una tarea o chat nuevo |
 | El skill no se activa | Pegar el contenido de `SKILL.md` como primer mensaje y pedir que lo siga |
 | Límite de uso de Pro | Reducir a 10 documentos (incluidos los 6 `a_mano`) |
-| Sin créditos en Workbench | Hacer la fase 2 en Chat comparando 2 versiones del prompt (sin medir tokens) |
+| Modo desarrollador (API key): no ve el Chat, los Proyectos o dónde subir el skill | Todo en Cowork, según la tabla de la guía: el codebook se lee desde la carpeta y el skill no se instala (*"sigue las instrucciones de mi-trabajo/codificador-[mi-variable]/SKILL.md"*) |
+| Modo desarrollador: Cowork no abre la carpeta, no ejecuta Python o no tiene internet | Revisar *Allowed workspace folders*; sin Python, verificar citas buscándolas en el texto y declararlo; la red solo hace falta para las verificaciones opcionales (*Allowed egress hosts*) |
+| El selector no muestra Haiku | Comparar Sonnet con Opus; lo que importa es que sean dos modelos distintos |
 | "¿Por qué kappa y no F1 o accuracy, como en los papers de NLP?" | Responden a preguntas distintas: kappa/α miden si dos codificadores coinciden más allá del azar (confiabilidad); precisión, exhaustividad y F1 miden si Claude acierta contra una referencia que se toma como verdad. El script da las dos familias; el protocolo decide con kappa porque así se fijó antes. Hoy son de referencia: se profundizan en la sesión 5 (evaluaciones, Claude Code y Claude Science). Ver [Conceptos §8](https://benjov.github.io/kit-ia-cide/conceptos.html#metricas) |
 | Alguien va muy atrasado | Saltar la fase 3 y usar `codificador-scjn` con la instrucción "agrega mi variable". La verificación de citas y el kappa incluyen la variable nueva sin editar nada |
 | No le alcanza el tiempo para los 6 documentos a mano | Codificar 3 y declararlo; terminar los otros 3 después de la sesión |

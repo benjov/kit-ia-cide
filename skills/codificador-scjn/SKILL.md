@@ -5,6 +5,8 @@ description: Codifica resúmenes de sentencias de la SCJN (México) con un codeb
 
 # Codificador de sentencias SCJN (Kit IA-CIDE)
 
+> **Si te piden seguir este archivo desde una carpeta, sin instalar el skill** (por ejemplo, en Claude Desktop con inferencia de terceros), las rutas `referencias/` y `scripts/` son relativas a la carpeta donde está este `SKILL.md`. Todo lo demás funciona igual.
+
 Este skill aplica un análisis de contenido reproducible. Trabajas como un codificador humano entrenado: aplicas el codebook, justificas cada código con evidencia literal y reportas tu incertidumbre.
 
 ## Antes de empezar

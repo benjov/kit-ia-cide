@@ -1,29 +1,26 @@
-# Fase 2 · Prototipo del prompt en Console Workbench
+# Fase 2 · Prototipo del prompt en un Proyecto de prueba
 
-**Objetivo**: convertir el codebook en un prompt que produzca JSON válido y verificable, compararlo entre modelos y estimar el costo **antes** de escalar.
+**Objetivo**: convertir el codebook en un prompt que produzca JSON válido y verificable, compararlo entre modelos y estimar el costo **antes** de escalar. Todo en Chat, en claude.ai o en Claude Desktop.
 
 ## Paso a paso (unos 15 min en la sesión; los pasos 7 y 8 son para después)
 
-1. Entra a **Claude Console** en el navegador (`platform.claude.com`; es otra página, no la app de Claude) → **Workbench**. Usa tus créditos de API.
-2. En **System prompt**, pega el contenido de [`system-prompt.md`](system-prompt.md).
-3. Sustituye `{{CODEBOOK}}` por el contenido de [`../01-codebook.md`](../01-codebook.md), o déjalo como variable y pégalo en el panel de variables.
-4. En el mensaje del usuario, escribe:
+1. Crea un Proyecto nuevo llamado *Prueba del prompt* y **no le subas archivos**: así el modelo solo ve el prompt y el documento.
+2. En las **instrucciones del Proyecto**, pega el contenido de [`system-prompt.md`](system-prompt.md). Esas instrucciones hacen el papel del *system prompt*.
+3. Sustituye `{{CODEBOOK}}` por el contenido de [`../01-codebook.md`](../01-codebook.md) (o por tu `codebook.md`).
+4. Abre un chat en el Proyecto, adjunta `corpus/resumenes/AI-148-2017.txt` y escribe:
 
    ```
-   <documento id="{{ID}}">
-   {{DOCUMENTO}}
-   </documento>
-
-   Codifica este documento según el codebook. Responde solo con el JSON del formato de salida.
+   Codifica el documento adjunto (id AI-148-2017) según el codebook. Responde solo con el JSON del formato de salida.
    ```
 
-5. En **Variables**, pega el texto de `corpus/resumenes/AI-148-2017.txt` en `DOCUMENTO` y escribe `AI-148-2017` en `ID`.
-6. Ejecuta con **Haiku 5.5**, luego con **Sonnet 5.5** y luego con **Opus 5.5**. Anota en la hoja de trabajo:
+5. Elige el modelo en el selector, debajo del cuadro de mensaje. Usa **un chat nuevo por modelo**, para que una respuesta no influya en la otra.
+6. Ejecuta con **Haiku 5.5**, luego con **Sonnet 5.5** y luego con **Opus 5.5** (si tu selector no muestra alguno, compara los que tengas). Anota en la hoja de trabajo:
    - ¿Coinciden los códigos?
    - ¿Las citas son literales? Búscalas con Ctrl+F en el documento.
-   - Tokens de entrada y de salida, y el costo que muestra Workbench.
-7. *Para después de la sesión*: agrega **3 casos de prueba** (en Workbench, "Evaluate" o "Test cases") con los documentos de la tabla de abajo, cuyo código correcto ya conocemos. Ejecuta la evaluación.
-8. Opcional: el botón **Get code** muestra el código equivalente. No lo necesitas hoy ni hay que ejecutarlo: es la llave para escalar en la sesión 5.
+   - ¿El JSON trae los campos `codigo`, `cita` y `confianza` para cada variable?
+   - El costo de escalar lo estimas con la [calculadora del sitio](https://benjov.github.io/kit-ia-cide/herramientas/costos.html), que trae los tokens medidos en el caso. El Chat no muestra tokens: decláralo como límite.
+7. *Para después de la sesión*: repite el paso 4 con los **3 casos de prueba** de la tabla de abajo, cuyo código correcto ya conocemos, cada vez que cambies el prompt.
+8. *Para después*: en el carril B, [`../../scripts/codificar_api.py`](../../scripts/codificar_api.py) usa este mismo prompt, fuerza el JSON con un esquema y registra los tokens de cada documento. Medir y evaluar de forma sistemática es tema de la sesión 5 (evaluaciones, Claude Code y Claude Science).
 
 ## Casos de prueba sugeridos
 

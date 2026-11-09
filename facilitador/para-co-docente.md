@@ -11,7 +11,7 @@
 
 ## 1. La sesión en un párrafo
 
-Sesión 4 (2.5 h, en vivo, unas 50 personas de ciencias sociales con Claude Pro y créditos de API). Es una **actividad individual**. Primero mostramos un caso terminado: 102 sentencias emblemáticas de la SCJN codificadas con 3 modelos de Claude. Pregunta del caso: ¿argumenta distinto la Corte en control abstracto y en control concreto? Cada código lleva una cita verificable. Después, cada participante elige una variable nueva, la define con Claude (Chat), prueba el prompt (Workbench), lo empaqueta en un skill, codifica 20 documentos con Cowork y **valida a mano 6 documentos a ciegas**. Cierra con una nota de una página. El código es opcional y Claude Code queda para la sesión 5.
+Sesión 4 (2.5 h, en vivo, unas 50 personas de ciencias sociales con Claude Pro; algunas usan Claude Desktop en modo desarrollador con su API key, y la guía tiene una sección para ese caso). Es una **actividad individual**. Primero mostramos un caso terminado: 102 sentencias emblemáticas de la SCJN codificadas con 3 modelos de Claude. Pregunta del caso: ¿argumenta distinto la Corte en control abstracto y en control concreto? Cada código lleva una cita verificable. Después, cada participante elige una variable nueva, la define con Claude (Chat), prueba el prompt en un Proyecto de prueba, comparando modelos, lo empaqueta en un skill, codifica 20 documentos con Cowork y **valida a mano 6 documentos a ciegas**. Cierra con una nota de una página. El código es opcional y Claude Code queda para la sesión 5.
 
 ## 2. Qué leer, en este orden
 

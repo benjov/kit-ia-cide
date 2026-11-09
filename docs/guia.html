@@ -38,8 +38,8 @@
   <div class="tabla-env"><table>
     <thead><tr><th>Herramienta</th><th>Dónde la abres</th><th>¿claude.ai o Desktop?</th><th>Fases</th></tr></thead>
     <tbody>
-      <tr><td><strong>Chat con Proyecto</strong></td><td>Barra lateral → <em>Proyectos</em> → <em>Nuevo proyecto</em></td><td>Cualquiera de los dos</td><td>1 y 6</td></tr>
-      <tr><td><strong>Workbench</strong></td><td><strong>Claude Console</strong> en el navegador (<code>platform.claude.com</code>) → <em>Workbench</em>. Usa tus créditos de API</td><td>Ninguno: es otra página, con otro inicio de sesión</td><td>2</td></tr>
+      <tr><td><strong>Chat con Proyecto</strong></td><td>Barra lateral → <em>Proyectos</em> → <em>Nuevo proyecto</em>. Usarás dos: uno para diseñar y otro, limpio, para probar el prompt</td><td>Cualquiera de los dos</td><td>1, 2 y 6</td></tr>
+      <tr><td><strong>Selector de modelo</strong></td><td>Debajo del cuadro de mensaje de cada chat</td><td>Cualquiera</td><td>2 (comparar modelos)</td></tr>
       <tr><td><strong>Skills</strong></td><td><em>Configuración → Capacidades → Skills</em></td><td>Cualquiera (el skill queda en tu cuenta)</td><td>3</td></tr>
       <tr><td><strong>Cowork</strong></td><td>Pestaña <em>Cowork</em> de la app; eliges la carpeta del kit</td><td><strong>Solo Claude Desktop</strong></td><td>3, 4 y 5</td></tr>
       <tr><td><strong>Ejecución de código y creación de archivos</strong></td><td><em>Configuración → Capacidades</em> (actívala una vez)</td><td>Cualquiera</td><td>Es lo que hace funcionar el skill</td></tr>
@@ -52,24 +52,63 @@
     <h4>Qué pasa de una aplicación a otra (todo queda en tu carpeta <code>mi-trabajo/</code>)</h4>
     <div class="cadena vert">
       <div class="nodo"><span class="donde">claude.ai o Desktop</span><b>1 · Chat con Proyecto</b><span class="cuerpo">Diseñas y congelas tu variable.<span class="archivo">codebook.md</span></span></div><span class="fl">lo descargas</span>
-      <div class="nodo"><span class="donde">Console · navegador</span><b>2 · Workbench</b><span class="cuerpo">Pruebas el prompt en 2 documentos y 2 modelos.<span class="archivo">tus notas: tokens, citas</span></span></div><span class="fl">si falla, ajustas antes de congelar</span>
+      <div class="nodo"><span class="donde">claude.ai o Desktop</span><b>2 · Proyecto de prueba</b><span class="cuerpo">Pruebas el prompt en 2 documentos y 2 modelos.<span class="archivo">tus notas: códigos, citas</span></span></div><span class="fl">si falla, ajustas antes de congelar</span>
       <div class="nodo acento"><span class="donde">Solo Desktop</span><b>3 · Cowork arma el skill</b><span class="cuerpo">Copia la plantilla con tu codebook.<span class="archivo">codificador-[mi-variable].zip</span></span></div><span class="fl">lo subes en Configuración → Skills</span>
       <div class="nodo acento"><span class="donde">Solo Desktop</span><b>4 · Cowork codifica 20</b><span class="cuerpo">Y verifica las citas con el script del skill.<span class="archivo">resultados_codificacion.csv</span></span></div><span class="fl">+ tu hoja a ciegas</span>
       <div class="nodo acento"><span class="donde">Solo Desktop</span><b>5 · Cowork valida</b><span class="cuerpo">Kappa, métricas y desacuerdos.<span class="archivo">hoja-codificacion-humana</span></span></div><span class="fl">los números</span>
       <div class="nodo ok"><span class="donde">Chat o Cowork</span><b>6 · Tu nota</b><span class="cuerpo">Variable, distribución, kappa, límites.<span class="archivo">nota.docx</span></span></div>
     </div>
-    <figcaption>Las cajas guinda son Cowork, que solo existe en Claude Desktop. Workbench es la única parada fuera de las apps: es una página de Claude Console en el navegador, con otro inicio de sesión. Ningún paso te pide abrir una terminal; los scripts los ejecuta Claude dentro de Cowork.</figcaption>
+    <figcaption>Las cajas guinda son Cowork, que solo existe en Claude Desktop; lo demás funciona igual en claude.ai o en Desktop. Ningún paso te pide abrir una terminal; los scripts los ejecuta Claude dentro de Cowork.</figcaption>
   </figure>
 
   <h2>Antes de la sesión (10 minutos)</h2>
   <ol>
     <li><strong>Descarga el kit</strong>: <a href="https://github.com/benjov/kit-ia-cide/archive/refs/heads/main.zip">kit-ia-cide-main.zip</a>. Descomprímelo: en Mac, con doble clic; en Windows, con clic derecho → <em>Extraer todo</em>. Te queda una carpeta <code>kit-ia-cide-main</code>; déjala en <em>Documentos</em>.</li>
     <li>Dentro de esa carpeta, crea una carpeta nueva llamada <code>mi-trabajo</code>. Ahí guardarás tu codebook, tu skill y tus resultados.</li>
-    <li>Actualiza <strong>Claude Desktop</strong>, entra con tu cuenta Pro y confirma que ves la pestaña <strong>Cowork</strong>.</li>
+    <li>Actualiza <strong>Claude Desktop</strong>, entra con tu cuenta Pro y confirma que ves la pestaña <strong>Cowork</strong>. ¿Usas Desktop en modo desarrollador con tu API key, en lugar de la cuenta Pro? Sigue además <a href="#modo-api">Si usas tu API key</a>.</li>
     <li>En <em>Configuración → Capacidades</em>, activa <strong>ejecución de código y creación de archivos</strong>.</li>
-    <li>Entra a <strong>Claude Console</strong> (<code>platform.claude.com</code>) y confirma que ves tus créditos.</li>
     <li>Lee las 10 variables de <code>ejercicio/README.md</code> (puedes leerlas <a href="https://github.com/benjov/kit-ia-cide/blob/main/ejercicio/README.md">en GitHub</a>) y llega con una elegida.</li>
   </ol>
+
+  <section id="modo-api">
+  <h2>Si usas tu API key (Claude Desktop con inferencia de terceros)</h2>
+  <p>Algunas personas usan Claude Desktop en <strong>modo desarrollador</strong>, conectado a la API con su propia key, para consumir sus créditos en lugar de los límites de Pro. Todo el ejercicio se puede hacer así, pero cambian tres cosas: <strong>todo pasa por Cowork</strong>, el skill no se instala sino que Cowork lo lee desde tu carpeta, y <strong>cada paso cuesta tokens</strong>.</p>
+  <div class="aviso alerta"><strong>Lo que no sabemos con certeza.</strong> La documentación oficial confirma que en este modo funcionan Cowork, el acceso a carpetas, la ejecución de código en su máquina virtual, la creación y descarga de archivos y el selector de modelo. No documenta las instrucciones ni el panel de conocimiento de los Proyectos, ni dónde se sube un skill en .zip. Por eso, en este modo la guía no depende de ellos. Además, a partir del 10 de noviembre de 2026 la app cambia a la vista unificada (<em>Unified Claude</em>), y los nombres de los menús pueden variar.</div>
+
+  <h3>Configuración (una vez, antes de la sesión)</h3>
+  <p>En Claude Desktop: <em>Help → Troubleshooting → Enable Developer Mode</em> (Ayuda → Solución de problemas) y luego <em>Developer → Configure Third-Party Inference…</em>. Los nombres de los campos vienen de la <a href="https://claude.com/docs/third-party/claude-desktop/configuration">referencia de configuración</a>:</p>
+  <div class="tabla-env"><table>
+    <thead><tr><th>Campo</th><th>Qué pones</th><th>Para qué</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Inference provider</strong></td><td><code>anthropic</code> (la API de Anthropic)</td><td>Que use tu cuenta de API</td></tr>
+      <tr><td><strong>Claude API key</strong></td><td>Tu key, o déjalo vacío para iniciar sesión con Claude Console en el navegador</td><td>El cobro va a tu organización de Console. Usa una key con límite de gasto</td></tr>
+      <tr><td><strong>Model list</strong></td><td><code>claude-sonnet-5-5</code>, <code>claude-haiku-5-5</code>, <code>claude-opus-5-5</code> (el primero es el predeterminado)</td><td>Que el selector muestre los tres modelos de la fase 2. Sonnet como predeterminado cuesta menos que Opus</td></tr>
+      <tr><td><strong>Allowed workspace folders</strong></td><td>Vacío, o la carpeta donde dejaste <code>kit-ia-cide-main</code></td><td>Que Cowork pueda abrir el kit</td></tr>
+      <tr><td><strong>Allowed egress hosts</strong></td><td>Solo si quieres las verificaciones con red: <code>www.scjn.gob.mx</code> y, para el carril B, <code>api.anthropic.com</code></td><td>Sin esto, la máquina virtual de Cowork no tiene internet. Para el ejercicio no hace falta</td></tr>
+    </tbody>
+  </table></div>
+  <p>Después abre una tarea de Cowork con la carpeta <code>kit-ia-cide-main</code> y pide esta prueba (tarda menos de un minuto):</p>
+  <div class="prompt">Ejecuta python3 --version y luego python3 skills/plantilla-codificador/scripts/verificar_citas.py --help. Muéstrame la salida literal. Después crea el archivo mi-trabajo/prueba.txt con la palabra hola.<button class="copiar">Copiar</button></div>
+  <p>Si ves una versión de Python, la ayuda del script y el archivo nuevo en <code>mi-trabajo/</code>, todo el ejercicio funciona. Si Python no está, avisa al equipo docente: Claude puede verificar las citas buscándolas en el texto, pero hay que declararlo.</p>
+
+  <h3>Qué cambia en cada fase</h3>
+  <div class="tabla-env"><table>
+    <thead><tr><th>Fase</th><th>Con Claude Pro</th><th>Con tu API key (modo desarrollador)</th></tr></thead>
+    <tbody>
+      <tr><td>1 · Codebook</td><td>Proyecto con archivos de conocimiento</td><td>Tarea de Cowork con la carpeta del kit. No subes nada: pide <em>"Lee caso-completo/01-codebook.md y los resúmenes AI-29-2011, ADR-496-2014 y AR-1422-2015 de ejercicio/muestra-20/"</em> antes de los tres prompts, y al final <em>"guárdalo en mi-trabajo/codebook.md"</em></td></tr>
+      <tr><td>2 · Prompt</td><td>Proyecto de prueba; sus instrucciones son el system prompt</td><td>Una tarea de Cowork nueva por modelo, con el prompt de abajo. El selector muestra los modelos que pusiste en <em>Model list</em></td></tr>
+      <tr><td>3 · Skill</td><td>Cowork arma el .zip y tú lo subes en Configuración</td><td>Cowork arma la carpeta del skill (el .zip ya no hace falta). No la instalas: en las fases 4 y 5 cambias <em>"usa el skill [nombre]"</em> por <em>"sigue las instrucciones de mi-trabajo/codificador-[mi-variable]/SKILL.md"</em>. Los scripts están en esa carpeta y Claude los ejecuta igual</td></tr>
+      <tr><td>4 y 5 · Codificar y validar</td><td>Cowork</td><td>Igual, con el cambio de la fase 3</td></tr>
+      <tr><td>6 · Nota</td><td>Chat o Cowork</td><td>Cowork (el Chat puede no estar activado en este modo)</td></tr>
+      <tr><td>Historial</td><td>En tu cuenta de claude.ai</td><td>Solo en tu equipo: las conversaciones no se sincronizan. Lo que importa queda en <code>mi-trabajo/</code></td></tr>
+    </tbody>
+  </table></div>
+  <p>Prompt de la fase 2 en este modo (una tarea nueva para cada modelo, para que una respuesta no influya en la otra):</p>
+  <div class="prompt">Lee caso-completo/02-prompt/system-prompt.md y sustituye {{CODEBOOK}} por el contenido de mi-trabajo/codebook.md. Aplica esas instrucciones como si fueran tu system prompt al documento ejercicio/muestra-20/AI-148-2017.txt y responde solo con el JSON del formato de salida. No uses otros archivos.<button class="copiar">Copiar</button></div>
+
+  <h3>Cuánto cuesta</h3>
+  <p>Aquí no hay límites de Pro: pagas cada token, también los que Cowork usa para leer, ejecutar scripts y corregir. Leer una sola vez los 20 documentos son unos 270,000 tokens de entrada, y Cowork relee contexto en cada paso. <strong>Estimación, no medida</strong>: toda la sesión costaría del orden de US$2 a US$5 con Sonnet 5.5 y aproximadamente el doble con Opus 5.5. Pon un límite de gasto en Console y revisa el consumo al terminar la fase 4. Es un dato útil para tu nota: cuánto costó codificar 20 documentos.</p>
+  </section>
 
   <h2>Tú haces los dos papeles</h2>
   <div class="roles">
@@ -85,30 +124,25 @@
       <details><summary>Opcional: verifica tú el corpus y el caso</summary><p>En Cowork puedes pedirle a Claude que ejecute los scripts del kit: que vuelva a descargar 3 documentos de la SCJN y compruebe su huella SHA-256, que verifique las 431 citas de Opus o que reproduzca todas las tablas del caso. Los prompts y lo que debes ver están en <a href="kit.html#verifica">Descargar kit → Verifica el kit</a>. Por qué importa: <a href="conceptos.html#corpus">procedencia</a> y <a href="conceptos.html#reproducibilidad">reproducibilidad</a>.</p></details></div>
 
     <div class="paso tarjeta" data-n="1"><span class="hora">0:20–0:40 · Chat con Proyecto (claude.ai o Desktop)</span><h3>Afinar la definición de tu variable</h3>
-      <p>Crea un Proyecto (<em>Proyectos → Nuevo proyecto</em>) y, en su panel de conocimiento, sube desde la carpeta del kit <code>caso-completo/01-codebook.md</code> y 3 resúmenes de <code>ejercicio/muestra-20/</code> que no sean de los 6 <code>a_mano</code>; por ejemplo, <code>AI-29-2011.txt</code>, <code>ADR-496-2014.txt</code> y <code>AR-1422-2015.txt</code>. Abre un chat dentro del Proyecto y pide:</p>
+      <p>Crea un Proyecto (<em>Proyectos → Nuevo proyecto</em>) y, en su panel de conocimiento, sube desde la carpeta del kit <code>caso-completo/01-codebook.md</code> y 3 resúmenes de <code>ejercicio/muestra-20/</code> que no sean de los 6 <code>a_mano</code>; por ejemplo, <code>AI-29-2011.txt</code>, <code>ADR-496-2014.txt</code> y <code>AR-1422-2015.txt</code>. Abre un chat dentro del Proyecto y pide (<a href="#modo-api">con tu API key</a>, hazlo en Cowork):</p>
       <div class="prompt">Voy a agregar la variable [VARIABLE] con esta definición inicial: [PEGAR DE LA FICHA]. Lee los 3 resúmenes y dime, con citas, en cuáles sería difícil aplicar mi definición y por qué.<button class="copiar">Copiar</button></div>
       <div class="prompt">Ponte en el papel de un codificador escéptico. Encuentra 3 ambigüedades en mi definición y propón una regla de decisión para cada una.<button class="copiar">Copiar</button></div>
       <div class="prompt">Escribe mi codebook v1.0 con el formato del codebook adjunto, pero solo con mi variable: tabla de códigos (máximo 5), regla de decisión, casos frontera, reglas generales y un formato de salida JSON con los campos codigo, cita y confianza. Entrégamelo como un archivo descargable llamado codebook.md.<button class="copiar">Copiar</button></div>
       <p class="porque"><strong>¿Por qué un codebook?</strong> Es la operacionalización de tu concepto y, con un LLM, es literalmente el prompt: cada ambigüedad que dejes la resuelve el modelo por ti, sin avisar y quizá de forma distinta en cada documento. <a href="conceptos.html#codebook">Más</a></p>
       <p>Descarga el archivo y guárdalo como <code>mi-trabajo/codebook.md</code>. <strong>A los 0:38 congela tu codebook v1.0.</strong> A partir de aquí no lo cambias hasta validar.</p></div>
 
-    <div class="paso tarjeta" data-n="2"><span class="hora">0:40–0:55 · Workbench en Claude Console (navegador)</span><h3>Probar el prompt antes de escalar</h3>
+    <div class="paso tarjeta" data-n="2"><span class="hora">0:40–0:55 · Chat con un Proyecto de prueba (claude.ai o Desktop)</span><h3>Probar el prompt antes de escalar</h3>
       <ol>
-        <li>Entra a <code>platform.claude.com</code> → <strong>Workbench</strong> y crea un prompt nuevo.</li>
-        <li>En el <strong>system prompt</strong>, pega el texto de <code>caso-completo/02-prompt/system-prompt.md</code> (ábrelo con TextEdit o el Bloc de notas, o <a href="https://github.com/benjov/kit-ia-cide/blob/main/caso-completo/02-prompt/system-prompt.md">en GitHub</a>). Donde dice <code>{{CODEBOOK}}</code>, pega tu <code>codebook.md</code>.</li>
-        <li>En el <strong>mensaje del usuario</strong>, pega esta plantilla. Workbench detecta <code>{{ID}}</code> y <code>{{DOCUMENTO}}</code> como variables:
-          <div class="prompt" style="white-space:pre-wrap">&lt;documento id="{{ID}}"&gt;
-{{DOCUMENTO}}
-&lt;/documento&gt;
-
-Codifica este documento según el codebook. Responde solo con el JSON del formato de salida.<button class="copiar">Copiar</button></div></li>
-        <li>En el panel de <strong>variables</strong>, escribe el ID (p. ej. <code>AI-148-2017</code>) y pega el texto del archivo <code>.txt</code> correspondiente.</li>
-        <li>Ejecuta con <strong>Haiku 5.5</strong> y luego con <strong>Sonnet 5.5</strong>. Repite con un segundo documento (p. ej. <code>ADR-2044-2008</code>). No uses ninguno de los 6 <code>a_mano</code>.</li>
-        <li>Anota: ¿coinciden los modelos? ¿Las citas son literales (búscalas con Ctrl+F en el .txt)? ¿Cuántos tokens usó? Con eso, la <a href="herramientas/costos.html">calculadora de costos</a> estima el costo de escalar.</li>
+        <li><a href="#modo-api">Con tu API key</a>, usa el prompt de Cowork de esa sección en lugar de los pasos 1 a 3. Con Claude Pro: crea un <strong>segundo Proyecto</strong> llamado <em>Prueba del prompt</em>. No le subas archivos al conocimiento: así el modelo solo ve tu prompt y el documento, como pasará en Cowork.</li>
+        <li>En las <strong>instrucciones del Proyecto</strong>, pega el texto de <code>caso-completo/02-prompt/system-prompt.md</code> (ábrelo con TextEdit o el Bloc de notas, o <a href="https://github.com/benjov/kit-ia-cide/blob/main/caso-completo/02-prompt/system-prompt.md">en GitHub</a>). Donde dice <code>{{CODEBOOK}}</code>, pega tu <code>codebook.md</code>. Esas instrucciones hacen el papel del <em>system prompt</em>.</li>
+        <li>Abre un chat dentro de ese Proyecto, elige <strong>Haiku 5.5</strong> en el selector de modelo, adjunta un <code>.txt</code> de <code>ejercicio/muestra-20/</code> (p. ej. <code>AI-148-2017.txt</code>) y pega:
+          <div class="prompt" style="white-space:pre-wrap">Codifica el documento adjunto según el codebook. Responde solo con el JSON del formato de salida.<button class="copiar">Copiar</button></div></li>
+        <li>Abre <strong>otro chat</strong> en el mismo Proyecto, elige <strong>Sonnet 5.5</strong> y repite con el mismo documento. Usa un chat nuevo para cada prueba, para que una respuesta no influya en la siguiente. Si tu selector no muestra Haiku, compara Sonnet con Opus. Repite todo con un segundo documento (p. ej. <code>ADR-2044-2008.txt</code>). No uses ninguno de los 6 <code>a_mano</code>.</li>
+        <li>Anota: ¿coinciden los modelos? ¿Las citas son literales (búscalas con Ctrl+F en el .txt)? ¿El JSON trae los campos <code>codigo</code>, <code>cita</code> y <code>confianza</code>?</li>
+        <li>Para estimar el costo de escalar a miles de documentos, usa la <a href="herramientas/costos.html">calculadora de costos</a>: ya trae los tokens medidos en el caso completo.</li>
       </ol>
       <p class="porque"><strong>¿Por qué probar antes de escalar?</strong> Es más barato descubrir aquí que el modelo parafrasea las citas o confunde dos códigos, que hacerlo después de 20 o de 3,000 documentos. Comparar dos modelos te dice además si tu variable es frágil. <a href="conceptos.html#costos">Tokens y costos</a></p>
-      <p style="color:var(--texto-suave);font-size:.9rem">Workbench tiene un botón <em>Get code</em>. Hoy no lo necesitas: ese código es para la sesión 5.</p>
-      <details><summary>¿Sin créditos o sin acceso a Console?</summary><p>Haz esta fase en un chat de tu Proyecto: pega el system prompt con tu codebook, adjunta un documento y pide el JSON. Repite con otro modelo usando el selector de modelo del chat. No verás los tokens; anótalo como límite.</p></details></div>
+      <p style="color:var(--texto-suave);font-size:.9rem">Límite que debes declarar: el Chat no muestra cuántos tokens usó cada respuesta. Medirlos, guardar casos de prueba y comparar versiones del prompt de forma sistemática es tema de la sesión 5 (evaluaciones, Claude Code y Claude Science).</p></div>
 
     <div class="paso pausa tarjeta" data-n="☕"><span class="hora">0:55–1:05</span><h3>Pausa</h3></div>
 
@@ -117,7 +151,7 @@ Codifica este documento según el codebook. Responde solo con el JSON del format
       <div class="prompt">Copia la carpeta skills/plantilla-codificador a mi-trabajo/codificador-[mi-variable]. En la copia: (1) reemplaza referencias/codebook.md por mi-trabajo/codebook.md; (2) en SKILL.md cambia name a codificador-[mi-variable] y escribe una description específica para mi variable; (3) ajusta la sección Salida con el nombre de mi variable; (4) borra el recuadro "Cómo usar esta plantilla". No edites los scripts. Después comprime la carpeta en mi-trabajo/codificador-[mi-variable].zip y muéstrame el SKILL.md final.<button class="copiar">Copiar</button></div>
       <p>Lee el <code>SKILL.md</code> que te muestra: la <code>description</code> es lo que Claude lee para decidir si usa el skill. Los scripts no se tocan: detectan solos el nombre de tu variable.</p>
       <p class="porque"><strong>¿Por qué un skill?</strong> Convierte tu prompt en un procedimiento fijo y versionado: el mismo codebook, las mismas reglas de salida y la misma auditoría en cada ejecución, compartible con un coautor. <a href="conceptos.html#herramientas">Glosario</a></p>
-      <p><strong>b) Tú lo instalas.</strong> <em>Configuración → Capacidades → Skills</em> → subir skill → elige <code>mi-trabajo/codificador-[mi-variable].zip</code> → actívalo. Para que Cowork lo vea, abre una <strong>tarea nueva</strong> de Cowork.</p>
+      <p><strong>b) Tú lo instalas</strong> (<a href="#modo-api">con tu API key</a>, sáltate este paso): <em>Configuración → Capacidades → Skills</em> → subir skill → elige <code>mi-trabajo/codificador-[mi-variable].zip</code> → actívalo. Para que Cowork lo vea, abre una <strong>tarea nueva</strong> de Cowork.</p>
       <details><summary>Sin Cowork: hazlo a mano</summary><ol>
         <li>Copia y pega la carpeta <code>skills/plantilla-codificador</code> dentro de <code>mi-trabajo/</code> y cámbiale el nombre.</li>
         <li>Abre <code>SKILL.md</code> con TextEdit (en Mac, <em>Formato → Convertir a texto normal</em>) o con el Bloc de notas. Cambia <code>name</code> y <code>description</code> y borra el recuadro de instrucciones.</li>
@@ -165,6 +199,7 @@ Codifica este documento según el codebook. Responde solo con el JSON del format
       <tr><td>No ves Cowork (versión vieja o sin Desktop)</td><td>Usa un chat de tu Proyecto con el skill activado: adjunta 6 a 10 resúmenes (incluidos los 6 <code>a_mano</code>) y el mismo prompt. Con la ejecución de código activada, Claude corre los mismos scripts del skill</td></tr>
       <tr><td>El skill no se activa</td><td>Escribe "usa el skill [nombre]" o pega el contenido de <code>SKILL.md</code> como primer mensaje</td></tr>
       <tr><td>Claude dice que no puede ejecutar código</td><td>Revisa <em>Configuración → Capacidades</em>. Si sigue sin poder, pide que verifique las citas buscándolas en el texto y lo declare en el reporte</td></tr>
+      <tr><td>Modo desarrollador: Cowork no abre la carpeta o no ejecuta Python</td><td>Revisa <em>Allowed workspace folders</em> y repite la prueba de <a href="#modo-api">Si usas tu API key</a>. Sin Python, pide que verifique las citas buscándolas en el texto y declara el cambio</td></tr>
       <tr><td>Llegas al límite de uso de Pro</td><td>Reduce a 10 documentos, incluidos los 6 <code>a_mano</code></td></tr>
     </tbody>
   </table></div>

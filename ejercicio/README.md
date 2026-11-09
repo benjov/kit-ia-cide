@@ -2,7 +2,7 @@
 
 Cada participante trabaja **solo/a, en su propio equipo**. Eliges **una variable nueva** (de las 10 de abajo o una tuya) y la llevas por todo el flujo: codebook → prompt → skill → Cowork → validación → hallazgo.
 
-**Todo se hace desde las aplicaciones de Claude**: Chat con Proyecto (claude.ai o Desktop), Workbench (Claude Console, en el navegador), Skills (Configuración → Capacidades) y Cowork (solo Claude Desktop). No necesitas terminal ni Python: los scripts de auditoría los ejecuta Claude dentro de Cowork. El paso a paso, con dónde se abre cada herramienta, está en la [guía de la sesión](https://benjov.github.io/kit-ia-cide/guia.html).
+**Todo se hace desde las aplicaciones de Claude**: Chat con Proyecto (claude.ai o Desktop; también para probar el prompt y comparar modelos), Skills (Configuración → Capacidades) y Cowork (solo Claude Desktop). No necesitas terminal ni Python: los scripts de auditoría los ejecuta Claude dentro de Cowork. El paso a paso, con dónde se abre cada herramienta, está en la [guía de la sesión](https://benjov.github.io/kit-ia-cide/guia.html). Si usas Claude Desktop en modo desarrollador con tu API key, todo se hace en Cowork: ver [Si usas tu API key](https://benjov.github.io/kit-ia-cide/guia.html#modo-api).
 
 **Tu corpus**: [`muestra-20/`](muestra-20/), con 20 resúmenes: las 9 acciones de inconstitucionalidad (control abstracto) y 11 amparos elegidos al azar con semilla 2026 (control concreto). La lista está en [`muestra-20/muestra.csv`](muestra-20/muestra.csv).
 
